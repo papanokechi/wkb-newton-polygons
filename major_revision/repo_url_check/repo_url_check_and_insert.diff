@@ -1,0 +1,64 @@
+--- a/paper/paper.tex
++++ b/paper/paper.tex
+@@ -2039,7 +2039,12 @@
+ Phase-III/IV invariants, proof skeletons, integration map, and
+ rendered figures --- is deposited as the companion Zenodo dataset
+ \cite{wkb_dataset_v1}, licensed CC-BY-4.0 (text and data) and MIT
+-(code and pipelines). The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
++(code and pipelines).
++All code, fleet scripts, and sample artifacts are publicly available
++at \url{https://github.com/papanokechi/wkb-newton-polygons}, which
++mirrors the Zenodo v2.0 dataset and provides a stable, versioned
++record of the computational workflow.
++The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
+ (placeholder, assigned by Zenodo at publication of v1.0). See
+ \Cref{sec:reproducibility} for the command sequence that reproduces
+ every artifact.
+--- a/arxiv_bundle/paper.tex
++++ b/arxiv_bundle/paper.tex
+@@ -2039,7 +2039,12 @@
+ Phase-III/IV invariants, proof skeletons, integration map, and
+ rendered figures --- is deposited as the companion Zenodo dataset
+ \cite{wkb_dataset_v1}, licensed CC-BY-4.0 (text and data) and MIT
+-(code and pipelines). The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
++(code and pipelines).
++All code, fleet scripts, and sample artifacts are publicly available
++at \url{https://github.com/papanokechi/wkb-newton-polygons}, which
++mirrors the Zenodo v2.0 dataset and provides a stable, versioned
++record of the computational workflow.
++The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
+ (placeholder, assigned by Zenodo at publication of v1.0). See
+ \Cref{sec:reproducibility} for the command sequence that reproduces
+ every artifact.
+--- a/journal_bundle/paper.tex
++++ b/journal_bundle/paper.tex
+@@ -2039,7 +2039,12 @@
+ Phase-III/IV invariants, proof skeletons, integration map, and
+ rendered figures --- is deposited as the companion Zenodo dataset
+ \cite{wkb_dataset_v1}, licensed CC-BY-4.0 (text and data) and MIT
+-(code and pipelines). The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
++(code and pipelines).
++All code, fleet scripts, and sample artifacts are publicly available
++at \url{https://github.com/papanokechi/wkb-newton-polygons}, which
++mirrors the Zenodo v2.0 dataset and provides a stable, versioned
++record of the computational workflow.
++The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
+ (placeholder, assigned by Zenodo at publication of v1.0). See
+ \Cref{sec:reproducibility} for the command sequence that reproduces
+ every artifact.
+--- a/major_revision/followup/paper_v2_1.tex
++++ b/major_revision/followup/paper_v2_1.tex
+@@ -2039,7 +2039,12 @@
+ Phase-III/IV invariants, proof skeletons, integration map, and
+ rendered figures --- is deposited as the companion Zenodo dataset
+ \cite{wkb_dataset_v1}, licensed CC-BY-4.0 (text and data) and MIT
+-(code and pipelines). The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
++(code and pipelines).
++All code, fleet scripts, and sample artifacts are publicly available
++at \url{https://github.com/papanokechi/wkb-newton-polygons}, which
++mirrors the Zenodo v2.0 dataset and provides a stable, versioned
++record of the computational workflow.
++The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
+ (placeholder, assigned by Zenodo at publication of v1.0). See
+ \Cref{sec:reproducibility} for the command sequence that reproduces
+ every artifact.
