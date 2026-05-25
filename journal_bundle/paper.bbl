@@ -1,0 +1,145 @@
+\begin{thebibliography}{{Pap}26}
+
+\bibitem[AKT01]{aoki-kawai-takei}
+Takashi Aoki, Takahiro Kawai, and Yoshitsugu Takei.
+\newblock On the exact steepest descent method: a new method for the
+  description of {S}tokes curves.
+\newblock {\em Journal of Mathematical Physics}, 42(8):3691--3713, 2001.
+
+\bibitem[Arn76]{arnold1976}
+V.~I. Arnol'd.
+\newblock Local normal forms of functions.
+\newblock {\em Inventiones mathematicae}, 35:87--109, 1976.
+
+\bibitem[Boa14]{boalch-stokes}
+Philip Boalch.
+\newblock Geometry and braiding of {S}tokes data; fission and wild character
+  varieties.
+\newblock {\em Annals of Mathematics (2)}, 179(1):301--365, 2014.
+
+\bibitem[Boa16]{boalch-wildhodge}
+Philip Boalch.
+\newblock Wild non-abelian {H}odge theory on curves.
+\newblock In {\em Geometry and Quantization of Moduli Spaces}, Advanced Courses
+  in Mathematics --- CRM Barcelona, pages 1--38. Birkh{\"a}user, 2016.
+
+\bibitem[Bri71]{brieskorn}
+Egbert Brieskorn.
+\newblock Singular elements of semi-simple algebraic groups.
+\newblock In {\em Actes du Congr{\`e}s International des Math{\'e}maticiens
+  (Nice, 1970)}, pages 279--284. Gauthier-Villars, 1971.
+
+\bibitem[BT33]{birkhoff-trjitzinsky}
+G.~D. Birkhoff and W.~J. Trjitzinsky.
+\newblock Analytic theory of singular difference equations.
+\newblock {\em Acta Mathematica}, 60:1--89, 1933.
+
+\bibitem[GMN13]{gmn-spectral}
+Davide Gaiotto, Gregory~W. Moore, and Andrew Neitzke.
+\newblock Spectral networks.
+\newblock {\em Annales Henri Poincar{\'e}}, 14:1643--1731, 2013.
+
+\bibitem[IN14]{iwaki-nakanishi}
+Kohei Iwaki and Tomoki Nakanishi.
+\newblock Exact {WKB} analysis and cluster algebras.
+\newblock {\em Journal of Physics A: Mathematical and Theoretical},
+  47(47):474009, 2014.
+
+\bibitem[KT05]{kawai-takei}
+Takahiro Kawai and Yoshitsugu Takei.
+\newblock {\em Algebraic Analysis of Singular Perturbation Theory}, volume 227
+  of {\em Translations of Mathematical Monographs}.
+\newblock American Mathematical Society, 2005.
+
+\bibitem[Lan02]{lang-algebra}
+Serge Lang.
+\newblock {\em Algebra}, volume 211 of {\em Graduate Texts in Mathematics}.
+\newblock Springer, New York, revised third edition, 2002.
+
+\bibitem[Lev75]{levelt}
+A.~H.~M. Levelt.
+\newblock Jordan decomposition for a class of singular differential operators.
+\newblock {\em Arkiv f{\"o}r Matematik}, 13(1):1--27, 1975.
+
+\bibitem[Mal74]{robba-malgrange}
+Bernard Malgrange.
+\newblock Sur les points singuliers des {\'e}quations diff{\'e}rentielles.
+\newblock {\em L'Enseignement Math{\'e}matique}, 20:147--176, 1974.
+\newblock See also Robba, Ph., \emph{Lemmes de Hensel pour les op{\'e}rateurs
+  diff{\'e}rentiels}, Enseign. Math.\ 26 (1980), 279--311.
+
+\bibitem[McK80]{mckay}
+John McKay.
+\newblock Graphs, singularities, and finite groups.
+\newblock In {\em The {S}anta {C}ruz Conference on Finite Groups (Santa Cruz,
+  1979)}, volume~37 of {\em Proceedings of Symposia in Pure Mathematics}, pages
+  183--186. American Mathematical Society, 1980.
+
+\bibitem[Moc11]{mochizuki-asymptotic}
+Takuro Mochizuki.
+\newblock Wild harmonic bundles and wild pure twistor {$\mathcal{D}$}-modules.
+\newblock {\em Ast{\'e}risque}, (340), 2011.
+
+\bibitem[{Pap}26]{wkb_dataset_v1}
+{Papanokechi}.
+\newblock The {WKB} geometry of {N}ewton polygons: A classification theory ---
+  computational atlas, conjectures, and proof skeletons.
+\newblock Zenodo dataset, v1.0, May 2026.
+\newblock \url{https://doi.org/10.5281/zenodo.XXXXXXX}; placeholder DOI to be
+  assigned on publication.
+
+\bibitem[Ram97]{ramis-stokes}
+Jean-Pierre Ramis.
+\newblock Phenomenon of {S}tokes and resummation.
+\newblock {\em Banach Center Publications}, 39:93--113, 1997.
+
+\bibitem[RSZ13]{ramis-q-stokes}
+Jean-Pierre Ramis, Jacques Sauloy, and Changgui Zhang.
+\newblock Local analytic classification of {$q$}-difference equations.
+\newblock {\em Ast{\'e}risque}, (355), 2013.
+
+\bibitem[Sab05]{sabbah-polarizable}
+Claude Sabbah.
+\newblock {\em Polarizable Twistor {$\mathcal{D}$}-modules}.
+\newblock Number 300 in Ast{\'e}risque. Soci{\'e}t{\'e} Math{\'e}matique de
+  France, 2005.
+
+\bibitem[Sab07]{sabbah-isomon}
+Claude Sabbah.
+\newblock {\em Isomonodromic Deformations and {F}robenius Manifolds: An
+  Introduction}.
+\newblock Universitext. Springer, 2007.
+
+\bibitem[Sau03]{sauloy}
+Jacques Sauloy.
+\newblock Galois theory of {F}uchsian {$q$}-difference equations.
+\newblock {\em Annales Scientifiques de l'{\'E}cole Normale Sup{\'e}rieure
+  (4)}, 36(6):925--968, 2003.
+
+\bibitem[Sib90]{sibuya}
+Yasutaka Sibuya.
+\newblock {\em Linear Differential Equations in the Complex Domain: Problems of
+  Analytic Continuation}, volume~82 of {\em Translations of Mathematical
+  Monographs}.
+\newblock American Mathematical Society, 1990.
+
+\bibitem[Tur55]{turrittin}
+H.~L. Turrittin.
+\newblock Convergent solutions of ordinary linear homogeneous differential
+  equations in the neighborhood of an irregular singular point.
+\newblock {\em Acta Mathematica}, 93:27--66, 1955.
+
+\bibitem[Was87]{wasow}
+Wolfgang Wasow.
+\newblock {\em Asymptotic Expansions for Ordinary Differential Equations}.
+\newblock Dover, 1987.
+\newblock Reprint of the 1965 Wiley edition.
+
+\bibitem[Zha98]{zhang}
+Changgui Zhang.
+\newblock Sur la sommabilit{\'e} des s{\'e}ries enti{\`e}res solutions
+  formelles d'une {\'e}quation aux {$q$}-diff{\'e}rences.
+\newblock {\em Comptes Rendus de l'Acad{\'e}mie des Sciences --- S{\'e}rie I},
+  327:349--352, 1998.
+
+\end{thebibliography}

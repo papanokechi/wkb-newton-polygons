@@ -1,0 +1,176 @@
+================================================================================
+Zenodo metadata block (v2.0)
+"The WKB Geometry of Newton Polygons: A Functorial Classification Theory"
+================================================================================
+
+# Upload type
+upload_type:           publication
+publication_type:      preprint
+
+# Title
+title: "The WKB Geometry of Newton Polygons:
+        A Functorial Classification Theory  (v2.0)"
+
+# Authors
+creators:
+  - name:         "Papanokechi"
+    affiliation:  "Independent Researcher"
+    orcid:        "0009-0000-6192-8273"
+
+# Publication / release
+publication_date:      2026-05-26
+version:               "2.0"
+language:              eng
+
+# Description (revised abstract; 186 non-math words / ≤220 target)
+description: |
+  This release accompanies the camera-ready manuscript "The WKB Geometry
+  of Newton Polygons: A Functorial Classification Theory" and supersedes
+  the v1.0 dataset (10.5281/zenodo.20355904) by promoting it to a
+  complete, refereed publication.
+
+  The central object is the constellation map F : L |-> C(L) =
+  Roots(chi_L), sending a scalar linear operator L (ODE, difference, or
+  q-difference, polynomial coefficients, one irregular singularity at
+  infinity) to the root set of its WKB characteristic polynomial.
+
+  The new contributions, calibrated against classical Levelt-Turrittin
+  theory, are:
+
+  (1) the χ(c) = χ_w(c^q) factorisation across each slope-graded
+      block, identifying χ_w with the classical edge-indicial
+      polynomial;
+  (2) a finite stratified atlas of 23 single-edge classes refining
+      to 39 classes under µ_q / µ_q' symmetry;
+  (3) a Kummer dichotomy (Theorem 5.1) governing Z-resonances of
+      χ_w;
+  (4) a p-visibility result for the analytic ray positions on the
+      t-cover.
+
+  We do NOT claim new wild character variety theorems; the
+  analytic-lifting theorems AT1, AT3, AT5, AT7 organise classical
+  Stokes geometry under the constellation lens (§7).
+
+  The release contains the camera-ready LaTeX manuscript (26 pp,
+  897 KB PDF), the full Phase I-V computational atlas (19 JSON
+  artifacts, ~2.6 MB), the arXiv-ready and journal-ready submission
+  bundles, the eight in-manuscript theorem proofs (M1, N1, D2, S1,
+  AT1, AT3, AT5, AT7), the agent-pipeline scripts (fleet1-fleet5),
+  the phase reports, and the Round-1 + Round-2 refereed revision
+  packages.
+
+# Keywords
+keywords:
+  - WKB analysis
+  - Newton polygon
+  - irregular singularity
+  - formal classification
+  - Stokes phenomenon
+  - anti-Stokes directions
+  - Levelt-Turrittin theorem
+  - exponent constellation
+  - mu_q-pullback
+  - slope filtration
+  - Kummer dichotomy
+  - p-visibility
+  - functorial classification
+  - classification theory
+  - q-difference operator
+  - irregular ODE
+  - constellation map
+
+# Communities
+communities:
+  - math-ph
+  - math.CA
+  - math.DS
+  - cs.MS
+
+# Licenses
+license_code:   MIT          # applies to code/ and fleets/
+license_text:   CC-BY-4.0    # applies to paper/, reports/, figures/
+
+# Related identifiers
+related_identifiers:
+  - identifier:   10.5281/zenodo.20355904
+    relation:     isNewVersionOf
+    scheme:       doi
+    description:  "Previous version (v1.0) of this dataset"
+
+  - identifier:   "arXiv:XXXX.XXXXX"
+    relation:     isSupplementTo
+    scheme:       arxiv
+    description:  "Companion arXiv preprint (placeholder; update after arXiv submission)"
+
+  - identifier:   "https://github.com/papanokechi/wkb-newton-polygons"
+    relation:     isSourceOf
+    scheme:       url
+    description:  "Public GitHub repository (mirror of the v2.0 release)"
+
+  - identifier:   "https://github.com/papanokechi/wkb-newton-polygons/releases/tag/v2.0"
+    relation:     isIdenticalTo
+    scheme:       url
+    description:  "Tagged GitHub release matching this Zenodo record"
+
+# References (subset of paper.bib; full list in references.bib)
+references:
+  - "Mochizuki, T. (2011). Wild Harmonic Bundles and Wild Pure Twistor D-modules."
+  - "Sabbah, C. (2013). Introduction to Stokes Structures. Lecture Notes in Mathematics 2060."
+  - "Lang, S. (2002). Algebra. GTM 211, Springer."
+  - "Sauloy, J. (2017). Differential Galois Theory through Riemann-Hilbert Correspondence."
+  - "Ramis, J.-P. (1985). Phenomene de Stokes et filtration Gevrey sur le groupe de Picard-Vessiot."
+
+# MSC 2020 classification
+subjects:
+  - "34E20  Singular perturbations, turning point theory, WKB methods"
+  - "34M30  Asymptotic, formal expansions in differential equations in the complex domain"
+  - "39A06  Linear difference equations"
+  - "39A13  q-difference equations"
+  - "12H05  Differential algebra"
+
+# Access and use
+access_right:           open
+access_conditions:      (none)
+embargo_date:           (none)
+
+# Notes
+notes: |
+  v2.0 is the camera-ready public release of the project. It supersedes
+  v1.0 (10.5281/zenodo.20355904) by adding the complete LaTeX manuscript,
+  the rendered taxonomy figure, and all eight in-manuscript theorem
+  proofs. The submitted-for-publication version of the manuscript is the
+  arxiv_bundle/paper.tex inside the upload.
+
+  Dual licensing:
+    - All code (code/, fleets/) is released under MIT.
+    - All text and figures (paper/, reports/, figures/) are released
+      under CC-BY 4.0.
+  See LICENSE-CODE and LICENSE-TEXT inside the bundle.
+
+  Author identity:
+    The author identity (name "Papanokechi", ORCID 0009-0000-6192-8273)
+    is consistent across this Zenodo record, the GitHub repository
+    https://github.com/papanokechi/wkb-newton-polygons, and the
+    manuscript metadata.
+
+# File list (uploaded to Zenodo)
+files:
+  - manuscript.pdf
+  - manuscript.tex
+  - references.bib
+  - paper.bbl
+  - LICENSE-CODE
+  - LICENSE-TEXT
+  - CITATION.cff
+  - release_notes_v2.0.txt
+  - citation_block.txt
+  - zenodo_metadata_v2.0.txt
+  - figures/constellations.png
+  - figures/taxonomy_tikz.tex
+  - data/*.json                          (19 files)
+  - reports/*.md                         (6 files)
+  - code/plot_constellations.py
+  - fleets/fleet.py
+  - fleets/fleet3.py
+  - fleets/fleet4.py
+  - fleets/fleet5.py

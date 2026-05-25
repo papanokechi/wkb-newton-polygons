@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+title: >-
+  The WKB Geometry of Newton Polygons:
+  A Functorial Classification Theory
+message: >-
+  If you use this dataset or the companion manuscript, please cite both
+  via the DOI below and the preferred-citation block.
+type: software
+version: "2.0"
+date-released: "2026-05-26"
+doi: 10.5281/zenodo.XXXXXXX
+repository-code: "https://github.com/papanokechi/wkb-newton-polygons"
+url: "https://doi.org/10.5281/zenodo.XXXXXXX"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - WKB analysis
+  - Newton polygon
+  - irregular singularity
+  - formal classification
+  - Stokes phenomenon
+  - anti-Stokes directions
+  - Levelt-Turrittin theorem
+  - exponent constellation
+  - mu_q-pullback
+  - slope filtration
+  - Kummer dichotomy
+  - p-visibility
+  - functorial classification
+  - classification theory
+  - q-difference operator
+  - difference operator
+  - irregular ODE
+authors:
+  - given-names: "Papanokechi"
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0000-6192-8273"
+preferred-citation:
+  type: article
+  title: "The WKB Geometry of Newton Polygons: A Functorial Classification Theory"
+  authors:
+    - given-names: "Papanokechi"
+      affiliation: "Independent Researcher"
+      orcid: "https://orcid.org/0009-0000-6192-8273"
+  year: 2026
+  doi: 10.5281/zenodo.XXXXXXX
+  url: "https://doi.org/10.5281/zenodo.XXXXXXX"
+  notes: "arXiv:XXXX.XXXXX [math-ph]; Zenodo record (v2.0)"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.XXXXXXX
+    description: "Zenodo record for v2.0 of this dataset"
+  - type: doi
+    value: 10.5281/zenodo.20355904
+    description: "Zenodo record for v1.0 of this dataset (superseded)"

@@ -1,0 +1,212 @@
+[
+  {
+    "id": "M1",
+    "title": "Per-edge factorisation (multi-edge generalisation of the Main Theorem)",
+    "statement": "For a scalar operator L with Newton polygon N(L) having edges E_1, ..., E_m at the irregular singularity (ordered by increasing slope), each E_alpha of slope -p_alpha/q_alpha with r_alpha+1 lattice points contributes a characteristic polynomial chi^{(alpha)}(c) = c^{k_0^{(alpha)}} * chi_w^{(alpha)}(c^{q_alpha}). The full WKB symbol factors as the PRODUCT chi(c) = prod_alpha chi^{(alpha)}(c) and the constellation C(L) is the (multiset) DISJOINT UNION of per-edge constellations C_alpha, each obtained from chi_w^{(alpha)} by the same mu_{q_alpha}-equivariant pullback as the Main Theorem.",
+    "evidence": {
+      "n_multi_edge_operators": 9,
+      "examples": [
+        "MULTI_edges_1o3_then_1o2",
+        "MULTI_edges_1o4_then_1o2",
+        "MULTI_edges_1o5_then_1o2",
+        "MULTI_edges_1o3_r2_then_1o2",
+        "MULTI_edges_1o4_r2_then_1o3"
+      ],
+      "edges_disjoint_count": 7
+    },
+    "remarks": "Independence is generic: per-edge constellations occupy distinct radii in the OPEN stratum. Equal-radius collisions between different edges define an inter-edge degeneracy locus that extends the Phase-1 single-edge stratification."
+  },
+  {
+    "id": "M2",
+    "title": "Multi-edge zero-root sharing (right-edge)",
+    "statement": "Let N(L) have two consecutive edges E_alpha (less negative slope) and E_beta (more negative, dominant) meeting at the joint vertex (k_*, d_*) with k_* > 0. Indexing per-edge characteristic polynomials so that the leftmost lattice point of each edge starts at k = 0, the dominant edge's chi^{(beta)}(c) factors as c^{k_*} * chi_w^{(beta)}(c^{q_beta}); the less-negative edge contributes no factor of c. Thus C_beta carries a multiplicity-k_* root at c = 0, while C_alpha generically does not. In particular, multi-edge polygons always exhibit the dominant-edge zero-root degeneracy.",
+    "evidence": {
+      "multi_edge_operators_with_dominant_zero_roots": 9,
+      "examples": [
+        "MULTI_edges_1o3_then_1o2",
+        "MULTI_edges_1o4_then_1o2",
+        "MULTI_edges_1o5_then_1o2",
+        "MULTI_edges_1o3_r2_then_1o2",
+        "MULTI_edges_1o4_r2_then_1o3"
+      ],
+      "observed_per_edge_zero_root_distribution": "left edges always 0; right (dominant) edge gives k_* zeros equal to the joint k-coordinate."
+    },
+    "remarks": "Extends the Phase-1 zero-root stratum: in single-edge polygons alpha_r = 0 was an accidental degeneracy; in multi-edge polygons the zero-root is *generic* on the dominant edge, with multiplicity given by the joint vertex."
+  },
+  {
+    "id": "D1",
+    "title": "Delta-modulus partition law (open stratum)",
+    "statement": "For a scalar single-edge operator on the open stratum (distinct |w_i|, distinct args, no Z- or omega-resonance), the multiset of pairwise differences {|c_i - c_j| : i<j} has cardinality exactly binomial(rq, 2) = rq(rq-1)/2, and the modulus partition factors as a product of three contributions: (i) intra-ring differences indexed by pairs in mu_q, (ii) inter-ring differences indexed by pairs (w_i, w_j), (iii) a global rotation of all of (ii) by the same mu_q action. In particular, the number of DISTINCT moduli in the Delta-multiset is at most (q-1)/2 + r*q*(r-1)/2 (counting multiplicities).",
+    "evidence": {
+      "open_stratum_count": 16,
+      "examples": [
+        "HIGHQ_simple_s1o5_r1",
+        "HIGHQ_simple_s1o6_r1",
+        "HIGHQ_simple_s1o7_r1",
+        "HIGHQ_genc_s1o5_r3",
+        "HIGHQ_genc_s1o6_r3"
+      ],
+      "observed_distinct_moduli": [
+        2,
+        3,
+        3,
+        21,
+        27,
+        5,
+        18,
+        5,
+        9,
+        9
+      ]
+    }
+  },
+  {
+    "id": "D2",
+    "title": "Inner-polynomial Z-resonance dichotomy (prime-q version)",
+    "statement": "Let L be scalar with one dominant edge of slope -p/q with q PRIME and inner polynomial chi_w of degree r >= 2, so C(L) is a disjoint union of r mu_q-orbits with radii rho_alpha = |w_alpha|^{1/q}. Call a small-coefficient (|n_k| <= 3, support <= 4) Z-relation sum n_k c_k = 0 *mu_q-forced* if its per-ring partial sums each vanish individually; otherwise call it *cross-ring nontrivial*. Then: (i) for GENERIC chi_w (the w_alpha algebraically independent over Q), C(L) admits no cross-ring nontrivial Z-relation; (ii) for SIMPLE chi_w (the w_alpha satisfying a Q-linear relation), C(L) admits cross-ring nontrivial Z-relations -- one for each independent Q-linear dependence among the q-th roots w_alpha^{1/q}. For COMPOSITE q the same statement holds modulo the cyclotomic relations of mu_q acting on each ring (the mu_q-forced piece is correspondingly richer and includes Z-combinations of single-ring sub-orbit sums).",
+    "evidence": {
+      "operators_with_nontrivial_z": 33,
+      "operators_with_only_mu_q_forced_z": 5,
+      "operators_with_no_z": 10,
+      "prime_q_genc_operators": 4,
+      "prime_q_genc_with_zero_nontrivial_Z": 4,
+      "simple_multiring_with_Z": 6,
+      "examples_prime_q_genc_no_Z": [
+        "HIGHQ_genc_s1o5_r2",
+        "HIGHQ_genc_s2o5_r2",
+        "HIGHQ_genc_s3o7_r2",
+        "HIGHQ_genc_s1o5_r3"
+      ],
+      "examples_simple_with_Z": [
+        "HIGHQ_simple_s1o5_r2",
+        "HIGHQ_simple_s2o5_r2",
+        "HIGHQ_simple_s1o6_r2",
+        "HIGHQ_simple_s3o7_r2",
+        "HIGHQ_simple_s1o5_r3"
+      ],
+      "sharpness": "All prime-q (q=5 or 7) generic-chi_w single-edge operators produce zero cross-ring Z-relations; every simple-chi_w multi-ring operator produces at least 5. The dichotomy is exact for prime q in the sweep."
+    },
+    "remarks": "Cross-ring Z-relations form a *lattice* in C(L) - C(L) that is invariant of the chi_w-stratum: operators on the same chi_w-stratum share their cross-ring Z-resonance lattice. This lattice is a finer invariant than mu_q symmetry and refines D1's modulus partition into an arithmetic stratification of F."
+  },
+  {
+    "id": "O1",
+    "title": "Omega-resonance classification",
+    "statement": "The constellation C(L) has angular spacing in 2 pi * (Z/m) with m > q if and only if chi_w has roots on a finite Galois orbit of (Z/m)^x distinct from the trivial mu_q-orbit. Equivalently: omega-resonance is equivalent to chi_w factoring as a product of cyclotomic-like polynomials in w whose roots have a common rational angular spacing.",
+    "evidence": {
+      "omega_resonant_count": 22,
+      "examples": [
+        "HIGHQ_simple_s1o5_r2",
+        "HIGHQ_genc_s1o5_r2",
+        "HIGHQ_simple_s2o5_r2",
+        "HIGHQ_genc_s2o5_r2",
+        "HIGHQ_simple_s1o6_r2"
+      ],
+      "observed_denoms": [
+        6,
+        10,
+        12,
+        14,
+        15,
+        16,
+        18,
+        21,
+        24
+      ]
+    },
+    "remarks": "This is the 'accidental symmetry' phenomenon of Phase 1 elevated to a precise structural law: the symmetry-inflation factor m / q is exactly the LCM of the inner Galois orbits' angular denominators."
+  },
+  {
+    "id": "S1",
+    "title": "System pullback: blocks act independently on F",
+    "statement": "For a block-diagonal system Phi = diag(L_1, ..., L_n) of scalar operators, the constellation C(Phi) is the multiset disjoint union of C(L_i). Hence F(Phi) = bigsqcup_i F(L_i), and F factors through the symmetric power: F : Sys^n(scalar local models) -> Sym^n( finite multisets in C ).",
+    "evidence": {
+      "system_operators": 4,
+      "examples": [
+        "SYS2_1o2_1o3",
+        "SYS2_1o3_r2_genc",
+        "SYS3_1o2_1o3_1o4",
+        "SYS3_1o5_r1_x3"
+      ]
+    },
+    "remarks": "This handles block-diagonal systems exactly; for general (coupled) systems the same disjoint-union statement holds after diagonalisation of the leading symbol when the eigenvalues are distinct; coalescence of eigenvalues defines a system-level discriminant stratum, conjecturally classified by Levelt-Turrittin decomposition."
+  },
+  {
+    "id": "P1",
+    "title": "p-invariance of the Delta-modulus partition (verified for q=5)",
+    "statement": "Fixing q and r, varying p in {1, 2, 3, 4} (all coprime to 5) while keeping chi_w fixed produces operators with IDENTICAL Delta-modulus partitions and identical C_n symmetry orders. Hence the slope numerator p is invisible to the Delta-invariant as well as to F itself.",
+    "evidence": {
+      "pinv_examples": [
+        "PINV_s1o5_r2_genc",
+        "PINV_s2o5_r2_genc",
+        "PINV_s3o5_r2_genc",
+        "PINV_s4o5_r2_genc"
+      ],
+      "all_signatures_equal": true,
+      "common_signature": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    "remarks": "Phase 1 conjectured this for F (the constellation); Phase 3 elevates it to the finer Delta-invariant."
+  },
+  {
+    "id": "N1",
+    "title": "Nested ramification: iterated mu_q-pullback",
+    "statement": "If chi_w(w) itself factors as chi_v(w^{q'}) for some q' > 1 (i.e. chi_w has only exponents in q' Z), then C(L) = bigsqcup_{v in Roots(chi_v)} { c : c^{q q'} = v }, exhibiting (mu_q x mu_{q'})-equivariance. The effective ramification is q q' and the apparent symmetry group is C_{q q'}, even though the Newton polygon advertises only q.",
+    "evidence": {
+      "nested_examples": [
+        "NEST_q3_qinner2",
+        "NEST_q2_qinner3"
+      ],
+      "observed_symmetries": [
+        [
+          "NEST_q3_qinner2",
+          6
+        ],
+        [
+          "NEST_q2_qinner3",
+          6
+        ]
+      ]
+    },
+    "remarks": "This is the iterated form of the Main Theorem; it explains 'hidden' symmetry inflation in chi without invoking a Newton-polygon refinement."
+  },
+  {
+    "id": "F1",
+    "title": "Slope-filtration target for multi-edge F",
+    "statement": "F extends to multi-edge scalar operators with target = the category of FILTERED multisets in C (ordered by the slope sequence of N(L)). The grading captures the asymptotic dominance: an exponent c in C_alpha (slope -p_alpha/q_alpha) controls the WKB solution at order x^{p_alpha/q_alpha}. The single-edge classification of Phase 1 is the associated-graded of this filtration on each stratum.",
+    "evidence": {
+      "multi_edge_operators": 9
+    },
+    "remarks": "This is the natural functorial reframing of multi-edge as a filtration whose graded pieces are Phase-1 classes."
+  },
+  {
+    "id": "G1",
+    "title": "Galois action on rings",
+    "statement": "The absolute Galois group Gal(Q-bar/Q) acts on the roots of chi_w; this action lifts uniquely to a permutation of the rings R_k of C(L) covering the mu_q action. The orbit structure of Gal on rings is an arithmetic invariant of F refining the modulus partition.",
+    "evidence": {
+      "galois_examples": [
+        "GAL_cyclotomic_3",
+        "GAL_cyclotomic_5"
+      ],
+      "observed_omega_denoms": [
+        [
+          "GAL_cyclotomic_3",
+          6
+        ],
+        [
+          "GAL_cyclotomic_5",
+          10
+        ]
+      ]
+    },
+    "remarks": "When chi_w is irreducible over Q, all rings form a single Galois orbit; when chi_w factors, the rings split according to the factorisation. GAL_cyclotomic_3 / 5 give cyclotomic ring orbits with omega-resonance denominators 6 / 10 respectively."
+  }
+]

@@ -1,0 +1,80 @@
+%% ============================================================================
+%% theorem_5_1_step2_fix.tex
+%%
+%% Round-2 follow-up fix for Step 2 of the proof of Theorem 5.1 (\Cref{thm:D2}).
+%%
+%% Reason for the update:
+%%
+%% (a) The v1 phrasing of Step 2 wrote a rational $u \in \mathbb{Q}^\times$ as
+%%     "$n_{\alpha 0} = -u\, q'$, $n_{\beta 0} = q'$, all others zero, $q'$ a
+%%     common denominator". This is dimensionally incorrect: $-u \cdot q'$ is
+%%     not an integer when $u = a/b$ and $q' = b$ -- it equals $-a/b \cdot b
+%%     = -a$, so the algebra is right by accident, but the phrasing is wrong
+%%     and reads as "$-u q'$" was treated as if $u$ were already an integer.
+%%     Fix: write $u = a/b$ in lowest terms and exhibit the integer
+%%     coefficients $(-a, b)$ directly.
+%%
+%% (b) Step 3 establishes mutual exclusivity but does not address
+%%     exhaustiveness. The two strata do NOT cover all operators: there exist
+%%     operators in which the $\{w_\alpha\}$ admit algebraic dependencies over
+%%     $\mathbb{Q}$ that are NOT pure Kummer relations $w_\beta = u^q w_\alpha$.
+%%     Add a one-sentence non-exhaustiveness scope note.
+%% ============================================================================
+
+%% ------------------- Drop-in replacement for Step 2 -------------------------
+
+\smallskip
+\textit{Step 2 (Kummer relation gives a cross-ring relation).}
+Suppose $w_\beta = u^q\, w_\alpha$ for some $u \in \Qlc^\times$ and
+distinct $\alpha \ne \beta$. Choose $z_\alpha \in \mathbb{C}$ with
+$z_\alpha^q = w_\alpha$ and set $z_\beta := u\, z_\alpha$; then
+$z_\beta^q = u^q\, w_\alpha = w_\beta$ as required. The identity
+$z_\beta - u\, z_\alpha = 0$ is a $\Zlc$-relation with $\lambda_\alpha
+= -u \ne 0$ in $\Zlc$ and $\lambda_\beta = 1 \ne 0$ in $\Zlc$, so it
+is cross-ring nontrivial.
+
+If in addition $u \in \mathbb{Q}^\times$, write $u = a / b$ in lowest
+terms with $a \in \mathbb{Z}$, $b \in \mathbb{Z}_{> 0}$, and
+$\gcd(a, b) = 1$. Then clearing denominators in $z_\beta - u\, z_\alpha
+= 0$ gives the genuine $\mathbb{Z}$-relation
+\begin{equation}\label{eq:D2-Z-relation}
+   b\, z_\beta \;-\; a\, z_\alpha \;=\; 0
+   \qquad \text{in } \mathbb{C},
+\end{equation}
+which has support $2$ on $\{z_\alpha, z_\beta\}$ and integer
+coefficients of absolute value $\max(|a|, b)$. Explicitly, the
+$\mathbb{Z}$-coefficient pattern from~\eqref{eq:D2-rearranged} is
+\[
+   n_{\alpha 0} \;=\; -a, \qquad
+   n_{\beta 0}  \;=\; b, \qquad
+   n_{\gamma j} \;=\; 0 \quad
+   \text{for all other } (\gamma, j),
+\]
+so $\lambda_\alpha = -a$, $\lambda_\beta = b$, neither of which is
+zero in $\Zlc$. This establishes a cross-ring nontrivial
+$\mathbb{Z}$-relation of support two and bounded coefficient size
+that is detectable by integer-relation searches with window
+$\ge \max(|a|, b)$. This proves (2).
+
+%% --------------- Drop-in addition AFTER Step 3 (mutual exclusivity) ----------
+
+\smallskip
+\textit{Scope: the dichotomy is not a trichotomy.}
+The two strata are mutually exclusive but \emph{not} exhaustive. There
+exist single-edge prime-$q$ operators whose inner-polynomial roots
+$\{w_1, \dots, w_r\}$ admit a nontrivial algebraic relation over
+$\mathbb{Q}$ that is not of the pure Kummer form $w_\beta = u^q\,
+w_\alpha$ (for example, multiplicative dependencies $w_1^a w_2^b =
+w_3^c$ with $(a, b, c) \ne (0, 0, q)$ modulo per-variable Kummer
+reductions, or transcendence-defect relations among three or more
+$w_\alpha$). On such operators \Cref{thm:D2} is silent: neither
+case~(1) nor case~(2) applies, and the cross-ring relation structure
+of $\Cl(L)$ is governed by the specific shape of the algebraic
+dependence rather than by Kummer theory. This stratum is the
+``residual'' between the open algebraic-independence locus and the
+Kummer locus; it is closed in the space of inner polynomials but
+strictly smaller than the algebraic-dependence locus.
+
+%% =================================================================
+%% END Step 2 fix
+%% =================================================================

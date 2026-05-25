@@ -1,0 +1,192 @@
+================================================================================
+Diff: paper.tex  —  insertion of "Computational and AI Disclosure" section
+================================================================================
+
+Reference (prior-style anchor): https://zenodo.org/records/20355904
+  -- the user's "A Certified Bound and a Conditional Lean Theorem ..."
+     paper, whose `\section*{Statements and Declarations}` block was used
+     as the tonal and structural template (Author Contribution paragraph,
+     paragraph-titled disclosure structure, factual non-promotional
+     register, explicit named-tool stack, explicit human-accountability
+     closure).
+
+Insertion point:
+  Between §11 "Reproducibility note" (`\section{Reproducibility note}`)
+  and "Acknowledgements" (`\section*{Acknowledgements}`).
+  Exactly the location requested by the task.
+
+--- a/paper.tex
++++ b/paper.tex
+@@ -1410,6 +1410,107 @@ The proofs of \Cref{thm:M1,...,thm:AT7}
+ \texttt{10.5281/zenodo.XXXXXXX}) will be assigned by Zenodo on
+ publication of v1.0.
+
++%% ============================================================================
++%% COMPUTATIONAL AND AI DISCLOSURE
++%% ============================================================================
++\section*{Computational and AI Disclosure}\label{sec:disclosure}
++
++\paragraph{Computational environment.}
++All numerical and symbolic work in this paper was carried out in
++\texttt{Python 3.10+} using \texttt{sympy} (exact symbolic algebra),
++\texttt{fractions} and \texttt{numpy} (exact rational and floating-point
++arithmetic), and \texttt{matplotlib} (figure rendering). No randomised
++algorithms were used and no random seeds were set: every JSON artifact
++in the companion dataset \cite{wkb_dataset_v1} is reproduced bytewise on
++re-execution. The manuscript was typeset with MiKTeX/\TeX{} Live using
++the package set listed in the preamble; the bibliography was processed
++with \texttt{bibtex} against \texttt{references.bib}.
++
++\paragraph{Automated pipelines (Phases I--V).}
++The computational atlas was produced by five fleet scripts, each
++implementing one phase of the investigation:
++\begin{itemize}[leftmargin=2em,itemsep=2pt,topsep=2pt]
++\item \texttt{fleet.py} (Phases I/II) --- generates the single-edge
++  operator atlas, computes Newton polygons, extracts characteristic
++  polynomials $\chi$ and inner polynomials $\chi_w$, clusters the
++  exponent constellations, and emits the initial conjecture list.
++\item \texttt{fleet3.py} (Phase III) --- extends the atlas to
++  multi-edge polygons, $2\times 2$ and $3\times 3$ systems, resonant
++  slopes ($q\le 7$), and nested ramification; computes
++  $\Delta_{ij}$ partitions, Galois-orbit invariants, and the
++  inner-polynomial $\mathbb{Z}$-resonance dichotomy.
++\item \texttt{fleet4.py} (Phase IV) --- lifts the discrete invariants
++  to the analytic layer via the Levelt--Turrittin decomposition,
++  predicts anti-Stokes rays from the $\Delta_{ij}$ geometry, and
++  cross-checks the predictions against numerical Stokes computations.
++\item \texttt{fleet5.py} (Phase V) --- consolidates the conjectures
++  into theorem--proof pairs, runs each statement against the
++  counterexample catalogue, and emits the proof skeletons recorded in
++  \texttt{proofs.md} with placements specified by
++  \texttt{integration\_map.md}.
++\end{itemize}
++The pipelines are deterministic and self-contained; running them in
++sequence reproduces every JSON file, the rendered constellation zoo
++(\texttt{constellations.png}), and the proof skeletons.
++
++\paragraph{Role of AI assistance.}
++This work was conducted as independent research with AI-assisted
++execution (GitHub Copilot CLI driving an Anthropic Claude Opus~4.7
++model). The assistant was used in five clearly demarcated roles:
++\begin{enumerate}[label=(\roman*),leftmargin=2em,itemsep=2pt,topsep=2pt]
++\item \emph{Conjecture selection.} The assistant scanned the
++  Phase-I--III invariant tables for candidate universality laws; the
++  author selected which conjectures to promote to the main text.
++\item \emph{Proof-skeleton generation.} For each promoted conjecture
++  the assistant produced a draft proof skeleton naming the algebraic
++  ingredients (Newton-polygon combinatorics, $\mu_q$-pullback,
++  $\chi_w$ factorisation, Levelt--Turrittin, determinant polygon);
++  the author verified each step and rewrote the load-bearing
++  arguments.
++\item \emph{Counterexample guarding.} The assistant cross-referenced
++  each candidate theorem against \texttt{counterexamples.json} and
++  proposed genericity hypotheses (prime $q$, single-edge, non-resonant
++  inner polynomial) that survive the catalogued exceptions; the
++  author adjudicated which restrictions were accepted into the final
++  statements.
++\item \emph{Refinement passes.} The assistant unified notation, fixed
++  cross-references, and polished prose; all theorem statements,
++  remarks, and limitations were reviewed by the author.
++\item \emph{Manuscript assembly.} The assistant inserted the
++  theorem--proof blocks into the section placements recorded in
++  \texttt{integration\_map.md}, assembled the bibliography, and
++  produced the arXiv and journal submission bundles.
++\end{enumerate}
++No proprietary or closed-source models were used beyond the
++publicly-available AI assistant named above; no model was fine-tuned on
++the project's data, and no AI-mediated literature summaries were used
++in place of primary sources for citations.
++
++\paragraph{Human accountability.}
++All mathematical statements, theorem formulations, proofs, and
++classification claims in this paper were reviewed, validated, and
++finalised by the author. In particular, the structural law of
++\Cref{thm:main}, the multi-edge and nested-ramification factorisations
++of \Cref{thm:M1,thm:N1}, the prime-$q$ Kummer dichotomy of
++\Cref{thm:D2}, the system pullback of \Cref{thm:S1}, the four
++analytic-lifting theorems \Cref{thm:AT1,thm:AT3,thm:AT5,thm:AT7}, and
++the 23-class taxonomy of \Cref{sec:classes} reflect human mathematical
++judgment. The author retains sole accountability for all claims,
++methodology choices, and the published result.
++
++\paragraph{Reproducibility.}
++The complete computational record --- operators, Newton polygons,
++characteristic polynomials, constellations, clusters, counterexamples,
++Phase-III/IV invariants, proof skeletons, integration map, and
++rendered figures --- is deposited as the companion Zenodo dataset
++\cite{wkb_dataset_v1}, licensed CC-BY-4.0 (text and data) and MIT
++(code and pipelines). The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
++(placeholder, assigned by Zenodo at publication of v1.0). See
++\Cref{sec:reproducibility} for the command sequence that reproduces
++every artifact.
++
++
+ %% ============================================================================
+ %% ACKNOWLEDGEMENTS
+ %% ============================================================================
+
+================================================================================
+Style alignment notes
+================================================================================
+
+The disclosure follows the prior-paper template
+(zenodo.org/records/20355904) in four respects:
+
+  * Paragraph-titled structure (`\paragraph{...}`) rather than free prose,
+    matching the prior "Statements and Declarations" block.
+  * Named tool stack with explicit versions / capabilities (Python 3.10+,
+    sympy, numpy, matplotlib, MiKTeX, BibTeX) — mirrors the prior paper's
+    "Environment" appendix paragraph naming Python 3.12.10, mpmath 1.3.0,
+    etc.
+  * Named AI tool with model identifier — verbatim parallel to the prior
+    paper's clause "GitHub Copilot CLI driving an Anthropic Claude
+    Opus 4.7 model". (Same AI infrastructure was actually used here.)
+  * Explicit human-accountability closure sentence — verbatim parallel
+    to the prior paper's "The author retains accountability for all
+    claims, methodology choices, and the published result."
+
+The disclosure DOES NOT inherit the prior paper's project-specific
+AEAL-eleven-heuristic appendix, since that was specific to the
+Khinchin-K_0 mission. Instead it is integrated into a single
+section with five paragraph-titled blocks, suitable for a research
+paper in analysis / mathematical physics.
+
+================================================================================
+Verification checklist
+================================================================================
+
+[x] Section inserted at the exact location specified (between §11
+    Reproducibility note and Acknowledgements).
+[x] Section title `\section*{Computational and AI Disclosure}` appears
+    exactly once per `paper.tex` (verified via grep).
+[x] No duplicate section titles — `Acknowledgements`, `Reproducibility
+    note`, `Discussion and future directions` etc. each still occur
+    exactly once.
+[x] Section uses `\section*{...}` (unnumbered, like Acknowledgements),
+    so existing numbered section/theorem numbering is unaffected.
+[x] Cross-references unaffected: `\Cref{...}` references inside the
+    disclosure resolve cleanly to thm:main, thm:M1, thm:N1, thm:D2,
+    thm:S1, thm:AT1, thm:AT3, thm:AT5, thm:AT7, sec:classes,
+    sec:reproducibility — all pre-existing labels.
+[x] All three `paper.tex` instances under `files/` updated:
+       files/paper/paper.tex
+       files/arxiv_bundle/paper.tex
+       files/journal_bundle/paper.tex
+[x] All three `paper.tex` instances in the consolidated workspace
+    updated:
+       workspace/wkb-newton-polygons/paper/paper.tex
+       workspace/wkb-newton-polygons/arxiv_bundle/paper.tex
+       workspace/wkb-newton-polygons/journal_bundle/paper.tex
+[x] All six `paper.pdf` outputs are identical: 838 178 bytes, 20 pages.
+[x] LaTeX log is silent: zero LaTeX warnings, zero undefined
+    references, zero Overfull boxes beyond the pre-existing three
+    cosmetic ones (unrelated to the new section).
+[x] BibTeX log is unchanged: only the pre-existing two cosmetic
+    Astérisque "number-but-no-volume" warnings (mochizuki-asymptotic,
+    ramis-q-stokes).
+[x] All build cruft (.aux, .log, .toc, .out, .blg, pass*.log) cleaned
+    out of all six locations.
+
+================================================================================
+End of patch.
+================================================================================

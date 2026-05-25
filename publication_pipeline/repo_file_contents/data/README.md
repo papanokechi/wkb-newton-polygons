@@ -1,0 +1,97 @@
+# `data/` — Computational atlas
+
+19 JSON artifacts (~2.6 MB total) covering the full Phase I–V
+computational atlas of operators, Newton polygons, characteristic
+polynomials, constellations, and analytic lifts.
+
+## File index
+
+### Phase I + II — operator zoo and base atlas
+
+| File                  | Bytes     | Description                                |
+|-----------------------|----------:|--------------------------------------------|
+| `operators.json`      |    28,565 | 48 single-edge operators (parameter sweep) |
+| `newton.json`         |    55,364 | Newton polygons (vertices, slopes, valuation patterns) |
+| `chi.json`            |    17,896 | WKB characteristic polynomials $\chi(c)$    |
+| `constellations.json` |    78,954 | Exponent constellations $\mathcal{C}(L)$    |
+| `clusters.json`       |    24,530 | Universality-class assignments (23 + degeneracies) |
+| `counterexamples.json`|     9,046 | Operators that delimit the strata           |
+
+### Phase III — multi-edge, systems, nested, controlled
+
+| File                       | Bytes     | Description                              |
+|----------------------------|----------:|------------------------------------------|
+| `phase3_operators.json`    |    93,423 | 48 additional operators                  |
+| `phase3_summary.json`      |     2,569 | Class-level summary statistics            |
+| `phase3_conjectures.json`  |    11,422 | Phase-III conjectures (M1, N1, D1–D2, …)  |
+| `phase3_clusters.json`     |    85,896 | Refined cluster assignments              |
+| `phase3_invariants.json`   |   532,046 | $\mu_q$ / $\mu_{q'}$ / $\omega$ / Galois invariants |
+| `phase3_gaps.json`         |     4,564 | Conjectural gaps and counterexamples     |
+
+### Phase IV — analytic lifting
+
+| File                     | Bytes       | Description                          |
+|--------------------------|------------:|--------------------------------------|
+| `phase4_framework.json`  |       3,631 | AT1–AT8 framework specification      |
+| `phase4_sample.json`     |       2,230 | Sample lifting data per representative |
+| `phase4_lift.json`       |       7,782 | Lift dictionaries per slope          |
+| `phase4_consistency.json`|      11,958 | Cross-consistency checks             |
+| `phase4_stokes.json`     |   1,524,593 | Computed anti-Stokes directions      |
+| `phase4_theorems.json`   |      16,208 | AT1–AT8 theorem statements           |
+
+### Phase V — proof targets
+
+| File                | Bytes  | Description                                  |
+|---------------------|-------:|----------------------------------------------|
+| `phase5_targets.json`| 25,169 | The eight proof targets M1, N1, D2, S1, AT1, AT3, AT5, AT7 |
+
+## Schema notes
+
+* All JSON files use 2-space indentation and stable key ordering for
+  reproducibility.
+* Operator entries (`operators.json`, `phase3_operators.json`) use:
+  ```json
+  {
+    "id": "...",
+    "slope": "p/q",
+    "valuation_pattern": "simple|double|mixed",
+    "rank": 1,
+    "equation_type": "ode|difference|q-difference",
+    "symbolic": "..."
+  }
+  ```
+  (No internal IDs are leaked to the manuscript prose; see
+  `../major_revision/followup/xref_cleanup_notes.md`.)
+
+* Newton-polygon entries (`newton.json`) record vertex coordinates,
+  edge slopes, and the induced small parameter $u$.
+
+* Constellation entries (`constellations.json`) record the root set
+  $\{c_k\}$ with radius, angular spacing, global phase, and ring
+  decomposition.
+
+## Reproducibility
+
+To regenerate the dataset from scratch:
+
+```bash
+python ../fleets/fleet.py    # produces operators.json, newton.json, chi.json,
+                             #          constellations.json, clusters.json,
+                             #          counterexamples.json
+python ../fleets/fleet3.py   # produces phase3_*.json
+python ../fleets/fleet4.py   # produces phase4_*.json
+python ../fleets/fleet5.py   # produces phase5_targets.json
+```
+
+Output files are byte-deterministic given the same Python version
+(≥ 3.10) and the same random seeds (hard-coded in the fleet scripts).
+
+## Citation
+
+If you use this dataset, please cite the v2.0 Zenodo record:
+
+```
+Papanokechi (2026). The WKB Geometry of Newton Polygons: A Functorial
+Classification Theory (v2.0) [Data set]. Zenodo.
+https://doi.org/10.5281/zenodo.XXXXXXX
+```

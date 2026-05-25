@@ -1,0 +1,178 @@
+================================================================================
+Repository structure map
+papanokechi/wkb-newton-polygons   (v2.0)
+================================================================================
+
+wkb-newton-polygons/
+├── .gitignore
+├── README.md                              top-level repo README
+├── CITATION.cff                           machine-readable citation metadata
+├── CONTRIBUTING.md                        contribution guidelines
+├── CHANGELOG.md                           version history (starts at v2.0)
+├── LICENSE-CODE                           MIT (code/, fleets/)
+├── LICENSE-TEXT                           CC-BY-4.0 (paper/, reports/, figures/)
+│
+├── paper/                                 CAMERA-READY MANUSCRIPT
+│   ├── README.md                            describes compile + content
+│   ├── manuscript.tex                       master LaTeX source (99,309 B)
+│   ├── manuscript.pdf                       26 pp, 897,105 B
+│   ├── manuscript.bbl                       pre-built bibliography
+│   ├── references.bib                       BibTeX source
+│   ├── paper.tex                            preserved name (= manuscript.tex)
+│   ├── paper.pdf                            preserved name (= manuscript.pdf)
+│   ├── paper.bbl                            preserved name (= manuscript.bbl)
+│   └── figures/
+│       ├── constellations.png
+│       └── taxonomy_tikz.tex
+│
+├── arxiv_bundle/                          ARXIV SUBMISSION BUNDLE
+│   ├── README.md
+│   ├── paper.tex                            byte-identical to paper/paper.tex
+│   ├── paper.bbl
+│   ├── paper.pdf                            26 pp, 897,107 B
+│   ├── references.bib
+│   └── figures/
+│       ├── constellations.png
+│       └── taxonomy_tikz.tex
+│
+├── journal_bundle/                        JOURNAL SUBMISSION BUNDLE
+│   ├── README.md
+│   ├── paper.tex                            byte-identical to paper/paper.tex
+│   ├── paper.bbl
+│   ├── paper.pdf
+│   ├── references.bib
+│   ├── class-file-placeholder.tex           replace at typesetting
+│   └── figures/
+│       ├── constellations.png
+│       └── taxonomy_tikz.tex
+│
+├── data/                                  COMPUTATIONAL ATLAS (19 JSONs, ~2.6 MB)
+│   ├── README.md
+│   ├── operators.json                       Phase I+II
+│   ├── newton.json
+│   ├── chi.json
+│   ├── constellations.json
+│   ├── clusters.json
+│   ├── counterexamples.json
+│   ├── phase3_operators.json                Phase III
+│   ├── phase3_summary.json
+│   ├── phase3_conjectures.json
+│   ├── phase3_clusters.json
+│   ├── phase3_invariants.json               (532 KB)
+│   ├── phase3_gaps.json
+│   ├── phase4_framework.json                Phase IV
+│   ├── phase4_sample.json
+│   ├── phase4_lift.json
+│   ├── phase4_consistency.json
+│   ├── phase4_stokes.json                   (1.5 MB — biggest file)
+│   ├── phase4_theorems.json
+│   └── phase5_targets.json                  Phase V
+│
+├── reports/                               PHASE REPORTS + PROOF SKELETONS
+│   ├── README.md
+│   ├── paper_draft.md                       original Phase-V draft
+│   ├── phase3_report.md
+│   ├── phase4_report.md
+│   ├── conjectures.md
+│   ├── proofs.md                            8 theorem-proof skeletons
+│   └── integration_map.md
+│
+├── figures/                               SHARED FIGURE SOURCES
+│   ├── README.md
+│   ├── constellations.png                   141,890 B
+│   └── taxonomy_tikz.tex                    4,792 B
+│
+├── code/                                  PLOTTING SCRIPT
+│   ├── README.md
+│   └── plot_constellations.py
+│
+├── fleets/                                AGENT-PIPELINE SCRIPTS
+│   ├── README.md
+│   ├── fleet.py                             Phase I+II (43,384 B)
+│   ├── fleet3.py                            Phase III (69,822 B)
+│   ├── fleet4.py                            Phase IV (58,252 B)
+│   └── fleet5.py                            Phase V (61,932 B)
+│
+├── major_revision/                        ROUND-1 + ROUND-2 REVISION PACKAGES
+│   ├── revised_abstract.tex
+│   ├── revised_introduction.tex
+│   ├── proofs_major_revision.tex
+│   ├── response_to_referee_letter.md
+│   ├── major_revision_checklist.md
+│   ├── major_revision_patch.diff
+│   └── followup/                            Round-2 (Feb 2026)
+│       ├── lemma_chi_multiplicative_v2.tex
+│       ├── theorem_5_1_step2_fix.tex
+│       ├── revised_abstract_v2.tex
+│       ├── major_revision_followup.diff
+│       ├── compile_log_summary.md
+│       ├── xref_cleanup_notes.md
+│       ├── followup_summary.md
+│       ├── paper_v2_0.tex
+│       ├── paper_v2_1.tex
+│       ├── paper_v1_backup.tex
+│       ├── build_v2.py
+│       └── figures/
+│           ├── taxonomy_tikz.tex
+│           ├── test_standalone.tex
+│           └── test_standalone.pdf
+│
+└── publication_pipeline/                  V2.0 RELEASE WORKFLOW
+    ├── repo_creation_commands.sh
+    ├── repo_populate_commands.sh
+    ├── doi_propagation_commands.sh
+    ├── repo_structure_map.txt              (this file)
+    ├── final_verification_report.md
+    ├── release_notes_v2.0.txt
+    ├── zenodo_metadata_v2.0.txt
+    ├── repo_file_contents/                  staging copies of repo metadata
+    │   ├── .gitignore
+    │   ├── README.md
+    │   ├── CITATION.cff
+    │   ├── CONTRIBUTING.md
+    │   ├── CHANGELOG.md
+    │   ├── paper/README.md
+    │   ├── arxiv_bundle/README.md
+    │   ├── journal_bundle/README.md
+    │   ├── data/README.md
+    │   ├── reports/README.md
+    │   ├── figures/README.md
+    │   ├── code/README.md
+    │   └── fleets/README.md
+    └── zenodo_v2_package/                   ZENODO V2.0 UPLOAD STAGING
+        ├── README.md
+        ├── manuscript.pdf
+        ├── manuscript.tex
+        ├── references.bib
+        ├── paper.bbl
+        ├── LICENSE-CODE
+        ├── LICENSE-TEXT
+        ├── CITATION.cff
+        ├── release_notes_v2.0.txt
+        ├── citation_block.txt
+        ├── zenodo_metadata_v2.0.txt
+        ├── figures/
+        │   ├── constellations.png
+        │   └── taxonomy_tikz.tex
+        ├── data/                              (19 JSONs)
+        ├── reports/                           (6 markdown files)
+        ├── code/
+        │   └── plot_constellations.py
+        └── fleets/
+            ├── fleet.py
+            ├── fleet3.py
+            ├── fleet4.py
+            └── fleet5.py
+
+================================================================================
+Mirror property
+================================================================================
+
+The top-level directories paper/, arxiv_bundle/, journal_bundle/, data/,
+reports/, figures/, code/, fleets/ mirror the workspace exactly. The
+only additions at the repo root are .gitignore, README.md, CITATION.cff,
+CONTRIBUTING.md, CHANGELOG.md, LICENSE-CODE, LICENSE-TEXT.
+
+The major_revision/ and publication_pipeline/ directories are committed
+for transparency (revision history and release workflow) but are not
+part of the canonical "compile the paper" or "use the atlas" surface.

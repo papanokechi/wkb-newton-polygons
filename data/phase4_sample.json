@@ -1,0 +1,122 @@
+[
+  {
+    "operator": "HIGHQ_simple_s1o5_r1",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 5
+  },
+  {
+    "operator": "HIGHQ_genc_s1o5_r2",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 10
+  },
+  {
+    "operator": "MULTI_edges_1o3_then_1o2",
+    "family": "scalar",
+    "n_edges": 2,
+    "N_roots": 10
+  },
+  {
+    "operator": "MULTI3_1o4_1o3_1o2",
+    "family": "scalar",
+    "n_edges": 3,
+    "N_roots": 20
+  },
+  {
+    "operator": "SYS2_1o2_1o3",
+    "family": "system",
+    "n_edges": 2,
+    "N_roots": 5
+  },
+  {
+    "operator": "MIX_DandS_1o3_r2",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 6
+  },
+  {
+    "operator": "CTRL_disc_eps1",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 9
+  },
+  {
+    "operator": "CTRL_disc_eps1o5",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 9
+  },
+  {
+    "operator": "CTRL_zeroroot_deep",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 2
+  },
+  {
+    "operator": "CTRL_zeroroot_doublemult",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 3
+  },
+  {
+    "operator": "CTRL_conjroots_t0",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 8
+  },
+  {
+    "operator": "CTRL_conjroots_t1",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 8
+  },
+  {
+    "operator": "NEST_q3_qinner2",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 12
+  },
+  {
+    "operator": "NEST_q2_qinner3",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 12
+  },
+  {
+    "operator": "GAL_cyclotomic_3",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 4
+  },
+  {
+    "operator": "GAL_cyclotomic_5",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 8
+  },
+  {
+    "operator": "OMEGA_q2_fifth",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 4
+  },
+  {
+    "operator": "OMEGA_q3_seventh",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 6
+  },
+  {
+    "operator": "PINV_s1o5_r2_genc",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 10
+  },
+  {
+    "operator": "PINV_s2o5_r2_genc",
+    "family": "scalar",
+    "n_edges": 1,
+    "N_roots": 10
+  }
+]

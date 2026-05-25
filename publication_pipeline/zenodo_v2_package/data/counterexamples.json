@@ -1,0 +1,110 @@
+{
+  "title": "Counterexample knowledge base for the WKB / Newton-polygon classification.",
+  "purpose": "Catalogue strata of the moduli of irregular types where the naive forms of M1, N1, D2, S1, AT1, AT3, AT5, AT7 fail; used by the Phase-V counterexample_guard to tighten hypotheses before paper insertion.",
+  "scope_note": "Counterexamples are drawn from Phase-III CTRL/MIX operators, Phase-II stress tests, Phase-IV consistency findings, and the Remark on Degenerate Loci in paper_draft.md.",
+  "strata": [
+    {
+      "id": "CE-disc",
+      "name": "Discriminant locus of chi_w",
+      "description": "chi_w(w) has a repeated root, so |Roots(chi_w)| < r and at least one mu_q-orbit of C(L) carries multiplicity > 1.",
+      "phase3_examples": ["CTRL_disc_eps1", "CTRL_disc_eps1o5", "CTRL_disc_eps1o25"],
+      "violates_naive_form_of": ["M1 Cor. (disjoint rings)", "AT1 (multiplicity-free Delta_ij)"],
+      "fix": "Add hypothesis 'chi_w squarefree' (disc chi_w ne 0); resonance / logarithmic Stokes data appear when the discriminant degenerates."
+    },
+    {
+      "id": "CE-equalmod",
+      "name": "Equal-modulus locus",
+      "description": "Two distinct roots w_alpha, w_beta of chi_w share the same modulus |w_alpha| = |w_beta|; distinct mu_q-orbits collapse onto a single radius.",
+      "phase2_examples": ["STRESS_equalmod (paper draft Remark, §3)"],
+      "phase3_examples": ["CTRL_conjroots_t0", "CTRL_conjroots_t1", "CTRL_conjroots_t2"],
+      "violates_naive_form_of": ["M1 Cor. (r concentric rings of size q)", "AT5 (cross-edge geometry)"],
+      "fix": "Restrict to the open subset {|w_i| pairwise distinct}; on the equal-modulus stratum, replace 'rigid rotation' by 'rigid permutation up to shared rotation' (cf. Cor. 2 of Main Theorem)."
+    },
+    {
+      "id": "CE-zeroroot",
+      "name": "Zero-root locus",
+      "description": "alpha_r = 0 so chi_w has w = 0 as a root; c = 0 enters C(L) with multiplicity q and the dominant edge moves.",
+      "phase3_examples": ["CTRL_zeroroot_deep", "CTRL_zeroroot_doublemult"],
+      "violates_naive_form_of": ["M1 (the edge is shared with a sub-edge)", "AT1 (Delta_{0,j} = c_j has the same argument across j-pairs in a ring)"],
+      "fix": "Add hypothesis 'alpha_r ne 0' (equivalently, chi_w(0) ne 0); when alpha_r = 0 the Newton polygon undergoes a wall-crossing and the dominant edge is replaced by a strictly shorter one."
+    },
+    {
+      "id": "CE-omega",
+      "name": "omega-resonance",
+      "description": "The angular differences arg(c_i) - arg(c_j) all lie in (2 pi Z)/m for some m > q; the cyclic symmetry C_m extends the Newton-polygon-forced C_q.",
+      "phase3_examples": ["OMEGA_q2_fifth", "OMEGA_q3_seventh", "GAL_cyclotomic_3", "GAL_cyclotomic_5", "HIGHQ_simple_s1o5_r2", "HIGHQ_genc_s1o5_r2"],
+      "violates_naive_form_of": ["AT1 (one ray per pair, generic)", "AT2 naive m/q prediction"],
+      "fix": "Either add 'no omega-resonance beyond mu_q' or replace 'distinct anti-Stokes directions' by 'distinct up to clustering at angular scale 2 pi / m'; for AT2 see Phase-IV calibration (universal-necessary; partial-sufficient)."
+    },
+    {
+      "id": "CE-multiedge-equalradius",
+      "name": "Inter-edge equal-radius collision",
+      "description": "A root w_alpha^{(i)} of chi_w^{(i)} and a root w_beta^{(j)} of chi_w^{(j)} on different Newton-polygon edges satisfy |w_alpha^{(i)}|^{1/q_i} = |w_beta^{(j)}|^{1/q_j}; rings from distinct edges coincide.",
+      "phase3_examples": ["MULTI_edges_1o4_then_1o2 (subset where edges collide)", "MULTI_edges_1o3_r2_then_1o2"],
+      "violates_naive_form_of": ["M1 (disjoint per-edge constellations)", "AT5 (clean slope filtration)"],
+      "fix": "Restrict the per-edge factorisation Corollary to the open subset where the disjoint per-edge ring systems do not coincide radially; on the collision stratum the Stokes data interleave."
+    },
+    {
+      "id": "CE-multiedge-zerosharing",
+      "name": "Multi-edge zero-root sharing (M2)",
+      "description": "Adjacent edges E_alpha and E_{alpha+1} share zero roots at their joining vertex; in particular the right-most edge's zero-roots coincide with the next edge's leading coefficient.",
+      "phase3_examples": ["MULTI_edges_1o3_then_1o2", "MULTI_edges_1o4_then_1o2", "MULTI_edges_1o5_then_1o2", "MULTI_edges_1o3_r2_then_1o2", "MULTI_edges_1o4_r2_then_1o3"],
+      "violates_naive_form_of": ["M1 (strict disjoint union over edges)"],
+      "fix": "Define per-edge constellations as multisets and identify the shared zero-roots at the joining vertices; the disjoint union is in the sheaf-theoretic / multiset sense."
+    },
+    {
+      "id": "CE-coupled-system",
+      "name": "Coupled (non-block-diagonal) system",
+      "description": "A first-order system Phi whose leading symbol is NOT diagonalisable (or whose blocks are coupled at higher orders), e.g. a cyclic-vector reduction of a scalar irregular operator.",
+      "phase3_examples": ["(out of scope; not in atlas)", "Generic Painleve-type systems"],
+      "violates_naive_form_of": ["S1 (block-diagonal factorisation)", "AT4 (direct-sum wild character variety)"],
+      "fix": "Restrict S1 / AT4 to genuinely block-diagonal systems; for coupled systems, S1 holds after diagonalising the leading symbol when its eigenvalues are distinct, with system-discriminant strata defining further degenerations."
+    },
+    {
+      "id": "CE-Zres-largecoef",
+      "name": "Z-resonance with large coefficients (D2 search-window limitation)",
+      "description": "A generic chi_w over a number field K may admit Q-linear relations among the c_k with coefficients exceeding the |n_k| <= 3, support <= 4 search bound used in Phase-III D2.",
+      "phase3_examples": ["(none detected in atlas, by construction; theoretical boundary)"],
+      "violates_naive_form_of": ["D2 (i): GENERIC ==> no cross-ring Z-relations"],
+      "fix": "State D2 (i) as 'no cross-ring Z-relation in the |n_k| <= 3 / support <= 4 search window'; the genuine algebraic-independence statement (no Z-relation at all) requires algebraic independence of {w_alpha^{1/q}} over Q and is a transcendental-degree statement going beyond the sweep."
+    },
+    {
+      "id": "CE-Zres-compositeq",
+      "name": "Cyclotomic sub-orbit relations for composite q (D2 nuance)",
+      "description": "For composite q, the cyclotomic field Q(zeta_q) contains nontrivial proper sub-cyclotomic Q(zeta_{q'}) with q' | q; these produce additional Z-linear relations within a single ring that are mu_q-forced but use sub-orbits.",
+      "phase3_examples": ["(implicit in q=4 and q=6 ops)"],
+      "violates_naive_form_of": ["D2 raw cross-ring filter (composite q)"],
+      "fix": "Define 'mu_q-forced' as 'all per-ring sub-orbit sums vanish under the cyclotomic relations of mu_q' (this is the Phase-III refined definition); the cross-ring filter then identifies the truly cross-ring component."
+    },
+    {
+      "id": "CE-nested-cancellation",
+      "name": "Nested-ramification cancellation",
+      "description": "chi_w(w) = chi_v(w^{q'}) for some q' > 1, but chi_v itself has structure (e.g. is constant or only one root), causing the effective ramification q*q' to be smaller than the apparent q*q'.",
+      "phase3_examples": ["(handled by recursive application of N1)"],
+      "violates_naive_form_of": ["N1 (effective ramification q*q')", "AT3 (cover degree exactly q*q')"],
+      "fix": "State N1 / AT3 with 'minimal q' such that chi_w(w) = chi_v(w^{q'}) admits no further inner factorisation'; iterate until stable."
+    },
+    {
+      "id": "CE-p-invisible-discrete",
+      "name": "p-invariance at the discrete level (P1)",
+      "description": "For fixed q, varying p across coprime residues mod q produces operators with IDENTICAL constellation, Delta_ij modulus partition, and ring structure: P1 is TRUE at the constellation level.",
+      "phase3_examples": ["PINV_s1o5_r2_genc", "PINV_s2o5_r2_genc", "PINV_s3o5_r2_genc", "PINV_s4o5_r2_genc"],
+      "violates_naive_form_of": ["NONE of the M1/N1/D2/S1 statements; this is itself a positive Phase-III invariance."],
+      "supports": ["AT7 as a *strengthening*: the analytic Stokes data DO see p even though discrete data do not."],
+      "fix": "P1 is preserved as a discrete invariance; AT7 records the analytic refinement that breaks p-invariance at the Stokes-data level."
+    }
+  ],
+  "summary": {
+    "total_strata": 11,
+    "theorem_to_strata": {
+      "M1": ["CE-disc", "CE-equalmod", "CE-zeroroot", "CE-multiedge-equalradius", "CE-multiedge-zerosharing"],
+      "N1": ["CE-nested-cancellation"],
+      "D2": ["CE-Zres-largecoef", "CE-Zres-compositeq"],
+      "S1": ["CE-coupled-system"],
+      "AT1": ["CE-disc", "CE-zeroroot", "CE-omega", "CE-equalmod"],
+      "AT3": ["CE-nested-cancellation"],
+      "AT5": ["CE-multiedge-equalradius", "CE-multiedge-zerosharing"],
+      "AT7": ["CE-p-invisible-discrete (as supporting evidence, not counterexample)"]
+    }
+  }
+}

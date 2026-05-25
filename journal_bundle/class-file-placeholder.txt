@@ -1,0 +1,59 @@
+JOURNAL CLASS FILE PLACEHOLDER
+==============================
+
+The bundle ships with `\documentclass{article}` (plain LaTeX article).
+Before final submission, you will need to:
+
+1. Place the target journal's class file in this directory.
+2. Replace the line in `paper.tex`:
+
+      \documentclass[11pt,a4paper]{article}
+
+   with the class command required by the journal.  Typical replacements:
+
+   * Springer Nature (LMaPh, AHP):
+       \documentclass[twocolumn,natbib]{sn-jnl}
+     (Springer Nature LaTeX template; class file `sn-jnl.cls`.)
+
+   * Elsevier (elsarticle):
+       \documentclass[preprint,11pt,a4paper]{elsarticle}
+     (Class file `elsarticle.cls`.)
+
+   * AMS (Journal of the AMS / Proc. AMS / Trans. AMS / etc.):
+       \documentclass{amsart}
+     (`amsart.cls` ships with AMS-LaTeX.)
+
+   * Journal de l'Ecole polytechnique - Mathematiques:
+       \documentclass{jep}
+     (`jep.cls`; available from the journal's website.)
+
+   * SIGMA:
+       \documentclass[a4paper]{sigma}
+     (`sigma.cls`; available from sigma-journal.com.)
+
+3. Some classes (e.g. Elsevier `elsarticle`) require switching from
+   `\author{...}` + `\thanks{...}` to their own front-matter macros
+   (`\author[label]{...}`, `\affiliation{...}`, `\ead{...}`, etc.).
+   Adapt the title block accordingly; the body of the paper does not
+   need to change.
+
+4. Theorem environments: most journal classes ship their own
+   `\newtheorem` setup.  Either keep the existing definitions or comment
+   them out and rely on the class's defaults; check that the
+   `\Cref{...}` references in the body still resolve.
+
+5. Bibliography style:
+   * If the journal demands `unsrt`, change
+       \bibliographystyle{alpha}
+     to
+       \bibliographystyle{unsrt}    %% or \bibliographystyle{plain}
+   * If the journal uses biblatex (e.g. modern Springer), wrap
+     `references.bib` via
+       \usepackage[backend=biber,style=numeric]{biblatex}
+       \addbibresource{references.bib}
+
+6. Recompile and check that section/theorem/figure numbering still
+   matches the integration map.
+
+Once these substitutions are in place, the paper should compile
+unchanged on the journal's template.

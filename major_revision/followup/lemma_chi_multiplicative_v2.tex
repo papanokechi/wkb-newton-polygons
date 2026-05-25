@@ -1,0 +1,119 @@
+%% ============================================================================
+%% lemma_chi_multiplicative_v2.tex
+%%
+%% Round-2 follow-up fix for Lemma \ref{lem:chi-multiplicative}.
+%%
+%% Reason for the update:
+%% In the v1 statement (proofs_major_revision.tex, lines 30--47), the lemma
+%% required BOTH summands $L_1, L_2$ to be single-slope. The induction step
+%% in Theorem 4.1 (M1) iterates the lemma over (\widehat M_1 \oplus \cdots
+%% \oplus \widehat M_{m-1}) \oplus \widehat M_m, where the first operand is
+%% already multi-slope after the first iteration. The v2 statement covers
+%% exactly this case: one operand may be multi-slope, provided all the
+%% slopes that appear (across both operands) are pairwise distinct.
+%% ============================================================================
+
+\begin{lemma}[Multiplicativity of the WKB characteristic polynomial
+across slope-disjoint formal direct sums]\label{lem:chi-multiplicative}
+Let $L_A$ and $L_B$ be scalar linear operators on $\mathbb{C}[x]$ in
+$\{\opD, \opS, \opT\}$, each with a single irregular singularity at
+$x = \infty$. Suppose that the Newton polygon $N(L_A)$ at $\infty$
+consists of edges $E_1^A, \dots, E_{m_A}^A$ of distinct slopes
+$-p_i^A / q_i^A$ ($i = 1, \dots, m_A$, $\gcd(p_i^A, q_i^A) = 1$,
+$p_i^A, q_i^A \ge 1$), and that $N(L_B)$ consists of a \emph{single}
+edge of slope $-p_B / q_B$ with $\gcd(p_B, q_B) = 1$, $p_B, q_B \ge 1$.
+Assume the slope-disjointness hypothesis
+\begin{equation}\label{eq:slope-disjoint}
+   \frac{p_B}{q_B} \;\notin\; \Big\{\frac{p_1^A}{q_1^A},\,
+   \dots,\, \frac{p_{m_A}^A}{q_{m_A}^A}\Big\}.
+\end{equation}
+Let $\widehat{M}(L_A) \oplus \widehat{M}(L_B)$ denote the formal direct
+sum of the associated $\mathbb{C}((x^{-1}))$-modules, and let $L_{AB}$
+be any scalar operator on $\mathbb{C}[x]$ obtained from a cyclic vector
+for the direct sum. Then
+\[
+   \chi_{L_{AB}}(c) \;=\; \chi_{L_A}(c)\, \chi_{L_B}(c),
+\]
+where $\chi_{L_A}, \chi_{L_B}$ denote the WKB characteristic polynomials
+of $L_A, L_B$ (the product, in the case of $L_A$, of its per-edge
+characteristic polynomials over $E_1^A, \dots, E_{m_A}^A$).
+\end{lemma}
+
+\begin{proof}
+The Newton polygon of a formal direct sum of irregular connections
+equals the upper convex hull of the union of the Newton polygons of the
+summands (\cite[Ch.~III, \S 1]{sabbah-isomon}; or, for the classical
+scalar case, \cite[Ch.~II]{robba-malgrange}). Under
+\eqref{eq:slope-disjoint}, this upper hull consists of $m_A + 1$ edges,
+exactly one for each slope in $\{p_i^A/q_i^A\}_{i=1}^{m_A} \cup
+\{p_B/q_B\}$.
+
+We analyse the $\LCinf$-data along each edge $E$ of $N(L_{AB})$. There
+are two cases.
+
+\smallskip
+\textit{Case 1: $E$ has slope $-p_i^A/q_i^A$ for some
+$i \in \{1, \dots, m_A\}$.}
+On the lattice $E \cap \mathbb{Z}^2$, only the summand $\widehat M(L_A)$
+contributes leading-order ($\LCinf$) terms at slope $p_i^A/q_i^A$;
+the summand $\widehat M(L_B)$ has a single slope $p_B/q_B \ne p_i^A/q_i^A$
+and therefore contributes only lower-order ($x^{-1}$-higher-valuation)
+corrections to the $\LCinf$-data on $E$. Hence
+\[
+   \LCinf\!\big(a_k^{(AB)}\big)\big|_{E}
+   \;=\;
+   \LCinf\!\big(a_k^{(A)}\big)\big|_{E_i^A}
+   \qquad \text{for } (k, h) \in E \cap \mathbb{Z}^2,
+\]
+which by \Cref{def:chi} gives the per-edge identity
+$\chi^{(i,A)}_{L_{AB}}(c) = \chi^{(i)}_{L_A}(c)$.
+
+\smallskip
+\textit{Case 2: $E$ has slope $-p_B/q_B$.}
+By the same argument with the roles of $L_A$ and $L_B$ exchanged, the
+$\LCinf$-data on $E$ is contributed solely by the (single edge of)
+$\widehat M(L_B)$. Hence
+$\chi^{(B)}_{L_{AB}}(c) = \chi_{L_B}(c)$.
+
+\smallskip
+Multiplying over all edges of $N(L_{AB})$ and using that for a scalar
+operator with multiple slope-distinct edges the total WKB characteristic
+polynomial is the product of its per-edge characteristic polynomials,
+\[
+   \chi_{L_{AB}}(c)
+   \;=\;
+   \Big(\prod_{i=1}^{m_A} \chi^{(i,A)}_{L_{AB}}(c)\Big)\,
+   \chi^{(B)}_{L_{AB}}(c)
+   \;=\;
+   \Big(\prod_{i=1}^{m_A} \chi^{(i)}_{L_A}(c)\Big)\,
+   \chi_{L_B}(c)
+   \;=\;
+   \chi_{L_A}(c)\, \chi_{L_B}(c),
+\]
+as claimed.
+\end{proof}
+
+\begin{remark}[Iteration over arbitrarily many slope-disjoint summands]
+\label{rem:chi-mult-iteration}
+The single-slope restriction on $L_B$ is essential only in the
+inductive step; \emph{either} operand may be multi-slope provided the
+slope-disjointness hypothesis~\eqref{eq:slope-disjoint} (interpreted as
+disjointness of slope sets) holds. In particular, an obvious induction
+on the number of slopes establishes the multi-fold multiplicativity
+statement
+\[
+   \chi_{L_1 \oplus \cdots \oplus L_m}(c)
+   \;=\;
+   \prod_{\alpha=1}^{m}\, \chi_{L_\alpha}(c),
+\]
+where each $L_\alpha$ is single-slope of slope $-p_\alpha/q_\alpha$ and
+the slopes are pairwise distinct. This is exactly the form invoked in
+the proof of \Cref{thm:M1} (Step 3): one applies the lemma to
+$(\widehat M_1 \oplus \cdots \oplus \widehat M_{m-1}) \oplus \widehat
+M_m$, with $L_A := L_1 \oplus \cdots \oplus L_{m-1}$ a multi-slope
+operator (with slope set $\{p_1/q_1, \dots, p_{m-1}/q_{m-1}\}$) and
+$L_B := L_m$ single-slope with slope $p_m/q_m$ distinct from those of
+$L_A$. The slope-disjointness hypothesis is exactly the multi-slope
+hypothesis $p_i/q_i \neq p_j/q_j$ for $i \ne j$ in the parent operator
+$L$.
+\end{remark}

@@ -1,0 +1,248 @@
+[
+  {
+    "operator": "HIGHQ_simple_s1o5_r1",
+    "p": 1,
+    "q": 5,
+    "N": 5,
+    "findings": [
+      "Total ray count on cover: actual=20, expected_max=20, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=10 divisible by q=5)."
+    ]
+  },
+  {
+    "operator": "HIGHQ_genc_s1o5_r2",
+    "p": 1,
+    "q": 5,
+    "N": 10,
+    "findings": [
+      "Total ray count on cover: actual=90, expected_max=90, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=70 divisible by q=5).",
+      "omega-resonance denom=15>q=5: anti-Stokes ray cluster enhancement expected (AT2 necessary: max_mult >= 2; naive m/q = 3.0).",
+      "Observed max ray multiplicity: 2; naive m/q = 3.0; AT2 verdict: necessary condition met (max_mult>=2), naive m/q under-predicts."
+    ]
+  },
+  {
+    "operator": "MULTI_edges_1o3_then_1o2",
+    "p": 1,
+    "q": 2,
+    "N": 10,
+    "findings": [
+      "Total ray count on cover: actual=84, expected_max=90, ratio=0.933",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=42 divisible by q=2).",
+      "Multi-edge (2 edges): anti-Stokes rays from leading edge only computed here; cross-edge contributions require leading-Q-difference analysis.",
+      "Zero-roots on dominant edge present; some Delta_{ij} = 0; anti-Stokes pairs collapse.",
+      "Cross-ring Z-resonance (30 relations): defines a chi_w-stratum in the discrete part of MW(L); does not affect the local anti-Stokes skeleton at this leading order."
+    ]
+  },
+  {
+    "operator": "MULTI3_1o4_1o3_1o2",
+    "p": 1,
+    "q": 2,
+    "N": 20,
+    "findings": [
+      "Total ray count on cover: actual=270, expected_max=380, ratio=0.711",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=48 divisible by q=2).",
+      "omega-resonance denom=24>q=2: anti-Stokes ray cluster enhancement expected (AT2 necessary: max_mult >= 2; naive m/q = 12.0).",
+      "Observed max ray multiplicity: 26; naive m/q = 12.0; AT2 verdict: MATCHES naive m/q.",
+      "Multi-edge (3 edges): anti-Stokes rays from leading edge only computed here; cross-edge contributions require leading-Q-difference analysis.",
+      "Zero-roots on dominant edge present; some Delta_{ij} = 0; anti-Stokes pairs collapse.",
+      "Cross-ring Z-resonance (30 relations): defines a chi_w-stratum in the discrete part of MW(L); does not affect the local anti-Stokes skeleton at this leading order."
+    ]
+  },
+  {
+    "operator": "SYS2_1o2_1o3",
+    "p": 1,
+    "q": 3,
+    "N": 5,
+    "findings": [
+      "Total ray count on cover: actual=20, expected_max=20, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=18 divisible by q=3).",
+      "omega-resonance denom=12>q=3: anti-Stokes ray cluster enhancement expected (AT2 necessary: max_mult >= 2; naive m/q = 4.0).",
+      "Observed max ray multiplicity: 2; naive m/q = 4.0; AT2 verdict: necessary condition met (max_mult>=2), naive m/q under-predicts.",
+      "Multi-edge (2 edges): anti-Stokes rays from leading edge only computed here; cross-edge contributions require leading-Q-difference analysis.",
+      "Cross-ring Z-resonance (2 relations): defines a chi_w-stratum in the discrete part of MW(L); does not affect the local anti-Stokes skeleton at this leading order."
+    ]
+  },
+  {
+    "operator": "MIX_DandS_1o3_r2",
+    "p": 1,
+    "q": 3,
+    "N": 6,
+    "findings": [
+      "Total ray count on cover: actual=30, expected_max=30, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=18 divisible by q=3)."
+    ]
+  },
+  {
+    "operator": "CTRL_disc_eps1",
+    "p": 1,
+    "q": 2,
+    "N": 9,
+    "findings": [
+      "Total ray count on cover: actual=66, expected_max=72, ratio=0.917",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=24 divisible by q=2).",
+      "Cross-ring Z-resonance (30 relations): defines a chi_w-stratum in the discrete part of MW(L); does not affect the local anti-Stokes skeleton at this leading order."
+    ]
+  },
+  {
+    "operator": "CTRL_disc_eps1o5",
+    "p": 1,
+    "q": 5,
+    "N": 9,
+    "findings": [
+      "Total ray count on cover: actual=72, expected_max=72, ratio=1.000",
+      "C_q rotational symmetry: NOT exact (n_rays_cover=48 not divisible by q=5); maybe degenerate.",
+      "Cross-ring Z-resonance (3 relations): defines a chi_w-stratum in the discrete part of MW(L); does not affect the local anti-Stokes skeleton at this leading order."
+    ]
+  },
+  {
+    "operator": "CTRL_zeroroot_deep",
+    "p": 1,
+    "q": 2,
+    "N": 2,
+    "findings": [
+      "Total ray count on cover: actual=2, expected_max=2, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=2 divisible by q=2)."
+    ]
+  },
+  {
+    "operator": "CTRL_zeroroot_doublemult",
+    "p": 1,
+    "q": 2,
+    "N": 3,
+    "findings": [
+      "Total ray count on cover: actual=6, expected_max=6, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=6 divisible by q=2)."
+    ]
+  },
+  {
+    "operator": "CTRL_conjroots_t0",
+    "p": 1,
+    "q": 2,
+    "N": 8,
+    "findings": [
+      "Total ray count on cover: actual=56, expected_max=56, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=24 divisible by q=2).",
+      "omega-resonance denom=24>q=2: anti-Stokes ray cluster enhancement expected (AT2 necessary: max_mult >= 2; naive m/q = 12.0).",
+      "Observed max ray multiplicity: 4; naive m/q = 12.0; AT2 verdict: necessary condition met (max_mult>=2), naive m/q under-predicts.",
+      "Cross-ring Z-resonance (30 relations): defines a chi_w-stratum in the discrete part of MW(L); does not affect the local anti-Stokes skeleton at this leading order."
+    ]
+  },
+  {
+    "operator": "CTRL_conjroots_t1",
+    "p": 1,
+    "q": 2,
+    "N": 8,
+    "findings": [
+      "Total ray count on cover: actual=56, expected_max=56, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=24 divisible by q=2).",
+      "omega-resonance denom=16>q=2: anti-Stokes ray cluster enhancement expected (AT2 necessary: max_mult >= 2; naive m/q = 8.0).",
+      "Observed max ray multiplicity: 4; naive m/q = 8.0; AT2 verdict: necessary condition met (max_mult>=2), naive m/q under-predicts.",
+      "Cross-ring Z-resonance (30 relations): defines a chi_w-stratum in the discrete part of MW(L); does not affect the local anti-Stokes skeleton at this leading order."
+    ]
+  },
+  {
+    "operator": "NEST_q3_qinner2",
+    "p": 1,
+    "q": 2,
+    "N": 12,
+    "findings": [
+      "Total ray count on cover: actual=132, expected_max=132, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=36 divisible by q=2).",
+      "omega-resonance denom=18>q=2: anti-Stokes ray cluster enhancement expected (AT2 necessary: max_mult >= 2; naive m/q = 9.0).",
+      "Observed max ray multiplicity: 6; naive m/q = 9.0; AT2 verdict: necessary condition met (max_mult>=2), naive m/q under-predicts.",
+      "Symmetry inflation C_6 > C_2: predicts an additional automorphism of the anti-Stokes skeleton (rotation by 2 pi / 6 on cover).",
+      "Inflation observable on anti-Stokes pattern: NO.",
+      "Cross-ring Z-resonance (30 relations): defines a chi_w-stratum in the discrete part of MW(L); does not affect the local anti-Stokes skeleton at this leading order.",
+      "Nested ramification: actual irregular-type degree is p*q' where q' is the inner ramification; anti-Stokes ray count predicted to scale by q'."
+    ]
+  },
+  {
+    "operator": "NEST_q2_qinner3",
+    "p": 1,
+    "q": 2,
+    "N": 12,
+    "findings": [
+      "Total ray count on cover: actual=132, expected_max=132, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=36 divisible by q=2).",
+      "omega-resonance denom=18>q=2: anti-Stokes ray cluster enhancement expected (AT2 necessary: max_mult >= 2; naive m/q = 9.0).",
+      "Observed max ray multiplicity: 6; naive m/q = 9.0; AT2 verdict: necessary condition met (max_mult>=2), naive m/q under-predicts.",
+      "Symmetry inflation C_6 > C_2: predicts an additional automorphism of the anti-Stokes skeleton (rotation by 2 pi / 6 on cover).",
+      "Inflation observable on anti-Stokes pattern: NO.",
+      "Cross-ring Z-resonance (30 relations): defines a chi_w-stratum in the discrete part of MW(L); does not affect the local anti-Stokes skeleton at this leading order.",
+      "Nested ramification: actual irregular-type degree is p*q' where q' is the inner ramification; anti-Stokes ray count predicted to scale by q'."
+    ]
+  },
+  {
+    "operator": "GAL_cyclotomic_3",
+    "p": 1,
+    "q": 2,
+    "N": 4,
+    "findings": [
+      "Total ray count on cover: actual=12, expected_max=12, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=8 divisible by q=2).",
+      "omega-resonance denom=6>q=2: anti-Stokes ray cluster enhancement expected (AT2 necessary: max_mult >= 2; naive m/q = 3.0).",
+      "Observed max ray multiplicity: 2; naive m/q = 3.0; AT2 verdict: necessary condition met (max_mult>=2), naive m/q under-predicts.",
+      "Cross-ring Z-resonance (16 relations): defines a chi_w-stratum in the discrete part of MW(L); does not affect the local anti-Stokes skeleton at this leading order."
+    ]
+  },
+  {
+    "operator": "GAL_cyclotomic_5",
+    "p": 1,
+    "q": 2,
+    "N": 8,
+    "findings": [
+      "Total ray count on cover: actual=56, expected_max=56, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=20 divisible by q=2).",
+      "omega-resonance denom=10>q=2: anti-Stokes ray cluster enhancement expected (AT2 necessary: max_mult >= 2; naive m/q = 5.0).",
+      "Observed max ray multiplicity: 4; naive m/q = 5.0; AT2 verdict: necessary condition met (max_mult>=2), naive m/q under-predicts.",
+      "Cross-ring Z-resonance (30 relations): defines a chi_w-stratum in the discrete part of MW(L); does not affect the local anti-Stokes skeleton at this leading order."
+    ]
+  },
+  {
+    "operator": "OMEGA_q2_fifth",
+    "p": 1,
+    "q": 2,
+    "N": 4,
+    "findings": [
+      "Total ray count on cover: actual=12, expected_max=12, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=8 divisible by q=2).",
+      "omega-resonance denom=10>q=2: anti-Stokes ray cluster enhancement expected (AT2 necessary: max_mult >= 2; naive m/q = 5.0).",
+      "Observed max ray multiplicity: 2; naive m/q = 5.0; AT2 verdict: necessary condition met (max_mult>=2), naive m/q under-predicts.",
+      "Cross-ring Z-resonance (16 relations): defines a chi_w-stratum in the discrete part of MW(L); does not affect the local anti-Stokes skeleton at this leading order."
+    ]
+  },
+  {
+    "operator": "OMEGA_q3_seventh",
+    "p": 1,
+    "q": 2,
+    "N": 6,
+    "findings": [
+      "Total ray count on cover: actual=30, expected_max=30, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=18 divisible by q=2).",
+      "omega-resonance denom=21>q=2: anti-Stokes ray cluster enhancement expected (AT2 necessary: max_mult >= 2; naive m/q = 10.5).",
+      "Observed max ray multiplicity: 3; naive m/q = 10.5; AT2 verdict: necessary condition met (max_mult>=2), naive m/q under-predicts.",
+      "Cross-ring Z-resonance (2 relations): defines a chi_w-stratum in the discrete part of MW(L); does not affect the local anti-Stokes skeleton at this leading order."
+    ]
+  },
+  {
+    "operator": "PINV_s1o5_r2_genc",
+    "p": 1,
+    "q": 5,
+    "N": 10,
+    "findings": [
+      "Total ray count on cover: actual=90, expected_max=90, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=70 divisible by q=5)."
+    ]
+  },
+  {
+    "operator": "PINV_s2o5_r2_genc",
+    "p": 2,
+    "q": 5,
+    "N": 10,
+    "findings": [
+      "Total ray count on cover: actual=180, expected_max=180, ratio=1.000",
+      "C_q rotational symmetry: PRESENT (n_rays_cover=140 divisible by q=5)."
+    ]
+  }
+]

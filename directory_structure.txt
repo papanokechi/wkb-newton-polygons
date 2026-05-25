@@ -1,0 +1,96 @@
+================================================================================
+Zenodo upload — directory layout
+"The WKB Geometry of Newton Polygons: A Classification Theory"  (v1.0)
+================================================================================
+
+wkb-newton-polygons-v1.0/
+│
+├── README.md                            Top-level project overview, reproducibility, citation.
+├── LICENSE-CODE                         MIT licence (applies to /code, /fleets).
+├── LICENSE-TEXT                         CC-BY 4.0 licence (applies to /reports, /theorems,
+│                                        /paper-draft, /figures, /data).
+├── CITATION.cff                         Standard citation file (auto-rendered by Zenodo/GitHub).
+│
+├── code/                                Executable Python (computational pipeline).
+│   ├── fleet.py                         Phase I  – atlas builder: operators → Newton polygons →
+│   │                                                χ(c) → constellations → clusters → conjectures.
+│   ├── fleet3.py                        Phase III – multi-edge, systems, Δ_ij geometry, resonance,
+│   │                                                Galois / nested ramification.
+│   ├── fleet4.py                        Phase IV – analytic lifting: anti-Stokes skeleton,
+│   │                                                wild character variety transversality.
+│   ├── fleet5.py                        Phase V  – theorem-proof consolidation pipeline.
+│   ├── plot_constellations.py           Generates constellations.png from constellations.json.
+│   └── requirements.txt                 Minimal pinned dependencies (numpy, sympy, matplotlib,
+│                                        networkx).
+│
+├── fleets/                              Fleet *manifests* (declarative agent specifications).
+│   ├── fleet1_pattern_discovery.yaml    Phase I  manifest.
+│   ├── fleet2_paper_drafting.yaml       Phase II manifest (no script; produced paper_draft.md).
+│   ├── fleet3_deepening.yaml            Phase III manifest.
+│   ├── fleet4_analytic_lifting.yaml     Phase IV manifest.
+│   └── fleet5_theorem_consolidation.yaml Phase V manifest.
+│
+├── data/                                Raw and processed JSON outputs of the pipeline.
+│   ├── operators.json                   Phase I operator metadata (48 base operators).
+│   ├── newton.json                      Newton polygons for every operator.
+│   ├── chi.json                         Characteristic polynomials χ(c) and inner χ_w.
+│   ├── constellations.json              Computed root sets C(L) with ring decomposition.
+│   ├── clusters.json                    23-class single-edge constellation taxonomy.
+│   ├── counterexamples.json             11-stratum knowledge base (sharpness boundaries).
+│   ├── phase3_operators.json            Phase III extended operator zoo (48 operators).
+│   ├── phase3_invariants.json           Δ_ij, modulus / argument partitions, resonance flags.
+│   ├── phase3_clusters.json             39 multi-axis universality classes.
+│   ├── phase3_gaps.json                 Gap-finder output: research-direction catalogue.
+│   ├── phase3_summary.json              Compact Phase-III summary statistics.
+│   ├── phase4_framework.json            Analytic-reader synthesis of LT / Stokes theory.
+│   ├── phase4_lift.json                 Invariant-lifter table (discrete → analytic mapping).
+│   ├── phase4_sample.json               20 sampled operators with analytic predictions.
+│   ├── phase4_stokes.json               Stokes-engine output: ray sets, Δ-arg partitions
+│   │                                    (~1.5 MB; principal verification corpus).
+│   └── phase4_consistency.json          Consistency-engine report (discrete vs analytic).
+│
+├── theorems/                            Formal statements, conjectures, proof skeletons.
+│   ├── conjectures.md                   Phase I conjectures (single-edge taxonomy laws).
+│   ├── phase3_conjectures.json          Phase III conjectures (M1, N1, D1–D2, O1, S1, P1, F1, G1).
+│   ├── phase4_theorems.json             Phase IV theorem candidates (AT1–AT8).
+│   ├── phase5_targets.json              Restated statements with hypothesis blocks and
+│   │                                    counterexample annotations (M1, N1, D2, S1, AT1, AT3,
+│   │                                    AT5, AT7).
+│   ├── proofs.md                        Eight LaTeX-ready theorem–proof pairs for paper insertion.
+│   └── integration_map.md               Section placement + inter-theorem dependency graph.
+│
+├── reports/                             Narrative phase reports.
+│   ├── phase3_report.md                 Phase III: extended classification, 39 clusters,
+│   │                                    new conjectures.
+│   └── phase4_report.md                 Phase IV: analytic lifting summary, AT1–AT8.
+│
+├── paper-draft/                         Draft of the accompanying paper.
+│   └── paper_draft.md                   "The WKB Geometry of Newton Polygons: A Classification
+│                                        Theory" — abstract, outline, Main Theorem, taxonomy
+│                                        spec, related work, vision.
+│
+└── figures/                             Rendered figures.
+    └── constellations.png               The 23-class constellation zoo (Phase I).
+
+================================================================================
+Notes on the layout
+================================================================================
+
+* The split "code / fleets" separates executable artefacts (Python) from the
+  declarative fleet manifests (YAML). All Python scripts are runnable from the
+  /code directory with the inputs found in /data and produce outputs that match
+  the JSON files already present.
+
+* /theorems and /reports are kept distinct so that the formal-mathematical
+  content (suitable for paper insertion) is cleanly separated from the
+  narrative phase commentary.
+
+* paper_draft.md lives in its own /paper-draft folder to mark its status as a
+  preprint draft (not the canonical statement of the theory; that role is
+  played by /theorems/proofs.md).
+
+* /figures currently contains the single constellation-zoo figure produced
+  by plot_constellations.py. Future versions are expected to add:
+    – slope-filtration diagram (AT5),
+    – p-visibility ray panels (AT7),
+    – nested-ramification symmetry diagram (AT3).

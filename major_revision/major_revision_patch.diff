@@ -1,0 +1,928 @@
+--- a/paper/paper.tex
++++ b/paper/paper.tex
+@@ -98,71 +98,89 @@
+ %% ============================================================================
+ %% ABSTRACT
+ %% ============================================================================
++%%
++%% Major revision: calibrated novelty per referee report.
++%%
+ \begin{abstract}
+-Local linear operators with one irregular singularity---differential,
+-difference, or $q$-difference---are organised, via the WKB ansatz over the
+-dominant Newton edge, by a discrete invariant: the \emph{exponent
+-constellation} $\Cl(L) \subset \mathbb{C}$. We promote this organisation to
+-a functorial classification. Writing
+-$\Fclass \colon L \mapsto \Cl(L)$ from scalar local models with one dominant
+-Newton edge to finite multisets in $\mathbb{C}$ taken up to global rotation,
+-we determine the image of $\Fclass$ and the structure of its fibres.
+-
+-The main structural law is algebraic. If the dominant Newton edge has slope
+-$-p/q$ in lowest terms and the edge contains $r{+}1$ lattice points, then
+-the WKB characteristic polynomial factors as
+-$\chi(c) = \chi_w(c^q)$ with $\chi_w \in \mathbb{C}[w]$ of degree $r$.
+-Consequently
+-$\Cl(L) = \bigsqcup_{w_i \in \Roots(\chi_w)} \mu_q \cdot w_i^{1/q}$,
+-a $\mu_q$-equivariant pullback of the inner spectrum along $c \mapsto c^q$.
+-The image of $\Fclass$ is a stratified space whose generic stratum, indexed
+-by $(p, q, r)$, contains finite-multiset configurations of $r$ concentric
+-$q$-gons; deeper strata correspond to equal-modulus collisions, multiplicities
+-in $\chi_w$, and zero roots.
+-
+-An automated sweep over roughly $96$ operators---five slopes, three ranks,
+-four valuation patterns, three equation types, plus stress-test probes and
+-multi-edge / system / nested-ramification extensions---yields \textbf{$23$}
+-distinct constellation classes. Beyond the single-edge case we prove:
+-(M1) a per-edge factorisation along the slope filtration; (N1) an iterated
+-$\mu_q$-pullback law for nested inner polynomials; (D2) a prime-$q$ Kummer
+-dichotomy distinguishing algebraically independent and cyclotomic strata;
+-and (S1) a block-diagonal pullback for systems. The discrete classification
+-admits an analytic refinement: (AT1) anti-Stokes directions are determined
+-by $\arg \Dij$ on the ramified cover; (AT3) nested ramification induces an
+-extra $\mu_{q'}$-action on wild character variety strata while the minimal
+-Levelt--Turrittin cover stays at $q$; (AT5) multi-edge Stokes data are
+-slope-graded; (AT7) the slope numerator $p$, invisible to $\Cl(L)$, is
+-visible to the analytic anti-Stokes skeleton.
+-
+-The contribution is a classification of the functor itself, not of the
+-operators feeding it: a discrete geometry of WKB images, with explicit
+-generic and special strata, intrinsic monodromy, and equation-type-invariant
+-combinatorics.
++For a scalar local linear operator $L$ (differential, difference, or
++$q$-difference) with one irregular singularity at $x = \infty$ whose
++Newton polygon has a unique dominant edge of slope $-p/q$ with $r{+}1$
++lattice points, the WKB ansatz on that edge yields a characteristic
++polynomial $\chi \in \mathbb{C}[c]$. Our central algebraic identity is
++\[
++   \chi(c) \;=\; \chi_w(c^q),
++\]
++where $\chi_w \in \mathbb{C}[w]$ is the classical edge-indicial
++polynomial of degree $r$ in the variable $w = c^q$. The exponent
++constellation $\Cl(L) \subset \mathbb{C}$ therefore decomposes as a
++$\mu_q$-equivariant union of $r$ fibres of $c \mapsto c^q$ over
++$\Roots(\chi_w)$.
++
++This factorisation organises a finite stratified atlas. A computational
++sweep produces $23$ constellation classes for single-edge slopes
++$-p/q \in \{1/2,\,1/3,\,1/4,\,2/3,\,3/2\}$ and rank $r \le 3$,
++refining to $39$ classes once multi-edge polygons, nested ramification,
++and the prime-$q$ arithmetic stratification are tracked. We prove a
++per-edge factorisation along the slope filtration, an iterated
++$\mu_{q'}$-pullback law for nested inner polynomials, a block-diagonal
++pullback for systems, and a prime-$q$ Kummer dichotomy separating the
++algebraically independent stratum from the cyclotomic stratum.
++
++The analytic input attaching anti-Stokes directions to the constellation
++is classical (Levelt--Turrittin, Sibuya, Wasow); on the $q$-fold cover
++the rays for a generic single-edge operator satisfy $\arg \Dij + p\phi
++\equiv \pi/2 \pmod{\pi}$. From this we extract one explicit consequence:
++the slope numerator $p$, invisible to $\Cl(L)$ itself, is visible to
++the cover-side ray pattern.
++
++The novel content of the paper is the algebraic identity, the
++stratified atlas, the $\mu_q/\mu_{q'}$ symmetry bookkeeping, and the
++$p$-visibility observation. The analytic statements
++(\Cref{thm:AT1}, \Cref{thm:AT3}, \Cref{thm:AT5}, \Cref{thm:AT7}) are
++explicit $\mu_q/\mu_{q'}$-equivariant repackagings of classical
++formal-classification theory; we make no claim of new wild character
++variety theorems.
+ \end{abstract}
+@@ -159,109 +177,257 @@
+ %% ============================================================================
+-%% Â§1  INTRODUCTION
++%% Â§1  INTRODUCTION  (major revision)
+ %% ============================================================================
+ \section{Introduction}\label{sec:intro}
+
+-\subsection{What we classify, and why a functor}\label{ssec:intro-functor}
+-
+-Linear operators with an irregular singularity occupy a peculiar middle
+-ground in the analytic theory of differential and difference equations. They
+-are simple enough that a great deal of structure---Newton polygons, formal
+-solutions, Stokes matrices---can be read off finitely many coefficients,
+-yet rich enough that no single invariant has proved adequate to organise
+-the resulting zoo. The present paper proposes to study not individual
+-operators but the \emph{map} that extracts the discrete WKB content of an
+-irregular singularity, and to classify its image.
+-
+-Concretely, attach to a scalar linear operator $L$ with one irregular
+-singularity at $x = \infty$ its dominant Newton edge of slope $-p/q$
+-($\gcd(p, q) = 1$), apply the WKB ansatz $f \sim \exp(\int c\, x^{p/q-1}\,
+-\mathrm{d}x)$ along that edge, and extract the leading balance: the
+-\emph{exponent constellation}
+-$\Cl(L) \subset \mathbb{C}$, a finite multiset. This assignment
+-$\Fclass \colon L \mapsto \Cl(L)$ is the central object of the paper, and
+-we call it the \emph{constellation functor}. It is invariant of equation
+-type ($\opD$, $\opS$, or $\opT$) at the combinatorial level; the analytic
+-meaning of an element of $\Cl(L)$ depends on the equation type, but the
+-multiset does not.
+-
+-\subsection{The structural law}\label{ssec:intro-law}
++\subsection{The constellation map}\label{ssec:intro-functor}
++
++To a scalar linear operator $L$ with a single irregular singularity at
++$x = \infty$, the WKB ansatz on the dominant Newton edge attaches a
++finite multiset of complex numbers, the \emph{exponent constellation}
++\[
++   \Cl(L) \;\subset\; \mathbb{C}.
++\]
++The present paper is about the combinatorial geometry of the
++assignment
++\[
++   \Fclass \colon L \;\longmapsto\; \Cl(L),
++\]
++which we call the \emph{constellation map}. An earlier draft of this
++paper used the word ``functor'' for $\Fclass$ informally; this revision
++reserves that word for the precise categorical setting given in
++\Cref{def:F-functor} below and otherwise speaks of the
++\emph{constellation map}. In the body of the paper $\Fclass$ is treated
++as a map between sets of objects (scalar local models with one dominant
++Newton edge on the source side, finite multisets in $\mathbb{C}$ up to
++global rotation on the target). \Cref{def:F-functor} promotes this to
++a functor between two small categories whose morphisms are formal gauge
++equivalences preserving the designated edge (source) and rotation-
++compatible bijections of multisets (target); no statement in the paper
++depends on the morphism part of $\Fclass$, but the formulation pins
++down what we mean by ``the fibres of $\Fclass$''.
++
++\begin{definition}[The category $\mathfrak{L}$ and the constellation
++functor]\label{def:F-functor}
++Let $\mathfrak{L}$ be the category whose
++\begin{itemize}[leftmargin=2em]
++\item \emph{objects} are pairs $(L, \mathfrak{e})$, where $L$ is a
++scalar linear operator on $\mathbb{C}[x]$ in $\{\opD, \opS, \opT\}$
++with exactly one irregular singularity at $x = \infty$ and
++$\mathfrak{e}$ is a designated dominant edge of $\NL$ at infinity;
++\item \emph{morphisms} $(L, \mathfrak{e}) \to (L', \mathfrak{e}')$
++are formal gauge equivalences $\widehat{M}(L) \xrightarrow{\sim}
++\widehat{M}(L')$ over $\mathbb{C}((x^{-1}))$ that send
++$\mathfrak{e}$ to $\mathfrak{e}'$ under the induced action on Newton
++polygons.
++\end{itemize}
++Let $\mathfrak{C}$ be the category whose
++\begin{itemize}[leftmargin=2em]
++\item \emph{objects} are finite multisets $C \subset \mathbb{C}$
++taken up to the global rotation equivalence
++$C \sim e^{i\theta} C$ for $\theta \in \mathbb{R}/2\pi\mathbb{Z}$;
++\item \emph{morphisms} are multiset bijections compatible with the
++rotation action.
++\end{itemize}
++The assignment $(L, \mathfrak{e}) \mapsto \Cl(L)$, extended to morphisms
++by sending a formal gauge equivalence to the induced bijection of
++roots of $\chi$, defines a functor
++\[
++   \Fclass \colon \mathfrak{L} \;\longrightarrow\; \mathfrak{C}.
++\]
++\end{definition}
++
++\begin{remark}\label{rem:F-functoriality}
++Functoriality is immediate from the construction of $\chi$ from the
++leading-coefficient data along $\mathfrak{e}$: a formal gauge
++equivalence preserving $\mathfrak{e}$ acts on the $\LCinf$-data of
++$\mathfrak{e}$ by a cocycle that preserves $\chi$ up to an overall
++rescaling of $c$, and hence preserves the multiset of roots of $\chi$
++up to a global rotation. We will use ``$\Fclass$'' and ``the
++constellation map'' interchangeably in the remainder of the paper.
++Whenever only the underlying object map matters, the reader may
++forget \Cref{def:F-functor} without loss.
++\end{remark}
+
+-The core observation is that $\Cl(L)$ is not an arbitrary multiset.
+-\Cref{thm:main} below establishes the algebraic identity
++\subsection{The structural law}\label{ssec:intro-law}
++
++The central observation, proved in \Cref{thm:main}, is the algebraic
++identity
+ \[
+    \chi(c) \;=\; \chi_w(c^q),
+ \]
+-where $\chi$ is the WKB characteristic polynomial built from the leading
+-coefficients along the dominant edge and $\chi_w$ is the \emph{inner
+-polynomial}: a degree-$r$ polynomial whose coefficients are exactly the
+-$\LCinf$ data of the edge in lowest-degree-first order. Solving $\chi = 0$
+-amounts to solving $\chi_w$ and then pulling back the roots along
+-$c \mapsto c^q$; the upshot is that $\Cl(L)$ decomposes canonically as a
+-$\mu_q$-equivariant union of $r$ orbits.
+-
+-This factorisation is at once an obstruction (no constellation outside the
+-image of $\Fclass$ has it) and a recipe (every constellation in the image
+-is so built). Section~\ref{sec:main} states the law as a theorem with two
+-corollaries (ring decomposition; Vieta monodromy) and a remark on the
+-degeneracy strata.
++where $\chi$ is the WKB characteristic polynomial built from the
++$\LCinf$-data along the dominant edge and $\chi_w \in \mathbb{C}[w]$
++is the \emph{inner polynomial} of degree $r$. Solving $\chi = 0$
++amounts to solving $\chi_w$ in the variable $w = c^q$ and pulling
++back along $c \mapsto c^q$; the constellation decomposes canonically
++as a $\mu_q$-equivariant union of $r$ fibres over $\Roots(\chi_w)$.
++This factorisation is at once an obstruction (no multiset outside the
++image of $\Fclass$ admits it) and a recipe (every multiset in the
++image is so built). \Cref{sec:main} states the law as
++\Cref{thm:main} with two corollaries (ring decomposition; Vieta
++monodromy) and a remark on the degeneracy strata.
++
++\subsection{$\chi_w$ as the edge-indicial polynomial}
++\label{ssec:intro-chi-w}
++
++The polynomial $\chi_w$ is not new content. It is exactly the
++\emph{edge-indicial polynomial} of the dominant edge $\mathfrak{e}$
++in the variable $w = c^q$, the form that appears in the classical
++leading-balance analysis of irregular singularities (Wasow
++\cite{wasow}, Sibuya \cite{sibuya}, Sabbah
++\cite{sabbah-isomon}). Setting $w = c^q$, the equation $\chi_w(w) = 0$
++is the standard requirement that the WKB ansatz produce a
++non-trivial formal solution along $\mathfrak{e}$. The novelty of
++\Cref{thm:main} is therefore not the existence of $\chi_w$ but the
++clean identification
++\[
++   \chi(c) \;=\; \chi_w(c^q),
++\]
++together with the consequence that the $\mu_q$-equivariant fibre
++structure of $\Cl(L)$ becomes explicit, and the slope denominator $q$
++appears as a \emph{pullback index} rather than as a feature of the
++leading balance to be rediscovered case by case.
+
+-\subsection{From a law to a classification}\label{ssec:intro-classification}
++\subsection{From a law to a classification}
++\label{ssec:intro-classification}
+
+ The structural law turns the classification problem into a combinatorial
+ one. Up to global rotation, a constellation is recovered from $(p, q, r)$
+ and the modulus-with-multiplicity partition $\pi$ of the roots of $\chi_w$.
+-A computational sweep, recorded in the dataset companion to this paper
++A computational sweep, recorded in the companion dataset
+ \cite{wkb_dataset_v1}, enumerates these classes for
+-$p/q \in \{1/2, 1/3, 1/4, 2/3, 3/2\}$ and rank $r \in \{1, 2, 3\}$ across
+-three equation types and a battery of stress-test probes: there are exactly
+-$23$ classes. These populate the open stratum and four named degenerate
+-strata (equal modulus; resonant multiplicity; zero root; accidental
+-symmetry); \Cref{sec:classes} catalogues them.
+-
+-The classification is then extended in several directions:
++slopes $-p/q \in \{1/2, 1/3, 1/4, 2/3, 3/2\}$ and ranks $r \in
++\{1, 2, 3\}$ across three equation types: there are exactly $23$
++classes in the single-edge case. Once multi-edge polygons, nested
++ramification, and the prime-$q$ arithmetic stratification are recorded,
++the atlas refines to $39$ classes. These populate the open stratum
++and four named degenerate strata (equal modulus; resonant multiplicity;
++zero root; accidental symmetry); \Cref{sec:classes} catalogues them.
++
++The classification is extended in several directions:
+ \begin{itemize}[leftmargin=*]
+ \item beyond the single edge: per-edge factorisation along the slope
+-      filtration (\Cref{thm:M1}, \S\ref{sec:multiedge});
+-\item beyond a single $\mu_q$-orbit pulling: nested ramification with
+-      iterated pullbacks (\Cref{thm:N1}, \S\ref{sec:multiedge});
+-\item beyond squarefree $\chi_w$: degeneracy strata and a Kummer
+-      dichotomy for prime $q$ (\Cref{thm:D2}, \S\ref{sec:degeneracy});
++      filtration (\Cref{thm:M1}, \Cref{sec:multiedge});
++\item beyond a single $\mu_q$-orbit: nested ramification with iterated
++      pullbacks (\Cref{thm:N1}, \Cref{sec:multiedge});
++\item beyond squarefree $\chi_w$: degeneracy strata and a prime-$q$
++      Kummer dichotomy (\Cref{thm:D2}, \Cref{sec:degeneracy});
+ \item beyond scalar operators: block-diagonal systems and a symmetric-power
+-      target (\Cref{thm:S1}, \S\ref{sec:systems});
++      target (\Cref{thm:S1}, \Cref{sec:systems});
+ \item beyond the discrete invariant: an analytic refinement attaching
+       anti-Stokes directions to differences $\Dij = c_i - c_j$
+-      (\Cref{thm:AT1,thm:AT3,thm:AT5,thm:AT7}, \S\ref{sec:analytic}).
++      (\Cref{thm:AT1,thm:AT3,thm:AT5,thm:AT7}, \Cref{sec:analytic}).
+ \end{itemize}
++
++\subsection{Scope of the analytic refinement}
++\label{ssec:intro-analytic-scope}
++
++The analytic theorems of \Cref{sec:analytic} attach Stokes-side
++information to the constellation. The reader should bear in mind a
++clear division of labour:
++\begin{itemize}[leftmargin=2em]
++\item \emph{Classical content.} The Levelt--Turrittin slope
++decomposition of a formal connection on a ramified cover of index $q$;
++the existence of formal exponential factors $Q_i(t) = c_i t^p +
++(\text{lower})$; the principle that anti-Stokes rays are governed by
++the leading term of $Q_i - Q_j$; and the slope-graded structure of
++Stokes data for multi-edge connections are classical
++(Sibuya \cite{sibuya}, Wasow \cite{wasow}, Sabbah
++\cite{sabbah-polarizable}).
++\item \emph{Algebraic refinement.} What is new in the present paper
++is the explicit linear form for the anti-Stokes condition in
++\Cref{thm:AT1},
++\[
++   \arg \Dij \;+\; p\phi \;\equiv\; \tfrac{\pi}{2} \pmod \pi;
++\]
++the observation that nested factorisations of $\chi_w$ induce an
++additional $\mu_{q'}$-action on the discrete part of the wild data
++\emph{without} changing the ramification index $q$ (\Cref{thm:AT3});
++the consequent $\mu_q/\mu_{q'}$ symmetry bookkeeping; and the
++$p$-visibility statement \Cref{thm:AT7}, by which the slope numerator
++$p$---invisible to $\Cl(L)$---is visible to the cover-side ray pattern.
++\item \emph{Equivariance, not Stokes matrices.} \Cref{thm:AT3} asserts
++$\mu_{q'}$-equivariance of an irregular-type parametrisation; it is
++not a statement about wild character variety strata in the moduli-
++theoretic sense of Boalch \cite{boalch-stokes,boalch-wildhodge}.
++We are explicit about this distinction.
++\end{itemize}
+
+-\subsection{What this is not}\label{ssec:intro-scope}
++\subsection{What is and is not classified}\label{ssec:intro-scope}
+
+-We do not classify operators, and we make no claim that $\Cl(L)$ is a
+-complete formal invariant: it is a coarsening of the irregular-type data
+-of Levelt--Turrittin, and the kernel of that coarsening (operators with the
+-same constellation but different Stokes structures) is itself interesting
+-and remains open. \Cref{sec:related} discusses how the present
+-classification relates to four neighbouring programmes---ADE
+-singularities; Stokes-graph / spectral-network classifications; the
+-formal classification of Sabbah--Mochizuki and Birkhoff--Trjitzinsky;
+-wild character varieties and irregular Riemann--Hilbert---and explains in
+-what precise sense our object is orthogonal to each.
++The object classified in this paper is the image of $\Fclass$ over
++the single-edge ($23$-class) and the extended single-edge / multi-edge
++/ nested-ramification / system / arithmetic strata ($39$-class). We
++do \emph{not} classify operators. The constellation is a coarsening of
++the irregular-type data of Levelt--Turrittin, and the kernel of this
++coarsening---operators with identical constellation but distinct
++Stokes structures---is the complementary problem solved (in
++appropriate categories) by wild character varieties (Boalch
++\cite{boalch-stokes,boalch-wildhodge}). \Cref{sec:related} positions
++the present work alongside neighbouring programmes: ADE
++classifications of singularities; Stokes-graph and spectral-network
++classifications; the formal classification of irregular connections
++(Levelt--Turrittin, Sabbah \cite{sabbah-isomon,sabbah-polarizable},
++Mochizuki \cite{mochizuki-asymptotic}); and wild character varieties.
++The constellation classification is orthogonal to each.
+
+-\subsection{Organisation}\label{ssec:intro-organisation}
++\subsection{Roadmap}\label{ssec:intro-organisation}
+
+-\S\ref{sec:prelim} fixes notation and recalls Newton polygons. \S\ref{sec:main}
+-proves the Main Theorem. \S\ref{sec:multiedge} extends to multi-edge polygons
+-(M1) and nested ramification (N1). \S\ref{sec:degeneracy} addresses the
+-degeneracy strata, the Vieta monodromy lift, and the Kummer dichotomy (D2).
+-\S\ref{sec:systems} treats systems (S1). \S\ref{sec:analytic} states and
+-proves the four analytic-lifting theorems (AT1, AT3, AT5, AT7).
+-\S\ref{sec:classes} presents the $23$-class atlas, the taxonomy diagram, and
+-the constellation zoo. \S\ref{sec:related} positions the work next to its
+-neighbours, and \S\ref{sec:vision} closes with future directions.
+-\Cref{sec:reproducibility} contains a reproducibility note and points to
+-the companion dataset \cite{wkb_dataset_v1}.
++\Cref{sec:prelim} fixes notation, recalls Newton polygons and the WKB
++symbol, and includes a short notation table.
++\Cref{sec:main} proves the structural law (\Cref{thm:main}).
++\Cref{sec:multiedge} extends to multi-edge polygons via the slope-
++filtration per-edge factorisation (\Cref{thm:M1}) and to nested
++ramification (\Cref{thm:N1}).
++\Cref{sec:degeneracy} treats the four degeneracy strata and proves the
++prime-$q$ Kummer dichotomy (\Cref{thm:D2}), separating the algebraic
++statement (Kummer theory over $\mathbb{Q}(\zeta_q)$) from the
++empirical bounded-search corroboration.
++\Cref{sec:systems} treats systems (\Cref{thm:S1}).
++\Cref{sec:analytic} states and proves the four analytic-lifting
++theorems (\Cref{thm:AT1,thm:AT3,thm:AT5,thm:AT7}), with explicit
++hypotheses (OS1)--(OS5) collected in \Cref{ssec:OS}.
++\Cref{sec:classes} presents the $23$-class atlas, the $39$-class
++refinement, the taxonomy diagram (\Cref{fig:taxonomy}), and the
++constellation zoo (\Cref{fig:zoo}).
++\Cref{sec:related} positions the work alongside its neighbours,
++\Cref{sec:vision} closes with future directions, and
++\Cref{sec:reproducibility} contains a reproducibility note.
+
+ \bigskip
+-The reader interested only in the main result can read
+-\Cref{sec:main} after \S\ref{sec:prelim}; the
+-analytic theorems of \S\ref{sec:analytic} are logically dependent on
+-\Cref{sec:main,sec:multiedge} but can be read in any internal order.
++The reader interested only in the structural law may read
++\Cref{sec:main} immediately after \Cref{sec:prelim}; the analytic
++theorems of \Cref{sec:analytic} depend logically on
++\Cref{sec:main,sec:multiedge} but may be read in any internal order.
+@@ -395,15 +561,52 @@
+ %% ============================================================================
++%% NOTATION TABLE (new, end of Â§2)
++%% ============================================================================
++\begin{table}[t]
++\centering
++\small
++\caption{Notation used throughout the paper, with first-use anchor.}
++\label{tab:notation}
++\begin{tabular}{@{}lll@{}}
++\toprule
++Symbol & Meaning & First use \\
++\midrule
++$L$, $\op$, $\opD$, $\opS$, $\opT$ &
++  scalar operator; abstract / differential / shift / $q$-shift &
++  \Cref{ssec:prelim-ops} \\
++$\NL$, $\mathfrak{e}$ &
++  Newton polygon of $L$ at $\infty$; designated dominant edge &
++  \Cref{ssec:prelim-Newton} \\
++$p, q, r$ &
++  numerator and denominator of slope; rank ($= $ \#edge points $-\, 1$) &
++  \Cref{thm:main} \\
++$\LCinf(a)$ &
++  leading coefficient of $a \in \mathbb{C}[x]$ at $\infty$ &
++  \Cref{ssec:prelim-ops} \\
++$\chi(c)$, $\chi_w(w)$ &
++  WKB characteristic polynomial; inner / edge-indicial polynomial &
++  \Cref{def:chi}, \Cref{ssec:intro-chi-w} \\
++$\Cl(L)$, $\Roots(\chi)$ &
++  exponent constellation; roots of $\chi$ with multiplicity &
++  \Cref{ssec:prelim-WKB} \\
++$\Fclass$, $\mathfrak{L}$, $\mathfrak{C}$ &
++  constellation functor; source and target categories &
++  \Cref{def:F-functor} \\
++$\mu_q$, $\zeta_q$ &
++  group of $q$-th roots of unity; primitive $q$-th root &
++  \Cref{thm:main} \\
++$\Dij$ &
++  difference $c_i - c_j$ of constellation elements &
++  \Cref{ssec:AT1} \\
++$\Acov$, $\Abase$ &
++  anti-Stokes rays on the $t$-cover; on the $x$-base &
++  \Cref{ssec:AT1} \\
++$\Zlc$, $\Qlc$ &
++  $\mathbb{Z}[\zeta_q]$; $\mathbb{Q}(\zeta_q)$ &
++  \Cref{thm:D2} \\
++$\MW(L)$ &
++  wild character variety of $L$ at $\infty$ &
++  \Cref{ssec:AT3} \\
++\bottomrule
++\end{tabular}
++\end{table}
++
++%% ============================================================================
+ %% Â§3  MAIN THEOREM
+@@ -547,9 +750,33 @@
+ \subsection{Per-edge factorisation along the slope filtration}\label{ssec:M1}
+
+ When $N(L)$ has several edges of distinct slopes, the Main Theorem applies
+ per edge and the constellations assemble multiplicatively via the
+ formal-classification (Levelt--Turrittin) slope decomposition.
+
++\begin{lemma}[Multiplicativity of $\chi$ across formal direct
++sums]\label{lem:chi-multiplicative}
++Let $L_1, L_2$ be scalar linear operators on $\mathbb{C}[x]$ each
++with a single irregular singularity at $x = \infty$ and Newton polygon
++a single edge of slope $-p_\alpha / q_\alpha$ ($\alpha = 1, 2$), with
++$p_1/q_1 \ne p_2/q_2$. Let $L_{12}$ be any scalar operator realising
++the formal direct sum $\widehat{M}(L_1) \oplus \widehat{M}(L_2)$ via
++a cyclic vector. Then
++$\chi_{L_{12}}(c) = \chi_{L_1}(c)\,\chi_{L_2}(c)$.
++\end{lemma}
++
++\begin{proof}
++The Newton polygon of a formal direct sum of irregular connections is
++the upper convex hull of the Newton polygons of the summands
++(\cite[Ch.~III]{sabbah-isomon}; \cite[Ch.~II]{robba-malgrange}); for
++distinct slopes it has two edges. On the edge $E_\alpha$ at slope
++$-p_\alpha/q_\alpha$ in $N(L_{12})$ only the summand
++$\widehat{M}(L_\alpha)$ contributes leading-order $\LCinf$-data
++(the other summand has formal type of strictly different slope and
++contributes only sub-leading corrections). Hence the per-edge
++characteristic polynomial of $L_{12}$ on $E_\alpha$ coincides with
++$\chi_{L_\alpha}$. The total $\chi_{L_{12}}$ is the product of its
++per-edge polynomials, giving
++$\chi_{L_{12}}(c) = \chi_{L_1}(c)\,\chi_{L_2}(c)$.
++\end{proof}
++
+ \begin{theorem}[Per-edge factorisation; multi-edge generalisation]\label{thm:M1}
+@@ -585,28 +812,52 @@
+ \end{theorem}
+
+-\begin{proof}[Proof sketch]
+-\textit{Step 1 (Slope decomposition).} By the Levelt--Turrittin theorem
+-(Sabbah \cite[Ch.~II]{sabbah-isomon}; Wasow \cite[Ch.~VII]{wasow};
+-Sibuya \cite{sibuya}) the formal differential module $\widehat{M}(L)$
+-decomposes canonically as a direct sum of slope-graded pieces, with the
+-slopes of the summands being exactly the slopes of the edges of $\NL$.
+-Choosing cyclic vectors in each summand realises $\widehat{M}_\alpha$ as
+-the formal module of a single-slope scalar operator $L_\alpha$, well
+-defined up to formal gauge.
+-
+-\textit{Step 2 (Per-edge Main Theorem).} Each $L_\alpha$ is a scalar
+-single-slope connection with Newton polygon a single edge of slope
+-$-p_\alpha / q_\alpha$ and $r_\alpha + 1$ lattice points; \Cref{thm:main}
+-applies and gives
+-$\chi^{(\alpha)}(c) = c^{k_0^{(\alpha)}}\, \chi_w^{(\alpha)}(c^{q_\alpha})$,
+-where $k_0^{(\alpha)}$ records the multiplicity of $c = 0$ contributed by
+-lattice points strictly below $E_\alpha$.
+-
+-\textit{Step 3 (Product factorisation).} The WKB characteristic polynomial
+-of a direct sum of formal connections is the product of the per-summand
+-characteristic polynomials (multiplicativity of the determinant of the
+-horizontal connection $1$-form, equivalently of the Newton polygon under
+-$\oplus$; \cf\ Robba--Malgrange \cite{robba-malgrange}). Hence
+-$\chi(c) = \prod_\alpha \chi^{(\alpha)}(c)$ and $\Cl(L) = \bigsqcup_\alpha
+-\Cl_\alpha$ as multisets.
+-
+-\textit{Step 4 (Genericity).} On the open subset $U_{\mathrm{disj}}$ the
+-per-edge constellations occupy disjoint radial annuli, so the multiset
+-union is an honest disjoint union of subsets of $\mathbb{C}^\times$. On
+-the complement (radii-collision stratum), the unions remain disjoint as
+-multisets, with possible coincidences in $\mathbb{C}^\times$ recorded by
+-multiplicity. \qedhere
+-\end{proof}
++\begin{proof}
++\textit{Step 1 (Slope decomposition; Levelt--Turrittin).}
++By Levelt--Turrittin (Sibuya \cite{sibuya};
++Wasow \cite[Ch.~VII]{wasow}; Sabbah \cite[Ch.~II,
++Thm.~II.2.4]{sabbah-isomon}), $\widehat{M}(L) = \bigoplus_\alpha
++\widehat{M}_\alpha$ canonically, $\widehat{M}_\alpha$ pure of slope
++$p_\alpha/q_\alpha$. Choosing cyclic vectors realises $\widehat{M}_\alpha$
++as the formal module of a scalar single-slope operator $L_\alpha$,
++with $N(L_\alpha)$ the single edge of slope $-p_\alpha/q_\alpha$.
++
++\textit{Step 2 (Per-edge Main Theorem).}
++\Cref{thm:main} applied to each $L_\alpha$ gives
++$\chi_{L_\alpha}(c) = c^{k_0^{(\alpha)}}\, \chi_w^{(\alpha)}(c^{q_\alpha})$,
++where $k_0^{(\alpha)}$ is the multiplicity of $c = 0$ contributed by
++lattice points strictly below $E_\alpha$.
++
++\textit{Step 3 (Multiplicativity).}
++Apply \Cref{lem:chi-multiplicative} inductively to the $m$-fold
++formal direct sum $\widehat{M}(L) = \bigoplus_\alpha \widehat{M}_\alpha$:
++the slopes are pairwise distinct, so each inductive step satisfies
++the lemma's hypothesis. This yields
++$\chi_L(c) = \prod_\alpha \chi_{L_\alpha}(c) = \prod_\alpha
++c^{k_0^{(\alpha)}}\,\chi_w^{(\alpha)}(c^{q_\alpha})$, and
++$\Cl(L) = \bigsqcup_\alpha \Cl_\alpha$ as multisets.
++
++\textit{Step 4 (Genericity).}
++On the open subset $U_{\mathrm{disj}}$ where the per-edge radial annuli
++$[\rho_\alpha^{\min}, \rho_\alpha^{\max}]$ are pairwise disjoint, the
++multiset union is also a disjoint union of subsets of $\mathbb{C}^\times$.
++On the complement (radii-collision stratum), the multiset disjoint
++union is preserved; only the set-theoretic statement weakens.
++\end{proof}
++
++\begin{remark}\label{rem:M1-cyclic-vector}
++The choice of cyclic vector in Step~1 affects $L_\alpha$ only up to a
++formal gauge equivalence preserving $\chi_{L_\alpha}$
++(\Cref{rem:F-functoriality}); the per-edge characteristic polynomials
++$\chi^{(\alpha)}$ depend canonically on $\widehat{M}_\alpha$ and hence
++on the edge $E_\alpha$.
++\end{remark}
+@@ -631,15 +882,14 @@
+-\begin{remark}[Counterexample boundary for M1]\label{rem:M1-counter}
+-The disjoint-union conclusion in (3) is a multiset statement; as
+-\emph{sets} in $\mathbb{C}^\times$ the per-edge constellations may
+-coincide on the \emph{inter-edge equal-radius stratum} (examples in the
+-companion dataset: \texttt{MULTI\_edges\_1o4\_then\_1o2},
+-\texttt{MULTI\_edges\_1o3\_r2\_then\_1o2}; see
+-\cite[counterexamples.json: CE-multiedge-equalradius]{wkb_dataset_v1}).
+-Likewise, when a per-edge $\chi_w^{(\alpha)}(0) = 0$, the zero-root
+-contributions of adjacent edges \emph{share} the origin in $\mathbb{C}$
+-(CE-multiedge-zerosharing). These are not contradictions: the multiset
+-disjoint union is preserved; only the set-theoretic statement is
+-weakened.
++\begin{remark}[Counterexample boundary for M1]\label{rem:M1-counter}
++The disjoint-union conclusion in (3) is a multiset statement; as
++\emph{sets} in $\mathbb{C}^\times$ the per-edge constellations may
++coincide on the \emph{inter-edge equal-radius stratum} (two-edge
++examples with slopes $-1/4$ then $-1/2$, and $-1/3$ then $-1/2$,
++are recorded as counterexample entries CE-multiedge-equalradius of
++the companion dataset~\cite{wkb_dataset_v1}). Likewise, when a per-
++edge $\chi_w^{(\alpha)}(0) = 0$, the zero-root contributions of
++adjacent edges \emph{share} the origin in $\mathbb{C}$
++(CE-multiedge-zerosharing). These are not contradictions: the multiset
++disjoint union is preserved; only the set-theoretic statement is
++weakened.
+ \end{remark}
+@@ -705,21 +955,19 @@
+-In the companion atlas \cite{wkb_dataset_v1}, four stress-test operators
+-exhibit the qualitatively distinct degenerate behaviours:
++In the companion atlas \cite{wkb_dataset_v1}, four stress-test
++representatives exhibit the qualitatively distinct degenerate
++behaviours:
+ \begin{enumerate}[leftmargin=2em]
+-\item \texttt{STRESS\_equalmod} (equal-modulus locus): six points on a
+-      single circle of radius $\sqrt{2}$, \emph{not} evenly spaced.
+-\item \texttt{STRESS\_doubleroot} (discriminant locus / resonant
+-      multiplicity): two rings, the inner with multiplicity $2$ at each
+-      apparent point.
+-\item \texttt{STRESS\_zeroroot} (zero-root locus / wall-crossing): two
+-      points at radius $1$ together with a multiplicity-$q$ root at the
+-      origin.
+-\item \texttt{STRESS\_accidental\_sym} (enhanced symmetry): a regular
+-      $rq$-gon with cyclic symmetry $C_{rq} \supsetneq C_q$, occurring at
+-      slope $-p/q$ but exhibiting symmetry above what $q$ predicts.
++\item \emph{Equal-modulus locus.} Six points on a single circle of
++      radius $\sqrt{2}$, not evenly spaced (dataset entry STR-equalmod).
++\item \emph{Discriminant locus, resonant multiplicity.} Two rings, the
++      inner with multiplicity $2$ at each apparent point (STR-doubleroot).
++\item \emph{Zero-root locus, wall-crossing.} Two points at radius $1$
++      together with a multiplicity-$q$ root at the origin
++      (STR-zeroroot).
++\item \emph{Enhanced symmetry.} A regular $rq$-gon with cyclic symmetry
++      $C_{rq} \supsetneq C_q$, occurring at slope $-p/q$ but exhibiting
++      symmetry above what $q$ predicts (STR-accidental-sym).
+ \end{enumerate}
+@@ -737,75 +985,99 @@
+-\begin{theorem}[Inner-polynomial $\mathbb{Z}$-resonance dichotomy; prime
+-$q$]\label{thm:D2}
+-Let $L$ be scalar with one dominant edge of slope $-p/q$, $q$ \emph{prime},
+-and let $\chi_w$ be squarefree with $r \ge 2$ distinct roots
+-$w_1, \dots, w_r$. Choose $q$-th roots $z_\alpha = w_\alpha^{1/q}
+-\in \mathbb{C}$ so that
+-$\Cl(L) = \bigsqcup_\alpha R_\alpha$ with
+-$R_\alpha = \{\zeta_q^j z_\alpha : 0 \le j < q\}$.
+-For $\lambda_1, \dots, \lambda_r \in \Zlc$, set $\Lambda(\lambda) =
+-\sum_\alpha \lambda_\alpha\, z_\alpha \in \mathbb{C}$. Call a
+-$\mathbb{Z}$-relation $\sum_{\alpha, j} n_{\alpha j}\, \zeta_q^j\, z_\alpha
+-= 0$ \emph{$\mu_q$-forced} if every $\lambda_\alpha := \sum_j n_{\alpha j}
+-\zeta_q^j$ vanishes in $\Zlc$; \emph{cross-ring nontrivial} otherwise.
+-Then:
++\begin{theorem}[Inner-polynomial Kummer dichotomy; prime $q$,
++revised]\label{thm:D2}
++Let $L$ be a scalar linear operator on $\mathbb{C}[x]$ with a single
++irregular singularity at $x = \infty$ and a single dominant Newton edge
++of slope $-p/q$ ($\gcd(p, q) = 1$), with $q$ prime. Suppose the inner
++polynomial $\chi_w \in \mathbb{C}[w]$ is squarefree with $r \ge 2$
++distinct nonzero roots
++$\Roots(\chi_w) = \{w_1, \dots, w_r\} \subset \mathbb{C}^\times$.
++Fix a consistent choice of $q$-th roots $z_\alpha$ with $z_\alpha^q
++= w_\alpha$, so that $\Cl(L) = \bigsqcup_\alpha R_\alpha$ with
++$R_\alpha = \{\zeta_q^j z_\alpha : 0 \le j < q\}$.
++For $n_{\alpha j} \in \mathbb{Z}$, set $\lambda_\alpha :=
++\sum_j n_{\alpha j} \zeta_q^j \in \Zlc$. Call a $\mathbb{Z}$-relation
++$\sum_{\alpha, j} n_{\alpha j} \zeta_q^j z_\alpha = 0$
++\emph{$\mu_q$-forced} if $\lambda_\alpha = 0$ in $\Zlc$ for every
++$\alpha$, and \emph{cross-ring nontrivial} otherwise. Then:
+ \begin{enumerate}[leftmargin=2em]
+-\item \textbf{Generic stratum.} If $\{w_1, \dots, w_r\}$ are algebraically
+-      independent over $\mathbb{Q}$, then $\Cl(L)$ admits \emph{no}
+-      cross-ring nontrivial $\mathbb{Z}$-relation.
+-\item \textbf{Kummer/cyclotomic stratum.} If there exist
+-      $\lambda_\alpha \in \Zlc$ not all zero with $\sum_\alpha
+-      \lambda_\alpha\, z_\alpha = 0$ in $\mathbb{C}$, then this identity
+-      \emph{is} a cross-ring nontrivial $\mathbb{Z}$-relation. A clean
+-      sufficient condition is $w_\beta / w_\alpha \in (\Qlc^\times)^q$ for
+-      some $\alpha \ne \beta$ (so $z_\beta / z_\alpha \in \Qlc$ after
+-      consistent choices of $q$-th roots).
++\item \textbf{Algebraic-independence stratum.} If $\{w_1, \dots, w_r\}$
++      are algebraically independent over $\mathbb{Q}$, then $\Cl(L)$
++      admits \emph{no} cross-ring nontrivial $\mathbb{Z}$-relation
++      (no bound on support or coefficient size is required).
++\item \textbf{Kummer stratum.} If there exist distinct $\alpha, \beta$
++      and $u \in \Qlc^\times$ with $w_\beta = u^q w_\alpha$, then,
++      after consistent choices of $q$-th roots, the relation
++      $z_\beta = u z_\alpha$ is a cross-ring nontrivial
++      $\Zlc$-relation; when $u \in \mathbb{Q}^\times$, it is a
++      $\mathbb{Z}$-relation of support $2$.
+ \end{enumerate}
++The two cases are mutually exclusive.
+ \end{theorem}
+@@ -765,42 +1037,75 @@
+-\begin{proof}[Proof sketch]
+-\textit{Set-up.} Each $R_\alpha = \{\zeta_q^j\, z_\alpha\}_{j=0}^{q-1}$.
+-Re-grouping by $\alpha$, the relation $\sum_{\alpha, j} n_{\alpha j}\,
+-\zeta_q^j\, z_\alpha = 0$ becomes $\sum_\alpha \lambda_\alpha\, z_\alpha
+-= 0$ in $\mathbb{C}$, with $\lambda_\alpha \in \Zlc$.
+-
+-\textit{$\mu_q$-forced sub-lattice.} For prime $q$, $\Zlc \cong \mathbb{Z}[x]
+-/ \Phi_q(x)$ has rank $q - 1$, so the kernel of $\mathbb{Z}^q \to \Zlc$,
+-$(n_0, \dots, n_{q-1}) \mapsto \sum_j n_j\, \zeta_q^j$, is generated by
+-the cyclotomic relation $1 + \zeta_q + \cdots + \zeta_q^{q-1} = 0$. Hence
+-$\lambda_\alpha = 0$ in $\Zlc$ iff $(n_{\alpha 0}, \dots, n_{\alpha, q-1})$
+-is a constant vector; in particular the only $\mu_q$-forced relation on a
+-single ring is the per-ring sum $\sum_{c \in R_\alpha} c = 0$.
+-
+-\textit{Case (i): Algebraic independence.} If $\{w_\alpha\}$ are
+-algebraically independent over $\mathbb{Q}$, then $\{z_\alpha\}$ are
+-algebraically independent over $\Qlc$ (Kummer/Eisenstein: each $z_\alpha$
+-is algebraic of degree $q$ over $\Qlc(w_\alpha)$, and the $w_\alpha$ are
+-independent). Hence any $\Zlc$-linear dependence $\sum_\alpha \lambda_\alpha
+-z_\alpha = 0$ forces all $\lambda_\alpha = 0$, \ie\ the original
+-$\mathbb{Z}$-relation is $\mu_q$-forced.
+-
+-\textit{Case (ii): Kummer / cyclotomic.} If some $\lambda_\alpha \ne 0$
+-exists with $\sum \lambda_\alpha z_\alpha = 0$, expanding $\lambda_\alpha
+-= \sum_j n_{\alpha j}\, \zeta_q^j$ recovers a $\mathbb{Z}$-relation not in
+-the $\mu_q$-forced sub-lattice; it is cross-ring nontrivial. The
+-sufficient conditions follow from Kummer theory: if $w_\beta / w_\alpha
+-= u^q$ with $u \in \Qlc^\times$, choose $z_\beta = u\, z_\alpha$, giving
+-the relation $z_\beta - u\, z_\alpha = 0$. Specialising to $u \in
+-\mathbb{Q}^\times$ gives a $\mathbb{Z}$-relation with support entirely on
+-$\{z_\alpha, z_\beta\}$.
+-
+-\textit{Sharpness on the atlas.} Every prime-$q$ generic-$\chi_w$ operator
+-in the Phase-III sweep ($q \in \{5, 7\}$) produces zero cross-ring
+-$\mathbb{Z}$-relations in the search window $|n_k| \le 3$, support
+-$\le 4$; every simple-$\chi_w$ multi-ring operator produces $\ge 5$. The
+-dichotomy is exact for prime $q$ within the search window.
++\begin{proof}[Proof of \Cref{thm:D2}]
++\textit{Setup.} Rearranging by ring index, the $\mathbb{Z}$-relation
++becomes $\sum_\alpha \lambda_\alpha z_\alpha = 0$ in $\mathbb{C}$ with
++$\lambda_\alpha \in \Zlc$.
++
++\textit{Kernel of $\mathbb{Z}^q \twoheadrightarrow \Zlc$.}
++For prime $q$, $\Zlc \simeq \mathbb{Z}[x]/\Phi_q(x)$ has $\mathbb{Z}$-rank
++$q-1$, and the kernel of $(n_0, \dots, n_{q-1}) \mapsto \sum_j n_j
++\zeta_q^j$ is generated by $(1, 1, \dots, 1)$ (the cyclotomic relation
++$\sum_j \zeta_q^j = 0$). Hence $\lambda_\alpha = 0$ iff the
++coefficient vector is constant, and the only $\mu_q$-forced
++relations are the per-ring sums.
++
++\textit{Step 1 (Algebraic independence $\Rightarrow$ $\mu_q$-forced).}
++Suppose $\{w_\alpha\}$ are algebraically independent over $\mathbb{Q}$,
++hence over $\Qlc$. By induction on $\alpha = 1, \dots, r$, the polynomial
++$X^q - w_\alpha$ is irreducible over
++$K_{\alpha-1} := \Qlc(w_1, \dots, w_r)(z_1, \dots, z_{\alpha - 1})$
++(by Lang, \emph{Algebra}, Ch.~VI, Thm.~9.1: $X^q - a$ is irreducible
++over $K$ iff $a$ is not a $q$-th power in $K$, and the algebraic
++independence ensures $w_\alpha$ is not a $q$-th power in $K_{\alpha-1}$,
++which is algebraic over $\Qlc(w_1, \dots, \widehat{w_\alpha}, \dots, w_r)$).
++The field tower has degree $q^r$, so $\{z_1, \dots, z_r\}$ are linearly
++independent over $\Qlc$ (in particular over $\Zlc$). Hence
++$\sum_\alpha \lambda_\alpha z_\alpha = 0$ forces all $\lambda_\alpha = 0$.
++
++\textit{Step 2 (Kummer relation gives cross-ring relation).}
++If $w_\beta = u^q w_\alpha$ with $u \in \Qlc^\times$, set
++$z_\beta := u z_\alpha$: then $z_\beta - u z_\alpha = 0$ is a
++$\Zlc$-relation with $\lambda_\alpha = -u \ne 0$ and $\lambda_\beta = 1$,
++hence cross-ring nontrivial. For $u \in \mathbb{Q}^\times$, expanding
++as constant $\mathbb{Z}$-coefficients yields a support-2
++$\mathbb{Z}$-relation.
++
++\textit{Step 3 (Mutual exclusivity).}
++A Kummer relation $w_\beta = u^q w_\alpha$ exhibits $w_\beta$ as
++algebraic over $\mathbb{Q}(w_\alpha)$, contradicting algebraic
++independence.
+ \end{proof}
++
++\begin{remark}[Bounded-search corroboration]\label{rem:D2-search}
++The companion dataset~\cite{wkb_dataset_v1} contains an integer-relation
++search for every single-edge prime-$q$ operator with $q \in \{5, 7\}$
++at $|n_k| \le 3$, support $\le 4$: every algebraic-independence
++representative produces zero cross-ring relations within this window;
++every Kummer representative produces at least five. The search-window
++data corroborate the algebraic dichotomy on the atlas; the algebraic
++statement itself does not depend on the search window.
++\end{remark}
+@@ -894,9 +1198,16 @@
+-\item[(OS3)] No $\omega$-resonance beyond $\mu_q$: the multiset
+-       $\{\arginline \Dij \mod \pi/p\}$ has no coincidences beyond
+-       those forced by the ring structure.
++\item[(OS3)] \emph{No $\omega$-resonance beyond $\mu_q$.} No two
++       distinct $\mu_q$-orbits of unordered pairs $\{i, j\}$,
++       $\{i', j'\}$ produce the same value of $\arginline \Dij
++       \pmod{\pi/p}$. (Equivalently: the multiset
++       $\{\arginline \Dij \mod \pi/p\}$ has no coincidences other
++       than those induced by the $\mu_q$-action on $\Cl(L)$, where
++       a forced coincidence is one of the form $\arginline(c -
++       \zeta_q^j c) = \arginline(c' - \zeta_q^j c')$ for two
++       elements $c, c'$ in the same ring $R_\alpha$ and any
++       $j \in \{1, \dots, q-1\}$.)
+@@ -931,33 +1242,84 @@
+-\begin{proof}[Proof sketch]
+-\textit{Step 1 (Levelt--Turrittin on the $q$-cover).} By Levelt--Turrittin
+-(Sabbah \cite[Ch.~II]{sabbah-isomon}; Wasow \cite[Ch.~VII]{wasow};
+-Sibuya \cite{sibuya}), there exists a ramification $x = t^q$ on which
+-$\widehat{L}$ is gauge-equivalent to a direct sum of rank-one summands
+-with irregular type $Q_i(t) = c_i\, t^p + R_i(t)$, the leading coefficient
+-$c_i$ being precisely a root of $\chi$.
+-
+-\textit{Step 2 (Leading anti-Stokes condition).} Anti-Stokes directions
+-for the pair $(i, j)$ are determined by the leading term of $Q_i - Q_j$
+-in $t$. On the open stratum the $c_i$ are pairwise distinct, so this
+-leading term is $\Dij\, t^p$. With $t = \rho\, e^{i\phi}$,
+-\[
+-   \mathrm{Re}(Q_i - Q_j)
+-   \;=\;
+-   \rho^p\, |\Dij|\, \cos(\arginline \Dij + p \phi) + O(\rho^{p-1}),
+-\]
+-and vanishing of the leading term gives $\arginline \Dij + p \phi \equiv
+-\pi/2 \pmod{\pi}$, with $2p$ solutions in $[0, 2\pi)$.
+-
+-\textit{Step 3 (Total count).} Summing over $\binom{N}{2}$ unordered pairs
+-gives $2 p \binom{N}{2}$ cover-rays with multiplicity. The distinct count
+-is governed by collisions in $\{\arginline \Dij \mod \pi/p\}$
+-(\cite[phase3\_invariants.json: D1 partition]{wkb_dataset_v1}).
+-
+-\textit{Step 4 (Projection to base).} The cover-to-base map $t \mapsto t^q$
+-acts on phases by $\phi \mapsto q\phi$; for a fixed pair the $2p$ cover
+-rays project to orbits of size $\gcd(2p, q)$, giving at most $2p /
+-\gcd(2p, q)$ base-rays per pair, with equality away from cross-pair
+-collisions.
++\begin{proof}[Proof of \Cref{thm:AT1}]
++We work throughout under (OS1)--(OS3) with $\op = \opD$.
++
++\textit{Step 1 (Splitting on the $q$-cover).}
++By Levelt--Turrittin (Sibuya \cite{sibuya}, Wasow
++\cite[Ch.~VII, Thms.~19.1, 19.2]{wasow}, Sabbah
++\cite[Ch.~II, Thm.~II.2.4]{sabbah-isomon}), on $x = t^q$ the formal
++connection $\widehat{L}$ becomes gauge-equivalent to a direct sum of
++rank-one formal exponentials, indexed by $\Cl(L)$, with $Q_i(t) =
++c_i\, t^p + R_i(t)$ and $\deg_t R_i < p$. The leading coefficient
++$c_i$ is precisely the $i$-th element of $\Roots(\chi)$
++(\cite[Ch.~II, \S 1.3]{sabbah-isomon}). Under (OS1)--(OS2) the $c_i$
++are pairwise distinct and nonzero.
++
++\textit{Step 2 (Anti-Stokes condition: leading-term form).}
++For a rank-one summand, the horizontal section behaves as
++$\exp(-Q_i(t))$ times a series of moderate growth. The pair $(i,j)$
++exhibits a Stokes (anti-Stokes) phenomenon along $\arg t = \phi$
++precisely where the leading $t$-term of $\mathrm{Re}(Q_i - Q_j)$
++vanishes. For pair $(i,j)$,
++$Q_i - Q_j = (c_i - c_j) t^p + (R_i - R_j)$ with
++$\deg(R_i - R_j) < p$; on the open stratum $\Dij = c_i - c_j \ne 0$.
++
++\textit{Step 3 (Real-part calculation).}
++With $t = \rho e^{i\phi}$ and $\Dij = |\Dij| e^{i \arginline \Dij}$,
++\[
++   \mathrm{Re}(Q_i - Q_j)
++   = |\Dij|\, \rho^p\, \cos(\arginline \Dij + p\phi)
++   + O(\rho^{p-1}).
++\]
++The leading $\rho^p$-term vanishes iff
++$\arginline \Dij + p\phi \equiv \pi/2 \pmod \pi$,
++giving an arithmetic progression of $2p$ solutions in $[0, 2\pi)$
++spaced by $\pi/p$.
++
++\textit{Step 4 (Total count, distinctness).}
++Summing over $\binom{N}{2}$ pairs gives $2p \binom{N}{2}$ cover-rays
++with multiplicity. The number of distinct cover-rays is determined by
++coincidences in $\{\arginline \Dij \pmod{\pi/p}\}$; (OS3) excludes
++coincidences beyond those forced by the ring structure.
++
++\textit{Step 5 (Projection $t \mapsto t^q$).}
++Multiplication by $q$ on phases: a per-pair arithmetic progression of
++spacing $\pi/p$ becomes one of spacing $q\pi/p$ on the base, with
++period $\gcd(2p, q)\,\pi/p$. The image has $2p/\gcd(2p, q)$ distinct
++points modulo $2\pi$, each covered by $\gcd(2p, q)$ cover-rays.
++
++\textit{Step 6 (Determinacy).}
++The anti-Stokes rays for pair $(i,j)$ are $\phi_k(i,j) =
++\frac{1}{p}(\frac{\pi}{2} - \arginline \Dij) + \frac{k\pi}{p}$,
++$k = 0, \dots, 2p-1$, depending only on $\arginline \Dij$ and $p$.
++Hence $\Acov$ is determined as a multiset by the multiset
++$\{(\arginline \Dij, p) : i < j\}$.
+ \end{proof}
++
++\begin{remark}[Beyond the leading term]\label{rem:AT1-subleading}
++The proof uses only the leading $t^p$-term of $Q_i - Q_j$; the
++sub-leading $R_i - R_j$ terms of degree $< p$ produce
++$O(\rho^{p-1})$ corrections that do not affect the set of
++anti-Stokes directions (only the Stokes multipliers along each ray).
++The constellation controls the analytic geometry only up to the
++skeleton.
++\end{remark}
+@@ -1186,29 +1542,33 @@
+-\subsection{Taxonomy diagram}\label{ssec:taxonomy}
+-
+-\begin{figure}[t]
+-\centering
+-\fbox{\parbox{0.97\linewidth}{\centering\textsf{[Figure~1
+-placeholder]}\\[0.4ex]\textsl{Taxonomy diagram of the $23$ constellation
+-classes; spec in \S\ref{ssec:taxonomy} and the companion dataset
+-\cite{wkb_dataset_v1}.}}}
+-\caption{The $\Fclass$-image stratification: $23$ constellation classes.
+-\textbf{Atlas.} A $4 \times 4$ grid indexed by $q \in \{2, 3, 4\}$
+-(columns) and $r \in \{1, 2, 3\}$ (rows), with a separate ``$r = 1$''
+-row spanning all $q$. Each $(q, r)$ cell with $r \ge 2$ is subdivided by
+-the valuation pattern of $\chi_w$: \emph{simple} (only $\alpha_0,
+-\alpha_r \ne 0$, single regular $rq$-gon), \emph{double} (one interior
+-$\alpha_j \ne 0$, two-radius generic or single-radius merger on the
+-discriminant locus), \emph{mixed/generic} (all $\alpha_j \ne 0$).
+-\textbf{Generic vs.\ special encoding.} Solid borders mark the generic
+-stratum, dashed grey borders the real-coefficient stratum, grey fill the
+-single-ring collapses, corner badges the accidental-symmetry classes.
+-\textbf{Degeneracy island.} A detached $1 \times 4$ inset records the
+-four stress-test classes (\texttt{STRESS\_equalmod},
+-\texttt{STRESS\_doubleroot}, \texttt{STRESS\_zeroroot},
+-\texttt{STRESS\_accidental\_sym}) with codimension-$1$ connector arrows
+-to the parent atlas cells.}
+-\label{fig:taxonomy}
+-\end{figure}
++\subsection{Taxonomy diagram}\label{ssec:taxonomy}
++
++\begin{figure}[t]
++\centering
++\input{figures/taxonomy_tikz.tex}
++\caption{The $\Fclass$-image stratification: $23$ constellation classes
++in the single-edge sweep, refining to $39$ once multi-edge, nested-
++ramification, and prime-$q$ arithmetic strata are recorded.
++\textbf{Atlas.} A $4 \times 4$ grid indexed by $q \in \{2, 3, 4\}$
++(columns) and $r \in \{1, 2, 3\}$ (rows), with a separate ``$r = 1$''
++row spanning all $q$. Each $(q, r)$ cell with $r \ge 2$ is subdivided
++by the valuation pattern of $\chi_w$: \emph{simple}, \emph{double},
++\emph{mixed/generic}. \textbf{Generic vs.\ special encoding.} Solid
++borders mark the generic stratum, dashed grey the real-coefficient
++stratum, grey fill the single-ring collapses, corner badges the
++accidental-symmetry classes. \textbf{Degeneracy island.} A detached
++$1 \times 4$ inset records the four named degenerate strata (equal-
++modulus, discriminant / resonant multiplicity, zero-root, enhanced
++symmetry) with codimension-$1$ connector arrows to the parent atlas
++cells. The TikZ source is included in the Zenodo
++dataset~\cite{wkb_dataset_v1} as \texttt{code/render\_taxonomy.tex};
++the rendered standalone figure file is \texttt{figures/taxonomy\_tikz.tex}.}
++\label{fig:taxonomy}
++\end{figure}
++
++%% NOTE: this hunk references figures/taxonomy_tikz.tex; that file must
++%% be present in the workspace before re-compiling. A minimal fallback
++%% is to keep the \fbox{...} placeholder unchanged at this site --- the
++%% rest of the patch is independent of the taxonomy rendering. If the
++%% TikZ file is not yet ready, REVERT this hunk and leave the \fbox in
++%% place; the rendered taxonomy can be deferred to a separate commit.
++%% (See major_revision_checklist.md item C.)
+%% END OF major_revision_patch.diff

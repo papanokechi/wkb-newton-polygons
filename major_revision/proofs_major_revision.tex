@@ -1,0 +1,561 @@
+%% ============================================================================
+%% proofs_major_revision.tex
+%%
+%% Full, publication-ready proofs for the three load-bearing theorems
+%% flagged by the referee:
+%%
+%%   * Theorem 4.1 = thm:M1   (Per-edge factorisation, multi-edge generalisation)
+%%   * Theorem 5.1 = thm:D2   (Inner-polynomial Kummer dichotomy, prime q)
+%%                            -- restated WITHOUT reliance on the search window
+%%   * Theorem 7.1 = thm:AT1  (Anti-Stokes <-> arg Delta_ij on the q-cover)
+%%
+%% These proofs are written to drop in directly under the existing theorem
+%% blocks in paper.tex (replacing the prior \begin{proof}[Proof sketch] ...
+%% \end{proof} blocks).
+%%
+%% Notation follows the macro conventions of paper.tex:
+%%   \op, \opD, \opS, \opT, \LCinf, \NL, \Cl, \Fclass, \Roots, \Dij,
+%%   \Zlc = \mathbb{Z}[\zeta_q], \Qlc = \mathbb{Q}(\zeta_q),
+%%   \arginline = arg, \Acov, \Symm = \mathfrak{S}, etc.
+%% ============================================================================
+
+
+%% =================================================================
+%% (a)  Full proof of Theorem 4.1  (M1: per-edge factorisation)
+%% =================================================================
+
+%% This block replaces lines 586--618 of paper.tex
+%% (the existing "Proof sketch" of \Cref{thm:M1}).
+
+\begin{lemma}[Multiplicativity of the WKB characteristic polynomial
+across formal direct sums]\label{lem:chi-multiplicative}
+Let $L_1, L_2$ be scalar linear operators on $\mathbb{C}[x]$ in
+$\{\opD, \opS, \opT\}$, each with a single irregular singularity at
+$x = \infty$ and Newton polygon at infinity consisting of a single
+edge of slope $-p_\alpha / q_\alpha$ ($\alpha = 1, 2$) with
+$\gcd(p_\alpha, q_\alpha) = 1$, $p_\alpha, q_\alpha \ge 1$. Assume the
+slopes $p_1/q_1 \ne p_2/q_2$ are distinct. Let $\widehat{M}(L_1) \oplus
+\widehat{M}(L_2)$ denote the formal direct sum of the associated
+$\mathbb{C}((x^{-1}))$-modules, and let $L_{12}$ be any scalar operator
+on $\mathbb{C}[x]$ obtained from a cyclic vector for the direct sum.
+Then
+\[
+   \chi_{L_{12}}(c) \;=\; \chi_{L_1}(c)\, \chi_{L_2}(c),
+\]
+where $\chi_{L_\alpha}$ denotes the WKB characteristic polynomial of
+$L_\alpha$ along its dominant edge.
+\end{lemma}
+
+\begin{proof}
+The Newton polygon of a formal direct sum of irregular connections
+equals the upper convex hull of the union of the Newton polygons of
+the summands (\cite[Ch.~III, \S 1]{sabbah-isomon}; or, for the
+classical scalar case, \cite[Ch.~II]{robba-malgrange}). For two
+single-slope summands with distinct slopes $-p_1/q_1 < -p_2/q_2$
+(WLOG), this upper hull consists of exactly two edges, of slopes
+$-p_2/q_2$ (lower, ``higher slope'' in absolute value) and $-p_1/q_1$
+(upper); the lattice-point structure on each edge $E_\alpha$ of
+$N(L_{12})$ coincides with that of $N(L_\alpha)$, up to a vertical
+translation by the height contribution of the other summand.
+
+The $\LCinf$-data of edge $E_\alpha$ in $N(L_{12})$ is determined as
+follows. On a cyclic vector $e = (e_1, e_2)$ for $\widehat{M}(L_1)
+\oplus \widehat{M}(L_2)$, the operator $\op$ acts diagonally,
+\[
+   \op \cdot (e_1, e_2) \;=\; (\op e_1,\, \op e_2).
+\]
+Restricting to the lattice $E_\alpha \cap \mathbb{Z}^2$, only the
+summand $\widehat{M}(L_\alpha)$ contributes leading-order terms in
+$x^{-1}$ at slope $p_\alpha/q_\alpha$: the other summand
+$\widehat{M}(L_\beta)$ ($\beta \ne \alpha$) has formal exponential
+factor of strictly different slope and therefore contributes only
+lower-order ($x^{-1}$-higher-valuation) corrections to the $\LCinf$
+data on $E_\alpha$. Hence the leading-coefficient data of $L_{12}$ on
+$E_\alpha$ coincides with that of $L_\alpha$:
+\[
+   \LCinf\!\big(a_k^{(12)}\big)\big|_{E_\alpha}
+   \;=\;
+   \LCinf\!\big(a_k^{(\alpha)}\big)\big|_{E_\alpha},
+   \qquad \text{for } (k, h) \in E_\alpha \cap \mathbb{Z}^2.
+\]
+By the construction of $\chi$ in \Cref{def:chi}, this gives
+$\chi^{(\alpha)}_{L_{12}}(c) = \chi_{L_\alpha}(c)$ for each
+$\alpha \in \{1, 2\}$, where the left-hand side denotes the per-edge
+WKB characteristic polynomial of $L_{12}$ on $E_\alpha$.
+
+For an operator $L$ whose Newton polygon has edges $E_1, \dots, E_m$
+of distinct slopes, the total WKB characteristic polynomial of $L$ is
+the product of its per-edge polynomials,
+\[
+   \chi_L(c) \;=\; \prod_\alpha \chi_L^{(\alpha)}(c),
+\]
+since the leading-balance condition on each edge contributes a factor
+independent of the others, and $\chi_L = \prod_\alpha c^{k_0^{(\alpha)}}
+\chi_w^{(\alpha)}(c^{q_\alpha})$ in the notation of \Cref{thm:main}.
+Combining with the previous paragraph,
+\[
+   \chi_{L_{12}}(c) \;=\;
+   \chi^{(1)}_{L_{12}}(c)\, \chi^{(2)}_{L_{12}}(c)
+   \;=\;
+   \chi_{L_1}(c)\, \chi_{L_2}(c),
+\]
+as claimed.
+\end{proof}
+
+\begin{proof}[Proof of \Cref{thm:M1} (Per-edge factorisation; multi-edge
+generalisation)]
+We organise the argument in four steps.
+
+\smallskip
+\textit{Step 1 (Slope decomposition; Levelt--Turrittin).}
+By the Levelt--Turrittin theorem (Sibuya \cite{sibuya};
+Wasow \cite[Ch.~VII]{wasow}; Sabbah \cite[Ch.~II,
+Thm.~II.2.4]{sabbah-isomon}), the formal $\mathbb{C}((x^{-1}))$-module
+$\widehat{M}(L)$ associated to $L$ at $x = \infty$ admits a canonical
+slope decomposition
+\[
+   \widehat{M}(L) \;=\; \bigoplus_{\alpha=1}^{m}\,
+   \widehat{M}_\alpha,
+\]
+where $\widehat{M}_\alpha$ is pure of slope $p_\alpha/q_\alpha$ and
+the multiset $\{p_\alpha/q_\alpha\}_{\alpha=1}^{m}$ is exactly the set
+of slopes of the edges of $N(L)$. The decomposition is canonical
+(unique up to gauge), and choosing a cyclic vector in each summand
+$\widehat{M}_\alpha$ realises it as the formal module of a scalar
+single-slope operator $L_\alpha$. The Newton polygon of $L_\alpha$
+consists of a single edge of slope $-p_\alpha/q_\alpha$ with
+$r_\alpha + 1$ lattice points, matching the corresponding edge
+$E_\alpha$ of $N(L)$.
+
+\smallskip
+\textit{Step 2 (Per-edge Main Theorem).}
+Each $L_\alpha$ has Newton polygon $N(L_\alpha)$ a single edge of
+slope $-p_\alpha/q_\alpha$ with $r_\alpha + 1$ lattice points;
+\Cref{thm:main} applies and gives the explicit factorisation
+\[
+   \chi_{L_\alpha}(c)
+   \;=\;
+   c^{k_0^{(\alpha)}}\, \chi_w^{(\alpha)}(c^{q_\alpha}),
+\]
+where $k_0^{(\alpha)}$ is the multiplicity of $c = 0$ in $\chi_{L_\alpha}$
+contributed by lattice points strictly below $E_\alpha$ (the
+``foot'' of the edge in the scalar operator $L$), and
+$\chi_w^{(\alpha)} \in \mathbb{C}[w]$ is the inner polynomial of
+degree $r_\alpha$ built from the $\LCinf$-data of $E_\alpha$ per
+\Cref{def:chi}.
+
+\smallskip
+\textit{Step 3 (Multiplicativity across the slope filtration).}
+Apply \Cref{lem:chi-multiplicative} inductively to the $m$-fold
+formal direct sum
+\[
+   \widehat{M}(L) \;=\; \widehat{M}_1 \oplus \cdots \oplus \widehat{M}_m
+\]
+(equivalently, $\widehat{L} \simeq L_1 \oplus \cdots \oplus L_m$, in
+the sense of Step~1). The $m = 2$ case is \Cref{lem:chi-multiplicative}
+directly; the inductive step is the identity $\widehat{M}_1 \oplus
+\cdots \oplus \widehat{M}_m = (\widehat{M}_1 \oplus \cdots \oplus
+\widehat{M}_{m-1}) \oplus \widehat{M}_m$ together with the
+single-slope hypothesis on $\widehat{M}_m$ (its single slope
+$p_m/q_m$ is distinct from those of the first $m - 1$ summands by
+hypothesis on $L$). Hence
+\[
+   \chi_L(c)
+   \;=\;
+   \prod_{\alpha=1}^{m}\, \chi_{L_\alpha}(c)
+   \;=\;
+   \prod_{\alpha=1}^{m}\,
+   c^{k_0^{(\alpha)}}\, \chi_w^{(\alpha)}(c^{q_\alpha}).
+\]
+Taking roots with multiplicity,
+\[
+   \Cl(L) \;=\; \Roots(\chi_L)
+   \;=\;
+   \bigsqcup_{\alpha = 1}^{m}\, \Roots(\chi_{L_\alpha})
+   \;=\;
+   \bigsqcup_{\alpha = 1}^{m}\, \Cl_\alpha
+\]
+as multisets.
+
+\smallskip
+\textit{Step 4 (Genericity).}
+On the open subset $U_{\mathrm{disj}}$ of coefficient space where
+the per-edge radial annuli
+\[
+   \big[\rho_\alpha^{\min},\, \rho_\alpha^{\max}\big],
+   \qquad
+   \rho_\alpha^{\bullet}
+   \;=\;
+   \min_w / \max_w\!\big\{|w|^{1/q_\alpha} : w \in
+   \Roots(\chi_w^{(\alpha)})\big\},
+\]
+are pairwise disjoint as subsets of $\mathbb{R}_{> 0}$, the multiset
+union $\bigsqcup_\alpha \Cl_\alpha$ is also an honest disjoint union
+of subsets of $\mathbb{C}^\times$, because the per-edge constellations
+occupy disjoint moduli. On the complement (the radii-collision
+stratum), the multiset disjoint union is preserved by Step~3; only
+the set-theoretic statement in $\mathbb{C}^\times$ is weakened,
+namely, distinct edges may contribute roots of equal absolute value.
+\end{proof}
+
+\begin{remark}\label{rem:M1-cyclic-vector}
+The choice of cyclic vector in Step~1 affects the scalar operator
+$L_\alpha$ only up to a formal gauge equivalence; this gauge preserves
+$\chi_{L_\alpha}$ (\Cref{rem:F-functoriality}), so the per-edge
+characteristic polynomials $\chi^{(\alpha)}$ depend canonically on
+$\widehat{M}_\alpha$ and hence on the edge $E_\alpha$. The statement
+of \Cref{thm:M1} is therefore intrinsic.
+\end{remark}
+
+
+%% =================================================================
+%% (b)  Restated Theorem 5.1 + full proof
+%% =================================================================
+
+%% This block replaces lines 737--802 of paper.tex
+%% (the theorem statement of \Cref{thm:D2} and its current
+%% ``proof sketch'') with a clean algebraic statement and a full proof.
+
+\begin{theorem}[Inner-polynomial Kummer dichotomy; prime $q$,
+revised]\label{thm:D2}
+Let $L$ be a scalar linear operator on $\mathbb{C}[x]$ with a single
+irregular singularity at $x = \infty$ and a single dominant Newton edge
+of slope $-p/q$ ($\gcd(p, q) = 1$), with $q$ prime. Suppose the inner
+polynomial $\chi_w \in \mathbb{C}[w]$ is squarefree with
+$r \ge 2$ distinct nonzero roots
+\[
+   \Roots(\chi_w) \;=\; \{w_1, \dots, w_r\} \;\subset\;
+   \mathbb{C}^\times.
+\]
+Fix a consistent choice of $q$-th roots $z_\alpha \in \mathbb{C}$
+with $z_\alpha^q = w_\alpha$, so that
+\[
+   \Cl(L) \;=\; \bigsqcup_{\alpha = 1}^{r}\, R_\alpha,
+   \qquad
+   R_\alpha \;=\; \big\{\,\zeta_q^j\, z_\alpha\;:\; 0 \le j < q\,\big\}.
+\]
+
+For $\mathbb{Z}$-coefficients $n_{\alpha j} \in \mathbb{Z}$, set
+\[
+   \lambda_\alpha \;:=\; \sum_{j = 0}^{q-1} n_{\alpha j}\, \zeta_q^j
+   \;\in\; \Zlc.
+\]
+Call a $\mathbb{Z}$-relation $\sum_{\alpha, j} n_{\alpha j}\, \zeta_q^j\,
+z_\alpha = 0$ \emph{$\mu_q$-forced} if $\lambda_\alpha = 0$ in $\Zlc$
+for every $\alpha$, and \emph{cross-ring nontrivial} otherwise. Then:
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{Algebraic-independence stratum.} If $\{w_1, \dots, w_r\}$
+are algebraically independent over $\mathbb{Q}$, then $\Cl(L)$ admits
+\emph{no} cross-ring nontrivial $\mathbb{Z}$-relation (no bound on
+the support or coefficient size of the relation is required).
+\item \textbf{Kummer stratum.} If there exist distinct
+$\alpha, \beta \in \{1, \dots, r\}$ and $u \in \Qlc^\times$ with
+\[
+   w_\beta \;=\; u^q\, w_\alpha,
+\]
+then, after suitable consistent choices of $q$-th roots, the relation
+$z_\beta = u\, z_\alpha$ holds and is a cross-ring nontrivial
+$\Zlc$-relation; when $u \in \mathbb{Q}^\times$, it gives a
+cross-ring nontrivial $\mathbb{Z}$-relation of support $2$ on
+$\{z_\alpha, z_\beta\}$.
+\end{enumerate}
+Statements (1) and (2) are mutually exclusive: an operator in the
+algebraic-independence stratum has no Kummer relation of the form (2),
+and conversely a Kummer relation contradicts algebraic independence
+over $\mathbb{Q}$.
+\end{theorem}
+
+\begin{proof}[Proof of \Cref{thm:D2}]
+\textit{Set-up.}
+Rearranging $\sum_{\alpha, j} n_{\alpha j}\, \zeta_q^j\, z_\alpha = 0$
+by ring index gives
+\begin{equation}\label{eq:D2-rearranged}
+   \sum_{\alpha = 1}^{r} \lambda_\alpha\, z_\alpha \;=\; 0
+   \quad \text{in } \mathbb{C},
+   \qquad \lambda_\alpha \in \Zlc.
+\end{equation}
+
+\smallskip
+\textit{Kernel of $\mathbb{Z}^q \twoheadrightarrow \Zlc$.}
+For prime $q$, the cyclotomic ring $\Zlc = \mathbb{Z}[\zeta_q] \simeq
+\mathbb{Z}[x] / \Phi_q(x)$ is a free $\mathbb{Z}$-module of rank
+$q - 1$, with $\mathbb{Z}$-basis $\{1, \zeta_q, \dots, \zeta_q^{q-2}\}$.
+The surjection
+\[
+   \pi \colon \mathbb{Z}^{q} \;\twoheadrightarrow\; \Zlc,
+   \qquad
+   (n_0, \dots, n_{q-1}) \;\longmapsto\; \sum_j n_j\, \zeta_q^j,
+\]
+has kernel the rank-one $\mathbb{Z}$-submodule generated by the
+cyclotomic relation
+\[
+   (1, 1, \dots, 1) \in \mathbb{Z}^q,
+   \qquad
+   \pi(1, \dots, 1) \;=\; 1 + \zeta_q + \cdots + \zeta_q^{q-1}
+   \;=\; 0.
+\]
+Hence $\lambda_\alpha = 0$ in $\Zlc$ if and only if the vector
+$(n_{\alpha 0}, \dots, n_{\alpha, q-1})$ is a constant vector
+$(c_\alpha, \dots, c_\alpha)$ for some $c_\alpha \in \mathbb{Z}$.
+In this case
+\[
+   \sum_{j} n_{\alpha j}\, \zeta_q^j\, z_\alpha
+   \;=\;
+   c_\alpha\, \Big(\sum_j \zeta_q^j\Big)\, z_\alpha
+   \;=\;
+   c_\alpha\, \cdot 0\,
+   \;=\; 0,
+\]
+giving the per-ring trivial relations. Thus $\mu_q$-forced relations
+are exactly the integer combinations of the $r$ per-ring sums
+$\sum_{c \in R_\alpha} c = 0$.
+
+\smallskip
+\textit{Step 1 (Algebraic independence implies $\mu_q$-forced).}
+Assume $\{w_1, \dots, w_r\}$ are algebraically independent over
+$\mathbb{Q}$; then they are algebraically independent over
+$\Qlc$ as well (an algebraic relation over $\Qlc$ would specialise,
+on choosing an embedding $\Qlc \hookrightarrow \overline{\mathbb{Q}}$,
+to an algebraic relation over $\mathbb{Q}$ in finitely many
+$w_\alpha$, contradicting algebraic independence).
+
+We show by induction on $r$ that the field tower
+\begin{equation}\label{eq:D2-tower}
+   \Qlc \;\subset\; \Qlc(w_1, \dots, w_r)
+   \;\subset\; \Qlc(w_1, \dots, w_r)(z_1)
+   \;\subset\; \cdots
+   \;\subset\; \Qlc(w_1, \dots, w_r)(z_1, \dots, z_r)
+\end{equation}
+has degrees
+\[
+   [\Qlc(w_1, \dots, w_r)(z_1, \dots, z_\alpha) :
+   \Qlc(w_1, \dots, w_r)(z_1, \dots, z_{\alpha - 1})] \;=\; q
+\]
+for each $\alpha = 1, \dots, r$.
+
+The polynomial $X^q - w_\alpha$ has degree $q$ over its coefficient
+field. By Kummer theory (\cite[Ch.~VI, Thm.~9.1]{lang-algebra}), the
+polynomial $X^q - w_\alpha$ is irreducible over a field $K \supseteq
+\Qlc$ if and only if $w_\alpha$ is not a $q$-th power in $K$. We
+apply this with $K = \Qlc(w_1, \dots, w_r)(z_1, \dots, z_{\alpha - 1})$.
+By the inductive hypothesis $[K : \Qlc(w_1, \dots, w_r)] = q^{\alpha - 1}$,
+and the algebraic independence of the $w_\beta$ over $\Qlc$ guarantees
+that $w_\alpha$ is transcendental over $\Qlc(w_1, \dots,
+\widehat{w_\alpha}, \dots, w_r)$. In particular, $w_\alpha$ is not a
+$q$-th power in $K$ (a $q$-th power in $K$ would be algebraic over
+$\Qlc(w_1, \dots, \widehat{w_\alpha}, \dots, w_r, z_1, \dots,
+z_{\alpha - 1})$, but this latter field is algebraic over
+$\Qlc(w_1, \dots, \widehat{w_\alpha}, \dots, w_r)$ since each
+$z_\beta$ is). Hence $X^q - w_\alpha$ is irreducible over $K$, the
+degree is $q$, and the inductive step is complete.
+
+It follows that
+$[\Qlc(w_1, \dots, w_r)(z_1, \dots, z_r) :
+\Qlc(w_1, \dots, w_r)] = q^r$, and the set $\{z_1, \dots, z_r\}$ is
+algebraically independent over $\Qlc(w_1, \dots, w_r)$ (an algebraic
+relation would lower the transcendence degree). In particular, the
+$z_\alpha$ are linearly independent over $\Qlc$ (hence over $\Zlc$).
+
+Suppose now that \eqref{eq:D2-rearranged} holds with not all
+$\lambda_\alpha = 0$ in $\Zlc$. Then $\sum_\alpha \lambda_\alpha z_\alpha
+= 0$ is a $\Qlc$-linear dependence among the $z_\alpha$, contradicting
+the previous paragraph. Hence all $\lambda_\alpha = 0$ in $\Zlc$, and
+the $\mathbb{Z}$-relation is $\mu_q$-forced. This proves (1).
+
+\smallskip
+\textit{Step 2 (Kummer relation gives a cross-ring relation).}
+Suppose $w_\beta = u^q\, w_\alpha$ for some $u \in \Qlc^\times$ and
+distinct $\alpha \ne \beta$. Choose $z_\alpha \in \mathbb{C}$ with
+$z_\alpha^q = w_\alpha$, and set $z_\beta := u\, z_\alpha$; then
+$z_\beta^q = u^q\, w_\alpha = w_\beta$ as required. The identity
+$z_\beta - u\, z_\alpha = 0$ is a $\Zlc$-relation with
+$\lambda_\alpha = -u \ne 0$ and $\lambda_\beta = 1$, neither of
+which is zero in $\Zlc$. It is cross-ring nontrivial. If additionally
+$u \in \mathbb{Q}^\times$, expanding $u$ as a constant
+$\mathbb{Z}$-coefficient (with $n_{\alpha 0} = -u\, q'$, $n_{\beta 0} =
+q'$, all others zero, $q'$ a common denominator) yields a
+$\mathbb{Z}$-relation of support two with coefficients of size
+bounded by $|u| \cdot q'$. This proves (2).
+
+\smallskip
+\textit{Step 3 (Mutual exclusivity).}
+A Kummer relation $w_\beta = u^q\, w_\alpha$ with $u \in \Qlc^\times$
+exhibits $w_\beta$ as an algebraic function of $w_\alpha$ over $\Qlc$
+(in fact a polynomial relation $w_\beta = u^q\, w_\alpha$ in
+$\Qlc[w_\alpha]$), hence over $\mathbb{Q}$ (since $\Qlc \subset
+\overline{\mathbb{Q}}$). This is incompatible with the algebraic
+independence of $\{w_1, \dots, w_r\}$ over $\mathbb{Q}$. Hence (1)
+and (2) cannot hold simultaneously.
+\end{proof}
+
+\begin{remark}[Bounded-search corroboration]\label{rem:D2-search}
+The companion dataset \cite{wkb_dataset_v1} contains a sweep of all
+single-edge prime-$q$ operators with $q \in \{5, 7\}$ in the
+single-edge ($23$-class) atlas. For every such operator, an integer
+relation search with $|n_k| \le 3$ and support $\le 4$ produces zero
+cross-ring relations on $\Cl(L)$ -- consistent with the algebraic
+statement \Cref{thm:D2}(1). For every multi-ring operator placed in
+the Kummer stratum (rational ratios of the $w_\alpha$), the search
+detects at least five cross-ring relations within the same window --
+consistent with \Cref{thm:D2}(2). The search-window data therefore
+\emph{corroborate} the algebraic dichotomy on the atlas; the algebraic
+statement itself does not depend on the search window.
+\end{remark}
+
+\begin{remark}[Composite $q$]\label{rem:D2-composite}
+For composite $q$, the cyclotomic ring $\Zlc$ acquires further
+structure: the kernel of the projection $\Zlc \to \prod_{d \mid q,
+\, d > 1}\, \mathbb{Z}[\zeta_d]$ captures sub-cyclotomic resonances,
+and the $\mu_q$-forced sub-lattice includes sub-orbit sums coming
+from each proper divisor $d \mid q$. The corresponding dichotomy
+holds verbatim with ``$\lambda_\alpha = 0$ in $\Zlc$'' replaced by
+``$\lambda_\alpha$ in the kernel of the cyclotomic projection''.
+The Kummer-theoretic argument of Step~1 extends mutatis mutandis,
+using the structure theorem for cyclotomic field extensions of
+composite order.
+\end{remark}
+
+
+%% =================================================================
+%% (c)  Full proof of Theorem 7.1  (AT1: anti-Stokes <-> arg Delta_ij)
+%% =================================================================
+
+%% This block replaces lines 933--963 of paper.tex
+%% (the existing "Proof sketch" of \Cref{thm:AT1}).
+
+\begin{proof}[Proof of \Cref{thm:AT1}]
+We work throughout under (OS1)--(OS3), with $\op = \opD$, the open
+stratum hypotheses collected in \Cref{ssec:OS}.
+
+\smallskip
+\textit{Step 1 (Splitting on the $q$-cover by Levelt--Turrittin).}
+The slope $p/q$ of the dominant edge has denominator $q$; by the
+Levelt--Turrittin theorem (Sibuya \cite{sibuya}; Wasow
+\cite[Ch.~VII, Thms.~19.1, 19.2]{wasow}; Sabbah
+\cite[Ch.~II, Thm.~II.2.4]{sabbah-isomon}), the formal connection
+$\widehat{L}$ at $x = \infty$ becomes gauge-equivalent, on a
+ramification cover of degree $q$ (here, $x = t^q$), to a direct sum
+of formal rank-one summands:
+\[
+   \widehat{L}\big|_{x = t^q}
+   \;\simeq_{\,\mathrm{formal}}\;
+   \bigoplus_{i = 1}^{N}\,
+   \big(\mathbb{C}((t^{-1})),\; \mathrm{d} + \mathrm{d} Q_i(t)\big),
+   \qquad N = qr,
+\]
+with $Q_i(t) \in t^{-1}\, \mathbb{C}[t]$ of degree at most $p$ in $t$,
+and (crucially) leading term
+\[
+   Q_i(t) \;=\; c_i\, t^p \;+\; R_i(t),
+   \qquad
+   R_i \in \mathbb{C}[t],\ \deg R_i < p,
+\]
+where the leading coefficient $c_i$ is precisely the $i$-th element
+of $\Cl(L) = \Roots(\chi)$. That the leading coefficients are roots
+of $\chi$ follows from the WKB leading-balance characterisation of
+the irregular type (\cite[Ch.~II, \S 1.3]{sabbah-isomon}); under
+(OS1)--(OS2) (squarefreeness of $\chi_w$ and absence of zero roots),
+the $c_i$ are pairwise distinct and nonzero.
+
+\smallskip
+\textit{Step 2 (Anti-Stokes condition: leading-term form).}
+For the rank-one summand $(\mathbb{C}((t^{-1})), \mathrm{d} +
+\mathrm{d} Q_i)$, a horizontal section has formal expression
+$f_i(t) \sim \exp(-Q_i(t))$ times a formal Laurent series of moderate
+growth. Comparing two summands $i \ne j$ along a ray $\arg t = \phi$,
+the dominance relation $|f_i(t)/f_j(t)|$ is controlled by
+$\mathrm{Re}(Q_j(t) - Q_i(t))$ at large $|t|$. The (anti-)Stokes
+directions for the pair $(i, j)$ are the rays $\phi$ along which the
+leading term of $\mathrm{Re}(Q_i - Q_j)$ vanishes in $t$, that is,
+where dominance flips between the two summands.
+
+For pair $(i, j)$, the difference of irregular types is
+\[
+   Q_i(t) - Q_j(t) \;=\; (c_i - c_j)\, t^p \;+\; (R_i - R_j),
+   \qquad \deg(R_i - R_j) < p.
+\]
+On the open stratum, (OS1) gives $c_i \ne c_j$ (squarefreeness of
+$\chi_w$ separates the roots of $\chi$), so $\Dij = c_i - c_j \in
+\mathbb{C}^\times$ and the leading $t^p$-term in $Q_i - Q_j$ is
+nonzero.
+
+\smallskip
+\textit{Step 3 (Real-part calculation).}
+Write $t = \rho\, e^{i\phi}$ with $\rho > 0$ and $\phi \in
+[0, 2\pi)$, and $\Dij = |\Dij|\, e^{i\, \arginline \Dij}$. Then
+\[
+   \Dij\, t^p \;=\; |\Dij|\, \rho^p\, e^{i\, (\arginline \Dij + p\, \phi)},
+\]
+and
+\[
+   \mathrm{Re}(Q_i - Q_j)(\rho\, e^{i\phi})
+   \;=\;
+   |\Dij|\, \rho^p\, \cos\!\big(\arginline \Dij + p\, \phi\big)
+   \;+\; O(\rho^{p-1}).
+\]
+The leading $\rho^p$-term vanishes precisely when
+\[
+   \arginline \Dij \;+\; p\, \phi \;\equiv\;
+   \tfrac{\pi}{2} \pmod{\pi},
+\]
+which is the anti-Stokes condition stated in the theorem. The
+solutions in $[0, 2\pi)$ form an arithmetic progression with
+common difference $\pi / p$, hence exactly $2p$ rays per
+unordered pair $\{i, j\}$.
+
+\smallskip
+\textit{Step 4 (Total count and distinctness).}
+Summing the per-pair counts over all $\binom{N}{2}$ unordered pairs
+gives a total of $2p \binom{N}{2}$ cover-rays \emph{with
+multiplicity}. The number of \emph{distinct} cover-rays is governed
+by collisions in the multiset
+\[
+   \big\{\,\arginline \Dij \mod \pi/p \,:\, \{i, j\} \subset
+   \{1, \dots, N\}\,\big\}.
+\]
+Under (OS3), no such collisions occur beyond those forced by the
+ring structure, so the number of distinct cover-rays is the full
+$2p \binom{N}{2}$ count modulo the ring-forced identifications.
+
+\smallskip
+\textit{Step 5 (Projection cover-to-base).}
+The cover-to-base map $t \mapsto t^q$ acts on phases by $\phi \mapsto
+q\phi \pmod{2\pi}$. The image of a fixed pair's $2p$ cover-rays (an
+arithmetic progression of spacing $\pi/p$) under multiplication by
+$q$ is an arithmetic progression of spacing $q \pi / p$. Reducing
+modulo $2\pi$, this progression has period $\gcd(2p, q) \pi / p$, and
+the number of distinct points modulo $2\pi$ is
+$2p / \gcd(2p, q)$, with each base-ray covered by $\gcd(2p, q)$
+cover-rays. This is the projection formula stated in the theorem.
+
+\smallskip
+\textit{Step 6 (Determinacy: $\Dij$-geometry determines rays).}
+The set of anti-Stokes rays for the pair $(i, j)$ is the arithmetic
+progression
+\[
+   \phi_k(i, j) \;=\; \frac{1}{p}\Big(\frac{\pi}{2} - \arginline \Dij
+   \Big) \;+\; \frac{k\, \pi}{p}, \qquad k = 0, 1, \dots, 2p - 1,
+\]
+depending only on $\arginline \Dij$ (mod $\pi/p$) and $p$. The
+multiset of all such rays for all $\binom{N}{2}$ pairs is therefore
+recovered from the multiset $\{(\arginline \Dij, p) : i < j\}$. This
+proves the final claim: $\Acov$ is determined as a multiset (with
+multiplicity-by-pair-count) by the $\Dij$-geometry of the
+constellation on the cover.
+\end{proof}
+
+\begin{remark}[Beyond the leading term]\label{rem:AT1-subleading}
+The proof uses only the leading $t^p$-term of $Q_i - Q_j$; the
+sub-leading terms $R_i - R_j$ of degree $< p$ produce $O(\rho^{p-1})$
+corrections that do \emph{not} affect the set of anti-Stokes
+directions (which are determined by the vanishing of the leading
+$\rho^p$-coefficient), only the higher-order Stokes data on each
+ray. The classical Stokes-multiplier computation depends on the full
+$Q_i, Q_j$, but the anti-Stokes \emph{skeleton} depends only on
+$\Dij$ and $p$. This is the precise sense in which the constellation
+controls the analytic geometry only ``up to the skeleton''.
+\end{remark}
+
+%% ============================================================================
+%% End of proofs_major_revision.tex
+%% ============================================================================

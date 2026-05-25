@@ -1,0 +1,892 @@
+[
+  {
+    "label": "Class[Regular-12-gon]",
+    "description": "All 12 roots lie on a single ring; rotational symmetry C_12. Regular 12-gon.",
+    "members": [
+      "ODE_s1o4_r3_simple"
+    ],
+    "representative": {
+      "name": "ODE_s1o4_r3_simple",
+      "eqtype": "ode",
+      "slope": "1/4",
+      "rank": 3,
+      "valuation": "simple",
+      "chi": "beta + c**12",
+      "rings": [
+        {
+          "radius": 1.0000000000000002,
+          "count": 12,
+          "base_angle": -2.8797932657906435,
+          "args": [
+            -2.8797932657906435,
+            -2.3561944901923453,
+            -1.8325957145940468,
+            -1.3089969389957468,
+            -0.7853981633974484,
+            -0.2617993877991494,
+            0.2617993877991493,
+            0.7853981633974483,
+            1.3089969389957474,
+            1.8325957145940464,
+            2.3561944901923444,
+            2.8797932657906435
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[Regular-9-gon]",
+    "description": "All 9 roots lie on a single ring; rotational symmetry C_9. Regular 9-gon.",
+    "members": [
+      "ODE_s1o3_r3_simple",
+      "ODE_s2o3_r3_simple"
+    ],
+    "representative": {
+      "name": "ODE_s1o3_r3_simple",
+      "eqtype": "ode",
+      "slope": "1/3",
+      "rank": 3,
+      "valuation": "simple",
+      "chi": "beta + c**9",
+      "rings": [
+        {
+          "radius": 0.9999999999999993,
+          "count": 9,
+          "base_angle": -3.141592653589793,
+          "args": [
+            -3.141592653589793,
+            -2.4434609527920617,
+            -1.7453292519943293,
+            -1.0471975511965979,
+            -0.34906585039886595,
+            0.34906585039886573,
+            1.047197551196598,
+            1.7453292519943298,
+            2.4434609527920617
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[Regular-8-gon]",
+    "description": "All 8 roots lie on a single ring; rotational symmetry C_8. Regular 8-gon.",
+    "members": [
+      "ODE_s1o4_r2_simple",
+      "DIFFERENCE_s1o4_r2_simple",
+      "Q-DIFFERENCE_s1o4_r2_simple"
+    ],
+    "representative": {
+      "name": "ODE_s1o4_r2_simple",
+      "eqtype": "ode",
+      "slope": "1/4",
+      "rank": 2,
+      "valuation": "simple",
+      "chi": "beta + c**8",
+      "rings": [
+        {
+          "radius": 0.9999999999999979,
+          "count": 8,
+          "base_angle": -2.748893571891069,
+          "args": [
+            -2.748893571891069,
+            -1.9634954084936203,
+            -1.1780972450961722,
+            -0.39269908169872403,
+            0.392699081698724,
+            1.1780972450961729,
+            1.9634954084936205,
+            2.7488935718910694
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[Regular-6-gon]",
+    "description": "All 6 roots lie on a single ring; rotational symmetry C_6. Regular 6-gon.",
+    "members": [
+      "ODE_s1o2_r3_simple",
+      "ODE_s1o3_r2_simple",
+      "ODE_s2o3_r2_simple",
+      "ODE_s3o2_r3_simple",
+      "DIFFERENCE_s1o3_r2_simple",
+      "DIFFERENCE_s2o3_r2_simple",
+      "Q-DIFFERENCE_s1o3_r2_simple",
+      "Q-DIFFERENCE_s2o3_r2_simple",
+      "STRESS_accidental_sym"
+    ],
+    "representative": {
+      "name": "ODE_s1o2_r3_simple",
+      "eqtype": "ode",
+      "slope": "1/2",
+      "rank": 3,
+      "valuation": "simple",
+      "chi": "beta + c**6",
+      "rings": [
+        {
+          "radius": 1.0000000000000002,
+          "count": 6,
+          "base_angle": -2.617993877991495,
+          "args": [
+            -2.617993877991495,
+            -1.5707963267948966,
+            -0.5235987755982988,
+            0.5235987755982985,
+            1.5707963267948966,
+            2.617993877991494
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[Regular-4-gon]",
+    "description": "All 4 roots lie on a single ring; rotational symmetry C_4. Regular 4-gon.",
+    "members": [
+      "ODE_s1o2_r2_simple",
+      "ODE_s1o4_r1_simple",
+      "ODE_s3o2_r2_simple",
+      "DIFFERENCE_s1o2_r2_simple",
+      "DIFFERENCE_s1o4_r1_simple",
+      "DIFFERENCE_s3o2_r2_simple",
+      "Q-DIFFERENCE_s1o2_r2_simple",
+      "Q-DIFFERENCE_s1o4_r1_simple",
+      "Q-DIFFERENCE_s3o2_r2_simple"
+    ],
+    "representative": {
+      "name": "ODE_s1o2_r2_simple",
+      "eqtype": "ode",
+      "slope": "1/2",
+      "rank": 2,
+      "valuation": "simple",
+      "chi": "beta + c**4",
+      "rings": [
+        {
+          "radius": 1.0,
+          "count": 4,
+          "base_angle": -2.356194490192345,
+          "args": [
+            -2.356194490192345,
+            -0.7853981633974483,
+            0.7853981633974485,
+            2.356194490192345
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C4, rings=[4, 4]]",
+    "description": "Multi-ring constellation with ring multiplicities [4, 4] and global rotational symmetry C_4.",
+    "members": [
+      "ODE_s1o4_r2_mixed",
+      "ODE_s1o4_r2_generic_complex",
+      "DIFFERENCE_s1o4_r2_mixed",
+      "DIFFERENCE_s1o4_r2_generic_complex",
+      "Q-DIFFERENCE_s1o4_r2_mixed",
+      "Q-DIFFERENCE_s1o4_r2_generic_complex"
+    ],
+    "representative": {
+      "name": "ODE_s1o4_r2_mixed",
+      "eqtype": "ode",
+      "slope": "1/4",
+      "rank": 2,
+      "valuation": "mixed",
+      "chi": "beta + c**8 + 3*c**4",
+      "rings": [
+        {
+          "radius": 0.786151377757423,
+          "count": 4,
+          "base_angle": -2.356194490192345,
+          "args": [
+            -2.356194490192345,
+            -0.7853981633974481,
+            0.7853981633974482,
+            2.3561944901923453
+          ]
+        },
+        {
+          "radius": 1.272019649514066,
+          "count": 4,
+          "base_angle": -2.356194490192345,
+          "args": [
+            -2.356194490192345,
+            -0.7853981633974484,
+            0.7853981633974478,
+            2.3561944901923457
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C4, rings=[4, 4, 4]]",
+    "description": "Multi-ring constellation with ring multiplicities [4, 4, 4] and global rotational symmetry C_4.",
+    "members": [
+      "ODE_s1o4_r3_generic_complex"
+    ],
+    "representative": {
+      "name": "ODE_s1o4_r3_generic_complex",
+      "eqtype": "ode",
+      "slope": "1/4",
+      "rank": 3,
+      "valuation": "generic_complex",
+      "chi": "beta + c**12 + 2*c**8 + 3*I*c**8 + 3*c**4 + 5*I*c**4",
+      "rings": [
+        {
+          "radius": 0.6503514484997123,
+          "count": 4,
+          "base_angle": -2.6408154959047807,
+          "args": [
+            -2.6408154959047807,
+            -1.070019169109884,
+            0.5007771576850135,
+            2.07157348447991
+          ]
+        },
+        {
+          "radius": 1.1123375979454182,
+          "count": 4,
+          "base_angle": -2.432371545977905,
+          "args": [
+            -2.432371545977905,
+            -0.8615752191830087,
+            0.7092211076118887,
+            2.2800174344067856
+          ]
+        },
+        {
+          "radius": 1.3823412604704335,
+          "count": 4,
+          "base_angle": -1.9953964286943495,
+          "args": [
+            -1.9953964286943495,
+            -0.42460010189945196,
+            1.1461962248954443,
+            2.716992551690342
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C4, rings=[4, 8]]",
+    "description": "Multi-ring constellation with ring multiplicities [4, 8] and global rotational symmetry C_4.",
+    "members": [
+      "ODE_s1o4_r3_mixed"
+    ],
+    "representative": {
+      "name": "ODE_s1o4_r3_mixed",
+      "eqtype": "ode",
+      "slope": "1/4",
+      "rank": 3,
+      "valuation": "mixed",
+      "chi": "beta + c**12 + 3*c**8 + 4*c**4",
+      "rings": [
+        {
+          "radius": 0.7507490673728855,
+          "count": 4,
+          "base_angle": -2.356194490192344,
+          "args": [
+            -2.356194490192344,
+            -0.7853981633974483,
+            0.785398163397448,
+            2.3561944901923444
+          ]
+        },
+        {
+          "radius": 1.1541243376240313,
+          "count": 8,
+          "base_angle": -2.5346319108837654,
+          "args": [
+            -2.5346319108837654,
+            -2.1777570695009247,
+            -0.9638355840888682,
+            -0.6069607427060285,
+            0.6069607427060285,
+            0.9638355840888677,
+            2.177757069500926,
+            2.5346319108837636
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C4, rings=[8]]",
+    "description": "Multi-ring constellation with ring multiplicities [8] and global rotational symmetry C_4.",
+    "members": [
+      "ODE_s1o4_r2_double"
+    ],
+    "representative": {
+      "name": "ODE_s1o4_r2_double",
+      "eqtype": "ode",
+      "slope": "1/4",
+      "rank": 2,
+      "valuation": "double",
+      "chi": "beta + c**8 + c**4*gamma",
+      "rings": [
+        {
+          "radius": 0.9999999999999999,
+          "count": 8,
+          "base_angle": -2.6179938779914944,
+          "args": [
+            -2.6179938779914944,
+            -2.0943951023931953,
+            -1.0471975511965974,
+            -0.5235987755982988,
+            0.5235987755982984,
+            1.0471975511965976,
+            2.0943951023931953,
+            2.617993877991495
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C4, rings=[8, 4]]",
+    "description": "Multi-ring constellation with ring multiplicities [8, 4] and global rotational symmetry C_4.",
+    "members": [
+      "ODE_s1o4_r3_double"
+    ],
+    "representative": {
+      "name": "ODE_s1o4_r3_double",
+      "eqtype": "ode",
+      "slope": "1/4",
+      "rank": 3,
+      "valuation": "double",
+      "chi": "beta + c**12 + c**8*gamma",
+      "rings": [
+        {
+          "radius": 0.9533428935093158,
+          "count": 8,
+          "base_angle": -2.8203141255601705,
+          "args": [
+            -2.8203141255601705,
+            -1.8920748548245192,
+            -1.2495177987652744,
+            -0.3212785280296225,
+            0.3212785280296229,
+            1.2495177987652735,
+            1.8920748548245188,
+            2.8203141255601696
+          ]
+        },
+        {
+          "radius": 1.1002762355000122,
+          "count": 4,
+          "base_angle": -2.356194490192345,
+          "args": [
+            -2.356194490192345,
+            -0.7853981633974484,
+            0.7853981633974487,
+            2.3561944901923453
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[Regular-3-gon]",
+    "description": "All 3 roots lie on a single ring; rotational symmetry C_3. Regular 3-gon.",
+    "members": [
+      "ODE_s1o3_r1_simple",
+      "ODE_s2o3_r1_simple",
+      "DIFFERENCE_s1o3_r1_simple",
+      "DIFFERENCE_s2o3_r1_simple",
+      "Q-DIFFERENCE_s1o3_r1_simple",
+      "Q-DIFFERENCE_s2o3_r1_simple"
+    ],
+    "representative": {
+      "name": "ODE_s1o3_r1_simple",
+      "eqtype": "ode",
+      "slope": "1/3",
+      "rank": 1,
+      "valuation": "simple",
+      "chi": "beta + c**3",
+      "rings": [
+        {
+          "radius": 1.0000000000000004,
+          "count": 3,
+          "base_angle": -3.141592653589793,
+          "args": [
+            -3.141592653589793,
+            -1.0471975511965976,
+            1.0471975511965979
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C3, rings=[3, 3]]",
+    "description": "Multi-ring constellation with ring multiplicities [3, 3] and global rotational symmetry C_3.",
+    "members": [
+      "ODE_s1o3_r2_mixed",
+      "ODE_s1o3_r2_generic_complex",
+      "ODE_s2o3_r2_mixed",
+      "ODE_s2o3_r2_generic_complex",
+      "DIFFERENCE_s1o3_r2_mixed",
+      "DIFFERENCE_s1o3_r2_generic_complex",
+      "DIFFERENCE_s2o3_r2_mixed",
+      "DIFFERENCE_s2o3_r2_generic_complex",
+      "Q-DIFFERENCE_s1o3_r2_mixed",
+      "Q-DIFFERENCE_s1o3_r2_generic_complex",
+      "Q-DIFFERENCE_s2o3_r2_mixed",
+      "Q-DIFFERENCE_s2o3_r2_generic_complex"
+    ],
+    "representative": {
+      "name": "ODE_s1o3_r2_mixed",
+      "eqtype": "ode",
+      "slope": "1/3",
+      "rank": 2,
+      "valuation": "mixed",
+      "chi": "beta + c**6 + 3*c**3",
+      "rings": [
+        {
+          "radius": 0.7255626302463277,
+          "count": 3,
+          "base_angle": -3.141592653589793,
+          "args": [
+            -3.141592653589793,
+            -1.0471975511965976,
+            1.047197551196598
+          ]
+        },
+        {
+          "radius": 1.3782407724892087,
+          "count": 3,
+          "base_angle": -3.141592653589793,
+          "args": [
+            -3.141592653589793,
+            -1.0471975511965976,
+            1.047197551196597
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C3, rings=[3, 3, 3]]",
+    "description": "Multi-ring constellation with ring multiplicities [3, 3, 3] and global rotational symmetry C_3.",
+    "members": [
+      "ODE_s1o3_r3_generic_complex",
+      "ODE_s2o3_r3_generic_complex"
+    ],
+    "representative": {
+      "name": "ODE_s1o3_r3_generic_complex",
+      "eqtype": "ode",
+      "slope": "1/3",
+      "rank": 3,
+      "valuation": "generic_complex",
+      "chi": "beta + c**9 + 2*c**6 + 3*I*c**6 + 3*c**3 + 5*I*c**3",
+      "rings": [
+        {
+          "radius": 0.5634613729584356,
+          "count": 3,
+          "base_angle": -1.426692225479845,
+          "args": [
+            -1.426692225479845,
+            0.66770287691335,
+            2.762097979306544
+          ]
+        },
+        {
+          "radius": 1.1525209343704292,
+          "count": 3,
+          "base_angle": -1.1487669589106781,
+          "args": [
+            -1.1487669589106781,
+            0.945628143482516,
+            3.0400232458757124
+          ]
+        },
+        {
+          "radius": 1.5398805311603305,
+          "count": 3,
+          "base_angle": -2.6605285715924656,
+          "args": [
+            -2.6605285715924656,
+            -0.5661334691992701,
+            1.5282616331939258
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C3, rings=[3, 6]]",
+    "description": "Multi-ring constellation with ring multiplicities [3, 6] and global rotational symmetry C_3.",
+    "members": [
+      "ODE_s1o3_r3_mixed",
+      "ODE_s2o3_r3_mixed"
+    ],
+    "representative": {
+      "name": "ODE_s1o3_r3_mixed",
+      "eqtype": "ode",
+      "slope": "1/3",
+      "rank": 3,
+      "valuation": "mixed",
+      "chi": "beta + c**9 + 3*c**6 + 4*c**3",
+      "rings": [
+        {
+          "radius": 0.6823278038280209,
+          "count": 3,
+          "base_angle": -3.1415926535897927,
+          "args": [
+            -3.1415926535897927,
+            -1.0471975511965979,
+            1.047197551196598
+          ]
+        },
+        {
+          "radius": 1.2106077944060853,
+          "count": 6,
+          "base_angle": -2.9036760926679017,
+          "args": [
+            -2.9036760926679017,
+            -1.2851141121184917,
+            -0.8092809902747048,
+            0.8092809902747052,
+            1.285114112118491,
+            2.9036760926679013
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C3, rings=[6]]",
+    "description": "Multi-ring constellation with ring multiplicities [6] and global rotational symmetry C_3.",
+    "members": [
+      "ODE_s1o3_r2_double",
+      "ODE_s2o3_r2_double"
+    ],
+    "representative": {
+      "name": "ODE_s1o3_r2_double",
+      "eqtype": "ode",
+      "slope": "1/3",
+      "rank": 2,
+      "valuation": "double",
+      "chi": "beta + c**6 + c**3*gamma",
+      "rings": [
+        {
+          "radius": 0.9999999999999997,
+          "count": 6,
+          "base_angle": -2.792526803190927,
+          "args": [
+            -2.792526803190927,
+            -1.396263401595464,
+            -0.6981317007977316,
+            0.6981317007977318,
+            1.3962634015954638,
+            2.7925268031909276
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C3, rings=[6, 3]]",
+    "description": "Multi-ring constellation with ring multiplicities [6, 3] and global rotational symmetry C_3.",
+    "members": [
+      "ODE_s1o3_r3_double",
+      "ODE_s2o3_r3_double",
+      "STRESS_doubleroot"
+    ],
+    "representative": {
+      "name": "ODE_s1o3_r3_double",
+      "eqtype": "ode",
+      "slope": "1/3",
+      "rank": 3,
+      "valuation": "double",
+      "chi": "beta + c**9 + c**6*gamma",
+      "rings": [
+        {
+          "radius": 0.9382793926994447,
+          "count": 6,
+          "base_angle": -2.5227664730993586,
+          "args": [
+            -2.5227664730993586,
+            -1.6660237316870319,
+            -0.42837137070616343,
+            0.4283713707061636,
+            1.6660237316870314,
+            2.52276647309936
+          ]
+        },
+        {
+          "radius": 1.1358883461325537,
+          "count": 3,
+          "base_angle": -1.047197551196598,
+          "args": [
+            -1.047197551196598,
+            1.0471975511965979,
+            3.1415926535897927
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[Regular-2-gon]",
+    "description": "All 2 roots lie on a single ring; rotational symmetry C_2. Regular 2-gon.",
+    "members": [
+      "ODE_s1o2_r1_simple",
+      "ODE_s3o2_r1_simple",
+      "DIFFERENCE_s1o2_r1_simple",
+      "DIFFERENCE_s3o2_r1_simple",
+      "Q-DIFFERENCE_s1o2_r1_simple",
+      "Q-DIFFERENCE_s3o2_r1_simple"
+    ],
+    "representative": {
+      "name": "ODE_s1o2_r1_simple",
+      "eqtype": "ode",
+      "slope": "1/2",
+      "rank": 1,
+      "valuation": "simple",
+      "chi": "beta + c**2",
+      "rings": [
+        {
+          "radius": 0.9999999999999997,
+          "count": 2,
+          "base_angle": -1.5707963267948966,
+          "args": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C2, rings=[2, 2]]",
+    "description": "Multi-ring constellation with ring multiplicities [2, 2] and global rotational symmetry C_2.",
+    "members": [
+      "ODE_s1o2_r2_mixed",
+      "ODE_s1o2_r2_generic_complex",
+      "ODE_s3o2_r2_mixed",
+      "ODE_s3o2_r2_generic_complex",
+      "DIFFERENCE_s1o2_r2_mixed",
+      "DIFFERENCE_s1o2_r2_generic_complex",
+      "DIFFERENCE_s3o2_r2_mixed",
+      "DIFFERENCE_s3o2_r2_generic_complex",
+      "Q-DIFFERENCE_s1o2_r2_mixed",
+      "Q-DIFFERENCE_s1o2_r2_generic_complex",
+      "Q-DIFFERENCE_s3o2_r2_mixed",
+      "Q-DIFFERENCE_s3o2_r2_generic_complex",
+      "STRESS_zeroroot"
+    ],
+    "representative": {
+      "name": "ODE_s1o2_r2_mixed",
+      "eqtype": "ode",
+      "slope": "1/2",
+      "rank": 2,
+      "valuation": "mixed",
+      "chi": "beta + c**4 + 3*c**2",
+      "rings": [
+        {
+          "radius": 0.6180339887498948,
+          "count": 2,
+          "base_angle": -1.5707963267948966,
+          "args": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "radius": 1.6180339887498967,
+          "count": 2,
+          "base_angle": -1.5707963267948966,
+          "args": [
+            -1.5707963267948966,
+            1.570796326794897
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C2, rings=[2, 2, 2]]",
+    "description": "Multi-ring constellation with ring multiplicities [2, 2, 2] and global rotational symmetry C_2.",
+    "members": [
+      "ODE_s1o2_r3_generic_complex",
+      "ODE_s3o2_r3_generic_complex"
+    ],
+    "representative": {
+      "name": "ODE_s1o2_r3_generic_complex",
+      "eqtype": "ode",
+      "slope": "1/2",
+      "rank": 3,
+      "valuation": "generic_complex",
+      "chi": "beta + c**6 + 2*c**4 + 3*I*c**4 + 3*c**2 + 5*I*c**2",
+      "rings": [
+        {
+          "radius": 0.42295700656567226,
+          "count": 2,
+          "base_angle": -2.140038338219768,
+          "args": [
+            -2.140038338219768,
+            1.0015543153700257
+          ]
+        },
+        {
+          "radius": 1.2372949318029833,
+          "count": 2,
+          "base_angle": -1.7231504383660174,
+          "args": [
+            -1.7231504383660174,
+            1.4184422152237752
+          ]
+        },
+        {
+          "radius": 1.9108673603989783,
+          "count": 2,
+          "base_angle": -0.8492002037989044,
+          "args": [
+            -0.8492002037989044,
+            2.292392449790888
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C2, rings=[2, 4]]",
+    "description": "Multi-ring constellation with ring multiplicities [2, 4] and global rotational symmetry C_2.",
+    "members": [
+      "ODE_s1o2_r3_mixed",
+      "ODE_s3o2_r3_mixed"
+    ],
+    "representative": {
+      "name": "ODE_s1o2_r3_mixed",
+      "eqtype": "ode",
+      "slope": "1/2",
+      "rank": 3,
+      "valuation": "mixed",
+      "chi": "beta + c**6 + 3*c**4 + 4*c**2",
+      "rings": [
+        {
+          "radius": 0.5636241621612578,
+          "count": 2,
+          "base_angle": -1.5707963267948966,
+          "args": [
+            -1.5707963267948966,
+            1.570796326794897
+          ]
+        },
+        {
+          "radius": 1.332002986696104,
+          "count": 4,
+          "base_angle": -1.9276711681777365,
+          "args": [
+            -1.9276711681777365,
+            -1.213921485412057,
+            1.213921485412056,
+            1.9276711681777372
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C2, rings=[4]]",
+    "description": "Multi-ring constellation with ring multiplicities [4] and global rotational symmetry C_2.",
+    "members": [
+      "ODE_s1o2_r2_double",
+      "ODE_s3o2_r2_double"
+    ],
+    "representative": {
+      "name": "ODE_s1o2_r2_double",
+      "eqtype": "ode",
+      "slope": "1/2",
+      "rank": 2,
+      "valuation": "double",
+      "chi": "beta + c**4 + c**2*gamma",
+      "rings": [
+        {
+          "radius": 1.0,
+          "count": 4,
+          "base_angle": -2.0943951023931957,
+          "args": [
+            -2.0943951023931957,
+            -1.0471975511965976,
+            1.047197551196598,
+            2.0943951023931957
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C2, rings=[4, 2]]",
+    "description": "Multi-ring constellation with ring multiplicities [4, 2] and global rotational symmetry C_2.",
+    "members": [
+      "ODE_s1o2_r3_double",
+      "ODE_s3o2_r3_double"
+    ],
+    "representative": {
+      "name": "ODE_s1o2_r3_double",
+      "eqtype": "ode",
+      "slope": "1/2",
+      "rank": 3,
+      "valuation": "double",
+      "chi": "beta + c**6 + c**4*gamma",
+      "rings": [
+        {
+          "radius": 0.9088626726047156,
+          "count": 4,
+          "base_angle": -2.499035597530548,
+          "args": [
+            -2.499035597530548,
+            -0.6425570560592454,
+            0.6425570560592455,
+            2.499035597530548
+          ]
+        },
+        {
+          "radius": 1.2106077944060862,
+          "count": 2,
+          "base_angle": -1.5707963267948961,
+          "args": [
+            -1.5707963267948961,
+            1.5707963267948963
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Class[C2, rings=[6]]",
+    "description": "Multi-ring constellation with ring multiplicities [6] and global rotational symmetry C_2.",
+    "members": [
+      "STRESS_equalmod"
+    ],
+    "representative": {
+      "name": "STRESS_equalmod",
+      "eqtype": "ode",
+      "slope": "1/2",
+      "rank": 3,
+      "valuation": "stress",
+      "chi": "c**6 - 2*c**4 + 4*c**2 - 8",
+      "rings": [
+        {
+          "radius": 1.4142135623730938,
+          "count": 6,
+          "base_angle": -2.356194490192345,
+          "args": [
+            -2.356194490192345,
+            -0.785398163397449,
+            -2.232475214690987e-16,
+            0.7853981633974483,
+            2.356194490192345,
+            3.141592653589793
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,66 @@
+================================================================================
+Diff: paper.tex  —  author-metadata alignment with Zenodo record 20355904
+================================================================================
+
+Reference: https://zenodo.org/records/20355904
+Identity:  Papanokechi (ORCID 0009-0000-6192-8273, Independent Researcher).
+
+--- a/paper.tex      (v1.0 placeholder identity)
++++ b/paper.tex      (v1.0 Zenodo-aligned identity)
+@@ -82,11 +82,12 @@ \title{The WKB Geometry of Newton Polygons:\\
+        A Functorial Classification Theory}
+
+ \author{%
+-  Hans Kuba Skarstind\thanks{Author placeholder; ORCID
+-  \texttt{0000-0000-0000-0000} (to be replaced before submission).
+-  Correspondence: \texttt{author@example.org}.}
++  Papanokechi\thanks{Independent researcher. ORCID:
++  \href{https://orcid.org/0009-0000-6192-8273}{\texttt{0009-0000-6192-8273}}.
++  Code and data repository:
++  \url{https://github.com/papanokechi}.}
+ }
+
+ \date{\today\hspace{1ex}\textsc{(preprint v1.0)}}
+
+================================================================================
+End of patch.
+================================================================================
+
+Rationale and notes
+-------------------
+
+* `Papanokechi` is treated as a single-token / mononym, exactly as it
+  appears in the Zenodo `creators[].name` field.  No family/given split
+  is invented.
+
+* The `\thanks{...}` block now points to:
+    - the ORCID record (hyperref-wrapped),
+    - the GitHub organisation `papanokechi` (also from the Zenodo record's
+      `code:codeRepository` field).
+  The placeholder email `author@example.org` is removed; the Zenodo
+  record does not expose an email address, so correspondence is routed
+  via the ORCID record and the repository.
+
+* `\href` and `\url` macros are already provided by the `hyperref`
+  package, which is loaded in the preamble — no additional package is
+  needed.
+
+* The change preserves single-author front-matter; no `\and`, `\affil`,
+  or external `authblk`/`authoraftertitle` macros are introduced.  This
+  keeps the LaTeX class-agnostic (compiles unchanged with `article`,
+  `amsart`, `elsarticle`, `jep`, `sigma`, Springer Nature template,
+  etc.).
+
+* The dataset BibTeX entry `wkb_dataset_v1` in `references.bib` and the
+  emitted `paper.bbl` are both updated; the `alpha` style now renders
+  the dataset key as `[Pap26]`.  No other cite-keys are affected.
+
+Compilation verified
+--------------------
+
+* `paper/paper.tex`           -> 19 pages, 827 793 bytes, 0 warnings.
+* `arxiv_bundle/paper.tex`    -> 19 pages, 827 793 bytes, 0 warnings.
+* `journal_bundle/paper.tex`  -> 19 pages, 827 793 bytes, 0 warnings.
+
+Three pdflatex passes (plus one bibtex on the master) are sufficient
+for full cross-reference convergence.

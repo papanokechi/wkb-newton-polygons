@@ -1,0 +1,147 @@
+================================================================================
+Zenodo metadata block
+"The WKB Geometry of Newton Polygons: A Classification Theory"  (v1.0)
+================================================================================
+
+# Upload type
+upload_type:           dataset
+publication_type:      working paper  # (the /paper-draft companion)
+
+# Title
+title: "The WKB Geometry of Newton Polygons: A Classification Theory
+        — computational atlas, conjectures, and proof skeletons (v1.0)"
+
+# Authors
+creators:
+  - name:        "Papanokechi"
+    affiliation: "Independent Researcher"
+    orcid:       "0009-0000-6192-8273"
+  # Add coauthors here as appropriate.
+
+# Publication / release
+publication_date:      2026-05-26
+version:               "v1.0"
+language:              eng
+
+# Description (300 words)
+description: |
+  This dataset accompanies the working paper "The WKB Geometry of Newton
+  Polygons: A Classification Theory". It collects the complete computational
+  atlas, structural invariants, conjectural laws, and theorem–proof skeletons
+  produced over five experimental phases of a fleet-of-agents investigation
+  into the classification of scalar linear operators with one irregular
+  singularity.
+
+  The central object is the functor F : L ↦ C(L) sending a scalar operator L
+  (ODE, difference, or q-difference, with polynomial coefficients and one
+  irregular singularity at infinity) to its WKB constellation
+  C(L) = Roots(χ), where χ(c) is the WKB characteristic polynomial.
+
+  The atlas covers 96 operators (48 single-edge + 48 multi-edge / systems /
+  resonant / nested) across slopes p/q with q up to 7, ranks r up to 3, and
+  ODE / difference / q-difference settings. For every operator we record the
+  Newton polygon, the inner factorisation χ(c) = χ_w(c^q), the ring
+  decomposition C(L) = ⊔_w {c : c^q = w}, the Δ_ij geometry (modulus / argument
+  partitions), the Galois / nested-ramification structure, and a 23-class
+  taxonomy of single-edge constellations.
+
+  Phase IV lifts the discrete invariants into the analytic layer (Levelt–
+  Turrittin formal classification, anti-Stokes skeleton on the ramified cover,
+  wild character variety transversality). Phase V consolidates the resulting
+  structural laws into eight theorem–proof pairs (M1, N1, D2, S1, AT1, AT3,
+  AT5, AT7), each guarded by an 11-stratum counterexample knowledge base.
+
+  Deliverables include: full source pipelines (fleet.py … fleet5.py), JSON
+  datasets, narrative phase reports, the paper draft, and the constellation
+  zoo figure. The package is intended both as a reproducibility artefact and
+  as a citable companion to the forthcoming paper.
+
+# Keywords
+keywords:
+  - WKB analysis
+  - Newton polygon
+  - irregular singularity
+  - formal classification
+  - Stokes phenomenon
+  - anti-Stokes directions
+  - Levelt–Turrittin theorem
+  - wild character variety
+  - exponent constellation
+  - mu_q-pullback
+  - slope filtration
+  - difference equations
+  - q-difference equations
+  - classification theory
+  - mathematical physics
+  - computer-assisted discovery
+  - experimental mathematics
+  - irregular Riemann–Hilbert
+
+# Communities (request membership on submission)
+communities:
+  - identifier: math-ph     # mathematical physics
+  - identifier: math-ca     # complex analysis
+  - identifier: math-ds     # dynamical systems
+  - identifier: cs-ms       # computer-assisted mathematics
+
+# Licences
+license:
+  code:       "MIT"                          # applies to /code, /fleets
+  data_text:  "CC-BY-4.0"                    # applies to /data, /reports,
+                                             # /theorems, /paper-draft, /figures
+
+# Access
+access_right:          open
+
+# Related identifiers
+related_identifiers:
+  - identifier:    "10.48550/arXiv.XXXX.XXXXX"   # PLACEHOLDER arXiv preprint
+    relation:      "isSupplementTo"
+    resource_type: "publication-preprint"
+    scheme:        "doi"
+
+  - identifier:    "https://github.com/<owner>/wkb-newton-polygons"  # PLACEHOLDER
+    relation:      "isSourceOf"
+    resource_type: "software"
+    scheme:        "url"
+
+  - identifier:    "10.5281/zenodo.XXXXXXX"   # PLACEHOLDER (assigned by Zenodo at publication)
+    relation:      "isVersionOf"
+    resource_type: "dataset"
+    scheme:        "doi"
+
+# Funding (none declared for v1.0)
+grants: []
+
+# Subjects (PhilPapers / MSC2020)
+subjects:
+  - term:       "34M40"     # Stokes phenomena and connection problems
+    identifier: "https://zbmath.org/classification/?q=cc%3A34M40"
+    scheme:     "MSC2020"
+  - term:       "34M30"     # Asymptotics, summation methods (ODE in the complex domain)
+    identifier: "https://zbmath.org/classification/?q=cc%3A34M30"
+    scheme:     "MSC2020"
+  - term:       "34M35"     # Singularities, monodromy and local behaviour, normal forms
+    identifier: "https://zbmath.org/classification/?q=cc%3A34M35"
+    scheme:     "MSC2020"
+  - term:       "39A06"     # Linear difference equations
+    identifier: "https://zbmath.org/classification/?q=cc%3A39A06"
+    scheme:     "MSC2020"
+  - term:       "39A13"     # q-difference equations
+    identifier: "https://zbmath.org/classification/?q=cc%3A39A13"
+    scheme:     "MSC2020"
+
+# Notes
+notes: |
+  This is v1.0 of a planned multi-version release.
+  v2.0 will include camera-ready paper sources;
+  v3.0 will add the extended analytic layer (Stokes constants, monodromy
+  representations) — see release_notes_v1.0.txt for the full versioning plan.
+
+  Reproducibility: every JSON in /data can be regenerated by running the
+  matching fleet*.py from /code under Python 3.11+ with the dependencies
+  pinned in /code/requirements.txt.
+
+================================================================================
+End of metadata block.
+================================================================================

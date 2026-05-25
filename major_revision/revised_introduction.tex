@@ -1,0 +1,237 @@
+%% ============================================================================
+%% revised_introduction.tex
+%%
+%% Replacement for Section 1 of paper.tex (original lines 162--267).
+%% Addresses referee:
+%%   - resolves the loose use of "functor": adopts dual interpretation,
+%%     defining the constellation map and pinning down a precise category
+%%     (Def 1.1) on which it is a functor; the categorical claim is
+%%     factual and minimal.
+%%   - new chi_w-vs.-edge-indicial paragraph (sec:intro-chi-w).
+%%   - new scope-of-analytic-lifting paragraph (sec:intro-analytic-scope).
+%%   - explicit new-vs.-classical statement in each major subsection.
+%%   - cleaned roadmap; no dataset-internal identifiers in the prose.
+%% ============================================================================
+
+\section{Introduction}\label{sec:intro}
+
+\subsection{The constellation map}\label{ssec:intro-functor}
+
+To a scalar linear operator $L$ with a single irregular singularity at
+$x = \infty$, the WKB ansatz on the dominant Newton edge attaches a
+finite multiset of complex numbers, the \emph{exponent constellation}
+\[
+   \Cl(L) \;\subset\; \mathbb{C}.
+\]
+The present paper is about the combinatorial geometry of the
+assignment
+\[
+   \Fclass \colon L \;\longmapsto\; \Cl(L),
+\]
+which we call the \emph{constellation map}. An earlier draft of this
+paper used the word ``functor'' for $\Fclass$ informally; this revision
+reserves that word for the precise categorical setting given in
+\Cref{def:F-functor} below and otherwise speaks of the
+\emph{constellation map}. In the body of the paper $\Fclass$ is treated
+as a map between sets of objects (scalar local models with one dominant
+Newton edge on the source side, finite multisets in $\mathbb{C}$ up to
+global rotation on the target). \Cref{def:F-functor} promotes this to
+a functor between two small categories whose morphisms are formal gauge
+equivalences preserving the designated edge (source) and rotation-
+compatible bijections of multisets (target); no statement in the paper
+depends on the morphism part of $\Fclass$, but the formulation pins
+down what we mean by ``the fibres of $\Fclass$''.
+
+\begin{definition}[The category $\mathfrak{L}$ and the constellation
+functor]\label{def:F-functor}
+Let $\mathfrak{L}$ be the category whose
+\begin{itemize}[leftmargin=2em]
+\item \emph{objects} are pairs $(L, \mathfrak{e})$, where $L$ is a
+scalar linear operator on $\mathbb{C}[x]$ in $\{\opD, \opS, \opT\}$
+with exactly one irregular singularity at $x = \infty$ and
+$\mathfrak{e}$ is a designated dominant edge of $\NL$ at infinity;
+\item \emph{morphisms} $(L, \mathfrak{e}) \to (L', \mathfrak{e}')$
+are formal gauge equivalences $\widehat{M}(L) \xrightarrow{\sim}
+\widehat{M}(L')$ over $\mathbb{C}((x^{-1}))$ that send
+$\mathfrak{e}$ to $\mathfrak{e}'$ under the induced action on Newton
+polygons.
+\end{itemize}
+Let $\mathfrak{C}$ be the category whose
+\begin{itemize}[leftmargin=2em]
+\item \emph{objects} are finite multisets $C \subset \mathbb{C}$
+taken up to the global rotation equivalence
+$C \sim e^{i\theta} C$ for $\theta \in \mathbb{R}/2\pi\mathbb{Z}$;
+\item \emph{morphisms} are multiset bijections compatible with the
+rotation action.
+\end{itemize}
+The assignment $(L, \mathfrak{e}) \mapsto \Cl(L)$, extended to morphisms
+by sending a formal gauge equivalence to the induced bijection of
+roots of $\chi$, defines a functor
+\[
+   \Fclass \colon \mathfrak{L} \;\longrightarrow\; \mathfrak{C}.
+\]
+\end{definition}
+
+\begin{remark}\label{rem:F-functoriality}
+Functoriality is immediate from the construction of $\chi$ from the
+leading-coefficient data along $\mathfrak{e}$: a formal gauge
+equivalence preserving $\mathfrak{e}$ acts on the $\LCinf$-data of
+$\mathfrak{e}$ by a cocycle that preserves $\chi$ up to an overall
+rescaling of $c$, and hence preserves the multiset of roots of $\chi$
+up to a global rotation. We will use ``$\Fclass$'' and ``the
+constellation map'' interchangeably in the remainder of the paper.
+Whenever only the underlying object map matters, the reader may
+forget \Cref{def:F-functor} without loss.
+\end{remark}
+
+\subsection{The structural law}\label{ssec:intro-law}
+
+The central observation, proved in \Cref{thm:main}, is the algebraic
+identity
+\[
+   \chi(c) \;=\; \chi_w(c^q),
+\]
+where $\chi$ is the WKB characteristic polynomial built from the
+$\LCinf$-data along the dominant edge and $\chi_w \in \mathbb{C}[w]$
+is the \emph{inner polynomial} of degree $r$. Solving $\chi = 0$
+amounts to solving $\chi_w$ in the variable $w = c^q$ and pulling
+back along $c \mapsto c^q$; the constellation decomposes canonically
+as a $\mu_q$-equivariant union of $r$ fibres over $\Roots(\chi_w)$.
+This factorisation is at once an obstruction (no multiset outside the
+image of $\Fclass$ admits it) and a recipe (every multiset in the
+image is so built). \Cref{sec:main} states the law as
+\Cref{thm:main} with two corollaries (ring decomposition; Vieta
+monodromy) and a remark on the degeneracy strata.
+
+\subsection{$\chi_w$ as the edge-indicial polynomial}
+\label{ssec:intro-chi-w}
+
+The polynomial $\chi_w$ is not new content. It is exactly the
+\emph{edge-indicial polynomial} of the dominant edge $\mathfrak{e}$
+in the variable $w = c^q$, the form that appears in the classical
+leading-balance analysis of irregular singularities (Wasow
+\cite{wasow}, Sibuya \cite{sibuya}, Sabbah
+\cite{sabbah-isomon}). Setting $w = c^q$, the equation $\chi_w(w) = 0$
+is the standard requirement that the WKB ansatz produce a
+non-trivial formal solution along $\mathfrak{e}$. The novelty of
+\Cref{thm:main} is therefore not the existence of $\chi_w$ but the
+clean identification
+\[
+   \chi(c) \;=\; \chi_w(c^q),
+\]
+together with the consequence that the $\mu_q$-equivariant fibre
+structure of $\Cl(L)$ becomes explicit, and the slope denominator $q$
+appears as a \emph{pullback index} rather than as a feature of the
+leading balance to be rediscovered case by case.
+
+\subsection{From a law to a classification}
+\label{ssec:intro-classification}
+
+The structural law turns the classification problem into a
+combinatorial one. Up to global rotation, a constellation is recovered
+from $(p, q, r)$ together with the modulus-with-multiplicity partition
+$\pi$ of the roots of $\chi_w$. A computational sweep, recorded in the
+companion dataset \cite{wkb_dataset_v1}, enumerates these classes for
+slopes $-p/q \in \{1/2, 1/3, 1/4, 2/3, 3/2\}$ and ranks $r \in
+\{1, 2, 3\}$ across three equation types: there are exactly $23$
+classes in the single-edge case. Once multi-edge polygons, nested
+ramification, and the prime-$q$ arithmetic stratification are recorded,
+the atlas refines to $39$ classes. These populate the open stratum
+and four named degenerate strata (equal modulus; resonant multiplicity;
+zero root; accidental symmetry); \Cref{sec:classes} catalogues them.
+
+The classification is extended in several directions:
+\begin{itemize}[leftmargin=*]
+\item beyond the single edge: per-edge factorisation along the slope
+      filtration (\Cref{thm:M1}, \Cref{sec:multiedge});
+\item beyond a single $\mu_q$-orbit: nested ramification with iterated
+      pullbacks (\Cref{thm:N1}, \Cref{sec:multiedge});
+\item beyond squarefree $\chi_w$: degeneracy strata and a prime-$q$
+      Kummer dichotomy (\Cref{thm:D2}, \Cref{sec:degeneracy});
+\item beyond scalar operators: block-diagonal systems and a
+      symmetric-power target (\Cref{thm:S1}, \Cref{sec:systems});
+\item beyond the discrete invariant: an analytic refinement attaching
+      anti-Stokes directions to the differences $\Dij = c_i - c_j$
+      (\Cref{thm:AT1,thm:AT3,thm:AT5,thm:AT7}, \Cref{sec:analytic}).
+\end{itemize}
+
+\subsection{Scope of the analytic refinement}
+\label{ssec:intro-analytic-scope}
+
+The analytic theorems of \Cref{sec:analytic} attach Stokes-side
+information to the constellation. The reader should bear in mind a
+clear division of labour:
+\begin{itemize}[leftmargin=2em]
+\item \emph{Classical content.} The Levelt--Turrittin slope
+decomposition of a formal connection on a ramified cover of index $q$;
+the existence of formal exponential factors $Q_i(t) = c_i t^p +
+(\text{lower})$; the principle that anti-Stokes rays are governed by
+the leading term of $Q_i - Q_j$; and the slope-graded structure of
+Stokes data for multi-edge connections are classical
+(Sibuya \cite{sibuya}, Wasow \cite{wasow}, Sabbah
+\cite{sabbah-polarizable}).
+\item \emph{Algebraic refinement.} What is new in the present paper
+is the explicit linear form for the anti-Stokes condition in
+\Cref{thm:AT1},
+\[
+   \arg \Dij \;+\; p\phi \;\equiv\; \tfrac{\pi}{2} \pmod \pi;
+\]
+the observation that nested factorisations of $\chi_w$ induce an
+additional $\mu_{q'}$-action on the discrete part of the wild data
+\emph{without} changing the ramification index $q$ (\Cref{thm:AT3});
+the consequent $\mu_q/\mu_{q'}$ symmetry bookkeeping; and the
+$p$-visibility statement \Cref{thm:AT7}, by which the slope numerator
+$p$---invisible to $\Cl(L)$---is visible to the cover-side ray pattern.
+\item \emph{Equivariance, not Stokes matrices.} \Cref{thm:AT3} asserts
+$\mu_{q'}$-equivariance of an irregular-type parametrisation; it is
+not a statement about wild character variety strata in the moduli-
+theoretic sense of Boalch \cite{boalch-stokes,boalch-wildhodge}.
+We are explicit about this distinction.
+\end{itemize}
+
+\subsection{What is and is not classified}\label{ssec:intro-scope}
+
+The object classified in this paper is the image of $\Fclass$ over
+the single-edge ($23$-class) and the extended single-edge / multi-edge
+/ nested-ramification / system / arithmetic strata ($39$-class). We
+do \emph{not} classify operators. The constellation is a coarsening of
+the irregular-type data of Levelt--Turrittin, and the kernel of this
+coarsening---operators with identical constellation but distinct
+Stokes structures---is the complementary problem solved (in
+appropriate categories) by wild character varieties (Boalch
+\cite{boalch-stokes,boalch-wildhodge}). \Cref{sec:related} positions
+the present work alongside neighbouring programmes: ADE
+classifications of singularities; Stokes-graph and spectral-network
+classifications; the formal classification of irregular connections
+(Levelt--Turrittin, Sabbah \cite{sabbah-isomon,sabbah-polarizable},
+Mochizuki \cite{mochizuki-asymptotic}); and wild character varieties.
+The constellation classification is orthogonal to each.
+
+\subsection{Roadmap}\label{ssec:intro-organisation}
+
+\Cref{sec:prelim} fixes notation, recalls Newton polygons and the WKB
+symbol, and includes a short notation table.
+\Cref{sec:main} proves the structural law (\Cref{thm:main}).
+\Cref{sec:multiedge} extends to multi-edge polygons via the slope-
+filtration per-edge factorisation (\Cref{thm:M1}) and to nested
+ramification (\Cref{thm:N1}).
+\Cref{sec:degeneracy} treats the four degeneracy strata and proves the
+prime-$q$ Kummer dichotomy (\Cref{thm:D2}), separating the algebraic
+statement (Kummer theory over $\mathbb{Q}(\zeta_q)$) from the
+empirical bounded-search corroboration.
+\Cref{sec:systems} treats systems (\Cref{thm:S1}).
+\Cref{sec:analytic} states and proves the four analytic-lifting
+theorems (\Cref{thm:AT1,thm:AT3,thm:AT5,thm:AT7}), with explicit
+hypotheses (OS1)--(OS5) collected in \Cref{ssec:OS}.
+\Cref{sec:classes} presents the $23$-class atlas, the $39$-class
+refinement, the taxonomy diagram (\Cref{fig:taxonomy}), and the
+constellation zoo (\Cref{fig:zoo}).
+\Cref{sec:related} positions the work alongside its neighbours,
+\Cref{sec:vision} closes with future directions, and
+\Cref{sec:reproducibility} contains a reproducibility note.
+
+\bigskip
+The reader interested only in the structural law may read
+\Cref{sec:main} immediately after \Cref{sec:prelim}; the analytic
+theorems of \Cref{sec:analytic} depend logically on
+\Cref{sec:main,sec:multiedge} but may be read in any internal order.

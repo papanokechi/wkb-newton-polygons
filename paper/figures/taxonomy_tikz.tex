@@ -1,0 +1,108 @@
+%% ============================================================================
+%% figures/taxonomy_tikz.tex
+%%
+%% Round-2 follow-up deliverable: real TikZ source for Figure 1, replacing the
+%% \fbox placeholder used in the v1 manuscript.
+%%
+%% Compiles standalone (with the standard "tikz" + "positioning" + "fit"
+%% libraries that are already loaded by paper.tex) and is inserted into the
+%% manuscript via \input{figures/taxonomy_tikz.tex} inside a figure environment.
+%%
+%% Structure mirrors the 23 -> 39 class structure documented in
+%% phase3_report.md and clusters.json:
+%%   * 23 single-edge classes, organised as a (slope) x (rank) atlas with
+%%     slopes -p/q in {1/2, 1/3, 1/4, 2/3, 3/2} and ranks r in {1, 2, 3}, plus
+%%     four named degenerate strata (equal-modulus, double root, zero root,
+%%     accidental symmetry);
+%%   * +16 refining strata from multi-edge polygons, nested ramification, and
+%%     prime-q arithmetic dichotomy (D2);
+%%   * Total: 39.
+%% ============================================================================
+
+%% The figure environment itself stays in paper.tex; this file is the
+%% tikzpicture body, intended to be \input{} inside a figure.
+
+\begin{tikzpicture}[
+   x = 1.0cm, y = 1.0cm,
+   font = \scriptsize,
+   atlas/.style = {draw, rounded corners=2pt, minimum width=1.55cm,
+                   minimum height=0.55cm, align=center, fill=white,
+                   inner sep=1.5pt},
+   deg/.style   = {draw, rounded corners=2pt, minimum width=1.85cm,
+                   minimum height=0.55cm, align=center, fill=gray!8,
+                   inner sep=1.5pt},
+   ref/.style   = {draw, dashed, rounded corners=2pt, minimum width=2.05cm,
+                   minimum height=0.55cm, align=center, fill=gray!4,
+                   inner sep=1.5pt},
+   grp/.style   = {draw, rounded corners=4pt, inner sep=6pt,
+                   fill=gray!2, very thin},
+   conn/.style  = {-{Latex[length=2.0mm,width=1.4mm]}, very thin, gray}
+]
+
+%% ----- Header labels for the slope columns -----
+\node[font=\scriptsize\bfseries] at (0,  4.7) {$-1/2$};
+\node[font=\scriptsize\bfseries] at (2,  4.7) {$-1/3$};
+\node[font=\scriptsize\bfseries] at (4,  4.7) {$-1/4$};
+\node[font=\scriptsize\bfseries] at (6,  4.7) {$-2/3$};
+\node[font=\scriptsize\bfseries] at (8,  4.7) {$-3/2$};
+
+%% ----- Row labels for rank -----
+\node[font=\scriptsize\bfseries] at (-1.4, 3.6) {$r=1$};
+\node[font=\scriptsize\bfseries] at (-1.4, 2.6) {$r=2$};
+\node[font=\scriptsize\bfseries] at (-1.4, 1.6) {$r=3$};
+
+%% ----- Row r = 1 (5 classes, one per slope) -----
+\node[atlas] (a11) at (0, 3.6) {$(1/2,1)$};
+\node[atlas] (a12) at (2, 3.6) {$(1/3,1)$};
+\node[atlas] (a13) at (4, 3.6) {$(1/4,1)$};
+\node[atlas] (a14) at (6, 3.6) {$(2/3,1)$};
+\node[atlas] (a15) at (8, 3.6) {$(3/2,1)$};
+
+%% ----- Row r = 2 (5 classes) -----
+\node[atlas] (a21) at (0, 2.6) {$(1/2,2)$};
+\node[atlas] (a22) at (2, 2.6) {$(1/3,2)$};
+\node[atlas] (a23) at (4, 2.6) {$(1/4,2)$};
+\node[atlas] (a24) at (6, 2.6) {$(2/3,2)$};
+\node[atlas] (a25) at (8, 2.6) {$(3/2,2)$};
+
+%% ----- Row r = 3 (5 classes) -----
+\node[atlas] (a31) at (0, 1.6) {$(1/2,3)$};
+\node[atlas] (a32) at (2, 1.6) {$(1/3,3)$};
+\node[atlas] (a33) at (4, 1.6) {$(1/4,3)$};
+\node[atlas] (a34) at (6, 1.6) {$(2/3,3)$};
+\node[atlas] (a35) at (8, 1.6) {$(3/2,3)$};
+
+%% ----- Four named degeneracy strata (the +4 to reach 19+4 = 23) -----
+\node[deg] (d1) at (1.0, 0.2) {equal-mod};
+\node[deg] (d2) at (3.2, 0.2) {double root};
+\node[deg] (d3) at (5.4, 0.2) {zero root};
+\node[deg] (d4) at (7.6, 0.2) {accident.\ sym.};
+
+%% ----- Box around the 23-class atlas -----
+\node[grp, fit = (a11) (a35) (d1) (d4),
+      label={[font=\scriptsize\bfseries\itshape, anchor=south]
+              above:23 single-edge classes}] (G23) {};
+
+%% ----- Refining strata (the +16 to reach 39) -----
+\node[ref] (r1) at (1.5, -1.7) {multi-edge\\(M1: $\prod \chi^{(\alpha)}$)};
+\node[ref] (r2) at (4.5, -1.7) {nested ramif.\\(N1: $\mu_{q'}$-pullback)};
+\node[ref] (r3) at (7.5, -1.7) {prime-$q$ arith.\\(D2: Kummer dichotomy)};
+
+%% ----- Box around the refinement layer -----
+\node[grp, fit = (r1) (r3),
+      label={[font=\scriptsize\bfseries\itshape, anchor=north]
+             below:$+16$ refining strata $\Rightarrow$ 39 classes total}]
+   (G39) {};
+
+%% ----- Connector arrows: atlas -> refinement layer -----
+\draw[conn] (a31) -- (r1.north west);
+\draw[conn] (a23) -- (r2.north);
+\draw[conn] (a35) -- (r3.north east);
+
+%% ----- Functor F label on the side -----
+\node[font=\scriptsize, align=left, anchor=west] at (10.0, 2.4)
+   {$\,\mathbf{F} : L \,\mapsto\, \Cl(L)$\\[1pt]
+    $\quad$ refinement\\$\quad$ $\downarrow$\\
+    $\,\mathbf{F}^{\mathrm{ref}}$};
+
+\end{tikzpicture}

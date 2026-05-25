@@ -1,0 +1,187 @@
+================================================================================
+Release notes
+"The WKB Geometry of Newton Polygons: A Classification Theory"
+Version v1.0  —  initial public release
+================================================================================
+
+Release date: 2026-05-26
+DOI:          10.5281/zenodo.XXXXXXX  (assigned by Zenodo at publication)
+Authors:      Papanokechi (ORCID 0009-0000-6192-8273; Independent Researcher)
+
+================================================================================
+1.  Summary of what is INCLUDED
+================================================================================
+
+Computational atlas
+-------------------
+* 48 single-edge operators (slopes 1/2, 1/3, 1/4, 2/3, 3/2; valuations
+  simple / double / mixed; ranks 1, 2, 3; ODE / difference / q-difference).
+* 48 Phase-III operators extending the zoo to:
+    - multi-edge Newton polygons (MULTI_*, MULTI3_*),
+    - block-diagonal systems (SYS2_*, SYS3_*),
+    - resonant slopes p/q with q up to 7 (HIGHQ_*),
+    - nested ramification (NEST_*),
+    - controlled Δ_ij degeneracies (CTRL_*, MIX_*),
+    - p-visibility families (PINV_*).
+* Newton polygons (vertices, slopes, valuation patterns) for every operator.
+* Characteristic polynomials χ(c) and inner polynomials χ_w(w).
+* Computed exponent constellations C(L) with ring decomposition, radii,
+  angular spacing, and global phase.
+
+Discrete classification
+-----------------------
+* The 23-class single-edge taxonomy (constellations.png + clusters.json).
+* The 39-cluster multi-axis universality classification (phase3_clusters.json).
+* Δ-modulus partitions, Δ-argument partitions, ω-resonance flags, Galois orbits,
+  nested ramification depth, multi-edge interference patterns.
+
+Analytic lifting (Phase IV)
+---------------------------
+* Levelt–Turrittin / Stokes-matrix / wild-character-variety framework synthesis.
+* Mapping table from discrete invariants to analytic invariants.
+* Anti-Stokes skeleton (rays, multiplicities) for 20 sampled operators.
+* Cover-to-base projection data and Δ-argument collision strata.
+* Consistency report: which discrete invariants survive analytically.
+
+Formal mathematical content
+---------------------------
+* Ten Phase-III conjectures: M1, N1, D1, D2, O1, S1, P1, F1, G1
+  (note: M2 was absorbed into M1 in the corrected Phase-V form).
+* Eight Phase-IV theorem candidates AT1–AT8.
+* Eight Phase-V theorem–proof pairs (paper-ready, LaTeX-friendly Markdown):
+    M1   — per-edge factorisation (multi-edge generalisation),
+    N1   — nested ramification (iterated μ_q-pullback),
+    D2   — inner-polynomial Z-resonance dichotomy (prime q),
+    S1   — system pullback (block-diagonal direct sum),
+    AT1  — anti-Stokes ⇄ arg(Δ_ij) on the ramified cover,
+    AT3  — nested ramification ⇒ μ_q'-symmetry on the wild data
+           (REFRAMED relative to the Phase-IV draft: minimal cover does NOT
+           grow from q to q·q'; nested factorisation imposes a symmetry, not
+           an analytic ramification increase).
+    AT5  — multi-edge slope filtration on the anti-Stokes skeleton,
+    AT7  — p-visibility: analytic anti-Stokes data detect p.
+* 11-stratum counterexample knowledge base (CE-disc, CE-equalmod,
+  CE-zeroroot, CE-omega, CE-multiedge-equalradius, CE-multiedge-zerosharing,
+  CE-coupled-system, CE-Zres-largecoef, CE-Zres-compositeq,
+  CE-nested-cancellation, CE-p-invisible-discrete) with theorem-to-strata
+  mapping.
+* Section-by-section integration plan for inserting the eight theorems into
+  the paper draft.
+
+Reports and figures
+-------------------
+* Phase III and Phase IV narrative reports.
+* The 23-panel constellation-zoo figure (constellations.png).
+* Working draft of the paper "The WKB Geometry of Newton Polygons: A
+  Classification Theory" with abstract, outline, Main Theorem statement,
+  taxonomy spec, related work, vision paragraph.
+
+Software
+--------
+* Fleet pipelines fleet.py (Phase I), fleet3.py (Phase III), fleet4.py
+  (Phase IV), fleet5.py (Phase V).
+* Visualisation script plot_constellations.py.
+* Fleet manifests (YAML) for each phase.
+* Pinned dependencies (requirements.txt).
+
+
+================================================================================
+2.  Summary of what is NOT YET INCLUDED
+================================================================================
+
+* Explicit numerical Stokes matrices for the sampled operators.
+  Phase IV records anti-Stokes RAY POSITIONS (the skeleton) and verifies the
+  combinatorial cover-vs-base predictions; the next layer — explicit
+  Stokes-constant values and their gluing — is deferred to v3.0.
+* Monodromy representations, wild character variety coordinates as functions
+  on a moduli space, and irregular Riemann–Hilbert data.
+* Camera-ready LaTeX sources for the paper. v1.0 ships the draft as a single
+  Markdown file in /paper-draft; v2.0 will provide the structured LaTeX
+  build.
+* Proof of the four Phase-IV theorems NOT promoted in Phase V — AT2 (Stokes
+  multiplier degeneracy on the discriminant locus), AT4 (Galois-orbit
+  collapse under analytic equivalence), AT6 (resonance-driven inflation of
+  the discrete part of MW), and AT8 (system-level analytic factorisation).
+  These remain as theorem candidates in phase4_theorems.json.
+* Operators with multiple irregular singularities. The entire framework is
+  set at a single irregular singularity at infinity; the multi-singular-point
+  problem (global isomonodromy) is out of scope for v1.0–v3.0 of this
+  dataset.
+* q-difference Stokes analogues. The framework is sketched in §8 of the
+  paper draft but the analytic lifting is restricted to the ODE setting for
+  AT1, AT3, AT5, AT7. Birkhoff–Trjitzinsky (difference) and Ramis-θ-Stokes
+  (q-difference) lifts are planned for a separate companion release.
+
+
+================================================================================
+3.  Known limitations
+================================================================================
+
+(a) **Open-stratum hypotheses (OS1)–(OS5)** are required for the analytic
+    theorems AT1, AT3, AT5, AT7. On the complement (degenerate strata), the
+    counterexamples in counterexamples.json document the failure modes; the
+    correct statements on these strata are open.
+
+(b) **D2 is stated for prime q.** The composite-q case requires the sub-cyclotomic
+    sub-lattice structure of Z[ζ_q] and is not fully treated; a sketched
+    extension is included as a remark in the proof.
+
+(c) **AT3 reframing.** The Phase-IV draft of AT3 incorrectly stated that
+    nested factorisation increases the minimal Levelt–Turrittin cover from q
+    to q·q'. The Phase-V version corrects this: the minimal cover is still q,
+    and nested factorisation imposes a μ_q' symmetry on the wild data (NOT
+    an analytic ramification refinement). The Phase-IV ray-count formula
+    2 p q' per pair is replaced by 2p per pair, in agreement with AT1. The
+    correction note is preserved in proofs.md for transparency.
+
+(d) **Phase-III conjecture P1** holds at the level of the constellation but
+    fails analytically: p is visible in the cover-ray pattern (Theorem AT7).
+    This is documented as a deliberate refinement, not a contradiction; see
+    AT7 §Part (4).
+
+(e) **System pullback S1** is stated for block-diagonal systems only.
+    Genuinely coupled systems with non-diagonalisable leading symbol lie
+    outside the scope of v1.0; partial coverage for systems with
+    diagonalisable, distinct-eigenvalue leading symbol is sketched in the
+    proof remark.
+
+(f) **Counterexample knowledge base.** The 11 strata in
+    counterexamples.json are not claimed to be exhaustive; they are the
+    minimal set required to harden the eight Phase-V theorems against the
+    operators present in the atlas. Additional strata may appear once the
+    multi-singular-point or genuinely-coupled-system cases are studied.
+
+(g) **Reproducibility caveat.** All Phase-I–V computations use exact
+    symbolic / rational arithmetic and are bytewise reproducible. The
+    rubber-duck critique passes used during Phase V are not encoded in the
+    pipeline; the proofs in proofs.md reflect the post-critique state.
+
+
+================================================================================
+4.  Future planned versions
+================================================================================
+
+v2.0  (target: ~6 months after v1.0)
+------------------------------------
+* Camera-ready paper sources (LaTeX): main paper.tex, bibliography,
+  rendered figures, supplementary appendices.
+* Slope-filtration diagram for Theorem AT5 (rendered as figure).
+* p-visibility panels for AT7 (q = 5, p ∈ {1, 2, 3, 4}).
+* Nested-ramification symmetry diagram for AT3.
+* Referee-revision history (diff against v1.0 paper_draft.md).
+
+v3.0  (target: ~12 months after v1.0)
+-------------------------------------
+* Extended analytic layer:
+    – explicit Stokes constants for the 20 Phase-IV sampled operators,
+    – wild character variety coordinates as moduli-space functions,
+    – isomonodromic deformation slices,
+    – proofs of AT2, AT4, AT6, AT8.
+* Difference and q-difference analytic lifts (Birkhoff–Trjitzinsky and
+  Ramis-θ-Stokes versions of AT1, AT3, AT5, AT7).
+* Composite-q version of Theorem D2.
+* Multi-singular-point preview (global isomonodromy).
+
+================================================================================
+End of release notes for v1.0.
+================================================================================

@@ -1,0 +1,133 @@
+================================================================================
+How to cite this dataset
+"The WKB Geometry of Newton Polygons: A Classification Theory"  (v1.0)
+================================================================================
+
+Please cite BOTH the dataset (this Zenodo record) AND the companion paper
+when using these materials.
+
+--------------------------------------------------------------------------------
+1. BibTeX
+--------------------------------------------------------------------------------
+
+% --- The Zenodo dataset (this release) ---
+@dataset{papanokechi_2026_wkb_newton_polygons_v1,
+  author       = {{Papanokechi}},
+  title        = {The {WKB} Geometry of {N}ewton Polygons:
+                  A Classification Theory ---
+                  computational atlas, conjectures, and proof skeletons},
+  year         = {2026},
+  month        = may,
+  publisher    = {Zenodo},
+  version      = {v1.0},
+  doi          = {10.5281/zenodo.XXXXXXX},
+  url          = {https://doi.org/10.5281/zenodo.XXXXXXX},
+  note         = {Dataset; companion to the working paper of the same title.
+                  ORCID: 0009-0000-6192-8273.}
+}
+
+% --- The companion paper (preprint) ---
+@unpublished{papanokechi_2026_wkb_newton_polygons_paper,
+  author       = {{Papanokechi}},
+  title        = {The {WKB} Geometry of {N}ewton Polygons:
+                  A Classification Theory},
+  year         = {2026},
+  note         = {Working paper. Companion dataset:
+                  \href{https://doi.org/10.5281/zenodo.XXXXXXX}{10.5281/zenodo.XXXXXXX}.
+                  ORCID: 0009-0000-6192-8273.},
+  eprint       = {XXXX.XXXXX},
+  archiveprefix = {arXiv},
+  primaryclass  = {math-ph}
+}
+
+% --- Combined biblatex \cite{...,...} block ---
+% \cite{papanokechi_2026_wkb_newton_polygons_paper,
+%       papanokechi_2026_wkb_newton_polygons_v1}
+
+
+--------------------------------------------------------------------------------
+2. Plain text
+--------------------------------------------------------------------------------
+
+Dataset:
+  Papanokechi. (2026). "The WKB Geometry of Newton Polygons:
+  A Classification Theory — computational atlas, conjectures, and proof
+  skeletons (v1.0)" [Data set]. Zenodo.
+  https://doi.org/10.5281/zenodo.XXXXXXX
+
+Paper:
+  Papanokechi. (2026). "The WKB Geometry of Newton Polygons:
+  A Classification Theory." arXiv preprint arXiv:XXXX.XXXXX.
+
+
+--------------------------------------------------------------------------------
+3. Citation File Format (CITATION.cff)
+--------------------------------------------------------------------------------
+
+# Place this file at the top level of the repository as `CITATION.cff`.
+
+cff-version: 1.2.0
+title: >-
+  The WKB Geometry of Newton Polygons:
+  A Classification Theory — computational atlas, conjectures, and proof
+  skeletons
+message: >-
+  If you use this dataset, please cite it together with the companion paper
+  (see preferred-citation block below).
+type: dataset
+version: v1.0
+date-released: 2026-05-26
+doi: 10.5281/zenodo.XXXXXXX
+license:
+  - MIT          # code (/code, /fleets)
+  - CC-BY-4.0    # text, data, figures (/data, /reports, /theorems,
+                 # /paper-draft, /figures)
+keywords:
+  - WKB analysis
+  - Newton polygon
+  - irregular singularity
+  - formal classification
+  - Stokes phenomenon
+  - anti-Stokes directions
+  - Levelt–Turrittin theorem
+  - wild character variety
+  - exponent constellation
+  - mu_q-pullback
+  - slope filtration
+  - classification theory
+authors:
+  - name:         Papanokechi
+    affiliation:  Independent Researcher
+    orcid:        https://orcid.org/0009-0000-6192-8273
+preferred-citation:
+  type: unpublished
+  title: "The WKB Geometry of Newton Polygons: A Classification Theory"
+  authors:
+    - name:         Papanokechi
+      affiliation:  Independent Researcher
+      orcid:        https://orcid.org/0009-0000-6192-8273
+  year: 2026
+  notes: "arXiv:XXXX.XXXXX [math-ph]"
+
+
+--------------------------------------------------------------------------------
+4. Placeholder reminders before publishing
+--------------------------------------------------------------------------------
+
+Before submitting to Zenodo, replace:
+
+  * 10.5281/zenodo.XXXXXXX     → Zenodo will assign this DOI on publication.
+  * XXXX.XXXXX                 → arXiv identifier of the companion preprint.
+
+Author identity (already populated):
+  * Name:        Papanokechi (single-name / mononym; per Zenodo record).
+  * ORCID:       0009-0000-6192-8273
+  * Affiliation: Independent Researcher
+  * Code/data:   https://github.com/papanokechi
+
+For minor version updates (e.g. v1.0 → v1.1), use Zenodo's "New version"
+workflow so the dataset DOI is updated while the concept DOI remains stable.
+
+================================================================================
+End of citation block.
+================================================================================

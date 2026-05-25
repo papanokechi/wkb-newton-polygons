@@ -1,0 +1,179 @@
+================================================================================
+Release notes
+"The WKB Geometry of Newton Polygons: A Functorial Classification Theory"
+Version v2.0  —  camera-ready public release
+================================================================================
+
+Release date: 2026-05-26
+DOI:          10.5281/zenodo.XXXXXXX  (assigned by Zenodo at publication)
+Supersedes:   v1.0  (10.5281/zenodo.20355904)
+Authors:      Papanokechi (ORCID 0009-0000-6192-8273; Independent Researcher)
+
+================================================================================
+1.  Summary of v2.0
+================================================================================
+
+v2.0 is the *camera-ready public release* of the project. It promotes
+v1.0 (a dataset + proof-skeleton snapshot) to a complete, polished,
+refereed manuscript with a fully-rendered taxonomy figure and full
+in-manuscript proofs.
+
+Headline numbers:
+
+* Manuscript: 26 pages, 897,105 bytes PDF.
+* Dataset: 19 JSON artifacts (~2.6 MB total) covering 96 operators.
+* Atlas: 23 single-edge classes refining to 39 classes under the
+  µ_q / µ_q' symmetry layer.
+* Eight in-manuscript theorems with full proofs: M1, N1, D2, S1, AT1,
+  AT3, AT5, AT7.
+* All cross-references resolve; 0 LaTeX errors and 0 undefined
+  references on a three-pass compile.
+
+================================================================================
+2.  Summary of what is INCLUDED (and new since v1.0)
+================================================================================
+
+Camera-ready manuscript
+-----------------------
+* Final paper.tex (= manuscript.tex) at 99,309 bytes.
+* Compiled paper.pdf at 897,105 bytes (26 pages).
+* references.bib with 24 entries (one new in v2.0: lang-algebra).
+* Pre-built paper.bbl (no bibtex run needed for re-compile).
+
+Taxonomy figure (Figure 1)
+--------------------------
+* Real TikZ source (figures/taxonomy_tikz.tex, 4,792 bytes), replacing
+  the v1.0 \fbox placeholder.
+* Depicts the 23-class single-edge atlas refining to 39 classes plus
+  the degeneracy island.
+
+Constellation zoo (Figure 2)
+----------------------------
+* figures/constellations.png (141,890 bytes), unchanged from v1.0.
+
+In-manuscript theorems with full proofs (NEW in v2.0)
+----------------------------------------------------
+* Theorem 4.1 (M1)   — multi-edge factorisation, with Lemma
+  chi-multiplicative (widened in Round 2 to cover multi-slope
+  adjunction).
+* Theorem 4.2 (N1)   — nested ramification ⇒ iterated pullback.
+* Theorem 5.1 (D2)   — Kummer dichotomy (Step 2 of the proof
+  corrected in Round 2: clean u = a/b lowest-terms derivation).
+* Theorem 6.1 (S1)   — system pullback via Sym^n / determinant
+  polygon.
+* Theorem 7.1 (AT1)  — anti-Stokes ↔ arg Δ_ij on the t-cover.
+* Theorem 7.2 (AT3)  — nested ramification ⇒ iterated
+  Levelt–Turrittin cover.
+* Theorem 7.3 (AT5)  — multi-edge ⇒ slope filtration on the Stokes
+  structure.
+* Theorem 7.4 (AT7)  — p-visibility: analytic ray positions depend
+  on p.
+
+(v1.0 contained these as text-only skeletons in reports/proofs.md.)
+
+Round-1 and Round-2 refereed revisions (NEW)
+--------------------------------------------
+* Round 1: abstract rewrite (calibrated novelty), introduction
+  rewrite (functoriality made precise), in-manuscript proofs,
+  notation table, taxonomy figure rendered, dataset identifiers
+  removed from prose.
+* Round 2: Lemma chi-multiplicative widened; Theorem 5.1 Step 2
+  arithmetic fixed; abstract trimmed to 186 non-math words;
+  Figure 1 finalised; (OS3) sharpened and cross-referenced in
+  Theorem 7.1 Step 4.
+
+Submission bundles
+------------------
+* arxiv_bundle/ — arXiv-ready (byte-identical paper.tex + figures + bbl).
+* journal_bundle/ — journal-ready with class-file placeholder.
+
+Computational and AI disclosure (§11)
+-------------------------------------
+* Transparent disclosure of the role of fleet pipelines and AI
+  assistance, with the explicit statement that all mathematical
+  content was reviewed and finalised by the human author.
+
+Dataset (unchanged from v1.0)
+-----------------------------
+* 19 JSON artifacts under data/ (~2.6 MB), covering operators,
+  Newton polygons, χ / χ_w, constellations, clusters,
+  counterexamples, and the analytic-lifting data.
+* Phase reports under reports/.
+* Fleet pipelines under fleets/.
+
+================================================================================
+3.  Summary of what is NOT included
+================================================================================
+
+* Stokes constants: only directions and Galois groupoids are computed
+  in this release. Numerical Stokes constants are planned for v3.0.
+* Wild character varieties: only stated as a target, not proved.
+* Operators with more than one irregular singularity: out of scope for
+  this release.
+* Numerical comparison against existing WKB packages (Mathematica
+  WKBQUAD, sympy WKB, etc.) — limited spot-checks have been done but
+  are not part of the release.
+
+================================================================================
+4.  Known limitations
+================================================================================
+
+* The 39-class refinement is sharp under generic hypotheses; on
+  measure-zero strata (e.g. equal-modulus locus, zero-root locus),
+  finer subdivisions may exist that are not exhibited in this
+  release.
+* Theorem 7.1 (AT1) and its three companions (AT3, AT5, AT7) are
+  stated for ODE operators; the difference and q-difference
+  analogues are conjectural (see §7 remarks).
+* The p-visibility result (AT7) is established under (OS3) — see §7.1
+  for the precise genericity hypothesis.
+* Compile environment: tested on MiKTeX 25.12 / pdfTeX 4.23 and arXiv
+  TeX Live 2024. Older TeX Live versions (≤ 2020) may not support all
+  TikZ libraries used in the taxonomy figure.
+
+================================================================================
+5.  Future planned versions
+================================================================================
+
+v3.0  (extended analytic layer)
+   * Numerical Stokes constants for a representative subset.
+   * Explicit ring decomposition of wild character varieties.
+   * Extension of (AT1, AT3, AT5, AT7) to the difference and
+     q-difference settings.
+
+v4.0  (multiple irregular singularities)
+   * Atlas over operators on P^1 with several irregular punctures.
+   * Inter-puncture Stokes-data compatibility constraints.
+
+================================================================================
+6.  Migration from v1.0
+================================================================================
+
+Users of v1.0 can switch to v2.0 with no API changes:
+
+* All JSON files in data/ retain their schemas (the few keys added in
+  Phase IV are additive).
+* fleets/fleet*.py are bit-identical to v1.0 (only documentation in
+  fleets/README.md is new).
+* The proofs in reports/proofs.md are unchanged in content; the
+  manuscript versions are now the canonical typeset form.
+
+Users of v1.0 who cited 10.5281/zenodo.20355904 should consider
+re-citing 10.5281/zenodo.XXXXXXX (v2.0) which contains the published
+paper.
+
+================================================================================
+7.  Acknowledgements
+================================================================================
+
+Computational work used Python 3.10+, sympy, numpy, mpmath. AI
+assistance (conjecture selection, proof-skeleton drafting,
+counterexample guarding, refinement passes, manuscript assembly) was
+provided in accordance with the disclosure in §11 of the manuscript.
+
+================================================================================
+8.  Contact
+================================================================================
+
+Open an issue on https://github.com/papanokechi/wkb-newton-polygons or
+contact via the Zenodo record at https://doi.org/10.5281/zenodo.XXXXXXX.

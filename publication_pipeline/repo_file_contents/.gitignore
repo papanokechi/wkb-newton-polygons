@@ -1,0 +1,138 @@
+# ============================================================================
+# .gitignore for wkb-newton-polygons
+# Python + LaTeX
+# ============================================================================
+
+# ---------------------------------------------------------------------------- 
+# Python
+# ----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# mypy / ruff / black
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+
+# ---------------------------------------------------------------------------- 
+# LaTeX
+# ----------------------------------------------------------------------------
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+# But DO ship the pre-built paper.bbl / manuscript.bbl in our committed
+# submission bundles (arXiv requires the .bbl to be present in the
+# uploaded source bundle).
+!paper/paper.bbl
+!paper/manuscript.bbl
+!arxiv_bundle/paper.bbl
+!journal_bundle/paper.bbl
+!publication_pipeline/zenodo_v2_package/paper.bbl
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
+*.glg
+*.ist
+*.nav
+*.snm
+*.vrb
+*.acn
+*.acr
+*.alg
+*.bak
+*.bbl.synctex.gz
+*.figlist
+*.makefile
+*.figlist
+*.run.xml
+
+# TikZ external builds
+*-tikzDictionary
+*.dpth
+*.md5
+
+# We DO commit the final compiled PDFs (paper.pdf), so don't ignore *.pdf
+# But ignore intermediate per-figure standalone PDFs / test artefacts.
+figures/test_standalone.pdf
+figures/*.aux
+figures/*.log
+
+# ---------------------------------------------------------------------------- 
+# Editor / OS noise
+# ----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-*
+
+# ---------------------------------------------------------------------------- 
+# Local scratch / session state
+# ----------------------------------------------------------------------------
+.copilot/
+session-state/
+scratch/
+TODO.local
+NOTES.local
+
+# Generated zip bundles
+*.zip
+publication_pipeline/zenodo_v2_package.zip
