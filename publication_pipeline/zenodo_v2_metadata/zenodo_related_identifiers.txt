@@ -1,0 +1,44 @@
+# Zenodo v2.0 related identifiers
+# "The WKB Geometry of Newton Polygons: A Functorial Classification Theory"
+
+# Each entry below maps to one row in Zenodo's "Related/alternate identifiers"
+# section. The schemes match Zenodo's controlled vocabulary
+# (doi, url, arxiv, ark, ...).
+
+# ---------------------------------------------------------------------------
+# 1. Supersedes the v1.0 dataset record
+# ---------------------------------------------------------------------------
+identifier:   10.5281/zenodo.20355904
+relation:     isNewVersionOf
+scheme:       doi
+resource_type: dataset
+description:  Previous Zenodo version of this dataset (v1.0).
+
+# ---------------------------------------------------------------------------
+# 2. Public GitHub mirror (source of truth for code + scripts)
+# ---------------------------------------------------------------------------
+identifier:   https://github.com/papanokechi/wkb-newton-polygons
+relation:     isSourceOf
+scheme:       url
+resource_type: software
+description:  Public GitHub repository mirroring this Zenodo release.
+
+# ---------------------------------------------------------------------------
+# 3. Tagged release on GitHub that matches this Zenodo record bit-for-bit
+# ---------------------------------------------------------------------------
+identifier:   https://github.com/papanokechi/wkb-newton-polygons/releases/tag/v2.0
+relation:     isIdenticalTo
+scheme:       url
+resource_type: software
+description:  Tagged GitHub release corresponding to this Zenodo v2.0 record.
+
+# ---------------------------------------------------------------------------
+# 4. Companion arXiv preprint (PLACEHOLDER — update after arXiv submission)
+# ---------------------------------------------------------------------------
+identifier:   arXiv:XXXX.XXXXX
+relation:     isSupplementTo
+scheme:       arxiv
+resource_type: publication-preprint
+description:  Companion arXiv preprint of the camera-ready manuscript.
+              Update both the identifier and the doi_propagation_commands.sh
+              script as soon as arXiv assigns the identifier.

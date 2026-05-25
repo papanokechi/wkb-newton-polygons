@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "title": "The WKB Geometry of Newton Polygons: A Functorial Classification Theory",
+    "upload_type": "publication",
+    "publication_type": "article",
+    "publication_date": "2026-05-26",
+    "version": "2.0",
+    "language": "eng",
+    "access_right": "open",
+    "license": "CC-BY-4.0",
+
+    "creators": [
+      {
+        "name": "Papanokechi",
+        "affiliation": "Independent Researcher",
+        "orcid": "0009-0000-6192-8273"
+      }
+    ],
+
+    "description": "<p>This release accompanies the camera-ready manuscript <em>The WKB Geometry of Newton Polygons: A Functorial Classification Theory</em> and supersedes the v1.0 dataset (<a href=\"https://doi.org/10.5281/zenodo.20355904\">10.5281/zenodo.20355904</a>) by promoting it to a complete, refereed publication.</p>\n<p>For a scalar local linear operator <em>L</em> (differential, difference, or <em>q</em>-difference) with one irregular singularity at <em>x = &infin;</em> whose Newton polygon has a unique dominant edge of slope <em>&minus;p/q</em> with <em>r&thinsp;+&thinsp;1</em> lattice points, the WKB ansatz on that edge produces a characteristic polynomial &chi; &isin; <b>C</b>[c]. Our central algebraic identity is &chi;(c) = &chi;<sub>w</sub>(c<sup>q</sup>), where &chi;<sub>w</sub> &isin; <b>C</b>[w] is the classical edge-indicial polynomial of degree <em>r</em>. The exponent constellation <em>C(L)</em> &sub; <b>C</b> is therefore a &mu;<sub>q</sub>-equivariant union of <em>r</em> fibres of <em>c &rarr; c<sup>q</sup></em> over Roots(&chi;<sub>w</sub>).</p>\n<p>This factorisation organises a finite stratified atlas: a computational sweep yields <b>23 single-edge classes</b> for &minus;p/q &isin; {1/2, 1/3, 1/4, 2/3, 3/2} and <em>r</em> &le; 3, refining to <b>39 classes</b> once multi-edge, nested-ramification, and prime-<em>q</em> arithmetic strata are tracked. We prove a per-edge factorisation along the slope filtration, an iterated &mu;<sub>q&prime;</sub>-pullback law for nested inner polynomials, a block-diagonal pullback for systems, and a prime-<em>q</em> Kummer dichotomy separating the algebraically independent stratum from the cyclotomic stratum.</p>\n<p>The analytic input attaching anti-Stokes directions is classical (Levelt&ndash;Turrittin, Sibuya, Wasow); on the <em>q</em>-fold cover the rays of a generic single-edge operator satisfy arg &Delta;<sub>ij</sub> + p&phi; &equiv; &pi;/2 (mod &pi;). One explicit consequence: the slope numerator <em>p</em>, invisible to <em>C(L)</em>, is visible to the cover-side ray pattern. The analytic statements (Theorems AT1, AT3, AT5, AT7) are &mu;<sub>q</sub>/&mu;<sub>q&prime;</sub>-equivariant repackagings of classical formal-classification theory.</p>\n<p><b>Release contents.</b> Camera-ready LaTeX manuscript (26 pp, 898 KB PDF, byte-identical compile across all bundles), the full Phase I&ndash;V computational atlas (19 JSON artifacts, ~2.6 MB), the arXiv-ready and journal-ready submission bundles, the eight in-manuscript theorem proofs (M1, N1, D2, S1, AT1, AT3, AT5, AT7), the agent-pipeline scripts (<code>fleet.py</code> &hellip; <code>fleet5.py</code>), the phase reports, and the Round-1 + Round-2 refereed revision packages.</p>\n<p><b>Repository.</b> A stable, versioned public GitHub mirror of this Zenodo release is at <a href=\"https://github.com/papanokechi/wkb-newton-polygons\">https://github.com/papanokechi/wkb-newton-polygons</a>; the manuscript points to it from the <em>Reproducibility</em> paragraph of the Computational and AI Disclosure section.</p>\n<p><b>Dual licensing.</b> All text, figures, and the JSON atlas are released under CC-BY-4.0; all code and fleet scripts are released under MIT. See <code>LICENSE-TEXT</code> and <code>LICENSE-CODE</code>.</p>",
+
+    "keywords": [
+      "WKB analysis",
+      "Newton polygon",
+      "irregular singularity",
+      "formal classification",
+      "Stokes phenomenon",
+      "anti-Stokes directions",
+      "Levelt-Turrittin theorem",
+      "exponent constellation",
+      "mu_q-pullback",
+      "slope filtration",
+      "Kummer dichotomy",
+      "p-visibility",
+      "functorial classification",
+      "classification theory",
+      "q-difference operator",
+      "difference operator",
+      "irregular ODE",
+      "constellation map",
+      "reproducible research"
+    ],
+
+    "subjects": [
+      { "term": "Singular perturbations, turning point theory, WKB methods", "identifier": "34E20", "scheme": "MSC2020" },
+      { "term": "Asymptotic, formal expansions in differential equations in the complex domain", "identifier": "34M30", "scheme": "MSC2020" },
+      { "term": "Linear difference equations", "identifier": "39A06", "scheme": "MSC2020" },
+      { "term": "q-difference equations", "identifier": "39A13", "scheme": "MSC2020" },
+      { "term": "Differential algebra", "identifier": "12H05", "scheme": "MSC2020" }
+    ],
+
+    "communities": [
+      { "identifier": "math-ph" },
+      { "identifier": "exact-wkb" },
+      { "identifier": "stokes-phenomena" },
+      { "identifier": "reproducible-research" }
+    ],
+
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.20355904",
+        "relation": "isNewVersionOf",
+        "scheme": "doi",
+        "resource_type": "dataset"
+      },
+      {
+        "identifier": "https://github.com/papanokechi/wkb-newton-polygons",
+        "relation": "isSourceOf",
+        "scheme": "url",
+        "resource_type": "software"
+      },
+      {
+        "identifier": "https://github.com/papanokechi/wkb-newton-polygons/releases/tag/v2.0",
+        "relation": "isIdenticalTo",
+        "scheme": "url",
+        "resource_type": "software"
+      },
+      {
+        "identifier": "arXiv:XXXX.XXXXX",
+        "relation": "isSupplementTo",
+        "scheme": "arxiv",
+        "resource_type": "publication-preprint"
+      }
+    ],
+
+    "notes": "v2.0 is the camera-ready public release. It supersedes v1.0 (10.5281/zenodo.20355904) with: (i) the full LaTeX manuscript (26 pp) and rendered taxonomy figure; (ii) eight in-manuscript theorem proofs (M1, N1, D2, S1, AT1, AT3, AT5, AT7); (iii) Round-1 revisions (calibrated novelty, precise functoriality on Op_1, Theorem 5.1 restated, notation table, dataset identifiers removed from prose, AI/computational disclosure in Section 11); (iv) Round-2 revisions (Lemma chi-multiplicative widened to multi-slope, Theorem 5.1 Step 2 arithmetic corrected, abstract trimmed to <=220 non-math words, (OS3) sharpened and cross-referenced in Theorem 7.1 Step 4); (v) GitHub repository URL inserted into the Reproducibility paragraph of the Computational and AI Disclosure. Dual-licensed: text and JSON atlas under CC-BY-4.0, code and fleet scripts under MIT."
+  }
+}

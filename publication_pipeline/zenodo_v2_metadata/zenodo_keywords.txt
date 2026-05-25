@@ -1,0 +1,23 @@
+# Clean keyword list for Zenodo v2.0 upload
+# One keyword per line; case-sensitive; Zenodo accepts free-form text.
+# 19 entries total.
+
+WKB analysis
+Newton polygon
+irregular singularity
+formal classification
+Stokes phenomenon
+anti-Stokes directions
+Levelt-Turrittin theorem
+exponent constellation
+mu_q-pullback
+slope filtration
+Kummer dichotomy
+p-visibility
+functorial classification
+classification theory
+q-difference operator
+difference operator
+irregular ODE
+constellation map
+reproducible research

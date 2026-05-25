@@ -1,0 +1,111 @@
+================================================================================
+Zenodo v2.0 file-upload checklist
+"The WKB Geometry of Newton Polygons: A Functorial Classification Theory"
+================================================================================
+
+Source bundle:
+    publication_pipeline/zenodo_v2_package/
+
+Reference zip (drop entirely into Zenodo as a single bundle, OR unpack and
+upload the individual files via the web UI / API):
+    publication_pipeline/wkb-newton-polygons-zenodo-v2.0.zip
+    (44 entries, 2,090,144 bytes, regenerated 2026-05-26 after the
+     GitHub-repo-URL insertion into the manuscript)
+
+Total files to be uploaded to Zenodo: 44
+Total payload (uncompressed): ~3.7 MB
+
+================================================================================
+TOP-LEVEL FILES (12)
+================================================================================
+[ ] manuscript.pdf                  898,187 B    CC-BY-4.0
+[ ] manuscript.tex                   99,553 B    CC-BY-4.0
+[ ] paper.pdf                       898,187 B    CC-BY-4.0  (alias of manuscript.pdf)
+[ ] paper.bbl                         5,533 B    CC-BY-4.0
+[ ] references.bib                    8,753 B    CC-BY-4.0
+[ ] CITATION.cff                      1,719 B    metadata
+[ ] citation_block.txt                4,757 B    metadata
+[ ] release_notes_v2.0.txt            8,137 B    documentation
+[ ] zenodo_metadata_v2.0.txt          6,264 B    metadata (mirror of this record)
+[ ] LICENSE-CODE                      1,210 B    MIT licence text
+[ ] LICENSE-TEXT                      1,407 B    CC-BY-4.0 licence text
+[ ] README.md                         7,195 B    documentation
+
+================================================================================
+figures/  (2 files)
+================================================================================
+[ ] figures/constellations.png      141,890 B    CC-BY-4.0
+[ ] figures/taxonomy_tikz.tex         4,792 B    CC-BY-4.0
+
+================================================================================
+data/  (19 JSON files, ~2.6 MB total)
+================================================================================
+[ ] data/chi.json                    17,896 B    CC-BY-4.0
+[ ] data/clusters.json               24,530 B    CC-BY-4.0
+[ ] data/constellations.json         78,954 B    CC-BY-4.0
+[ ] data/counterexamples.json         9,046 B    CC-BY-4.0
+[ ] data/newton.json                 55,364 B    CC-BY-4.0
+[ ] data/operators.json              28,565 B    CC-BY-4.0
+[ ] data/phase3_clusters.json        85,896 B    CC-BY-4.0
+[ ] data/phase3_conjectures.json     11,422 B    CC-BY-4.0
+[ ] data/phase3_gaps.json             4,564 B    CC-BY-4.0
+[ ] data/phase3_invariants.json     532,046 B    CC-BY-4.0
+[ ] data/phase3_operators.json       93,423 B    CC-BY-4.0
+[ ] data/phase3_summary.json          2,569 B    CC-BY-4.0
+[ ] data/phase4_consistency.json     11,958 B    CC-BY-4.0
+[ ] data/phase4_framework.json        3,631 B    CC-BY-4.0
+[ ] data/phase4_lift.json             7,782 B    CC-BY-4.0
+[ ] data/phase4_sample.json           2,230 B    CC-BY-4.0
+[ ] data/phase4_stokes.json       1,524,593 B    CC-BY-4.0
+[ ] data/phase4_theorems.json        16,208 B    CC-BY-4.0
+[ ] data/phase5_targets.json         25,169 B    CC-BY-4.0
+
+================================================================================
+reports/  (6 markdown files, ~178 KB total)
+================================================================================
+[ ] reports/conjectures.md           24,259 B    CC-BY-4.0
+[ ] reports/integration_map.md        4,979 B    CC-BY-4.0
+[ ] reports/paper_draft.md           23,897 B    CC-BY-4.0
+[ ] reports/phase3_report.md         32,120 B    CC-BY-4.0
+[ ] reports/phase4_report.md         42,539 B    CC-BY-4.0
+[ ] reports/proofs.md                50,617 B    CC-BY-4.0
+
+================================================================================
+code/  (1 Python file)
+================================================================================
+[ ] code/plot_constellations.py       2,405 B    MIT
+
+================================================================================
+fleets/  (4 Python files, ~233 KB total)
+================================================================================
+[ ] fleets/fleet.py                  43,384 B    MIT  (Phase I + II)
+[ ] fleets/fleet3.py                 69,822 B    MIT  (Phase III)
+[ ] fleets/fleet4.py                 58,252 B    MIT  (Phase IV)
+[ ] fleets/fleet5.py                 61,932 B    MIT  (Phase V)
+
+================================================================================
+UPLOAD WORKFLOW
+================================================================================
+Option A (recommended — single archive):
+  1. Drag wkb-newton-polygons-zenodo-v2.0.zip onto the Zenodo upload area.
+  2. Paste metadata from zenodo_metadata_ready.txt OR push it via
+     POST /api/deposit/depositions using zenodo_metadata_ready.json.
+  3. Publish.
+
+Option B (per-file upload):
+  1. Upload all 44 files listed above, preserving the directory layout
+     (Zenodo allows directory paths in filenames).
+  2. Paste metadata.
+  3. Publish.
+
+================================================================================
+PRE-FLIGHT CHECKS
+================================================================================
+[x] All 44 files present in publication_pipeline/zenodo_v2_package/
+[x] manuscript.pdf == paper.pdf (898,187 B; byte-identical alias)
+[x] manuscript.tex contains the public GitHub URL on line 2044
+[x] paper.bbl is 5,533 B, pre-built (no bibtex needed at reader side)
+[x] LICENSE-CODE (MIT) and LICENSE-TEXT (CC-BY-4.0) both present
+[x] CITATION.cff includes ORCID 0009-0000-6192-8273
+[x] zip regenerated 2026-05-26 with the URL-corrected manuscript
+[x] zip contains exactly 44 entries
