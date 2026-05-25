@@ -1,0 +1,48 @@
+{
+  "title": "The WKB Geometry of Newton Polygons: A Classification Theory",
+  "objects": {
+    "L": "scalar linear operator with one irregular singularity at infinity",
+    "D, S, T": "derivation, shift f(x)->f(x+1), q-shift f(x)->f(qx)",
+    "N(L)": "Newton polygon at infinity = upper convex hull of {(k, deg a_k)}",
+    "dominant edge": "edge of N(L) with the most-negative slope, written -p/q with gcd(p,q)=1",
+    "r": "rank multiplier; the dominant edge has r+1 lattice points",
+    "chi(c)": "WKB characteristic polynomial = sum over edge lattice points of LC_inf(a_k) c^k",
+    "chi_w(w)": "inner polynomial of degree r with chi(c) = chi_w(c^q)",
+    "C(L)": "WKB exponent constellation = Roots(chi)",
+    "mu_q": "group of q-th roots of unity; zeta_q = e^{2 pi i / q}",
+    "F": "functor L |-> C(L) up to coarse equivalence"
+  },
+  "main_theorem": "If the dominant Newton edge has slope -p/q in lowest terms and contains r+1 lattice points at (rq - jq, jp) for 0 <= j <= r, then chi(c) = chi_w(c^q) and C(L) is the mu_q-equivariant pullback bigsqcup_{w_i in Roots(chi_w)} { c : c^q = w_i }.",
+  "corollaries": [
+    "Generic ring decomposition: when the |w_i| are pairwise distinct and nonzero, C(L) is r concentric mu_q-orbits of size q.",
+    "Vieta monodromy: under beta = alpha_r -> e^{i theta} beta, the lift sum m_k Delta_k = theta (mod 2 pi)."
+  ],
+  "degeneracy_loci": [
+    "discriminant {disc chi_w = 0}: multiple roots in chi_w cause ring multiplicity > q",
+    "equal-modulus {|w_i| = |w_j|, i != j}: distinct mu_q-orbits merge into one radius with non-uniform angular distribution",
+    "zero-root {alpha_r = 0}: c = 0 enters C(L) with multiplicity q and the dominant edge jumps"
+  ],
+  "atlas": {
+    "operators_swept": 89,
+    "constellation_classes": 23,
+    "axes": [
+      "slope p/q in {1/2,1/3,1/4,2/3,3/2}",
+      "rank r in {1,2,3}",
+      "valuation in {simple, double, mixed, generic_complex}",
+      "equation type in {ODE, difference, q-difference}"
+    ],
+    "stress_classes": [
+      "equalmod",
+      "doubleroot",
+      "zeroroot",
+      "accidental_sym"
+    ]
+  },
+  "open_problems_stated": [
+    "Multi-edge Newton polygons and stratification by edge sequences.",
+    "Matrix / system operators and links to wild character varieties.",
+    "Sharp converse to the constellation classification.",
+    "What Stokes data (phases, lines) refine F to a complete invariant."
+  ],
+  "phase1_phase2_status": "complete; 23 classes are codified, Main Theorem proven, paper draft written."
+}

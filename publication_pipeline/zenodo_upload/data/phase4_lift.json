@@ -1,0 +1,86 @@
+[
+  {
+    "invariant": "Constellation C(L) (Phase-I)",
+    "discrete_form": "Multiset of roots of chi(c) = chi_w(c^q).",
+    "analytic_lift": "Multiset of leading coefficients {c_i} of irregular-type polynomials Q_i(t) = c_i t^p + lower. Determines the *top* component of the Levelt-Turrittin decomposition over Q_w / t^p Q_w.",
+    "lift_strength": "exact (discrete part of irregular type)",
+    "caveats": "The lower-order coefficients of Q_i(t) are NOT determined by chi(c); they require the full operator and are independent invariants."
+  },
+  {
+    "invariant": "Ring decomposition C(L) = bigsqcup_alpha R_alpha (mu_q-orbits)",
+    "discrete_form": "r concentric rings of size q at radii rho_alpha = |w_alpha|^{1/q}.",
+    "analytic_lift": "Ring R_alpha corresponds to the Levelt-Turrittin summand of rank q with irregular type Q_alpha(t) = rho_alpha * zeta * t^p over the q branches t -> zeta t, zeta in mu_q. Each ring is a *single* Galois-cyclic summand.",
+    "lift_strength": "exact",
+    "caveats": "Equal-modulus stratum (|w_alpha| = |w_beta|) causes ring fusion in MW(L)."
+  },
+  {
+    "invariant": "Delta_{ij} = c_i - c_j (Phase-III)",
+    "discrete_form": "Pairwise differences in the constellation.",
+    "analytic_lift": "Leading coefficient L_{ij} of Q_i(t) - Q_j(t). In the generic case Q_i - Q_j has degree p and L_{ij} = Delta_{ij}; in degenerate cases L_{ij} comes from a lower-degree term. Anti-Stokes directions are determined by (arg(L_{ij}), deg(Q_i - Q_j)).",
+    "lift_strength": "exact for the generic case; lower-degree corrections needed off the open stratum",
+    "caveats": "Multi-edge and accidental cancellations require tracking lower-order Q_i terms."
+  },
+  {
+    "invariant": "Delta-argument partition (P3 cluster axis)",
+    "discrete_form": "Multiset of arguments {arg(Delta_{ij}) mod 2 pi}.",
+    "analytic_lift": "Anti-Stokes ray positions on the cover t-plane: phi_{ij,k} = (pi/(2p)) - (1/p) arg(Delta_{ij}) + (k pi)/p, k = 0,1,...,2p-1. Projects to 2p / gcd(2p, q) distinct rays in the base x-plane.",
+    "lift_strength": "exact correspondence (generic)",
+    "caveats": "Multiplicities depend on gcd(2p, q); base-plane projection identifies rays."
+  },
+  {
+    "invariant": "Delta-modulus partition",
+    "discrete_form": "Multiset of |Delta_{ij}|.",
+    "analytic_lift": "Dominance separation strength: larger |Delta_{ij}| means faster dominance switching across the corresponding anti-Stokes ray. Does NOT determine Stokes multiplier magnitudes (those are global analytic invariants requiring summation theory).",
+    "lift_strength": "qualitative (dominance scale, not Stokes constant)",
+    "caveats": "Stokes constants depend on global analytic data, not just |Delta_{ij}|."
+  },
+  {
+    "invariant": "omega-resonance (P3)",
+    "discrete_form": "Smallest m such that all arg(c_i)/arg(c_j) differences lie in 2 pi Z/m; flagged when m > q.",
+    "analytic_lift": "Coincidence pattern of anti-Stokes directions. When m > q the anti-Stokes rays group into clusters of multiplicity m/q, signalling *Stokes group enhancement* (the unipotent Stokes group at that direction has higher dimension than the generic q-direction Stokes group).",
+    "lift_strength": "qualitative (cluster pattern); quantitative content requires checking lower Q_i terms",
+    "caveats": "True 'enhancement' requires also that lower Q_i terms align; we only check leading."
+  },
+  {
+    "invariant": "Z-resonance, cross-ring nontrivial (P3 D2)",
+    "discrete_form": "Integer Z-linear relations sum n_k c_k = 0 not derivable from per-ring cyclotomic relations.",
+    "analytic_lift": "Algebraic relations among the leading irregular-type coefficients. These imply algebraic constraints on the *moduli* of the wild character variety: the locus of leading-coefficient configurations compatible with the inner polynomial chi_w lies on a chi_w-stratum in the discrete part of MW(L).",
+    "lift_strength": "structural (defines chi_w-strata, not Stokes data)",
+    "caveats": "Z-resonance is about *which* (c_1, ..., c_N) is realised; it does not refine Stokes data within a stratum."
+  },
+  {
+    "invariant": "Symmetry inflation: C_n with n > q (P3)",
+    "discrete_form": "The full constellation C(L) is invariant under rotation by 2 pi / n with n strictly larger than the Newton-polygon q.",
+    "analytic_lift": "CANDIDATE automorphism of the anti-Stokes skeleton: rotation by 2 pi / (n p / q) on the t-plane (after suitable rescaling) preserves the leading {c_i}. To upgrade to an automorphism of MW(L) one must verify it preserves the lower-order Q_i coefficients and formal monodromy.",
+    "lift_strength": "candidate (leading order)",
+    "caveats": "Inflation may be broken by lower-order corrections in the irregular type."
+  },
+  {
+    "invariant": "Multi-edge factorisation chi = prod_alpha chi^{(alpha)} (Phase-III M1)",
+    "discrete_form": "C(L) = bigsqcup_alpha C_alpha with one ring system per edge.",
+    "analytic_lift": "Slope filtration of the formal connection. The Levelt-Turrittin decomposition splits L_formal as a direct sum L = bigoplus_alpha L_alpha, where each L_alpha is a single-slope summand. Each summand carries its own Stokes structure on its own anti-Stokes ray pattern (slope -p_alpha/q_alpha). The TOTAL anti-Stokes set is the union, but pairs (i, j) WITH i in C_alpha, j in C_beta, alpha != beta give Q_i - Q_j of slope max(slope_alpha, slope_beta) and their anti-Stokes contribution is determined by the LARGER slope's leading Q-coefficient (the smaller-slope contribution is invisible at leading order).",
+    "lift_strength": "structural (slope filtration); needs cross-slope leading-term analysis",
+    "caveats": "Phase-III's 'disjoint edges' is generic; collisions across edges define a new stratum."
+  },
+  {
+    "invariant": "System operators / S1 (Phase-III)",
+    "discrete_form": "For block-diagonal Phi = diag(L_1, ..., L_n), C(Phi) = bigsqcup_i C(L_i).",
+    "analytic_lift": "Direct-sum splitting of MW(Phi) = prod_i MW(L_i). The Stokes matrices are block-diagonal. This applies ONLY to genuinely decoupled systems; coupled systems require additional invariants (off-diagonal Stokes couplings) not visible in the constellation.",
+    "lift_strength": "exact for genuine direct sums; not applicable to general systems",
+    "caveats": "All Phase-III SYS operators are explicit block diagonal; general coupled systems are out of scope."
+  },
+  {
+    "invariant": "Nested ramification (Phase-III N1)",
+    "discrete_form": "chi_w(w) factors as chi_v(w^{q'}), giving effective (mu_q x mu_{q'})-equivariance.",
+    "analytic_lift": "Iterated Levelt-Turrittin pullback: the connection requires a further ramified cover t -> tau, tau = t^{1/q'}, on which the irregular type polynomials in tau have degree p q'. Anti-Stokes rays multiply by q' (the inner ramification index). The wild character variety acquires a mu_{q'} symmetry inherited from the inner cover.",
+    "lift_strength": "structural (iterated cover)",
+    "caveats": "Cancellations in the iterated pullback may reduce effective q to q*q'/gcd or smaller."
+  },
+  {
+    "invariant": "Galois action on rings (Phase-III G1)",
+    "discrete_form": "Gal(Qbar/Q) acts on Roots(chi_w), permuting rings of C(L).",
+    "analytic_lift": "Galois-equivariant locus of the wild character variety: when chi_w is defined over Q, the L-rational points of MW(L) form a closed subscheme invariant under Gal(Qbar/Q) action on rings. Cyclotomic chi_w give MW(L) over Q(zeta_n) for appropriate n.",
+    "lift_strength": "structural (descent / equivariant locus)",
+    "caveats": "Stokes constants are typically transcendental; only the discrete part of MW(L) is Galois-equivariant."
+  }
+]

@@ -1,0 +1,3440 @@
+[
+  {
+    "name": "ODE_s1o2_r1_simple",
+    "n_roots": 2,
+    "rings": [
+      {
+        "radius": 0.9999999999999997,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ]
+      }
+    ],
+    "ring_counts": [
+      2
+    ],
+    "ring_radii": [
+      0.9999999999999997
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5235987755982987
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r2_simple",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 1.0,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974483,
+          0.7853981633974485,
+          2.356194490192345
+        ]
+      }
+    ],
+    "ring_counts": [
+      4
+    ],
+    "ring_radii": [
+      1.0
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965974,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.26179938779914913
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r2_double",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 1.0,
+        "count": 4,
+        "base_angle": -2.0943951023931957,
+        "args": [
+          -2.0943951023931957,
+          -1.0471975511965976,
+          1.047197551196598,
+          2.0943951023931957
+        ]
+      }
+    ],
+    "ring_counts": [
+      4
+    ],
+    "ring_radii": [
+      1.0
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.047197551196598,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r2_mixed",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 0.6180339887498948,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ]
+      },
+      {
+        "radius": 1.6180339887498967,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.570796326794897
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.6180339887498948,
+      1.6180339887498967
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965976,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5789965596377566,
+      3.0861948695503347
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r2_generic_complex",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 0.5176380902050421,
+        "count": 2,
+        "base_angle": -2.0943951023931957,
+        "args": [
+          -2.0943951023931957,
+          1.047197551196598
+        ]
+      },
+      {
+        "radius": 1.9318516525781353,
+        "count": 2,
+        "base_angle": -1.0471975511965974,
+        "args": [
+          -1.0471975511965974,
+          2.0943951023931953
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.5176380902050421,
+      1.9318516525781353
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965976,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5207865962951506,
+      0.0028121793031476994
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r3_simple",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 1.0000000000000002,
+        "count": 6,
+        "base_angle": -2.617993877991495,
+        "args": [
+          -2.617993877991495,
+          -1.5707963267948966,
+          -0.5235987755982988,
+          0.5235987755982985,
+          1.5707963267948966,
+          2.617993877991494
+        ]
+      }
+    ],
+    "ring_counts": [
+      6
+    ],
+    "ring_radii": [
+      1.0000000000000002
+    ],
+    "Cn_order": 6,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965985,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.1745329251994332
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r3_double",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.9088626726047156,
+        "count": 4,
+        "base_angle": -2.499035597530548,
+        "args": [
+          -2.499035597530548,
+          -0.6425570560592454,
+          0.6425570560592455,
+          2.499035597530548
+        ]
+      },
+      {
+        "radius": 1.2106077944060862,
+        "count": 2,
+        "base_angle": -1.5707963267948961,
+        "args": [
+          -1.5707963267948961,
+          1.5707963267948963
+        ]
+      }
+    ],
+    "ring_counts": [
+      4,
+      2
+    ],
+    "ring_radii": [
+      0.9088626726047156,
+      1.2106077944060862
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965976,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null,
+      null
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r3_mixed",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.5636241621612578,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.570796326794897
+        ]
+      },
+      {
+        "radius": 1.332002986696104,
+        "count": 4,
+        "base_angle": -1.9276711681777365,
+        "args": [
+          -1.9276711681777365,
+          -1.213921485412057,
+          1.213921485412056,
+          1.9276711681777372
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      4
+    ],
+    "ring_radii": [
+      0.5636241621612578,
+      1.332002986696104
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965974,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null,
+      null
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r3_generic_complex",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.42295700656567226,
+        "count": 2,
+        "base_angle": -2.140038338219768,
+        "args": [
+          -2.140038338219768,
+          1.0015543153700257
+        ]
+      },
+      {
+        "radius": 1.2372949318029833,
+        "count": 2,
+        "base_angle": -1.7231504383660174,
+        "args": [
+          -1.7231504383660174,
+          1.4184422152237752
+        ]
+      },
+      {
+        "radius": 1.9108673603989783,
+        "count": 2,
+        "base_angle": -0.8492002037989044,
+        "args": [
+          -0.8492002037989044,
+          2.292392449790888
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.42295700656567226,
+      1.2372949318029833,
+      1.9108673603989783
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965983,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5787773300733097,
+      3.090911120198184,
+      3.137095632506391
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r1_simple",
+    "n_roots": 3,
+    "rings": [
+      {
+        "radius": 1.0000000000000004,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.0471975511965979
+        ]
+      }
+    ],
+    "ring_counts": [
+      3
+    ],
+    "ring_radii": [
+      1.0000000000000004
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.34906585039886595
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r2_simple",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 1.0000000000000002,
+        "count": 6,
+        "base_angle": -2.617993877991495,
+        "args": [
+          -2.617993877991495,
+          -1.5707963267948966,
+          -0.5235987755982988,
+          0.5235987755982985,
+          1.5707963267948966,
+          2.617993877991494
+        ]
+      }
+    ],
+    "ring_counts": [
+      6
+    ],
+    "ring_radii": [
+      1.0000000000000002
+    ],
+    "Cn_order": 6,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965985,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.1745329251994332
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r2_double",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.9999999999999997,
+        "count": 6,
+        "base_angle": -2.792526803190927,
+        "args": [
+          -2.792526803190927,
+          -1.396263401595464,
+          -0.6981317007977316,
+          0.6981317007977318,
+          1.3962634015954638,
+          2.7925268031909276
+        ]
+      }
+    ],
+    "ring_counts": [
+      6
+    ],
+    "ring_radii": [
+      0.9999999999999997
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.047197551196598,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r2_mixed",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.7255626302463277,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.047197551196598
+        ]
+      },
+      {
+        "radius": 1.3782407724892087,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.047197551196597
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      3
+    ],
+    "ring_radii": [
+      0.7255626302463277,
+      1.3782407724892087
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.38599770642517095,
+      2.05746324636689
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r2_generic_complex",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.6446898273744027,
+        "count": 3,
+        "base_angle": -1.3962634015954645,
+        "args": [
+          -1.3962634015954645,
+          0.698131700797732,
+          2.792526803190927
+        ]
+      },
+      {
+        "radius": 1.5511335180712433,
+        "count": 3,
+        "base_angle": -2.7925268031909276,
+        "args": [
+          -2.7925268031909276,
+          -0.6981317007977321,
+          1.3962634015954645
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      3
+    ],
+    "ring_radii": [
+      0.6446898273744027,
+      1.5511335180712433
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965987,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.3471910641967677,
+      0.0018747862020993544
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r3_simple",
+    "n_roots": 9,
+    "rings": [
+      {
+        "radius": 0.9999999999999993,
+        "count": 9,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -2.4434609527920617,
+          -1.7453292519943293,
+          -1.0471975511965979,
+          -0.34906585039886595,
+          0.34906585039886573,
+          1.047197551196598,
+          1.7453292519943298,
+          2.4434609527920617
+        ]
+      }
+    ],
+    "ring_counts": [
+      9
+    ],
+    "ring_radii": [
+      0.9999999999999993
+    ],
+    "Cn_order": 9,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.11635528346628798
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r3_double",
+    "n_roots": 9,
+    "rings": [
+      {
+        "radius": 0.9382793926994447,
+        "count": 6,
+        "base_angle": -2.5227664730993586,
+        "args": [
+          -2.5227664730993586,
+          -1.6660237316870319,
+          -0.42837137070616343,
+          0.4283713707061636,
+          1.6660237316870314,
+          2.52276647309936
+        ]
+      },
+      {
+        "radius": 1.1358883461325537,
+        "count": 3,
+        "base_angle": -1.047197551196598,
+        "args": [
+          -1.047197551196598,
+          1.0471975511965979,
+          3.1415926535897927
+        ]
+      }
+    ],
+    "ring_counts": [
+      6,
+      3
+    ],
+    "ring_radii": [
+      0.9382793926994447,
+      1.1358883461325537
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511966,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null,
+      null
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r3_mixed",
+    "n_roots": 9,
+    "rings": [
+      {
+        "radius": 0.6823278038280209,
+        "count": 3,
+        "base_angle": -3.1415926535897927,
+        "args": [
+          -3.1415926535897927,
+          -1.0471975511965979,
+          1.047197551196598
+        ]
+      },
+      {
+        "radius": 1.2106077944060853,
+        "count": 6,
+        "base_angle": -2.9036760926679017,
+        "args": [
+          -2.9036760926679017,
+          -1.2851141121184917,
+          -0.8092809902747048,
+          0.8092809902747052,
+          1.285114112118491,
+          2.9036760926679013
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      6
+    ],
+    "ring_radii": [
+      0.6823278038280209,
+      1.2106077944060853
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965965,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null,
+      null
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r3_generic_complex",
+    "n_roots": 9,
+    "rings": [
+      {
+        "radius": 0.5634613729584356,
+        "count": 3,
+        "base_angle": -1.426692225479845,
+        "args": [
+          -1.426692225479845,
+          0.66770287691335,
+          2.762097979306544
+        ]
+      },
+      {
+        "radius": 1.1525209343704292,
+        "count": 3,
+        "base_angle": -1.1487669589106781,
+        "args": [
+          -1.1487669589106781,
+          0.945628143482516,
+          3.0400232458757124
+        ]
+      },
+      {
+        "radius": 1.5398805311603305,
+        "count": 3,
+        "base_angle": -2.6605285715924656,
+        "args": [
+          -2.6605285715924656,
+          -0.5661334691992701,
+          1.5282616331939258
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      3,
+      3
+    ],
+    "ring_radii": [
+      0.5634613729584356,
+      1.1525209343704292,
+      1.5398805311603305
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511966036,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.38585155338220645,
+      2.0606074134654557,
+      2.091397088337593
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r1_simple",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 1.0,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974483,
+          0.7853981633974485,
+          2.356194490192345
+        ]
+      }
+    ],
+    "ring_counts": [
+      4
+    ],
+    "ring_radii": [
+      1.0
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965974,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.26179938779914913
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r2_simple",
+    "n_roots": 8,
+    "rings": [
+      {
+        "radius": 0.9999999999999979,
+        "count": 8,
+        "base_angle": -2.748893571891069,
+        "args": [
+          -2.748893571891069,
+          -1.9634954084936203,
+          -1.1780972450961722,
+          -0.39269908169872403,
+          0.392699081698724,
+          1.1780972450961729,
+          1.9634954084936205,
+          2.7488935718910694
+        ]
+      }
+    ],
+    "ring_counts": [
+      8
+    ],
+    "ring_radii": [
+      0.9999999999999979
+    ],
+    "Cn_order": 8,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965956,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.13089969389957368
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r2_double",
+    "n_roots": 8,
+    "rings": [
+      {
+        "radius": 0.9999999999999999,
+        "count": 8,
+        "base_angle": -2.6179938779914944,
+        "args": [
+          -2.6179938779914944,
+          -2.0943951023931953,
+          -1.0471975511965974,
+          -0.5235987755982988,
+          0.5235987755982984,
+          1.0471975511965976,
+          2.0943951023931953,
+          2.617993877991495
+        ]
+      }
+    ],
+    "ring_counts": [
+      8
+    ],
+    "ring_radii": [
+      0.9999999999999999
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965974,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r2_mixed",
+    "n_roots": 8,
+    "rings": [
+      {
+        "radius": 0.786151377757423,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974481,
+          0.7853981633974482,
+          2.3561944901923453
+        ]
+      },
+      {
+        "radius": 1.272019649514066,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974484,
+          0.7853981633974478,
+          2.3561944901923457
+        ]
+      }
+    ],
+    "ring_counts": [
+      4,
+      4
+    ],
+    "ring_radii": [
+      0.786151377757423,
+      1.272019649514066
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.047197551196595,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.28949827981887744,
+      1.5430974347751665
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r2_generic_complex",
+    "n_roots": 8,
+    "rings": [
+      {
+        "radius": 0.719470701422262,
+        "count": 4,
+        "base_angle": -2.6179938779914953,
+        "args": [
+          -2.6179938779914953,
+          -1.0471975511965979,
+          0.5235987755982989,
+          2.0943951023931966
+        ]
+      },
+      {
+        "radius": 1.3899106635241487,
+        "count": 4,
+        "base_angle": -2.0943951023931953,
+        "args": [
+          -2.0943951023931953,
+          -0.5235987755982979,
+          1.0471975511965974,
+          2.617993877991494
+        ]
+      }
+    ],
+    "ring_counts": [
+      4,
+      4
+    ],
+    "ring_radii": [
+      0.719470701422262,
+      1.3899106635241487
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.047197551196598,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.26039329814757517,
+      0.0014060896515726284
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r3_simple",
+    "n_roots": 12,
+    "rings": [
+      {
+        "radius": 1.0000000000000002,
+        "count": 12,
+        "base_angle": -2.8797932657906435,
+        "args": [
+          -2.8797932657906435,
+          -2.3561944901923453,
+          -1.8325957145940468,
+          -1.3089969389957468,
+          -0.7853981633974484,
+          -0.2617993877991494,
+          0.2617993877991493,
+          0.7853981633974483,
+          1.3089969389957474,
+          1.8325957145940464,
+          2.3561944901923444,
+          2.8797932657906435
+        ]
+      }
+    ],
+    "ring_counts": [
+      12
+    ],
+    "ring_radii": [
+      1.0000000000000002
+    ],
+    "Cn_order": 12,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965994,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.08726646259971593
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r3_double",
+    "n_roots": 12,
+    "rings": [
+      {
+        "radius": 0.9533428935093158,
+        "count": 8,
+        "base_angle": -2.8203141255601705,
+        "args": [
+          -2.8203141255601705,
+          -1.8920748548245192,
+          -1.2495177987652744,
+          -0.3212785280296225,
+          0.3212785280296229,
+          1.2495177987652735,
+          1.8920748548245188,
+          2.8203141255601696
+        ]
+      },
+      {
+        "radius": 1.1002762355000122,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974484,
+          0.7853981633974487,
+          2.3561944901923453
+        ]
+      }
+    ],
+    "ring_counts": [
+      8,
+      4
+    ],
+    "ring_radii": [
+      0.9533428935093158,
+      1.1002762355000122
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.047197551196599,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null,
+      null
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r3_mixed",
+    "n_roots": 12,
+    "rings": [
+      {
+        "radius": 0.7507490673728855,
+        "count": 4,
+        "base_angle": -2.356194490192344,
+        "args": [
+          -2.356194490192344,
+          -0.7853981633974483,
+          0.785398163397448,
+          2.3561944901923444
+        ]
+      },
+      {
+        "radius": 1.1541243376240313,
+        "count": 8,
+        "base_angle": -2.5346319108837654,
+        "args": [
+          -2.5346319108837654,
+          -2.1777570695009247,
+          -0.9638355840888682,
+          -0.6069607427060285,
+          0.6069607427060285,
+          0.9638355840888677,
+          2.177757069500926,
+          2.5346319108837636
+        ]
+      }
+    ],
+    "ring_counts": [
+      4,
+      8
+    ],
+    "ring_radii": [
+      0.7507490673728855,
+      1.1541243376240313
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965985,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null,
+      null
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r3_generic_complex",
+    "n_roots": 12,
+    "rings": [
+      {
+        "radius": 0.6503514484997123,
+        "count": 4,
+        "base_angle": -2.6408154959047807,
+        "args": [
+          -2.6408154959047807,
+          -1.070019169109884,
+          0.5007771576850135,
+          2.07157348447991
+        ]
+      },
+      {
+        "radius": 1.1123375979454182,
+        "count": 4,
+        "base_angle": -2.432371545977905,
+        "args": [
+          -2.432371545977905,
+          -0.8615752191830087,
+          0.7092211076118887,
+          2.2800174344067856
+        ]
+      },
+      {
+        "radius": 1.3823412604704335,
+        "count": 4,
+        "base_angle": -1.9953964286943495,
+        "args": [
+          -1.9953964286943495,
+          -0.42460010189945196,
+          1.1461962248954443,
+          2.716992551690342
+        ]
+      }
+    ],
+    "ring_counts": [
+      4,
+      4,
+      4
+    ],
+    "ring_radii": [
+      0.6503514484997123,
+      1.1123375979454182,
+      1.3823412604704335
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965925,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.28938866503665484,
+      1.5454555600990911,
+      1.5685478162531958
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r1_simple",
+    "n_roots": 3,
+    "rings": [
+      {
+        "radius": 1.0000000000000004,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.0471975511965979
+        ]
+      }
+    ],
+    "ring_counts": [
+      3
+    ],
+    "ring_radii": [
+      1.0000000000000004
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.34906585039886595
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r2_simple",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 1.0000000000000002,
+        "count": 6,
+        "base_angle": -2.617993877991495,
+        "args": [
+          -2.617993877991495,
+          -1.5707963267948966,
+          -0.5235987755982988,
+          0.5235987755982985,
+          1.5707963267948966,
+          2.617993877991494
+        ]
+      }
+    ],
+    "ring_counts": [
+      6
+    ],
+    "ring_radii": [
+      1.0000000000000002
+    ],
+    "Cn_order": 6,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965985,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.1745329251994332
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r2_double",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.9999999999999997,
+        "count": 6,
+        "base_angle": -2.792526803190927,
+        "args": [
+          -2.792526803190927,
+          -1.396263401595464,
+          -0.6981317007977316,
+          0.6981317007977318,
+          1.3962634015954638,
+          2.7925268031909276
+        ]
+      }
+    ],
+    "ring_counts": [
+      6
+    ],
+    "ring_radii": [
+      0.9999999999999997
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.047197551196598,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r2_mixed",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.7255626302463277,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.047197551196598
+        ]
+      },
+      {
+        "radius": 1.3782407724892087,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.047197551196597
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      3
+    ],
+    "ring_radii": [
+      0.7255626302463277,
+      1.3782407724892087
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.38599770642517095,
+      2.05746324636689
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r2_generic_complex",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.6446898273744027,
+        "count": 3,
+        "base_angle": -1.3962634015954645,
+        "args": [
+          -1.3962634015954645,
+          0.698131700797732,
+          2.792526803190927
+        ]
+      },
+      {
+        "radius": 1.5511335180712433,
+        "count": 3,
+        "base_angle": -2.7925268031909276,
+        "args": [
+          -2.7925268031909276,
+          -0.6981317007977321,
+          1.3962634015954645
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      3
+    ],
+    "ring_radii": [
+      0.6446898273744027,
+      1.5511335180712433
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965987,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.3471910641967677,
+      0.0018747862020993544
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r3_simple",
+    "n_roots": 9,
+    "rings": [
+      {
+        "radius": 0.9999999999999993,
+        "count": 9,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -2.4434609527920617,
+          -1.7453292519943293,
+          -1.0471975511965979,
+          -0.34906585039886595,
+          0.34906585039886573,
+          1.047197551196598,
+          1.7453292519943298,
+          2.4434609527920617
+        ]
+      }
+    ],
+    "ring_counts": [
+      9
+    ],
+    "ring_radii": [
+      0.9999999999999993
+    ],
+    "Cn_order": 9,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.11635528346628798
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r3_double",
+    "n_roots": 9,
+    "rings": [
+      {
+        "radius": 0.9382793926994447,
+        "count": 6,
+        "base_angle": -2.5227664730993586,
+        "args": [
+          -2.5227664730993586,
+          -1.6660237316870319,
+          -0.42837137070616343,
+          0.4283713707061636,
+          1.6660237316870314,
+          2.52276647309936
+        ]
+      },
+      {
+        "radius": 1.1358883461325537,
+        "count": 3,
+        "base_angle": -1.047197551196598,
+        "args": [
+          -1.047197551196598,
+          1.0471975511965979,
+          3.1415926535897927
+        ]
+      }
+    ],
+    "ring_counts": [
+      6,
+      3
+    ],
+    "ring_radii": [
+      0.9382793926994447,
+      1.1358883461325537
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511966,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null,
+      null
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r3_mixed",
+    "n_roots": 9,
+    "rings": [
+      {
+        "radius": 0.6823278038280209,
+        "count": 3,
+        "base_angle": -3.1415926535897927,
+        "args": [
+          -3.1415926535897927,
+          -1.0471975511965979,
+          1.047197551196598
+        ]
+      },
+      {
+        "radius": 1.2106077944060853,
+        "count": 6,
+        "base_angle": -2.9036760926679017,
+        "args": [
+          -2.9036760926679017,
+          -1.2851141121184917,
+          -0.8092809902747048,
+          0.8092809902747052,
+          1.285114112118491,
+          2.9036760926679013
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      6
+    ],
+    "ring_radii": [
+      0.6823278038280209,
+      1.2106077944060853
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965965,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null,
+      null
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r3_generic_complex",
+    "n_roots": 9,
+    "rings": [
+      {
+        "radius": 0.5634613729584356,
+        "count": 3,
+        "base_angle": -1.426692225479845,
+        "args": [
+          -1.426692225479845,
+          0.66770287691335,
+          2.762097979306544
+        ]
+      },
+      {
+        "radius": 1.1525209343704292,
+        "count": 3,
+        "base_angle": -1.1487669589106781,
+        "args": [
+          -1.1487669589106781,
+          0.945628143482516,
+          3.0400232458757124
+        ]
+      },
+      {
+        "radius": 1.5398805311603305,
+        "count": 3,
+        "base_angle": -2.6605285715924656,
+        "args": [
+          -2.6605285715924656,
+          -0.5661334691992701,
+          1.5282616331939258
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      3,
+      3
+    ],
+    "ring_radii": [
+      0.5634613729584356,
+      1.1525209343704292,
+      1.5398805311603305
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511966036,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.38585155338220645,
+      2.0606074134654557,
+      2.091397088337593
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r1_simple",
+    "n_roots": 2,
+    "rings": [
+      {
+        "radius": 0.9999999999999997,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ]
+      }
+    ],
+    "ring_counts": [
+      2
+    ],
+    "ring_radii": [
+      0.9999999999999997
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5235987755982987
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r2_simple",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 1.0,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974483,
+          0.7853981633974485,
+          2.356194490192345
+        ]
+      }
+    ],
+    "ring_counts": [
+      4
+    ],
+    "ring_radii": [
+      1.0
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965974,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.26179938779914913
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r2_double",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 1.0,
+        "count": 4,
+        "base_angle": -2.0943951023931957,
+        "args": [
+          -2.0943951023931957,
+          -1.0471975511965976,
+          1.047197551196598,
+          2.0943951023931957
+        ]
+      }
+    ],
+    "ring_counts": [
+      4
+    ],
+    "ring_radii": [
+      1.0
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.047197551196598,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r2_mixed",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 0.6180339887498948,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ]
+      },
+      {
+        "radius": 1.6180339887498967,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.570796326794897
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.6180339887498948,
+      1.6180339887498967
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965976,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5789965596377566,
+      3.0861948695503347
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r2_generic_complex",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 0.5176380902050421,
+        "count": 2,
+        "base_angle": -2.0943951023931957,
+        "args": [
+          -2.0943951023931957,
+          1.047197551196598
+        ]
+      },
+      {
+        "radius": 1.9318516525781353,
+        "count": 2,
+        "base_angle": -1.0471975511965974,
+        "args": [
+          -1.0471975511965974,
+          2.0943951023931953
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.5176380902050421,
+      1.9318516525781353
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965976,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5207865962951506,
+      0.0028121793031476994
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r3_simple",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 1.0000000000000002,
+        "count": 6,
+        "base_angle": -2.617993877991495,
+        "args": [
+          -2.617993877991495,
+          -1.5707963267948966,
+          -0.5235987755982988,
+          0.5235987755982985,
+          1.5707963267948966,
+          2.617993877991494
+        ]
+      }
+    ],
+    "ring_counts": [
+      6
+    ],
+    "ring_radii": [
+      1.0000000000000002
+    ],
+    "Cn_order": 6,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965985,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.1745329251994332
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r3_double",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.9088626726047156,
+        "count": 4,
+        "base_angle": -2.499035597530548,
+        "args": [
+          -2.499035597530548,
+          -0.6425570560592454,
+          0.6425570560592455,
+          2.499035597530548
+        ]
+      },
+      {
+        "radius": 1.2106077944060862,
+        "count": 2,
+        "base_angle": -1.5707963267948961,
+        "args": [
+          -1.5707963267948961,
+          1.5707963267948963
+        ]
+      }
+    ],
+    "ring_counts": [
+      4,
+      2
+    ],
+    "ring_radii": [
+      0.9088626726047156,
+      1.2106077944060862
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965976,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null,
+      null
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r3_mixed",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.5636241621612578,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.570796326794897
+        ]
+      },
+      {
+        "radius": 1.332002986696104,
+        "count": 4,
+        "base_angle": -1.9276711681777365,
+        "args": [
+          -1.9276711681777365,
+          -1.213921485412057,
+          1.213921485412056,
+          1.9276711681777372
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      4
+    ],
+    "ring_radii": [
+      0.5636241621612578,
+      1.332002986696104
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965974,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      null,
+      null
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r3_generic_complex",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.42295700656567226,
+        "count": 2,
+        "base_angle": -2.140038338219768,
+        "args": [
+          -2.140038338219768,
+          1.0015543153700257
+        ]
+      },
+      {
+        "radius": 1.2372949318029833,
+        "count": 2,
+        "base_angle": -1.7231504383660174,
+        "args": [
+          -1.7231504383660174,
+          1.4184422152237752
+        ]
+      },
+      {
+        "radius": 1.9108673603989783,
+        "count": 2,
+        "base_angle": -0.8492002037989044,
+        "args": [
+          -0.8492002037989044,
+          2.292392449790888
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.42295700656567226,
+      1.2372949318029833,
+      1.9108673603989783
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965983,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5787773300733097,
+      3.090911120198184,
+      3.137095632506391
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o2_r1_simple",
+    "n_roots": 2,
+    "rings": [
+      {
+        "radius": 0.9999999999999997,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ]
+      }
+    ],
+    "ring_counts": [
+      2
+    ],
+    "ring_radii": [
+      0.9999999999999997
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5235987755982987
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o2_r2_simple",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 1.0,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974483,
+          0.7853981633974485,
+          2.356194490192345
+        ]
+      }
+    ],
+    "ring_counts": [
+      4
+    ],
+    "ring_radii": [
+      1.0
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965974,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.26179938779914913
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o2_r2_mixed",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 0.6180339887498948,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ]
+      },
+      {
+        "radius": 1.6180339887498967,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.570796326794897
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.6180339887498948,
+      1.6180339887498967
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965976,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5789965596377566,
+      3.0861948695503347
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o2_r2_generic_complex",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 0.5176380902050421,
+        "count": 2,
+        "base_angle": -2.0943951023931957,
+        "args": [
+          -2.0943951023931957,
+          1.047197551196598
+        ]
+      },
+      {
+        "radius": 1.9318516525781353,
+        "count": 2,
+        "base_angle": -1.0471975511965974,
+        "args": [
+          -1.0471975511965974,
+          2.0943951023931953
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.5176380902050421,
+      1.9318516525781353
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965976,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5207865962951506,
+      0.0028121793031476994
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o3_r1_simple",
+    "n_roots": 3,
+    "rings": [
+      {
+        "radius": 1.0000000000000004,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.0471975511965979
+        ]
+      }
+    ],
+    "ring_counts": [
+      3
+    ],
+    "ring_radii": [
+      1.0000000000000004
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.34906585039886595
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o3_r2_simple",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 1.0000000000000002,
+        "count": 6,
+        "base_angle": -2.617993877991495,
+        "args": [
+          -2.617993877991495,
+          -1.5707963267948966,
+          -0.5235987755982988,
+          0.5235987755982985,
+          1.5707963267948966,
+          2.617993877991494
+        ]
+      }
+    ],
+    "ring_counts": [
+      6
+    ],
+    "ring_radii": [
+      1.0000000000000002
+    ],
+    "Cn_order": 6,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965985,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.1745329251994332
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o3_r2_mixed",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.7255626302463277,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.047197551196598
+        ]
+      },
+      {
+        "radius": 1.3782407724892087,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.047197551196597
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      3
+    ],
+    "ring_radii": [
+      0.7255626302463277,
+      1.3782407724892087
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.38599770642517095,
+      2.05746324636689
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o3_r2_generic_complex",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.6446898273744027,
+        "count": 3,
+        "base_angle": -1.3962634015954645,
+        "args": [
+          -1.3962634015954645,
+          0.698131700797732,
+          2.792526803190927
+        ]
+      },
+      {
+        "radius": 1.5511335180712433,
+        "count": 3,
+        "base_angle": -2.7925268031909276,
+        "args": [
+          -2.7925268031909276,
+          -0.6981317007977321,
+          1.3962634015954645
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      3
+    ],
+    "ring_radii": [
+      0.6446898273744027,
+      1.5511335180712433
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965987,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.3471910641967677,
+      0.0018747862020993544
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o4_r1_simple",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 1.0,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974483,
+          0.7853981633974485,
+          2.356194490192345
+        ]
+      }
+    ],
+    "ring_counts": [
+      4
+    ],
+    "ring_radii": [
+      1.0
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965974,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.26179938779914913
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o4_r2_simple",
+    "n_roots": 8,
+    "rings": [
+      {
+        "radius": 0.9999999999999979,
+        "count": 8,
+        "base_angle": -2.748893571891069,
+        "args": [
+          -2.748893571891069,
+          -1.9634954084936203,
+          -1.1780972450961722,
+          -0.39269908169872403,
+          0.392699081698724,
+          1.1780972450961729,
+          1.9634954084936205,
+          2.7488935718910694
+        ]
+      }
+    ],
+    "ring_counts": [
+      8
+    ],
+    "ring_radii": [
+      0.9999999999999979
+    ],
+    "Cn_order": 8,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965956,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.13089969389957368
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o4_r2_mixed",
+    "n_roots": 8,
+    "rings": [
+      {
+        "radius": 0.786151377757423,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974481,
+          0.7853981633974482,
+          2.3561944901923453
+        ]
+      },
+      {
+        "radius": 1.272019649514066,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974484,
+          0.7853981633974478,
+          2.3561944901923457
+        ]
+      }
+    ],
+    "ring_counts": [
+      4,
+      4
+    ],
+    "ring_radii": [
+      0.786151377757423,
+      1.272019649514066
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.047197551196595,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.28949827981887744,
+      1.5430974347751665
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o4_r2_generic_complex",
+    "n_roots": 8,
+    "rings": [
+      {
+        "radius": 0.719470701422262,
+        "count": 4,
+        "base_angle": -2.6179938779914953,
+        "args": [
+          -2.6179938779914953,
+          -1.0471975511965979,
+          0.5235987755982989,
+          2.0943951023931966
+        ]
+      },
+      {
+        "radius": 1.3899106635241487,
+        "count": 4,
+        "base_angle": -2.0943951023931953,
+        "args": [
+          -2.0943951023931953,
+          -0.5235987755982979,
+          1.0471975511965974,
+          2.617993877991494
+        ]
+      }
+    ],
+    "ring_counts": [
+      4,
+      4
+    ],
+    "ring_radii": [
+      0.719470701422262,
+      1.3899106635241487
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.047197551196598,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.26039329814757517,
+      0.0014060896515726284
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s2o3_r1_simple",
+    "n_roots": 3,
+    "rings": [
+      {
+        "radius": 1.0000000000000004,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.0471975511965979
+        ]
+      }
+    ],
+    "ring_counts": [
+      3
+    ],
+    "ring_radii": [
+      1.0000000000000004
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.34906585039886595
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s2o3_r2_simple",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 1.0000000000000002,
+        "count": 6,
+        "base_angle": -2.617993877991495,
+        "args": [
+          -2.617993877991495,
+          -1.5707963267948966,
+          -0.5235987755982988,
+          0.5235987755982985,
+          1.5707963267948966,
+          2.617993877991494
+        ]
+      }
+    ],
+    "ring_counts": [
+      6
+    ],
+    "ring_radii": [
+      1.0000000000000002
+    ],
+    "Cn_order": 6,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965985,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.1745329251994332
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s2o3_r2_mixed",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.7255626302463277,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.047197551196598
+        ]
+      },
+      {
+        "radius": 1.3782407724892087,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.047197551196597
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      3
+    ],
+    "ring_radii": [
+      0.7255626302463277,
+      1.3782407724892087
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.38599770642517095,
+      2.05746324636689
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s2o3_r2_generic_complex",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.6446898273744027,
+        "count": 3,
+        "base_angle": -1.3962634015954645,
+        "args": [
+          -1.3962634015954645,
+          0.698131700797732,
+          2.792526803190927
+        ]
+      },
+      {
+        "radius": 1.5511335180712433,
+        "count": 3,
+        "base_angle": -2.7925268031909276,
+        "args": [
+          -2.7925268031909276,
+          -0.6981317007977321,
+          1.3962634015954645
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      3
+    ],
+    "ring_radii": [
+      0.6446898273744027,
+      1.5511335180712433
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965987,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.3471910641967677,
+      0.0018747862020993544
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s3o2_r1_simple",
+    "n_roots": 2,
+    "rings": [
+      {
+        "radius": 0.9999999999999997,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ]
+      }
+    ],
+    "ring_counts": [
+      2
+    ],
+    "ring_radii": [
+      0.9999999999999997
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5235987755982987
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s3o2_r2_simple",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 1.0,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974483,
+          0.7853981633974485,
+          2.356194490192345
+        ]
+      }
+    ],
+    "ring_counts": [
+      4
+    ],
+    "ring_radii": [
+      1.0
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965974,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.26179938779914913
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s3o2_r2_mixed",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 0.6180339887498948,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ]
+      },
+      {
+        "radius": 1.6180339887498967,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.570796326794897
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.6180339887498948,
+      1.6180339887498967
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965976,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5789965596377566,
+      3.0861948695503347
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s3o2_r2_generic_complex",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 0.5176380902050421,
+        "count": 2,
+        "base_angle": -2.0943951023931957,
+        "args": [
+          -2.0943951023931957,
+          1.047197551196598
+        ]
+      },
+      {
+        "radius": 1.9318516525781353,
+        "count": 2,
+        "base_angle": -1.0471975511965974,
+        "args": [
+          -1.0471975511965974,
+          2.0943951023931953
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.5176380902050421,
+      1.9318516525781353
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965976,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5207865962951506,
+      0.0028121793031476994
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o2_r1_simple",
+    "n_roots": 2,
+    "rings": [
+      {
+        "radius": 0.9999999999999997,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ]
+      }
+    ],
+    "ring_counts": [
+      2
+    ],
+    "ring_radii": [
+      0.9999999999999997
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5235987755982987
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o2_r2_simple",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 1.0,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974483,
+          0.7853981633974485,
+          2.356194490192345
+        ]
+      }
+    ],
+    "ring_counts": [
+      4
+    ],
+    "ring_radii": [
+      1.0
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965974,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.26179938779914913
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o2_r2_mixed",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 0.6180339887498948,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ]
+      },
+      {
+        "radius": 1.6180339887498967,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.570796326794897
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.6180339887498948,
+      1.6180339887498967
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965976,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5789965596377566,
+      3.0861948695503347
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o2_r2_generic_complex",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 0.5176380902050421,
+        "count": 2,
+        "base_angle": -2.0943951023931957,
+        "args": [
+          -2.0943951023931957,
+          1.047197551196598
+        ]
+      },
+      {
+        "radius": 1.9318516525781353,
+        "count": 2,
+        "base_angle": -1.0471975511965974,
+        "args": [
+          -1.0471975511965974,
+          2.0943951023931953
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.5176380902050421,
+      1.9318516525781353
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965976,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5207865962951506,
+      0.0028121793031476994
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o3_r1_simple",
+    "n_roots": 3,
+    "rings": [
+      {
+        "radius": 1.0000000000000004,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.0471975511965979
+        ]
+      }
+    ],
+    "ring_counts": [
+      3
+    ],
+    "ring_radii": [
+      1.0000000000000004
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.34906585039886595
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o3_r2_simple",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 1.0000000000000002,
+        "count": 6,
+        "base_angle": -2.617993877991495,
+        "args": [
+          -2.617993877991495,
+          -1.5707963267948966,
+          -0.5235987755982988,
+          0.5235987755982985,
+          1.5707963267948966,
+          2.617993877991494
+        ]
+      }
+    ],
+    "ring_counts": [
+      6
+    ],
+    "ring_radii": [
+      1.0000000000000002
+    ],
+    "Cn_order": 6,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965985,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.1745329251994332
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o3_r2_mixed",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.7255626302463277,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.047197551196598
+        ]
+      },
+      {
+        "radius": 1.3782407724892087,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.047197551196597
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      3
+    ],
+    "ring_radii": [
+      0.7255626302463277,
+      1.3782407724892087
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.38599770642517095,
+      2.05746324636689
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o3_r2_generic_complex",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.6446898273744027,
+        "count": 3,
+        "base_angle": -1.3962634015954645,
+        "args": [
+          -1.3962634015954645,
+          0.698131700797732,
+          2.792526803190927
+        ]
+      },
+      {
+        "radius": 1.5511335180712433,
+        "count": 3,
+        "base_angle": -2.7925268031909276,
+        "args": [
+          -2.7925268031909276,
+          -0.6981317007977321,
+          1.3962634015954645
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      3
+    ],
+    "ring_radii": [
+      0.6446898273744027,
+      1.5511335180712433
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965987,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.3471910641967677,
+      0.0018747862020993544
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o4_r1_simple",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 1.0,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974483,
+          0.7853981633974485,
+          2.356194490192345
+        ]
+      }
+    ],
+    "ring_counts": [
+      4
+    ],
+    "ring_radii": [
+      1.0
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965974,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.26179938779914913
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o4_r2_simple",
+    "n_roots": 8,
+    "rings": [
+      {
+        "radius": 0.9999999999999979,
+        "count": 8,
+        "base_angle": -2.748893571891069,
+        "args": [
+          -2.748893571891069,
+          -1.9634954084936203,
+          -1.1780972450961722,
+          -0.39269908169872403,
+          0.392699081698724,
+          1.1780972450961729,
+          1.9634954084936205,
+          2.7488935718910694
+        ]
+      }
+    ],
+    "ring_counts": [
+      8
+    ],
+    "ring_radii": [
+      0.9999999999999979
+    ],
+    "Cn_order": 8,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965956,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.13089969389957368
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o4_r2_mixed",
+    "n_roots": 8,
+    "rings": [
+      {
+        "radius": 0.786151377757423,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974481,
+          0.7853981633974482,
+          2.3561944901923453
+        ]
+      },
+      {
+        "radius": 1.272019649514066,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974484,
+          0.7853981633974478,
+          2.3561944901923457
+        ]
+      }
+    ],
+    "ring_counts": [
+      4,
+      4
+    ],
+    "ring_radii": [
+      0.786151377757423,
+      1.272019649514066
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.047197551196595,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.28949827981887744,
+      1.5430974347751665
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o4_r2_generic_complex",
+    "n_roots": 8,
+    "rings": [
+      {
+        "radius": 0.719470701422262,
+        "count": 4,
+        "base_angle": -2.6179938779914953,
+        "args": [
+          -2.6179938779914953,
+          -1.0471975511965979,
+          0.5235987755982989,
+          2.0943951023931966
+        ]
+      },
+      {
+        "radius": 1.3899106635241487,
+        "count": 4,
+        "base_angle": -2.0943951023931953,
+        "args": [
+          -2.0943951023931953,
+          -0.5235987755982979,
+          1.0471975511965974,
+          2.617993877991494
+        ]
+      }
+    ],
+    "ring_counts": [
+      4,
+      4
+    ],
+    "ring_radii": [
+      0.719470701422262,
+      1.3899106635241487
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.047197551196598,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.26039329814757517,
+      0.0014060896515726284
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s2o3_r1_simple",
+    "n_roots": 3,
+    "rings": [
+      {
+        "radius": 1.0000000000000004,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.0471975511965979
+        ]
+      }
+    ],
+    "ring_counts": [
+      3
+    ],
+    "ring_radii": [
+      1.0000000000000004
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.34906585039886595
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s2o3_r2_simple",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 1.0000000000000002,
+        "count": 6,
+        "base_angle": -2.617993877991495,
+        "args": [
+          -2.617993877991495,
+          -1.5707963267948966,
+          -0.5235987755982988,
+          0.5235987755982985,
+          1.5707963267948966,
+          2.617993877991494
+        ]
+      }
+    ],
+    "ring_counts": [
+      6
+    ],
+    "ring_radii": [
+      1.0000000000000002
+    ],
+    "Cn_order": 6,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965985,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.1745329251994332
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s2o3_r2_mixed",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.7255626302463277,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.047197551196598
+        ]
+      },
+      {
+        "radius": 1.3782407724892087,
+        "count": 3,
+        "base_angle": -3.141592653589793,
+        "args": [
+          -3.141592653589793,
+          -1.0471975511965976,
+          1.047197551196597
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      3
+    ],
+    "ring_radii": [
+      0.7255626302463277,
+      1.3782407724892087
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.38599770642517095,
+      2.05746324636689
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s2o3_r2_generic_complex",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 0.6446898273744027,
+        "count": 3,
+        "base_angle": -1.3962634015954645,
+        "args": [
+          -1.3962634015954645,
+          0.698131700797732,
+          2.792526803190927
+        ]
+      },
+      {
+        "radius": 1.5511335180712433,
+        "count": 3,
+        "base_angle": -2.7925268031909276,
+        "args": [
+          -2.7925268031909276,
+          -0.6981317007977321,
+          1.3962634015954645
+        ]
+      }
+    ],
+    "ring_counts": [
+      3,
+      3
+    ],
+    "ring_radii": [
+      0.6446898273744027,
+      1.5511335180712433
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965987,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.3471910641967677,
+      0.0018747862020993544
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s3o2_r1_simple",
+    "n_roots": 2,
+    "rings": [
+      {
+        "radius": 0.9999999999999997,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ]
+      }
+    ],
+    "ring_counts": [
+      2
+    ],
+    "ring_radii": [
+      0.9999999999999997
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965979,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5235987755982987
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s3o2_r2_simple",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 1.0,
+        "count": 4,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.7853981633974483,
+          0.7853981633974485,
+          2.356194490192345
+        ]
+      }
+    ],
+    "ring_counts": [
+      4
+    ],
+    "ring_radii": [
+      1.0
+    ],
+    "Cn_order": 4,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965974,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.26179938779914913
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s3o2_r2_mixed",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 0.6180339887498948,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ]
+      },
+      {
+        "radius": 1.6180339887498967,
+        "count": 2,
+        "base_angle": -1.5707963267948966,
+        "args": [
+          -1.5707963267948966,
+          1.570796326794897
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.6180339887498948,
+      1.6180339887498967
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965976,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5789965596377566,
+      3.0861948695503347
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s3o2_r2_generic_complex",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 0.5176380902050421,
+        "count": 2,
+        "base_angle": -2.0943951023931957,
+        "args": [
+          -2.0943951023931957,
+          1.047197551196598
+        ]
+      },
+      {
+        "radius": 1.9318516525781353,
+        "count": 2,
+        "base_angle": -1.0471975511965974,
+        "args": [
+          -1.0471975511965974,
+          2.0943951023931953
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.5176380902050421,
+      1.9318516525781353
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 1.0471975511965976,
+    "monodromy_matches_theta": true,
+    "per_ring_rotation": [
+      0.5207865962951506,
+      0.0028121793031476994
+    ]
+  },
+  {
+    "name": "STRESS_equalmod",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 1.4142135623730938,
+        "count": 6,
+        "base_angle": -2.356194490192345,
+        "args": [
+          -2.356194490192345,
+          -0.785398163397449,
+          -2.232475214690987e-16,
+          0.7853981633974483,
+          2.356194490192345,
+          3.141592653589793
+        ]
+      }
+    ],
+    "ring_counts": [
+      6
+    ],
+    "ring_radii": [
+      1.4142135623730938
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 0.0,
+    "monodromy_matches_theta": false,
+    "per_ring_rotation": [
+      0.0
+    ]
+  },
+  {
+    "name": "STRESS_doubleroot",
+    "n_roots": 9,
+    "rings": [
+      {
+        "radius": 1.0000000019442425,
+        "count": 6,
+        "base_angle": -2.0943951102413485,
+        "args": [
+          -2.0943951102413485,
+          -2.094395094545042,
+          -6.295691147846394e-10,
+          6.295692043608362e-10,
+          2.0943950909042557,
+          2.094395113882135
+        ]
+      },
+      {
+        "radius": 1.2599210498948739,
+        "count": 3,
+        "base_angle": -2.094395102393196,
+        "args": [
+          -2.094395102393196,
+          -7.782460709588352e-18,
+          2.0943951023931975
+        ]
+      }
+    ],
+    "ring_counts": [
+      6,
+      3
+    ],
+    "ring_radii": [
+      1.0000000019442425,
+      1.2599210498948739
+    ],
+    "Cn_order": 3,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 0.0,
+    "monodromy_matches_theta": false,
+    "per_ring_rotation": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "STRESS_zeroroot",
+    "n_roots": 4,
+    "rings": [
+      {
+        "radius": 0.0,
+        "count": 2,
+        "base_angle": 0.0,
+        "args": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "radius": 0.9999999999999996,
+        "count": 2,
+        "base_angle": 0.0,
+        "args": [
+          0.0,
+          3.141592653589793
+        ]
+      }
+    ],
+    "ring_counts": [
+      2,
+      2
+    ],
+    "ring_radii": [
+      0.0,
+      0.9999999999999996
+    ],
+    "Cn_order": 2,
+    "is_regular_polygon": false,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 0.0,
+    "monodromy_matches_theta": false,
+    "per_ring_rotation": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "STRESS_accidental_sym",
+    "n_roots": 6,
+    "rings": [
+      {
+        "radius": 1.0000000000000002,
+        "count": 6,
+        "base_angle": -2.617993877991495,
+        "args": [
+          -2.617993877991495,
+          -1.5707963267948966,
+          -0.5235987755982988,
+          0.5235987755982985,
+          1.5707963267948966,
+          2.617993877991494
+        ]
+      }
+    ],
+    "ring_counts": [
+      6
+    ],
+    "ring_radii": [
+      1.0000000000000002
+    ],
+    "Cn_order": 6,
+    "is_regular_polygon": true,
+    "monodromy_theta": 1.0471975511965976,
+    "monodromy_argshift_product": 0.0,
+    "monodromy_matches_theta": false,
+    "per_ring_rotation": [
+      0.0
+    ]
+  }
+]

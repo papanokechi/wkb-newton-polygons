@@ -1,0 +1,102 @@
+[
+  {
+    "id": "G1",
+    "title": "Multi-edge Newton polygons",
+    "why": "Phase 1+2 treated only the dominant edge; an operator with k > 1 edges yields a slope filtration that the present F ignores."
+  },
+  {
+    "id": "G2",
+    "title": "2x2 and 3x3 systems",
+    "why": "F is defined on scalar operators only; for systems the eigenvalue spectrum of the leading symbol generates a richer constellation."
+  },
+  {
+    "id": "G3",
+    "title": "High-ramification slopes (q >= 5)",
+    "why": "All Phase-1 sweep points used q in {2,3,4}; q=5,6,7 may exhibit phenomena (number-theoretic resonance, larger automorphism groups) invisible at small q."
+  },
+  {
+    "id": "G4",
+    "title": "Delta_ij modulus partition",
+    "why": "The constellation only records {c_i}; the multiset {|c_i - c_j|} is a finer invariant that survives global rotation."
+  },
+  {
+    "id": "G5",
+    "title": "Delta_ij argument partition",
+    "why": "Stokes lines are determined by arg(c_i - c_j); a modulus-free angular invariant is the bridge to Stokes-graph classification."
+  },
+  {
+    "id": "G6",
+    "title": "Z-resonance among constellation points",
+    "why": "Integer linear relations sum n_k c_k = 0 with small |n_k| signal accidental algebraic dependencies absent from Phase 1's clustering key."
+  },
+  {
+    "id": "G7",
+    "title": "omega-resonance beyond mu_q",
+    "why": "When arg(c_i) - arg(c_j) is in 2 pi Q with denominator strictly larger than q, the constellation has additional rotational structure."
+  },
+  {
+    "id": "G8",
+    "title": "Mixed-type operators (D + lambda S)",
+    "why": "Operators combining differential and difference terms test whether F's combinatorial output is genuinely equation-type-agnostic at the Newton-polygon level."
+  },
+  {
+    "id": "G9",
+    "title": "Controlled discriminant collisions",
+    "why": "Phase 1 found degenerations by stress test; a parametric family approaching the discriminant locus would expose the deformation law."
+  },
+  {
+    "id": "G10",
+    "title": "Slope-filtration interaction across edges",
+    "why": "For multi-edge polygons, do the per-edge constellations C_alpha algebraically interact (resonances among edges) or are they independent?"
+  },
+  {
+    "id": "G11",
+    "title": "Analytic fibres of F (equation-type discrimination)",
+    "why": "Phase 1 noted that the combinatorial chi is equation-type invariant but the analytic meaning of c is not; an analytic invariant distinguishing ODE/diff/q-diff is missing."
+  },
+  {
+    "id": "G12",
+    "title": "Galois action on chi_w",
+    "why": "Gal(Q-bar/Q) acts on the roots w_i; this action lifts to a permutation of the rings of C(L). Phase 1 has no Galois-theoretic invariant."
+  },
+  {
+    "id": "G13",
+    "title": "Sharpness of p-invariance",
+    "why": "Phase 1 conjectured the slope numerator p is invisible; in multi-edge or systems contexts this may fail (p could survive as a phase twist)."
+  },
+  {
+    "id": "G14",
+    "title": "Orbit fusion under real-coefficient pairing",
+    "why": "Real chi_w has conjugate root pairs of equal modulus, fusing two mu_q-orbits; this is recorded as a class but not as an invariant of F."
+  },
+  {
+    "id": "G15",
+    "title": "Codimension count for each degeneracy stratum",
+    "why": "Phase 1 names 4 strata but does not specify their codimension in the alpha-coefficient space, blocking a precise stratification statement."
+  },
+  {
+    "id": "G16",
+    "title": "Deep zero-root strata",
+    "why": "alpha_r = 0 alone gives multiplicity q at zero, but if alpha_r = alpha_{r-1} = 0, the constellation collapses further."
+  },
+  {
+    "id": "G17",
+    "title": "Per-edge gauge group",
+    "why": "Each edge alpha admits its own leading-coefficient gauge beta_alpha; Vieta monodromy may decompose under the product of these groups."
+  },
+  {
+    "id": "G18",
+    "title": "Inner-polynomial ramification",
+    "why": "chi_w itself may admit a further factorisation chi_w(w) = chi_v(w^{q'}) for some q' > 1; this is iterated mu_q-pullback structure."
+  },
+  {
+    "id": "G19",
+    "title": "Mixed equation-type Newton polygons",
+    "why": "If a single operator carries both D^k and S^k terms, the Newton-polygon recipe still applies; do the resulting classes match the pure ones?"
+  },
+  {
+    "id": "G20",
+    "title": "Limit of high-rank / high-q families",
+    "why": "What is the asymptotic structure of C(L) as r, q -> infinity? Equidistribution on annuli? Random-matrix-like statistics?"
+  }
+]

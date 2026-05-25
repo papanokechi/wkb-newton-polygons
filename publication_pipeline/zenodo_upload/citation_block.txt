@@ -1,0 +1,119 @@
+================================================================================
+How to cite this dataset and the accompanying manuscript
+"The WKB Geometry of Newton Polygons: A Functorial Classification Theory"
+v2.0 (2026-05-26)
+================================================================================
+
+Authors:   Papanokechi  (ORCID 0009-0000-6192-8273; Independent Researcher)
+DOI:       10.5281/zenodo.XXXXXXX     (assigned by Zenodo at publication)
+URL:       https://doi.org/10.5281/zenodo.XXXXXXX
+GitHub:    https://github.com/papanokechi/wkb-newton-polygons
+License:   MIT (code/, fleets/) + CC-BY-4.0 (paper/, reports/, figures/)
+
+
+================================================================================
+1.  BibTeX
+================================================================================
+
+Preferred (cite the v2.0 record, which contains the camera-ready paper):
+
+@misc{papanokechi-wkb-newton-2026,
+  author       = {Papanokechi},
+  title        = {The {WKB} Geometry of {Newton} Polygons:
+                  A Functorial Classification Theory},
+  year         = {2026},
+  month        = may,
+  publisher    = {Zenodo},
+  version      = {2.0},
+  doi          = {10.5281/zenodo.XXXXXXX},
+  url          = {https://doi.org/10.5281/zenodo.XXXXXXX},
+  note         = {Version 2.0; camera-ready manuscript and companion
+                  computational atlas. Supersedes v1.0
+                  (10.5281/zenodo.20355904).}
+}
+
+Secondary (cite only the dataset, e.g.\ in a software-citations section):
+
+@dataset{papanokechi-wkb-dataset-2026,
+  author       = {Papanokechi},
+  title        = {{WKB} Newton-Polygon Classification: Computational Atlas},
+  year         = {2026},
+  publisher    = {Zenodo},
+  version      = {2.0},
+  doi          = {10.5281/zenodo.XXXXXXX},
+  url          = {https://doi.org/10.5281/zenodo.XXXXXXX}
+}
+
+Companion arXiv preprint (placeholder; update after arXiv submission):
+
+@misc{papanokechi-wkb-arxiv-2026,
+  author       = {Papanokechi},
+  title        = {The {WKB} Geometry of {Newton} Polygons:
+                  A Functorial Classification Theory},
+  year         = {2026},
+  eprint       = {XXXX.XXXXX},
+  archivePrefix= {arXiv},
+  primaryClass = {math-ph},
+  url          = {https://arxiv.org/abs/XXXX.XXXXX}
+}
+
+
+================================================================================
+2.  Plain text
+================================================================================
+
+Papanokechi (2026). The WKB Geometry of Newton Polygons: A Functorial
+Classification Theory (v2.0) [Software and dataset]. Zenodo.
+https://doi.org/10.5281/zenodo.XXXXXXX
+
+
+================================================================================
+3.  APA 7
+================================================================================
+
+Papanokechi. (2026). The WKB geometry of Newton polygons: A functorial
+classification theory (Version 2.0) [Software and dataset]. Zenodo.
+https://doi.org/10.5281/zenodo.XXXXXXX
+
+
+================================================================================
+4.  Chicago (author–date)
+================================================================================
+
+Papanokechi. 2026. "The WKB Geometry of Newton Polygons: A Functorial
+Classification Theory." Version 2.0. Zenodo.
+https://doi.org/10.5281/zenodo.XXXXXXX.
+
+
+================================================================================
+5.  IEEE
+================================================================================
+
+Papanokechi, "The WKB Geometry of Newton Polygons: A Functorial
+Classification Theory," v2.0, Zenodo, May 2026.
+[Online]. Available: https://doi.org/10.5281/zenodo.XXXXXXX
+
+
+================================================================================
+6.  Cite-this-software widget (CITATION.cff)
+================================================================================
+
+Machine-readable citation metadata is provided in CITATION.cff at the
+root of the repository.  GitHub's "Cite this repository" widget will
+render the preferred citation automatically.
+
+
+================================================================================
+7.  When to cite v1.0 vs.\ v2.0
+================================================================================
+
+Cite v2.0  (this record):
+  - if you use any version of the manuscript;
+  - if you use the rendered taxonomy figure (Figure 1);
+  - if you use the in-manuscript proofs (M1, N1, D2, S1, AT1, AT3, AT5, AT7).
+
+Cite v1.0  (10.5281/zenodo.20355904):
+  - only if you specifically need the snapshot before the Round-1 and
+    Round-2 referee revisions.
+
+In all other cases, prefer v2.0.

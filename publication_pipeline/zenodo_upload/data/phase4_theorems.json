@@ -1,0 +1,354 @@
+[
+  {
+    "id": "AT1",
+    "title": "Anti-Stokes / Delta-argument correspondence on the cover (open stratum)",
+    "statement": "Let L be scalar with one dominant Newton edge of slope -p/q in lowest terms, on the open stratum (no omega-resonance, no symmetry inflation, no Z-resonance). Let C(L) = {c_1, ..., c_N} and Delta_{ij} = c_i - c_j. Then on the ramified cover t-plane the anti-Stokes directions of the Levelt-Turrittin connection are exactly {phi : arg(Delta_{ij}) + p * phi = pi/2 (mod pi), some i != j}, yielding 2 p * (N choose 2) directions counted with multiplicity. Distinct directions and their multiplicities are encoded by the Delta-argument partition of Phase III (D1). Projecting to the base x-plane identifies directions modulo 2 pi / q, giving 2 p * (N choose 2) / gcd(2 p, q) directions in [0, 2 pi).",
+    "evidence": {
+      "open_stratum_ops": 11,
+      "examples": [
+        "HIGHQ_simple_s1o5_r1",
+        "HIGHQ_simple_s1o6_r1",
+        "HIGHQ_simple_s1o7_r1",
+        "HIGHQ_genc_s1o5_r3",
+        "MIX_DandS_1o3_r2"
+      ],
+      "predicted_ray_count_per_pair_on_cover": "2 p",
+      "predicted_projection_factor": "gcd(2 p, q)"
+    },
+    "remarks": "This is the cleanest analytic lift of D1: arg(Delta_{ij}) is not just a combinatorial partition; it is the angle of an anti-Stokes ray. The lift is on the cover, NOT the base; the base x-plane sees a quotient picture.",
+    "lift_strength": "exact correspondence (open stratum)"
+  },
+  {
+    "id": "AT2",
+    "title": "omega-resonance produces cluster enhancement (universal); naive m/q is partial",
+    "statement": "Let C(L) carry omega-resonance with angular denominator m > q (Phase-III O1). Then on the cover t-plane: (i) the anti-Stokes ray multiplicities are STRICTLY ENHANCED above the generic single-pair value (max_mult >= 2 in every observed case, defining cluster groups at angular scale 2 pi / m); (ii) however, the naive prediction max_mult = m/q (one extra Stokes constant per coincidence) matches the observed leading-order max_mult only on a partial sub-locus of omega-resonant operators. Specifically, simple-chi_w operators with prime q and small q/m gap tend to attain max_mult = m/q at leading order, while generic-chi_w operators with composite q (or with q=2 and large m) show max_mult < m/q. The shortfall is bridged by lower-order Q_i coefficient alignment; full Stokes-group enhancement is a closed condition of higher codimension in the wild character variety moduli.",
+    "evidence": {
+      "omega_resonant_ops": 22,
+      "ops_with_multiplicity_>=_m/q": 9,
+      "ops_with_multiplicity_<_m/q": 13,
+      "fraction_matching_naive": 0.409,
+      "multiplicity_comparison_full": [
+        {
+          "operator": "CTRL_conjroots_t0",
+          "m": 24,
+          "q": 2,
+          "predicted_naive_mult": 12.0,
+          "observed_max_mult": 4,
+          "matches_naive": false
+        },
+        {
+          "operator": "CTRL_conjroots_t1",
+          "m": 16,
+          "q": 2,
+          "predicted_naive_mult": 8.0,
+          "observed_max_mult": 4,
+          "matches_naive": false
+        },
+        {
+          "operator": "CTRL_conjroots_t2",
+          "m": 12,
+          "q": 2,
+          "predicted_naive_mult": 6.0,
+          "observed_max_mult": 4,
+          "matches_naive": false
+        },
+        {
+          "operator": "GAL_cyclotomic_3",
+          "m": 6,
+          "q": 2,
+          "predicted_naive_mult": 3.0,
+          "observed_max_mult": 2,
+          "matches_naive": false
+        },
+        {
+          "operator": "GAL_cyclotomic_5",
+          "m": 10,
+          "q": 2,
+          "predicted_naive_mult": 5.0,
+          "observed_max_mult": 4,
+          "matches_naive": false
+        },
+        {
+          "operator": "HIGHQ_genc_s1o5_r2",
+          "m": 15,
+          "q": 5,
+          "predicted_naive_mult": 3.0,
+          "observed_max_mult": 2,
+          "matches_naive": false
+        },
+        {
+          "operator": "HIGHQ_genc_s1o6_r2",
+          "m": 18,
+          "q": 6,
+          "predicted_naive_mult": 3.0,
+          "observed_max_mult": 4,
+          "matches_naive": true
+        },
+        {
+          "operator": "HIGHQ_genc_s2o5_r2",
+          "m": 15,
+          "q": 5,
+          "predicted_naive_mult": 3.0,
+          "observed_max_mult": 2,
+          "matches_naive": false
+        },
+        {
+          "operator": "HIGHQ_genc_s3o7_r2",
+          "m": 21,
+          "q": 7,
+          "predicted_naive_mult": 3.0,
+          "observed_max_mult": 3,
+          "matches_naive": true
+        },
+        {
+          "operator": "HIGHQ_simple_s1o5_r2",
+          "m": 10,
+          "q": 5,
+          "predicted_naive_mult": 2.0,
+          "observed_max_mult": 5,
+          "matches_naive": true
+        },
+        {
+          "operator": "HIGHQ_simple_s1o5_r3",
+          "m": 15,
+          "q": 5,
+          "predicted_naive_mult": 3.0,
+          "observed_max_mult": 7,
+          "matches_naive": true
+        },
+        {
+          "operator": "HIGHQ_simple_s1o6_r2",
+          "m": 12,
+          "q": 6,
+          "predicted_naive_mult": 2.0,
+          "observed_max_mult": 6,
+          "matches_naive": true
+        },
+        {
+          "operator": "HIGHQ_simple_s1o6_r3",
+          "m": 18,
+          "q": 6,
+          "predicted_naive_mult": 3.0,
+          "observed_max_mult": 9,
+          "matches_naive": true
+        },
+        {
+          "operator": "HIGHQ_simple_s2o5_r2",
+          "m": 10,
+          "q": 5,
+          "predicted_naive_mult": 2.0,
+          "observed_max_mult": 5,
+          "matches_naive": true
+        },
+        {
+          "operator": "HIGHQ_simple_s3o7_r2",
+          "m": 14,
+          "q": 7,
+          "predicted_naive_mult": 2.0,
+          "observed_max_mult": 7,
+          "matches_naive": true
+        },
+        {
+          "operator": "MULTI3_1o4_1o3_1o2",
+          "m": 24,
+          "q": 2,
+          "predicted_naive_mult": 12.0,
+          "observed_max_mult": 26,
+          "matches_naive": true
+        },
+        {
+          "operator": "NEST_q2_qinner3",
+          "m": 18,
+          "q": 2,
+          "predicted_naive_mult": 9.0,
+          "observed_max_mult": 6,
+          "matches_naive": false
+        },
+        {
+          "operator": "NEST_q3_qinner2",
+          "m": 18,
+          "q": 2,
+          "predicted_naive_mult": 9.0,
+          "observed_max_mult": 6,
+          "matches_naive": false
+        },
+        {
+          "operator": "OMEGA_q2_fifth",
+          "m": 10,
+          "q": 2,
+          "predicted_naive_mult": 5.0,
+          "observed_max_mult": 2,
+          "matches_naive": false
+        },
+        {
+          "operator": "OMEGA_q3_seventh",
+          "m": 21,
+          "q": 2,
+          "predicted_naive_mult": 10.5,
+          "observed_max_mult": 3,
+          "matches_naive": false
+        },
+        {
+          "operator": "SYS2_1o2_1o3",
+          "m": 12,
+          "q": 3,
+          "predicted_naive_mult": 4.0,
+          "observed_max_mult": 2,
+          "matches_naive": false
+        },
+        {
+          "operator": "SYS3_1o2_1o3_1o4",
+          "m": 24,
+          "q": 4,
+          "predicted_naive_mult": 6.0,
+          "observed_max_mult": 4,
+          "matches_naive": false
+        }
+      ],
+      "observed_denoms": [
+        6,
+        10,
+        12,
+        14,
+        15,
+        16,
+        18,
+        21,
+        24
+      ],
+      "summary": "Universal: every Phase-III omega-resonant operator shows max_mult >= 2 (enhancement IS present). Partial match: ~41% match naive m/q at leading order; the remainder show max_mult strictly less than m/q. The bimodal pattern (HIGHQ-simple-prime-q vs HIGHQ-genc-composite-q / CTRL_conjroots / GAL_cyclotomic) suggests that naive m/q is exact on a structured stratum and a strict lower bound elsewhere."
+    },
+    "remarks": "AT2 is a NECESSARY condition (enhancement always present) with a partial SUFFICIENT condition (naive m/q exact on a sub-locus). The naive prediction fails generically but holds on an identifiable stratum; the full sufficient condition requires lower-order Q-coefficient alignment, of higher codimension.",
+    "lift_strength": "structural (necessary: enhancement universal; sufficient: partial sub-locus)"
+  },
+  {
+    "id": "AT3",
+    "title": "Nested ramification corresponds to an iterated Levelt-Turrittin cover",
+    "statement": "If chi_w(w) = chi_v(w^{q'}) for some q' > 1 (Phase-III N1), then the minimal cover on which the formal connection splits is x = tau^{q q'} (not x = t^q). On the inner cover tau, the irregular-type polynomials have degree p q', and the anti-Stokes ray set has 2 p q' * (N' choose 2) directions (where N' = deg chi_v). The (mu_q x mu_{q'})-action makes the wild character variety MW(L) into a quotient of a finer variety by a finite group of order q q'.",
+    "evidence": {
+      "nest_ops": 2,
+      "examples": [
+        "NEST_q3_qinner2",
+        "NEST_q2_qinner3"
+      ],
+      "observed_symmetries": [
+        [
+          "NEST_q3_qinner2",
+          6
+        ],
+        [
+          "NEST_q2_qinner3",
+          6
+        ]
+      ]
+    },
+    "remarks": "Phase-III N1 detected this as a discrete symmetry inflation; AT3 interprets it analytically as the choice of minimal Levelt-Turrittin cover. Cancellations may reduce the effective q*q' if chi_v has additional structure.",
+    "lift_strength": "structural (cover refinement)"
+  },
+  {
+    "id": "AT4",
+    "title": "Direct-sum system pullback gives a direct-sum wild character variety",
+    "statement": "For Phi = diag(L_1, ..., L_n) a block-diagonal system, the wild character variety factors: MW(Phi) = prod_i MW(L_i) (Phase-III S1). Stokes matrices are block diagonal, anti-Stokes ray sets are unions of the per-block ray sets, and the formal monodromy is the direct sum of per-block monodromies.",
+    "evidence": {
+      "system_ops": 4,
+      "examples": [
+        "SYS2_1o2_1o3",
+        "SYS2_1o3_r2_genc",
+        "SYS3_1o2_1o3_1o4",
+        "SYS3_1o5_r1_x3"
+      ]
+    },
+    "remarks": "Holds only for genuine direct sums; coupled systems (e.g. cyclic-vector reductions of scalar operators of higher order, or generic Painleve-type systems) require non-block Stokes data and lie OUTSIDE the Phase-IV lifting framework.",
+    "lift_strength": "exact for direct sums; not applicable to coupled systems"
+  },
+  {
+    "id": "AT5",
+    "title": "Multi-edge slope filtration on the anti-Stokes skeleton",
+    "statement": "For a scalar operator L with multi-edge Newton polygon (edges E_1, ..., E_m of strictly increasing slope), the formal connection splits as a direct sum L_formal = bigoplus_alpha L_alpha indexed by slope (Phase-III M1). The anti-Stokes ray set decomposes as a slope-graded union: rays of slope -p_alpha/q_alpha come from pairs (i, j) with i, j both in C_alpha; rays from cross-edge pairs (i in C_alpha, j in C_beta, alpha != beta) are governed by the LARGER slope's leading Q coefficient, i.e. by Q_i - Q_j whose degree equals max(p_alpha, p_beta) * (q_alpha q_beta / lcm). Hence cross-edge anti-Stokes directions inherit the dominant edge's combinatorics.",
+    "evidence": {
+      "multi_edge_ops": 9,
+      "examples": [
+        "MULTI_edges_1o3_then_1o2",
+        "MULTI_edges_1o4_then_1o2",
+        "MULTI_edges_1o5_then_1o2",
+        "MULTI_edges_1o3_r2_then_1o2",
+        "MULTI_edges_1o4_r2_then_1o3"
+      ],
+      "right_edge_zero_roots": [
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    "remarks": "Phase-III M1 stated the decomposition combinatorially (C = bigsqcup C_alpha); AT5 upgrades it to a *slope filtration* on the Stokes structure: the (anti-)Stokes data are slope-graded, with each grade carrying a single-edge Stokes skeleton.",
+    "lift_strength": "structural (slope filtration); cross-edge leading-term analysis needed for full details"
+  },
+  {
+    "id": "AT6",
+    "title": "Galois action on rings descends to Galois-equivariant strata of the wild character variety",
+    "statement": "Let chi_w(w) be defined over a number field K with Galois group Gal(K-bar/K). The action on Roots(chi_w) lifts (via mu_q-pullback) to an action on the ring set {R_alpha} of C(L) (Phase-III G1). The discrete part of MW(L) (i.e. the set of leading {c_i} configurations) carries a Gal(K-bar/K)-equivariant structure: the K-rational locus of MW(L) is the locus where Stokes data are invariant under the Galois action on rings.",
+    "evidence": {
+      "galois_ops": 2,
+      "examples": [
+        "GAL_cyclotomic_3",
+        "GAL_cyclotomic_5"
+      ],
+      "observed_omega_denoms": [
+        [
+          "GAL_cyclotomic_3",
+          6
+        ],
+        [
+          "GAL_cyclotomic_5",
+          10
+        ]
+      ]
+    },
+    "remarks": "Galois descent applies to the DISCRETE part of MW(L) (the irregular type up to formal monodromy); Stokes constants themselves are typically transcendental and lie in a Galois extension determined by the actual ODE coefficients.",
+    "lift_strength": "structural (discrete part); transcendental for Stokes constants"
+  },
+  {
+    "id": "AT7",
+    "title": "p-visibility of anti-Stokes data (negation of naive p-invariance)",
+    "statement": "While the Phase-III Delta-modulus partition is invariant under p -> p' with gcd(p, q) = gcd(p', q) = 1 (P1), the analytic anti-Stokes ray *positions* depend on p: ray spacing is 2 pi / (2 p) on the cover and the cover-to-base projection factor is gcd(2 p, q). Hence Phase-III's p-invariance is a property of the *combinatorial* (modulus / argument partition) data only; the analytic Stokes structure detects p through the projection. Concretely: for fixed q, varying p across coprime residues produces analytic data that differ as wild character variety points even when discrete invariants agree.",
+    "evidence": {
+      "pinv_ops": 4,
+      "examples": [
+        "PINV_s1o5_r2_genc",
+        "PINV_s2o5_r2_genc",
+        "PINV_s3o5_r2_genc",
+        "PINV_s4o5_r2_genc"
+      ],
+      "common_Delta_modulus_partition": "[5, 5, 5, 5, 5, 5, 5, 5, 5]",
+      "differing_anti_Stokes_data": "Yes: ray positions phi_{ij,k}(p) differ for p in {1, 2, 3, 4} mod 5."
+    },
+    "remarks": "This formalises the boundary of Phase-III P1: p is invisible at the Newton-polygon / constellation / Delta-partition level but VISIBLE analytically. The Stokes skeleton sees p; the constellation does not.",
+    "lift_strength": "exact (explicit p-dependence in ray angle formula)"
+  },
+  {
+    "id": "AT8",
+    "title": "chi_w-stratum is detected by cross-ring Z-resonance, not by Stokes skeleton",
+    "statement": "Phase-III D2 distinguishes generic vs simple chi_w by the presence of cross-ring nontrivial Z-relations among the c_i. These relations are arithmetic (over Q) and define a chi_w-stratum in the affine moduli of leading-coefficient configurations. The anti-Stokes skeleton, by contrast, depends only on arg(Delta_{ij}) which varies continuously with (c_1, ..., c_N). Hence: chi_w-strata are INVISIBLE to the local Stokes skeleton; they show up as algebraic constraints on the *position* of MW(L) in its ambient moduli.",
+    "evidence": {
+      "simple_with_Z": 6,
+      "prime_q_genc_no_Z": 4,
+      "examples_simple": [
+        "HIGHQ_simple_s1o5_r2",
+        "HIGHQ_simple_s2o5_r2",
+        "HIGHQ_simple_s1o6_r2",
+        "HIGHQ_simple_s3o7_r2",
+        "HIGHQ_simple_s1o5_r3"
+      ],
+      "examples_genc": [
+        "HIGHQ_genc_s1o5_r2",
+        "HIGHQ_genc_s2o5_r2",
+        "HIGHQ_genc_s3o7_r2",
+        "HIGHQ_genc_s1o5_r3"
+      ]
+    },
+    "remarks": "AT8 is a *transversality* statement: Stokes data and chi_w-strata are independent dimensions of the wild character variety landscape. Cross-ring Z-resonance refines the discrete moduli; the anti-Stokes skeleton refines the local Stokes structure.",
+    "lift_strength": "structural (transversality)"
+  }
+]

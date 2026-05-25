@@ -1,0 +1,148 @@
+{
+  "title": "Phase V -- target statements (restated with hypotheses and counterexample annotations).",
+  "theorems": [
+    {
+      "id": "M1",
+      "label": "Theorem M1 (Per-edge factorisation, multi-edge generalisation).",
+      "phase_source": "III",
+      "phase_statement": "For a scalar operator L with Newton polygon N(L) having edges E_1, ..., E_m at the irregular singularity (ordered by increasing slope), each E_alpha of slope -p_alpha/q_alpha with r_alpha+1 lattice points contributes a characteristic polynomial chi^{(alpha)}(c) = c^{k_0^{(alpha)}} * chi_w^{(alpha)}(c^{q_alpha}). The full WKB symbol factors as the PRODUCT chi(c) = prod_alpha chi^{(alpha)}(c) and the constellation C(L) is the (multiset) DISJOINT UNION of per-edge constellations C_alpha, each obtained from chi_w^{(alpha)} by the same mu_{q_alpha}-equivariant pullback as the Main Theorem.",
+      "hypothesis_block": "\\textbf{Hypotheses.} $L$ scalar, polynomial coefficients, one irregular singularity\nat $x = \\infty$, $N(L)$ multi-edge with edges of strictly increasing slope. The\nformal direct-sum decomposition (Step 1) is unconditional; the multiset disjoint\nunion (Step 3) is unconditional; the \\emph{set} disjoint union (Step 4) holds\non the open subset $U_{\\mathrm{disj}}$.\n",
+      "statement_latex": "Let $L$ be a scalar linear operator with polynomial coefficients on $\\mathbb{C}[x]$\nand a single irregular singularity at $x = \\infty$. Suppose $N(L)$ at $\\infty$ has\nedges $E_1, \\ldots, E_m$ with pairwise distinct slopes $-p_\\alpha / q_\\alpha$\n($\\gcd(p_\\alpha, q_\\alpha) = 1$) and $r_\\alpha + 1$ lattice points on $E_\\alpha$.\nThen:\n\n\\begin{enumerate}\n  \\item (Slope decomposition.) The formal differential module $\\widehat{M}(L)$\n  associated to $L$ admits a canonical slope decomposition into slope-graded\n  pieces $\\widehat{M}_1, \\ldots, \\widehat{M}_m$, with $\\widehat{M}_\\alpha$ of\n  pure slope $p_\\alpha / q_\\alpha$. Passing back from formal modules to cyclic\n  vectors, $\\widehat{M}_\\alpha$ corresponds to a single-slope scalar operator\n  $L_\\alpha$ (well-defined up to formal gauge), so we may write\n  $\\widehat{L} \\simeq L_1 \\oplus \\cdots \\oplus L_m$ in the sense of formal\n  modules.\n\n  \\item (Per-edge characteristic polynomial.) Each $L_\\alpha$ satisfies the\n  Phase-I Main Theorem with $\\chi^{(\\alpha)}(c) = c^{k_0^{(\\alpha)}}\\,\n  \\chi_w^{(\\alpha)}\\!\\big(c^{q_\\alpha}\\big)$, where $k_0^{(\\alpha)}$ is the\n  height of $E_\\alpha$ above the $c$-axis and $\\chi_w^{(\\alpha)}$ is the inner\n  polynomial of degree $r_\\alpha$ built from $\\mathrm{LC}_\\infty$ of the\n  $E_\\alpha$ coefficients.\n\n  \\item (Total factorisation.) Define\n  $\\chi(c) := \\prod_{\\alpha=1}^{m}\\, \\chi^{(\\alpha)}(c)$. Then\n  $\\mathcal{C}(L) = \\bigsqcup_{\\alpha=1}^{m}\\, \\mathcal{C}_\\alpha$ as\n  multisets, with $\\mathcal{C}_\\alpha = \\mathrm{Roots}(\\chi^{(\\alpha)})$.\n\\end{enumerate}\n\n\\noindent\\textbf{Genericity.} On the open subset of coefficient space where\nthe per-edge radial annuli $\\big[\\rho_\\alpha^{\\min},\\, \\rho_\\alpha^{\\max}\\big]$\nwith $\\rho_\\alpha^{\\bullet} = |w_\\bullet^{(\\alpha)}|^{1/q_\\alpha}$ are pairwise\ndisjoint, the union is in fact a disjoint union of \\emph{distinct} subsets of\n$\\mathbb{C}$.\n",
+      "counterexample_ids": [
+        "CE-disc",
+        "CE-equalmod",
+        "CE-zeroroot",
+        "CE-multiedge-equalradius",
+        "CE-multiedge-zerosharing"
+      ],
+      "section_target": "§4 (Multi-edge generalisation)",
+      "dependencies": [
+        "Main Theorem (paper_draft §3)"
+      ],
+      "phase4_correction": null
+    },
+    {
+      "id": "N1",
+      "label": "Theorem N1 (Nested ramification: iterated $\\mu_q$-pullback).",
+      "phase_source": "III",
+      "phase_statement": "If chi_w(w) itself factors as chi_v(w^{q'}) for some q' > 1 (i.e. chi_w has only exponents in q' Z), then C(L) = bigsqcup_{v in Roots(chi_v)} { c : c^{q q'} = v }, exhibiting (mu_q x mu_{q'})-equivariance. The effective ramification is q q' and the apparent symmetry group is C_{q q'}, even though the Newton polygon advertises only q.",
+      "hypothesis_block": "\\textbf{Hypotheses.} $L$ scalar with one dominant edge of slope $-p/q$, $\\gcd(p,q) = 1$;\n$\\chi_w(w) = \\chi_v(w^{q'})$ for some $q' \\ge 2$. No other genericity assumptions\nare needed: N1 is a purely algebraic identity of polynomials.\n",
+      "statement_latex": "Let $L$ be scalar with one dominant edge of slope $-p/q$ as in the Main\nTheorem. Suppose the inner polynomial admits a factorisation\n$\\chi_w(w) = \\chi_v(w^{q'})$ for some integer $q' \\ge 2$ and a polynomial\n$\\chi_v \\in \\mathbb{C}[v]$ of degree $r' = r/q'$ (so $\\chi_w$ has nonzero\ncoefficients only in degrees that are multiples of $q'$). Then\n$$\\mathcal{C}(L) \\;=\\; \\bigsqcup_{v \\in \\mathrm{Roots}(\\chi_v)}\\, \\big\\{\\, c \\in \\mathbb{C} : c^{q q'} = v \\,\\big\\}.$$\nIn particular each $v$-fibre carries the \\emph{full} $\\mu_{qq'}$-action (acting freely on\n$\\{c : c^{qq'} = v\\}$). The \\emph{visible} symmetry generated by the\n$\\mu_q$-action (from the outer factorisation $\\chi(c) = \\chi_w(c^q)$) and the\n$\\mu_{q'}$-action (from the nested factorisation $\\chi_w = \\chi_v \\circ (\\cdot)^{q'}$,\nacting by permuting the $q'$-th roots of $v$ at the $w$-level) is\n$\\mu_{\\mathrm{lcm}(q, q')} \\subseteq \\mu_{qq'}$. The two coincide exactly when\n$\\gcd(q, q') = 1$ (CRT), in which case $\\mu_{qq'} \\cong \\mu_q \\times \\mu_{q'}$\ncanonically.\n",
+      "counterexample_ids": [
+        "CE-nested-cancellation"
+      ],
+      "section_target": "§4 (Nested ramification)",
+      "dependencies": [
+        "Main Theorem"
+      ],
+      "phase4_correction": null
+    },
+    {
+      "id": "D2",
+      "label": "Theorem D2 (Inner-polynomial Z-resonance dichotomy; prime $q$ case).",
+      "phase_source": "III",
+      "phase_statement": "Let L be scalar with one dominant edge of slope -p/q with q PRIME and inner polynomial chi_w of degree r >= 2, so C(L) is a disjoint union of r mu_q-orbits with radii rho_alpha = |w_alpha|^{1/q}. Call a small-coefficient (|n_k| <= 3, support <= 4) Z-relation sum n_k c_k = 0 *mu_q-forced* if its per-ring partial sums each vanish individually; otherwise call it *cross-ring nontrivial*. Then: (i) for GENERIC chi_w (the w_alpha algebraically independent over Q), C(L) admits no cross-ring nontrivial Z-relation; (ii) for SIMPLE chi_w (the w_alpha satisfying a Q-linear relation), C(L) admits cross-ring nontrivial Z-relations -- one for each independent Q-linear dependence among the q-th roots w_alpha^{1/q}. For COMPOSITE q the same statement holds modulo the cyclotomic relations of mu_q acting on each ring (the mu_q-forced piece is correspondingly richer and includes Z-combinations of single-ring sub-orbit sums).",
+      "hypothesis_block": "\\textbf{Hypotheses.} $q$ prime; $\\chi_w$ squarefree with $r \\ge 2$ distinct roots\n$w_1, \\ldots, w_r$. Statement (i) is the algebraic-independence statement (no\n$\\mathbb{Z}$-relation \\emph{at all} beyond $\\mu_q$-forced); statement (ii) is\nexistential. For composite $q$, the $\\mu_q$-forced sub-lattice is richer (it\ncontains sub-orbit sums coming from divisors of $q$); the dichotomy must be\nrestated by replacing ``$\\lambda_\\alpha = 0$ in $\\mathbb{Z}[\\zeta_q]$'' by\n``$\\lambda_\\alpha$ in the kernel of the projection $\\mathbb{Z}[\\zeta_q] \\to \\prod_{d \\mid q} \\mathbb{Z}[\\zeta_d]$''.\n",
+      "statement_latex": "Let $L$ be scalar with one dominant edge of slope $-p/q$ where $q$ is\n\\emph{prime}, and let $\\chi_w$ have $r \\ge 2$ distinct roots $w_1, \\ldots, w_r$;\nchoose $q$-th roots $z_\\alpha = w_\\alpha^{1/q} \\in \\mathbb{C}$, so the ring\ndecomposition is\n$\\mathcal{C}(L) = \\bigsqcup_\\alpha R_\\alpha$ with $R_\\alpha = \\{\\zeta_q^j z_\\alpha : 0 \\le j < q\\}$.\n\nFor $\\lambda_1, \\ldots, \\lambda_r \\in \\mathbb{Z}[\\zeta_q]$, write\n$\\Lambda(\\lambda) = \\sum_\\alpha \\lambda_\\alpha z_\\alpha \\in \\mathbb{C}$.\nCall a $\\mathbb{Z}$-relation $\\sum_{\\alpha, j} n_{\\alpha j} \\zeta_q^j z_\\alpha = 0$\n\\textbf{$\\mu_q$-forced} if every $\\lambda_\\alpha = \\sum_j n_{\\alpha j} \\zeta_q^j$\nlies in the ideal $\\mathbb{Z}\\cdot\\Phi(\\zeta_q) = \\mathbb{Z}\\cdot(1 + \\zeta_q + \\cdots + \\zeta_q^{q-1}) = 0$\n(equivalently, each $\\lambda_\\alpha = 0$ since $\\Phi_q(\\zeta_q) = 0$ is the only relation\namong $1, \\zeta_q, \\ldots, \\zeta_q^{q-1}$ for prime $q$); call it \\textbf{cross-ring nontrivial} otherwise.\n\nThen:\n\\begin{enumerate}\n  \\item \\textbf{Generic case.} If $\\{w_1, \\ldots, w_r\\}$ are algebraically independent\n  over $\\mathbb{Q}$, then $\\mathcal{C}(L)$ admits \\emph{no} cross-ring nontrivial\n  $\\mathbb{Z}$-relation.\n\n  \\item \\textbf{Kummer/cyclotomic case.} If there exist $\\lambda_\\alpha \\in \\mathbb{Z}[\\zeta_q]$\n  not all zero such that $\\sum_\\alpha \\lambda_\\alpha z_\\alpha = 0$, then this\n  identity \\emph{is} a cross-ring nontrivial $\\mathbb{Z}$-relation on $\\mathcal{C}(L)$.\n  A clean sufficient condition is that the field extension\n  $\\mathbb{Q}(\\zeta_q)(z_1, \\ldots, z_r)$ has transcendence degree strictly less\n  than $r$ over $\\mathbb{Q}(\\zeta_q)$; in particular, $w_\\beta / w_\\alpha \\in (\\mathbb{Q}(\\zeta_q)^\\times)^q$\n  (so $z_\\beta / z_\\alpha \\in \\mathbb{Q}(\\zeta_q)$ for a suitable choice of $q$-th\n  roots) forces such a relation.\n\\end{enumerate}\n",
+      "counterexample_ids": [
+        "CE-Zres-largecoef",
+        "CE-Zres-compositeq"
+      ],
+      "section_target": "§5 (Degeneracy strata / arithmetic stratification)",
+      "dependencies": [
+        "Main Theorem",
+        "Corollary 1 (ring decomposition)"
+      ],
+      "phase4_correction": null
+    },
+    {
+      "id": "S1",
+      "label": "Theorem S1 (System pullback: block-diagonal direct sum).",
+      "phase_source": "III",
+      "phase_statement": "For a block-diagonal system Phi = diag(L_1, ..., L_n) of scalar operators, the constellation C(Phi) is the multiset disjoint union of C(L_i). Hence F(Phi) = bigsqcup_i F(L_i), and F factors through the symmetric power: F : Sys^n(scalar local models) -> Sym^n( finite multisets in C ).",
+      "hypothesis_block": "\\textbf{Hypotheses.} $\\Phi$ block-diagonal with scalar blocks $L_i$ each satisfying\nthe Main Theorem hypotheses. Coupled-system extension: leading symbol diagonalisable\nwith distinct eigenvalues.\n",
+      "statement_latex": "Let $\\Phi = \\mathrm{diag}(L_1, \\ldots, L_n)$ be a block-diagonal system of\nscalar linear operators, each $L_i$ scalar with a single irregular singularity at\n$x = \\infty$ and Newton polygon $N(L_i)$. Then\n$$\\mathcal{C}(\\Phi) \\;=\\; \\bigsqcup_{i = 1}^{n}\\, \\mathcal{C}(L_i) \\qquad \\text{as multisets,}$$\nand the constellation functor $F$ factors\n$$F\\,:\\, \\mathrm{Sys}^n(\\text{scalar}) \\;\\longrightarrow\\; \\mathrm{Sym}^n(\\text{finite multisets in } \\mathbb{C}), \\qquad F(\\Phi) \\;=\\; \\bigsqcup_i F(L_i).$$\n",
+      "counterexample_ids": [
+        "CE-coupled-system"
+      ],
+      "section_target": "§6 (Systems)",
+      "dependencies": [
+        "Main Theorem"
+      ],
+      "phase4_correction": null
+    },
+    {
+      "id": "AT1",
+      "label": "Theorem AT1 (Anti-Stokes $\\leftrightarrow$ $\\arg(\\Delta_{ij})$ on the cover; open stratum).",
+      "phase_source": "IV",
+      "phase_statement": "Let L be scalar with one dominant Newton edge of slope -p/q in lowest terms, on the open stratum (no omega-resonance, no symmetry inflation, no Z-resonance). Let C(L) = {c_1, ..., c_N} and Delta_{ij} = c_i - c_j. Then on the ramified cover t-plane the anti-Stokes directions of the Levelt-Turrittin connection are exactly {phi : arg(Delta_{ij}) + p * phi = pi/2 (mod pi), some i != j}, yielding 2 p * (N choose 2) directions counted with multiplicity. Distinct directions and their multiplicities are encoded by the Delta-argument partition of Phase III (D1). Projecting to the base x-plane identifies directions modulo 2 pi / q, giving 2 p * (N choose 2) / gcd(2 p, q) directions in [0, 2 pi).",
+      "hypothesis_block": "\\textbf{Open-stratum hypotheses (OS).}\n(OS1) $\\chi_w$ squarefree;\n(OS2) $\\chi_w(0) \\ne 0$ (no zero-roots, so all $\\Delta_{ij}$ relate distinct $c_i$);\n(OS3) no $\\omega$-resonance beyond $\\mu_q$ (i.e., the multiset\n$\\{\\arg \\Delta_{ij} \\mod \\pi/p\\}$ has no coincidences beyond those forced by the ring structure).\n",
+      "statement_latex": "Let $L$ be scalar with one dominant edge of slope $-p/q$ ($\\gcd(p, q) = 1$), in\nthe \\emph{open stratum} (OS1)--(OS3) below. Let $\\mathcal{C}(L) = \\{c_1, \\ldots, c_N\\}$\nwith $N = qr$ and $\\Delta_{ij} = c_i - c_j$ for unordered pairs $\\{i, j\\}$. On\nthe ramified cover $x = t^q$, the formal connection splits as\n$$\\widehat{L}_{|x = t^q} \\;\\simeq\\; \\bigoplus_{i = 1}^{N}\\, \\big(\\mathbb{C}\\{t\\},\\ \\mathrm{d} + \\mathrm{d}Q_i(t)\\big), \\qquad Q_i(t) = c_i\\, t^p + R_i(t),\\ \\deg R_i < p,$$\nand the anti-Stokes directions on the $t$-plane are exactly\n$$\\mathcal{A}^{\\mathrm{cov}} \\;=\\; \\big\\{\\, \\phi \\in [0, 2\\pi)\\ :\\ \\arg(\\Delta_{ij}) + p\\, \\phi \\equiv \\tfrac{\\pi}{2} \\pmod{\\pi},\\ \\text{ some unordered } \\{i, j\\} \\,\\big\\}.$$\nEach unordered pair $\\{i, j\\}$ contributes exactly $2p$ cover-rays; the total\nray count \\emph{with multiplicity} is $2p \\binom{N}{2}$. The \\emph{distinct} ray\ncount is determined by the $\\Delta$-argument partition of\n$\\{\\arg \\Delta_{ij} \\mod \\pi/p\\}_{\\{i,j\\}}$ (Phase-III D1). Under projection\nto the base $x$-plane (covering map $t \\mapsto t^q$), each unordered cover-pair's\n$2p$ rays project to $2p/\\gcd(2p, q)$ base-rays. The number of distinct base-rays\ncontributed by a single pair is therefore exactly $2p/\\gcd(2p, q)$, with the\ntotal distinct base-ray count obtained by accounting for cross-pair collisions.\n",
+      "counterexample_ids": [
+        "CE-disc",
+        "CE-zeroroot",
+        "CE-omega",
+        "CE-equalmod"
+      ],
+      "section_target": "§7 (Analytic lifting)",
+      "dependencies": [
+        "Main Theorem",
+        "Levelt-Turrittin (cited)"
+      ],
+      "phase4_correction": null
+    },
+    {
+      "id": "AT3",
+      "label": "Theorem AT3 (Nested ramification induces $\\mu_{q'}$-symmetry on wild data).",
+      "phase_source": "IV",
+      "phase_statement": "If chi_w(w) = chi_v(w^{q'}) for some q' > 1 (Phase-III N1), then the minimal cover on which the formal connection splits is x = tau^{q q'} (not x = t^q). On the inner cover tau, the irregular-type polynomials have degree p q', and the anti-Stokes ray set has 2 p q' * (N' choose 2) directions (where N' = deg chi_v). The (mu_q x mu_{q'})-action makes the wild character variety MW(L) into a quotient of a finer variety by a finite group of order q q'.",
+      "hypothesis_block": "\\textbf{Hypotheses.} As in N1: $\\chi_w(w) = \\chi_v(w^{q'})$ for some $q' \\ge 2$,\n$\\chi_v$ admitting no further inner factorisation (else iterate). No additional\nanalytic hypotheses are required; AT3 is structural at the level of the formal\nclassification.\n",
+      "statement_latex": "Suppose the hypotheses of N1 hold: $\\chi_w(w) = \\chi_v(w^{q'})$ for some\n$q' \\ge 2$. Let $\\mathcal{C}(L)$ be as in N1, and let $\\mathrm{MW}(L)$ denote the\nwild character variety of $L$ at $x = \\infty$.\n\n\\begin{enumerate}\n  \\item The minimal Levelt-Turrittin ramification cover for $\\widehat{L}$ is\n  \\textbf{still} $x = t^q$ (not $x = \\tau^{q q'}$): on the $q$-cover, the formal\n  connection splits as a direct sum of rank-one summands with irregular types\n  $Q_i(t) = c_i t^p + (\\text{lower})$, and the $c_i$ are exactly the elements of\n  $\\mathcal{C}(L)$ listed by N1.\n\n  \\item The nested factorisation $\\chi_w = \\chi_v \\circ (\\cdot)^{q'}$ induces an\n  \\emph{additional} $\\mu_{q'}$-action on the constellation: choose any\n  $\\eta \\in \\mu_{qq'}$ with $\\eta^q = \\zeta_{q'}$ (the choice is unique modulo\n  $\\mu_q$); then $\\eta$ acts on $\\mathcal{C}(L)$ by $c \\mapsto \\eta\\, c$, preserving\n  each $v$-fibre $\\{c : c^{qq'} = v\\}$ and permuting the $q'$ choices of\n  $w = c^q$ within that fibre. Combined with the original $\\mu_q$-action of the\n  cover (acting by $c \\mapsto \\zeta_q c$), the visible symmetry group of the\n  constellation is $\\mu_{\\mathrm{lcm}(q, q')} \\subseteq \\mu_{qq'}$, with equality\n  $\\mu_{\\mathrm{lcm}(q, q')} = \\mu_{qq'}$ iff $\\gcd(q, q') = 1$.\n\n  \\item The locus of irregular types $\\{Q_i(t)\\}_i$ compatible with the\n  $\\chi_w = \\chi_v \\circ (\\cdot)^{q'}$ factorisation carries a natural\n  $\\mu_{q'}$-permutation symmetry (permuting the $q'$ choices of $q$-th root of\n  $v$). At the level of the discrete part of the wild character variety\n  $\\mathrm{MW}(L)^{\\mathrm{disc}}$ (parametrising irregular types modulo formal\n  gauge), this symmetry organises the stratum of nested-factorisable types into\n  a $\\mu_{q'}$-equivariant subvariety. The full identification of this stratum\n  with a quotient by $\\mu_{q'}$ requires the wild character variety formalism of\n  Boalch (\\emph{Geometry and braiding of Stokes data}, 2014; \\emph{Wild\n  non-abelian Hodge theory on curves}); we assert here only the equivariance.\n\\end{enumerate}\n",
+      "counterexample_ids": [
+        "CE-nested-cancellation"
+      ],
+      "section_target": "§7 (Analytic lifting / Wild character variety)",
+      "dependencies": [
+        "N1",
+        "AT1",
+        "Levelt-Turrittin"
+      ],
+      "phase4_correction": "Phase-IV AT3 incorrectly stated that the minimal cover becomes x = tau^{qq'}, leading to a ray-count of 2pq' per pair on a finer cover. The corrected statement: the cover stays at q; rays per pair on the q-cover are 2p (as in AT1); the mu_{q'}-action acts on the formal-monodromy classification (the discrete part of MW(L))."
+    },
+    {
+      "id": "AT5",
+      "label": "Theorem AT5 (Multi-edge slope filtration on the anti-Stokes skeleton).",
+      "phase_source": "IV",
+      "phase_statement": "For a scalar operator L with multi-edge Newton polygon (edges E_1, ..., E_m of strictly increasing slope), the formal connection splits as a direct sum L_formal = bigoplus_alpha L_alpha indexed by slope (Phase-III M1). The anti-Stokes ray set decomposes as a slope-graded union: rays of slope -p_alpha/q_alpha come from pairs (i, j) with i, j both in C_alpha; rays from cross-edge pairs (i in C_alpha, j in C_beta, alpha != beta) are governed by the LARGER slope's leading Q coefficient, i.e. by Q_i - Q_j whose degree equals max(p_alpha, p_beta) * (q_alpha q_beta / lcm). Hence cross-edge anti-Stokes directions inherit the dominant edge's combinatorics.",
+      "hypothesis_block": "\\textbf{Open-stratum hypotheses (for AT5).}\n(OS1)--(OS3) per-edge open-stratum (apply AT1 to each $L_\\alpha$);\n(OS4) per-edge radial annuli pairwise disjoint;\n(OS5) cross-edge leading coefficients nonzero, i.e.\\ $c_j \\ne 0$ for $j \\in \\mathcal{C}_\\beta$\n(equivalently $\\chi_w^{(\\beta)}(0) \\ne 0$, so the dominant edge has no zero-root contribution).\nIf (OS5) fails, the cross-edge degree must be recomputed from the next nonzero\nterm of $Q_j^{(\\beta)}$, which may have degree strictly less than $P_\\beta$ — in\nwhich case the slope filtration on Stokes data needs the corresponding correction.\n",
+      "statement_latex": "Suppose $L$ has multi-edge Newton polygon as in M1, with edges $E_\\alpha$ of\nslope $-p_\\alpha/q_\\alpha$ and per-edge constellations $\\mathcal{C}_\\alpha$ of size\n$N_\\alpha = q_\\alpha r_\\alpha$. Let $d = \\mathrm{lcm}(q_1, \\ldots, q_m)$ and consider\nthe common cover $x = t^d$. Then:\n\n\\begin{enumerate}\n  \\item \\textbf{Within-edge rays.} The anti-Stokes rays contributed by pairs\n  $(i, j)$ both in $\\mathcal{C}_\\alpha$ are exactly the rays of AT1 applied to\n  $L_\\alpha$, lifted from the $q_\\alpha$-cover to the $d$-cover (each such ray\n  appears with multiplicity $d / q_\\alpha$ on the $d$-cover): $2 P_\\alpha \\binom{N_\\alpha}{2}$\n  rays counted with multiplicity, where $P_\\alpha = p_\\alpha d / q_\\alpha$.\n\n  \\item \\textbf{Cross-edge rays.} For pairs $(i \\in \\mathcal{C}_\\alpha, j \\in \\mathcal{C}_\\beta)$\n  with $\\alpha \\ne \\beta$, write $\\sigma_\\alpha = p_\\alpha / q_\\alpha$ for the slope\n  magnitude and WLOG $\\sigma_\\beta > \\sigma_\\alpha$ (the edges have distinct slopes,\n  so $\\sigma_\\alpha \\ne \\sigma_\\beta$). On the common cover, $P_\\beta > P_\\alpha$\n  (with $P_\\bullet := p_\\bullet d/q_\\bullet = \\sigma_\\bullet d$), so the irregular types satisfy\n  $$Q_j^{(\\beta)}(t) - Q_i^{(\\alpha)}(t) \\;=\\; c_j\\, t^{P_\\beta} \\,-\\, c_i\\, t^{P_\\alpha} \\,+\\, (\\text{lower}),$$\n  whose leading term is $c_j t^{P_\\beta}$ (provided $c_j \\ne 0$; hypothesis (OS5)).\n  The corresponding anti-Stokes directions are determined by\n  $\\arg(c_j) + P_\\beta\\, \\phi \\equiv \\pi/2 \\pmod{\\pi}$, contributing $2 P_\\beta$\n  rays per cross-edge pair.\n\n  \\item \\textbf{Slope filtration.} The Stokes data of $L$ decompose along the\n  slope filtration $\\widehat{L} \\simeq \\bigoplus_\\alpha L_\\alpha$: each summand\n  $L_\\alpha$ carries its own Stokes structure with rays of slope $-p_\\alpha/q_\\alpha$;\n  cross-edge Stokes constants ($L_\\alpha \\to L_\\beta$ with $\\alpha < \\beta$) are\n  organised along rays of the \\emph{higher} slope $-p_\\beta/q_\\beta$.\n\\end{enumerate}\n",
+      "counterexample_ids": [
+        "CE-multiedge-equalradius",
+        "CE-multiedge-zerosharing"
+      ],
+      "section_target": "§7 (Analytic lifting / multi-edge)",
+      "dependencies": [
+        "M1",
+        "AT1"
+      ],
+      "phase4_correction": null
+    },
+    {
+      "id": "AT7",
+      "label": "Theorem AT7 ($p$-visibility: analytic anti-Stokes data detect $p$).",
+      "phase_source": "IV",
+      "phase_statement": "While the Phase-III Delta-modulus partition is invariant under p -> p' with gcd(p, q) = gcd(p', q) = 1 (P1), the analytic anti-Stokes ray *positions* depend on p: ray spacing is 2 pi / (2 p) on the cover and the cover-to-base projection factor is gcd(2 p, q). Hence Phase-III's p-invariance is a property of the *combinatorial* (modulus / argument partition) data only; the analytic Stokes structure detects p through the projection. Concretely: for fixed q, varying p across coprime residues produces analytic data that differ as wild character variety points even when discrete invariants agree.",
+      "hypothesis_block": "\\textbf{Hypotheses.} Fixed $q$, $r$, and inner polynomial $\\chi_w$;\n$L_p$ scalar with one dominant edge of slope $-p/q$ for each coprime $p$.\nOpen-stratum (OS1)-(OS3) for the distinct-ray formula in Part (3); the\nproportionality $\\#\\mathcal{A}^{\\mathrm{cov}}_p \\propto p$ is sub-stratum-independent.\n",
+      "statement_latex": "Fix $q$ and $r$ and let $\\chi_w$ be a fixed inner polynomial of degree $r$.\nFor each $p \\in \\{p' : 1 \\le p' < q,\\ \\gcd(p', q) = 1\\}$, let $L_p$ denote a\nscalar operator whose Newton polygon has a single dominant edge of slope $-p/q$\nwith the prescribed $\\chi_w$. Then:\n\n\\begin{enumerate}\n  \\item (Constellation $p$-invariance, Phase-III P1.) $\\mathcal{C}(L_p)$ is\n  independent of $p$ as a multiset in $\\mathbb{C}$, and the $\\Delta$-modulus\n  partition $\\{|\\Delta_{ij}|\\}$ is $p$-independent.\n\n  \\item ($p$-visibility on the cover, AT7.) The anti-Stokes ray set\n  $\\mathcal{A}^{\\mathrm{cov}}_p$ on the cover $x = t^q$ \\emph{depends} on $p$:\n  rays satisfy $\\arg \\Delta_{ij} + p \\phi \\equiv \\tfrac{\\pi}{2} \\pmod{\\pi}$, so\n  varying $p$ rotates / dilates the ray pattern.\n\n  \\item Quantitatively, in the open stratum the cover-ray count is\n  $2 p \\binom{N}{2}$ with multiplicity. For $\\chi_w$ generic with $r$ distinct\n  nonzero roots of pairwise distinct moduli (so $\\mathcal{C}(L)$ decomposes as\n  $r$ disjoint rings of $q$ points each) and $q \\ge 3$, the \\emph{distinct}\n  cover-ray count is\n  $$\\#\\mathcal{A}^{\\mathrm{cov}}_p \\;=\\; 2 p \\cdot \\Big(r \\cdot q \\,+\\, q^2 \\cdot \\binom{r}{2}\\Big) \\;=\\; 2 p\\, q \\,\\big(\\, r \\,+\\, q\\, \\tbinom{r}{2}\\big),$$\n  which is strictly proportional to $p$ for fixed $\\chi_w$, and in particular is\n  not $p$-invariant. The case $q = 2$ admits only one within-ring direction\n  class per ring and the formula becomes $2 p (r + 4 \\binom{r}{2})$.\n\n  \\item Hence Phase-III P1 holds at the constellation / $\\Delta$-partition level,\n  but \\emph{fails} at the analytic anti-Stokes level: $p$ is invisible to the\n  combinatorics of $\\mathcal{C}(L)$ and visible to the analytic Stokes skeleton.\n\\end{enumerate}\n",
+      "counterexample_ids": [
+        "CE-p-invisible-discrete (this strengthens P1 rather than contradicting it)"
+      ],
+      "section_target": "§7 (Analytic lifting / p-visibility)",
+      "dependencies": [
+        "AT1",
+        "P1 (Phase-III)"
+      ],
+      "phase4_correction": null
+    }
+  ]
+}

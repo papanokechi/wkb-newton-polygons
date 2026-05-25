@@ -1,0 +1,1496 @@
+[
+  {
+    "name": "ODE_s1o2_r1_simple",
+    "eqtype": "ode",
+    "slope": "1/2",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x)*D^0 + (1)*D^2",
+    "coeffs": [
+      "beta*x",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r2_simple",
+    "eqtype": "ode",
+    "slope": "1/2",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**2)*D^0 + (1)*D^4",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r2_double",
+    "eqtype": "ode",
+    "slope": "1/2",
+    "rank": 2,
+    "valuation": "double",
+    "expression": "(beta*x**2)*D^0 + (gamma*x)*D^2 + (1)*D^4",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "gamma*x",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r2_mixed",
+    "eqtype": "ode",
+    "slope": "1/2",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**2)*D^0 + (3*x)*D^2 + (1)*D^4",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "3*x",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r2_generic_complex",
+    "eqtype": "ode",
+    "slope": "1/2",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**2)*D^0 + (x*(2 + 3*I))*D^2 + (1)*D^4",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "x*(2 + 3*I)",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r3_simple",
+    "eqtype": "ode",
+    "slope": "1/2",
+    "rank": 3,
+    "valuation": "simple",
+    "expression": "(beta*x**3)*D^0 + (1)*D^6",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r3_double",
+    "eqtype": "ode",
+    "slope": "1/2",
+    "rank": 3,
+    "valuation": "double",
+    "expression": "(beta*x**3)*D^0 + (gamma*x)*D^4 + (1)*D^6",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "0",
+      "0",
+      "gamma*x",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r3_mixed",
+    "eqtype": "ode",
+    "slope": "1/2",
+    "rank": 3,
+    "valuation": "mixed",
+    "expression": "(beta*x**3)*D^0 + (4*x**2)*D^2 + (3*x)*D^4 + (1)*D^6",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "4*x**2",
+      "0",
+      "3*x",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o2_r3_generic_complex",
+    "eqtype": "ode",
+    "slope": "1/2",
+    "rank": 3,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**3)*D^0 + (x**2*(3 + 5*I))*D^2 + (x*(2 + 3*I))*D^4 + (1)*D^6",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "x**2*(3 + 5*I)",
+      "0",
+      "x*(2 + 3*I)",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r1_simple",
+    "eqtype": "ode",
+    "slope": "1/3",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x)*D^0 + (1)*D^3",
+    "coeffs": [
+      "beta*x",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r2_simple",
+    "eqtype": "ode",
+    "slope": "1/3",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**2)*D^0 + (1)*D^6",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r2_double",
+    "eqtype": "ode",
+    "slope": "1/3",
+    "rank": 2,
+    "valuation": "double",
+    "expression": "(beta*x**2)*D^0 + (gamma*x)*D^3 + (1)*D^6",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "gamma*x",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r2_mixed",
+    "eqtype": "ode",
+    "slope": "1/3",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**2)*D^0 + (3*x)*D^3 + (1)*D^6",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "3*x",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r2_generic_complex",
+    "eqtype": "ode",
+    "slope": "1/3",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**2)*D^0 + (x*(2 + 3*I))*D^3 + (1)*D^6",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "x*(2 + 3*I)",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r3_simple",
+    "eqtype": "ode",
+    "slope": "1/3",
+    "rank": 3,
+    "valuation": "simple",
+    "expression": "(beta*x**3)*D^0 + (1)*D^9",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r3_double",
+    "eqtype": "ode",
+    "slope": "1/3",
+    "rank": 3,
+    "valuation": "double",
+    "expression": "(beta*x**3)*D^0 + (gamma*x)*D^6 + (1)*D^9",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "gamma*x",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r3_mixed",
+    "eqtype": "ode",
+    "slope": "1/3",
+    "rank": 3,
+    "valuation": "mixed",
+    "expression": "(beta*x**3)*D^0 + (4*x**2)*D^3 + (3*x)*D^6 + (1)*D^9",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "0",
+      "4*x**2",
+      "0",
+      "0",
+      "3*x",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o3_r3_generic_complex",
+    "eqtype": "ode",
+    "slope": "1/3",
+    "rank": 3,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**3)*D^0 + (x**2*(3 + 5*I))*D^3 + (x*(2 + 3*I))*D^6 + (1)*D^9",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "0",
+      "x**2*(3 + 5*I)",
+      "0",
+      "0",
+      "x*(2 + 3*I)",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r1_simple",
+    "eqtype": "ode",
+    "slope": "1/4",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x)*D^0 + (1)*D^4",
+    "coeffs": [
+      "beta*x",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r2_simple",
+    "eqtype": "ode",
+    "slope": "1/4",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**2)*D^0 + (1)*D^8",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r2_double",
+    "eqtype": "ode",
+    "slope": "1/4",
+    "rank": 2,
+    "valuation": "double",
+    "expression": "(beta*x**2)*D^0 + (gamma*x)*D^4 + (1)*D^8",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "gamma*x",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r2_mixed",
+    "eqtype": "ode",
+    "slope": "1/4",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**2)*D^0 + (3*x)*D^4 + (1)*D^8",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "3*x",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r2_generic_complex",
+    "eqtype": "ode",
+    "slope": "1/4",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**2)*D^0 + (x*(2 + 3*I))*D^4 + (1)*D^8",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "x*(2 + 3*I)",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r3_simple",
+    "eqtype": "ode",
+    "slope": "1/4",
+    "rank": 3,
+    "valuation": "simple",
+    "expression": "(beta*x**3)*D^0 + (1)*D^12",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r3_double",
+    "eqtype": "ode",
+    "slope": "1/4",
+    "rank": 3,
+    "valuation": "double",
+    "expression": "(beta*x**3)*D^0 + (gamma*x)*D^8 + (1)*D^12",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "gamma*x",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r3_mixed",
+    "eqtype": "ode",
+    "slope": "1/4",
+    "rank": 3,
+    "valuation": "mixed",
+    "expression": "(beta*x**3)*D^0 + (4*x**2)*D^4 + (3*x)*D^8 + (1)*D^12",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "0",
+      "0",
+      "4*x**2",
+      "0",
+      "0",
+      "0",
+      "3*x",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s1o4_r3_generic_complex",
+    "eqtype": "ode",
+    "slope": "1/4",
+    "rank": 3,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**3)*D^0 + (x**2*(3 + 5*I))*D^4 + (x*(2 + 3*I))*D^8 + (1)*D^12",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "0",
+      "0",
+      "x**2*(3 + 5*I)",
+      "0",
+      "0",
+      "0",
+      "x*(2 + 3*I)",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r1_simple",
+    "eqtype": "ode",
+    "slope": "2/3",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x**2)*D^0 + (1)*D^3",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r2_simple",
+    "eqtype": "ode",
+    "slope": "2/3",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**4)*D^0 + (1)*D^6",
+    "coeffs": [
+      "beta*x**4",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r2_double",
+    "eqtype": "ode",
+    "slope": "2/3",
+    "rank": 2,
+    "valuation": "double",
+    "expression": "(beta*x**4)*D^0 + (gamma*x**2)*D^3 + (1)*D^6",
+    "coeffs": [
+      "beta*x**4",
+      "0",
+      "0",
+      "gamma*x**2",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r2_mixed",
+    "eqtype": "ode",
+    "slope": "2/3",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**4)*D^0 + (3*x**2)*D^3 + (1)*D^6",
+    "coeffs": [
+      "beta*x**4",
+      "0",
+      "0",
+      "3*x**2",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r2_generic_complex",
+    "eqtype": "ode",
+    "slope": "2/3",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**4)*D^0 + (x**2*(2 + 3*I))*D^3 + (1)*D^6",
+    "coeffs": [
+      "beta*x**4",
+      "0",
+      "0",
+      "x**2*(2 + 3*I)",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r3_simple",
+    "eqtype": "ode",
+    "slope": "2/3",
+    "rank": 3,
+    "valuation": "simple",
+    "expression": "(beta*x**6)*D^0 + (1)*D^9",
+    "coeffs": [
+      "beta*x**6",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r3_double",
+    "eqtype": "ode",
+    "slope": "2/3",
+    "rank": 3,
+    "valuation": "double",
+    "expression": "(beta*x**6)*D^0 + (gamma*x**2)*D^6 + (1)*D^9",
+    "coeffs": [
+      "beta*x**6",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "gamma*x**2",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r3_mixed",
+    "eqtype": "ode",
+    "slope": "2/3",
+    "rank": 3,
+    "valuation": "mixed",
+    "expression": "(beta*x**6)*D^0 + (4*x**4)*D^3 + (3*x**2)*D^6 + (1)*D^9",
+    "coeffs": [
+      "beta*x**6",
+      "0",
+      "0",
+      "4*x**4",
+      "0",
+      "0",
+      "3*x**2",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s2o3_r3_generic_complex",
+    "eqtype": "ode",
+    "slope": "2/3",
+    "rank": 3,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**6)*D^0 + (x**4*(3 + 5*I))*D^3 + (x**2*(2 + 3*I))*D^6 + (1)*D^9",
+    "coeffs": [
+      "beta*x**6",
+      "0",
+      "0",
+      "x**4*(3 + 5*I)",
+      "0",
+      "0",
+      "x**2*(2 + 3*I)",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r1_simple",
+    "eqtype": "ode",
+    "slope": "3/2",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x**3)*D^0 + (1)*D^2",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r2_simple",
+    "eqtype": "ode",
+    "slope": "3/2",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**6)*D^0 + (1)*D^4",
+    "coeffs": [
+      "beta*x**6",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r2_double",
+    "eqtype": "ode",
+    "slope": "3/2",
+    "rank": 2,
+    "valuation": "double",
+    "expression": "(beta*x**6)*D^0 + (gamma*x**3)*D^2 + (1)*D^4",
+    "coeffs": [
+      "beta*x**6",
+      "0",
+      "gamma*x**3",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r2_mixed",
+    "eqtype": "ode",
+    "slope": "3/2",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**6)*D^0 + (3*x**3)*D^2 + (1)*D^4",
+    "coeffs": [
+      "beta*x**6",
+      "0",
+      "3*x**3",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r2_generic_complex",
+    "eqtype": "ode",
+    "slope": "3/2",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**6)*D^0 + (x**3*(2 + 3*I))*D^2 + (1)*D^4",
+    "coeffs": [
+      "beta*x**6",
+      "0",
+      "x**3*(2 + 3*I)",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r3_simple",
+    "eqtype": "ode",
+    "slope": "3/2",
+    "rank": 3,
+    "valuation": "simple",
+    "expression": "(beta*x**9)*D^0 + (1)*D^6",
+    "coeffs": [
+      "beta*x**9",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r3_double",
+    "eqtype": "ode",
+    "slope": "3/2",
+    "rank": 3,
+    "valuation": "double",
+    "expression": "(beta*x**9)*D^0 + (gamma*x**3)*D^4 + (1)*D^6",
+    "coeffs": [
+      "beta*x**9",
+      "0",
+      "0",
+      "0",
+      "gamma*x**3",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r3_mixed",
+    "eqtype": "ode",
+    "slope": "3/2",
+    "rank": 3,
+    "valuation": "mixed",
+    "expression": "(beta*x**9)*D^0 + (4*x**6)*D^2 + (3*x**3)*D^4 + (1)*D^6",
+    "coeffs": [
+      "beta*x**9",
+      "0",
+      "4*x**6",
+      "0",
+      "3*x**3",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "ODE_s3o2_r3_generic_complex",
+    "eqtype": "ode",
+    "slope": "3/2",
+    "rank": 3,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**9)*D^0 + (x**6*(3 + 5*I))*D^2 + (x**3*(2 + 3*I))*D^4 + (1)*D^6",
+    "coeffs": [
+      "beta*x**9",
+      "0",
+      "x**6*(3 + 5*I)",
+      "0",
+      "x**3*(2 + 3*I)",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o2_r1_simple",
+    "eqtype": "difference",
+    "slope": "1/2",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x)*S^0 + (1)*S^2",
+    "coeffs": [
+      "beta*x",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o2_r2_simple",
+    "eqtype": "difference",
+    "slope": "1/2",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**2)*S^0 + (1)*S^4",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o2_r2_mixed",
+    "eqtype": "difference",
+    "slope": "1/2",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**2)*S^0 + (3*x)*S^2 + (1)*S^4",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "3*x",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o2_r2_generic_complex",
+    "eqtype": "difference",
+    "slope": "1/2",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**2)*S^0 + (x*(2 + 3*I))*S^2 + (1)*S^4",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "x*(2 + 3*I)",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o3_r1_simple",
+    "eqtype": "difference",
+    "slope": "1/3",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x)*S^0 + (1)*S^3",
+    "coeffs": [
+      "beta*x",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o3_r2_simple",
+    "eqtype": "difference",
+    "slope": "1/3",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**2)*S^0 + (1)*S^6",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o3_r2_mixed",
+    "eqtype": "difference",
+    "slope": "1/3",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**2)*S^0 + (3*x)*S^3 + (1)*S^6",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "3*x",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o3_r2_generic_complex",
+    "eqtype": "difference",
+    "slope": "1/3",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**2)*S^0 + (x*(2 + 3*I))*S^3 + (1)*S^6",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "x*(2 + 3*I)",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o4_r1_simple",
+    "eqtype": "difference",
+    "slope": "1/4",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x)*S^0 + (1)*S^4",
+    "coeffs": [
+      "beta*x",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o4_r2_simple",
+    "eqtype": "difference",
+    "slope": "1/4",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**2)*S^0 + (1)*S^8",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o4_r2_mixed",
+    "eqtype": "difference",
+    "slope": "1/4",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**2)*S^0 + (3*x)*S^4 + (1)*S^8",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "3*x",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s1o4_r2_generic_complex",
+    "eqtype": "difference",
+    "slope": "1/4",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**2)*S^0 + (x*(2 + 3*I))*S^4 + (1)*S^8",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "x*(2 + 3*I)",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s2o3_r1_simple",
+    "eqtype": "difference",
+    "slope": "2/3",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x**2)*S^0 + (1)*S^3",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s2o3_r2_simple",
+    "eqtype": "difference",
+    "slope": "2/3",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**4)*S^0 + (1)*S^6",
+    "coeffs": [
+      "beta*x**4",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s2o3_r2_mixed",
+    "eqtype": "difference",
+    "slope": "2/3",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**4)*S^0 + (3*x**2)*S^3 + (1)*S^6",
+    "coeffs": [
+      "beta*x**4",
+      "0",
+      "0",
+      "3*x**2",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s2o3_r2_generic_complex",
+    "eqtype": "difference",
+    "slope": "2/3",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**4)*S^0 + (x**2*(2 + 3*I))*S^3 + (1)*S^6",
+    "coeffs": [
+      "beta*x**4",
+      "0",
+      "0",
+      "x**2*(2 + 3*I)",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s3o2_r1_simple",
+    "eqtype": "difference",
+    "slope": "3/2",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x**3)*S^0 + (1)*S^2",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s3o2_r2_simple",
+    "eqtype": "difference",
+    "slope": "3/2",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**6)*S^0 + (1)*S^4",
+    "coeffs": [
+      "beta*x**6",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s3o2_r2_mixed",
+    "eqtype": "difference",
+    "slope": "3/2",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**6)*S^0 + (3*x**3)*S^2 + (1)*S^4",
+    "coeffs": [
+      "beta*x**6",
+      "0",
+      "3*x**3",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "DIFFERENCE_s3o2_r2_generic_complex",
+    "eqtype": "difference",
+    "slope": "3/2",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**6)*S^0 + (x**3*(2 + 3*I))*S^2 + (1)*S^4",
+    "coeffs": [
+      "beta*x**6",
+      "0",
+      "x**3*(2 + 3*I)",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o2_r1_simple",
+    "eqtype": "q-difference",
+    "slope": "1/2",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x)*T^0 + (1)*T^2",
+    "coeffs": [
+      "beta*x",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o2_r2_simple",
+    "eqtype": "q-difference",
+    "slope": "1/2",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**2)*T^0 + (1)*T^4",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o2_r2_mixed",
+    "eqtype": "q-difference",
+    "slope": "1/2",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**2)*T^0 + (3*x)*T^2 + (1)*T^4",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "3*x",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o2_r2_generic_complex",
+    "eqtype": "q-difference",
+    "slope": "1/2",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**2)*T^0 + (x*(2 + 3*I))*T^2 + (1)*T^4",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "x*(2 + 3*I)",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o3_r1_simple",
+    "eqtype": "q-difference",
+    "slope": "1/3",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x)*T^0 + (1)*T^3",
+    "coeffs": [
+      "beta*x",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o3_r2_simple",
+    "eqtype": "q-difference",
+    "slope": "1/3",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**2)*T^0 + (1)*T^6",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o3_r2_mixed",
+    "eqtype": "q-difference",
+    "slope": "1/3",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**2)*T^0 + (3*x)*T^3 + (1)*T^6",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "3*x",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o3_r2_generic_complex",
+    "eqtype": "q-difference",
+    "slope": "1/3",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**2)*T^0 + (x*(2 + 3*I))*T^3 + (1)*T^6",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "x*(2 + 3*I)",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o4_r1_simple",
+    "eqtype": "q-difference",
+    "slope": "1/4",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x)*T^0 + (1)*T^4",
+    "coeffs": [
+      "beta*x",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o4_r2_simple",
+    "eqtype": "q-difference",
+    "slope": "1/4",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**2)*T^0 + (1)*T^8",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o4_r2_mixed",
+    "eqtype": "q-difference",
+    "slope": "1/4",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**2)*T^0 + (3*x)*T^4 + (1)*T^8",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "3*x",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s1o4_r2_generic_complex",
+    "eqtype": "q-difference",
+    "slope": "1/4",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**2)*T^0 + (x*(2 + 3*I))*T^4 + (1)*T^8",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "0",
+      "x*(2 + 3*I)",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s2o3_r1_simple",
+    "eqtype": "q-difference",
+    "slope": "2/3",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x**2)*T^0 + (1)*T^3",
+    "coeffs": [
+      "beta*x**2",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s2o3_r2_simple",
+    "eqtype": "q-difference",
+    "slope": "2/3",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**4)*T^0 + (1)*T^6",
+    "coeffs": [
+      "beta*x**4",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s2o3_r2_mixed",
+    "eqtype": "q-difference",
+    "slope": "2/3",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**4)*T^0 + (3*x**2)*T^3 + (1)*T^6",
+    "coeffs": [
+      "beta*x**4",
+      "0",
+      "0",
+      "3*x**2",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s2o3_r2_generic_complex",
+    "eqtype": "q-difference",
+    "slope": "2/3",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**4)*T^0 + (x**2*(2 + 3*I))*T^3 + (1)*T^6",
+    "coeffs": [
+      "beta*x**4",
+      "0",
+      "0",
+      "x**2*(2 + 3*I)",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s3o2_r1_simple",
+    "eqtype": "q-difference",
+    "slope": "3/2",
+    "rank": 1,
+    "valuation": "simple",
+    "expression": "(beta*x**3)*T^0 + (1)*T^2",
+    "coeffs": [
+      "beta*x**3",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s3o2_r2_simple",
+    "eqtype": "q-difference",
+    "slope": "3/2",
+    "rank": 2,
+    "valuation": "simple",
+    "expression": "(beta*x**6)*T^0 + (1)*T^4",
+    "coeffs": [
+      "beta*x**6",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s3o2_r2_mixed",
+    "eqtype": "q-difference",
+    "slope": "3/2",
+    "rank": 2,
+    "valuation": "mixed",
+    "expression": "(beta*x**6)*T^0 + (3*x**3)*T^2 + (1)*T^4",
+    "coeffs": [
+      "beta*x**6",
+      "0",
+      "3*x**3",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "Q-DIFFERENCE_s3o2_r2_generic_complex",
+    "eqtype": "q-difference",
+    "slope": "3/2",
+    "rank": 2,
+    "valuation": "generic_complex",
+    "expression": "(beta*x**6)*T^0 + (x**3*(2 + 3*I))*T^2 + (1)*T^4",
+    "coeffs": [
+      "beta*x**6",
+      "0",
+      "x**3*(2 + 3*I)",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "STRESS_equalmod",
+    "eqtype": "ode",
+    "slope": "1/2",
+    "rank": 3,
+    "valuation": "stress",
+    "expression": "(-8*x**3)*D^0 + (4*x**2)*D^2 + (-2*x)*D^4 + (1)*D^6",
+    "coeffs": [
+      "-8*x**3",
+      "0",
+      "4*x**2",
+      "0",
+      "-2*x",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "STRESS_doubleroot",
+    "eqtype": "ode",
+    "slope": "1/3",
+    "rank": 3,
+    "valuation": "stress",
+    "expression": "(-2*x**3)*D^0 + (5*x**2)*D^3 + (-4*x)*D^6 + (1)*D^9",
+    "coeffs": [
+      "-2*x**3",
+      "0",
+      "0",
+      "5*x**2",
+      "0",
+      "0",
+      "-4*x",
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "STRESS_zeroroot",
+    "eqtype": "ode",
+    "slope": "1/2",
+    "rank": 2,
+    "valuation": "stress",
+    "expression": "(-x)*D^2 + (1)*D^4",
+    "coeffs": [
+      "0",
+      "0",
+      "-x",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "STRESS_accidental_sym",
+    "eqtype": "ode",
+    "slope": "1/2",
+    "rank": 3,
+    "valuation": "stress",
+    "expression": "(x**3)*D^0 + (1)*D^6",
+    "coeffs": [
+      "x**3",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  }
+]
