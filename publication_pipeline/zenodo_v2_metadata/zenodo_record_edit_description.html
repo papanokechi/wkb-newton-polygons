@@ -1,0 +1,60 @@
+<!--
+  PASTE THIS INTO THE ZENODO "Edit record" → "Description" RICH-TEXT FIELD.
+  It replaces the existing description verbatim and removes the incorrect
+  "supersedes v1.0 dataset (10.5281/zenodo.20355904)" claim, which referred
+  to an unrelated Khinchin's-constant deposit.
+-->
+
+<p>This release publishes the camera-ready manuscript <em>The WKB Geometry of
+Newton Polygons: A Functorial Classification Theory</em> together with its
+full Phase I&ndash;V computational atlas, refereed Round-1 and Round-2
+revision packages, and submission-ready arXiv and journal bundles.</p>
+
+<p>For a scalar local linear operator <em>L</em> (differential, difference,
+or <em>q</em>-difference) with one irregular singularity at <em>x = &infin;</em>
+whose Newton polygon has a unique dominant edge of slope <em>&minus;p/q</em>
+with <em>r&thinsp;+&thinsp;1</em> lattice points, the WKB ansatz on that edge
+produces a characteristic polynomial &chi; &isin; <b>C</b>[c]. Our central
+algebraic identity is &chi;(c) = &chi;<sub>w</sub>(c<sup>q</sup>), where
+&chi;<sub>w</sub> &isin; <b>C</b>[w] is the classical edge-indicial polynomial
+of degree <em>r</em>. The exponent constellation <em>C(L)</em> &sub; <b>C</b>
+is therefore a &mu;<sub>q</sub>-equivariant union of <em>r</em> fibres of
+<em>c &rarr; c<sup>q</sup></em> over Roots(&chi;<sub>w</sub>).</p>
+
+<p>This factorisation organises a finite stratified atlas: a computational
+sweep yields <b>23 single-edge classes</b> for &minus;p/q &isin;
+{1/2, 1/3, 1/4, 2/3, 3/2} and <em>r</em> &le; 3, refining to <b>39 classes</b>
+once multi-edge, nested-ramification, and prime-<em>q</em> arithmetic strata
+are tracked. We prove a per-edge factorisation along the slope filtration, an
+iterated &mu;<sub>q&prime;</sub>-pullback law for nested inner polynomials, a
+block-diagonal pullback for systems, and a prime-<em>q</em> Kummer dichotomy
+separating the algebraically independent stratum from the cyclotomic
+stratum.</p>
+
+<p>The analytic input attaching anti-Stokes directions is classical
+(Levelt&ndash;Turrittin, Sibuya, Wasow); on the <em>q</em>-fold cover the rays
+of a generic single-edge operator satisfy
+arg &Delta;<sub>ij</sub> + p&phi; &equiv; &pi;/2 (mod &pi;).
+One explicit consequence: the slope numerator <em>p</em>, invisible to
+<em>C(L)</em>, is visible to the cover-side ray pattern. The analytic
+statements (Theorems AT1, AT3, AT5, AT7) are
+&mu;<sub>q</sub>/&mu;<sub>q&prime;</sub>-equivariant repackagings of classical
+formal-classification theory.</p>
+
+<p><b>Release contents.</b> Camera-ready LaTeX manuscript (26 pp, 898 KB
+PDF, byte-identical compile across all bundles), the full Phase I&ndash;V
+computational atlas (19 JSON artifacts, ~2.6 MB), the arXiv-ready and
+journal-ready submission bundles, the eight in-manuscript theorem proofs
+(M1, N1, D2, S1, AT1, AT3, AT5, AT7), the agent-pipeline scripts
+(<code>fleet.py</code> &hellip; <code>fleet5.py</code>), the phase reports,
+and the Round-1 + Round-2 refereed revision packages.</p>
+
+<p><b>Repository.</b> A stable, versioned public GitHub mirror of this Zenodo
+release is at
+<a href="https://github.com/papanokechi/wkb-newton-polygons">https://github.com/papanokechi/wkb-newton-polygons</a>;
+the manuscript points to it from the <em>Reproducibility</em> paragraph of
+the Computational and AI Disclosure section.</p>
+
+<p><b>Dual licensing.</b> All text, figures, and the JSON atlas are released
+under CC-BY-4.0; all code and fleet scripts are released under MIT. See
+<code>LICENSE-TEXT</code> and <code>LICENSE-CODE</code> in the record.</p>
