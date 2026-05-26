@@ -7,9 +7,13 @@
 
 ---
 
-## 🟡 Overall verdict: **PASS WITH MINOR POLISH**
+## 🟠 Overall verdict: **PASS WITH MINOR POLISH + arXiv ENDORSEMENT GATE**
 
-The manuscript is **mathematically complete**, the **supplementary Zenodo archive is live and citable**, the **arXiv bundle compiles cleanly**, and the **GitHub mirror is published**. Three small categories of pre-submission touch-ups remain; none requires re-deriving any result, re-running the pipeline, or revising any proof. **Estimated effort to ready-to-submit: 30–45 minutes.**
+The manuscript is **mathematically complete**, the **supplementary Zenodo archive is live and citable**, the **arXiv bundle compiles cleanly**, and the **GitHub mirror is published**. Three categories of pre-submission edits remain (~30–45 min), plus one external dependency:
+
+- **arXiv endorsement (3–14 days)** — SIGMA is an arXiv-overlay journal, so posting to arXiv is the canonical submission path. As a first-time `math-ph` submitter with a non-institutional email and a single-author paper, both auto-endorsement paths are closed; a personal endorsement from an established `math-ph` author is required. Backup path: direct email to `editor@sigma-journal.com` with endorsement-blocked justification (SIGMA's exception path, documented in `submission_filelist.md` §E).
+
+Total wall-clock estimate: **3–14 days** (dominated by endorsement latency); **30–45 min** of mechanical work on the author's side.
 
 ---
 
@@ -112,13 +116,26 @@ SIGMA's submission portal requires both fields.
 
 Template ships in `submission_cover_letter.md`. Replace `[DATE]`, `[EDITOR NAME]`, `[ARXIV ID]`, `[EMAIL]`; render to 1-page PDF.
 
-### Action 5 (recommended) — Post arXiv preprint
+### Action 5 (REQUIRED for the standard arXiv-overlay path) — Post arXiv preprint
 
-Tar `arxiv_bundle/` (after Step 3 of `sigma_arxiv_readiness.md`) → arXiv `math-ph` primary, `math.CA` + `math.AG` cross-list. After ID assignment:
+SIGMA is an **arXiv overlay journal**: there is no separate SIGMA web portal. The submission consists of posting to arXiv, then emailing the arXiv ID to `editor@sigma-journal.com`.
 
-1. Add `arXiv:YYMM.NNNNN` to manuscript front-matter.
-2. Zenodo Edit-record → add `isSupplementTo arXiv:YYMM.NNNNN` relation.
-3. Re-tag GitHub release v2.0.1 with the arXiv-ID-baked manuscript.
+**⚠️ Endorsement gate:** As a first-time `math-ph` submitter with a non-institutional email and a single-author paper, both arXiv auto-endorsement paths are closed. The author must obtain a personal endorsement from an established `math-ph` arXiv author.
+
+Endorsement workflow:
+
+1. Start a `math-ph` submission at <https://arxiv.org/submit> → arXiv emails a 6-character endorsement code.
+2. Forward the code to 1–3 candidate endorsers — authors of papers cited in `references.bib` (Sabbah / Mochizuki / Hertling / Singer school), or SIGMA editorial-board members active in `math-ph` (e.g., Eric Rains, Bertrand Eynard, Boris Khesin, Alexander Its, Carlos Simpson). Include the Zenodo DOI and GitHub repo URL. Do NOT mass-mail many endorsers simultaneously (arXiv policy discourages this).
+3. Once endorsed, complete the arXiv submission. Tar `arxiv_bundle/` with the artefact-stripped 6-file payload (see `sigma_arxiv_readiness.md` §C).
+4. After arXiv assigns an ID (typically same-day post-endorsement), back-propagate the arXiv ID into the manuscript front-matter and Zenodo `isSupplementTo` relation. Re-tag GitHub release v2.0.1.
+
+**Timeline:** typically 3–14 days from endorsement request to arXiv ID.
+
+### Action 5b (BACKUP — if endorsement stalls beyond ~2 weeks)
+
+SIGMA accepts direct-email submissions "in exceptional cases" with written justification for not using arXiv. "First-time `math-ph` submitter awaiting endorsement" is a plausible exceptional reason.
+
+Email payload — see `submission_filelist.md` §E for the template, including the suggested explanation paragraph for the cover letter.
 
 ---
 
@@ -139,14 +156,19 @@ Tar `arxiv_bundle/` (after Step 3 of `sigma_arxiv_readiness.md`) → arXiv `math
 
 **The manuscript is mathematically and computationally ready for submission to SIGMA.**
 
-The four blocking touch-ups (DOI propagation, email + affiliation, version-label cleanup, cover letter) are mechanical edits to fewer than 10 lines across the source tree, and a single script invocation handles the DOI propagation. After these:
+The four blocking author-side touch-ups (DOI propagation, email + affiliation, version-label cleanup, cover letter) are mechanical edits to fewer than 10 lines across the source tree, and a single script invocation handles the DOI propagation. After these:
 
 1. **Recompile** — 4-pass `pdflatex → bibtex → pdflatex → pdflatex` (≈ 30 s)
 2. **Commit + push** to GitHub
-3. **Post arXiv** (optional, but recommended) — ~24 h processing latency
-4. **Submit via SIGMA portal** — 7 files (see `submission_filelist.md`)
-5. **Log in SIARC ledger** — `submission_log.txt §1 Active deposits`
+3. **Open an arXiv endorsement request** by starting a `math-ph` submission → forward the 6-char endorsement code to 1–3 candidate endorsers (see Action 5 above) — **3–14 days**
+4. **Post to arXiv** (canonical path) once endorsement is granted, **OR** invoke SIGMA's exception path (`submission_filelist.md` §E) if endorsement stalls
+5. **Email SIGMA editorial office** — `editor@sigma-journal.com` with the arXiv ID (or attached manuscript in the exception case)
+6. **Log in SIARC ledger** — `submission_log.txt §1 Active deposits`
 
-**Estimated total time from "start touch-ups" to "click Submit on SIGMA portal":** 30–45 minutes for the manuscript edits + script invocation, plus ~24 hours of arXiv processing latency if Action 5 is included.
+**Estimated total time from "start touch-ups" to "send email to SIGMA":**
+- Author-side mechanical work: 30–45 minutes
+- arXiv endorsement wait: 3–14 days (dominant)
+- arXiv processing latency after endorsement: ~24 hours
+- SIGMA editor acknowledgement: 2 working days per SIGMA's policy
 
 — *End of report.*

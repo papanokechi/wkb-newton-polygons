@@ -113,13 +113,33 @@ SIGMA accepts arXiv preprints from any of these primary categories; the cross-li
 
 ---
 
-## F. Note on the optional arXiv submission
+**⚠️ arXiv endorsement is required for this paper** (first-time submitter to `math-ph` with non-institutional email + single-author paper closes both auto-endorsement paths). Plan for **3–14 days** to obtain endorsement; backup path is direct email to SIGMA (see §G).
 
-SIGMA encourages an accompanying arXiv preprint but does not require one for first submission. The arXiv post can be done either:
+---
 
-- **(a) BEFORE clicking Submit on the SIGMA portal** (recommended) — gives the manuscript an arXiv ID that can be referenced in the cover letter; SIGMA reviewers can fetch the PDF from arXiv if needed.
-- **(b) IN PARALLEL with the SIGMA submission** — both ID assignment processes run independently; the arXiv ID and the SIGMA assignment number can be merged later via a Zenodo Edit-record (`isSupplementTo`) + a `paper_v2_2.tex` revision that adds both IDs to the front-matter.
+## F. arXiv is the SIGMA submission portal (NOT optional in normal circumstances)
 
-Either path is acceptable.
+**Correction to earlier notes:** SIGMA is explicitly an **arXiv overlay journal**, and arXiv is the *canonical* submission path. Per the SIGMA "How to Submit" page (<https://www.emis.de/journals/SIGMA/about.html>):
+
+> *"Please submit the paper to arXiv.org and send the arXiv number to editor@sigma-journal.com or (in exceptional cases only) you can send the zipped paper in TeX/LaTeX format directly to editor@sigma-journal.com … with an explanation why you prefer not to put the paper to arXiv."*
+
+Concrete consequences:
+
+1. **There is no separate SIGMA web portal.** The "submission" consists of posting to arXiv, then emailing the arXiv ID to `editor@sigma-journal.com`.
+2. **Posting to arXiv must precede emailing SIGMA**, since the email body is built around the arXiv ID.
+3. **Direct-by-email-only submission** is allowed as an exception but requires written justification for not using arXiv. For this paper, "first-time `math-ph` submitter awaiting endorsement" is the relevant justification if endorsement stalls (see §G).
+4. **Therefore the arXiv-readiness checks in this report are mandatory pre-submission checks**, not "nice to have".
+
+---
+
+## G. Endorsement strategy
+
+| Step | Action | Notes |
+|---|---|---|
+| 1 | Start a `math-ph` submission at <https://arxiv.org/submit> | Triggers arXiv to email a 6-char endorsement code |
+| 2 | Identify candidate endorsers | (i) Authors of papers cited in `references.bib` (the Sabbah / Mochizuki / Hertling / Singer school for irregular ODEs and Stokes geometry); (ii) SIGMA editorial-board members who are `math-ph`-active (e.g., Eric Rains, Bertrand Eynard, Boris Khesin, Alexander Its, Carlos Simpson). These editors are familiar with SIGMA's arXiv-overlay model. |
+| 3 | Contact 1–3 candidates politely | Include the endorsement code, Zenodo DOI `10.5281/zenodo.20387847`, GitHub URL <https://github.com/papanokechi/wkb-newton-polygons>, and a 1-paragraph abstract. **Do not** mass-mail many endorsers at once — arXiv's policy discourages this. |
+| 4 | Wait for endorser to act | One positive endorsement is sufficient |
+| 5 | If no response in ~2 weeks | Take the SIGMA exception path (direct-email-to-`editor@sigma-journal.com` with endorsement-blocked justification; see `submission_filelist.md` §E for the email template) |
 
 — *End of report.*
