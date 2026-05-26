@@ -1,0 +1,8332 @@
+{
+  "metadata": {
+    "n_classes_23": 23,
+    "n_classes_39": 39,
+    "inputs": [
+      "data/clusters.json",
+      "data/phase3_clusters.json",
+      "data/constellations.json",
+      "data/phase3_invariants.json"
+    ]
+  },
+  "atlas_23": {
+    "fingerprints": [
+      {
+        "atlas": "23-class",
+        "label": "Class[Regular-12-gon]",
+        "description": "All 12 roots lie on a single ring; rotational symmetry C_12. Regular 12-gon.",
+        "members": [
+          "ODE_s1o4_r3_simple"
+        ],
+        "n_members": 1,
+        "rep_name": "ODE_s1o4_r3_simple",
+        "slope": "1/4",
+        "rank": 3,
+        "n_roots": 12,
+        "ring_counts": [
+          12
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599
+          ]
+        ],
+        "Cn_order": 12,
+        "is_regular_polygon": true
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[Regular-9-gon]",
+        "description": "All 9 roots lie on a single ring; rotational symmetry C_9. Regular 9-gon.",
+        "members": [
+          "ODE_s1o3_r3_simple",
+          "ODE_s2o3_r3_simple"
+        ],
+        "n_members": 2,
+        "rep_name": "ODE_s1o3_r3_simple",
+        "slope": "1/3",
+        "rank": 3,
+        "n_roots": 9,
+        "ring_counts": [
+          9
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.698132,
+            0.698132,
+            0.698132,
+            0.698132,
+            0.698132,
+            0.698132,
+            0.698132,
+            0.698132,
+            0.698132
+          ]
+        ],
+        "Cn_order": 9,
+        "is_regular_polygon": true
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[Regular-8-gon]",
+        "description": "All 8 roots lie on a single ring; rotational symmetry C_8. Regular 8-gon.",
+        "members": [
+          "ODE_s1o4_r2_simple",
+          "DIFFERENCE_s1o4_r2_simple",
+          "Q-DIFFERENCE_s1o4_r2_simple"
+        ],
+        "n_members": 3,
+        "rep_name": "ODE_s1o4_r2_simple",
+        "slope": "1/4",
+        "rank": 2,
+        "n_roots": 8,
+        "ring_counts": [
+          8
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.785398,
+            0.785398,
+            0.785398,
+            0.785398,
+            0.785398,
+            0.785398,
+            0.785398,
+            0.785398
+          ]
+        ],
+        "Cn_order": 8,
+        "is_regular_polygon": true
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[Regular-6-gon]",
+        "description": "All 6 roots lie on a single ring; rotational symmetry C_6. Regular 6-gon.",
+        "members": [
+          "ODE_s1o2_r3_simple",
+          "ODE_s1o3_r2_simple",
+          "ODE_s2o3_r2_simple",
+          "ODE_s3o2_r3_simple",
+          "DIFFERENCE_s1o3_r2_simple",
+          "DIFFERENCE_s2o3_r2_simple",
+          "Q-DIFFERENCE_s1o3_r2_simple",
+          "Q-DIFFERENCE_s2o3_r2_simple",
+          "STRESS_accidental_sym"
+        ],
+        "n_members": 9,
+        "rep_name": "ODE_s1o2_r3_simple",
+        "slope": "1/2",
+        "rank": 3,
+        "n_roots": 6,
+        "ring_counts": [
+          6
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198
+          ]
+        ],
+        "Cn_order": 6,
+        "is_regular_polygon": true
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[Regular-4-gon]",
+        "description": "All 4 roots lie on a single ring; rotational symmetry C_4. Regular 4-gon.",
+        "members": [
+          "ODE_s1o2_r2_simple",
+          "ODE_s1o4_r1_simple",
+          "ODE_s3o2_r2_simple",
+          "DIFFERENCE_s1o2_r2_simple",
+          "DIFFERENCE_s1o4_r1_simple",
+          "DIFFERENCE_s3o2_r2_simple",
+          "Q-DIFFERENCE_s1o2_r2_simple",
+          "Q-DIFFERENCE_s1o4_r1_simple",
+          "Q-DIFFERENCE_s3o2_r2_simple"
+        ],
+        "n_members": 9,
+        "rep_name": "ODE_s1o2_r2_simple",
+        "slope": "1/2",
+        "rank": 2,
+        "n_roots": 4,
+        "ring_counts": [
+          4
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ]
+        ],
+        "Cn_order": 4,
+        "is_regular_polygon": true
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C4, rings=[4, 4]]",
+        "description": "Multi-ring constellation with ring multiplicities [4, 4] and global rotational symmetry C_4.",
+        "members": [
+          "ODE_s1o4_r2_mixed",
+          "ODE_s1o4_r2_generic_complex",
+          "DIFFERENCE_s1o4_r2_mixed",
+          "DIFFERENCE_s1o4_r2_generic_complex",
+          "Q-DIFFERENCE_s1o4_r2_mixed",
+          "Q-DIFFERENCE_s1o4_r2_generic_complex"
+        ],
+        "n_members": 6,
+        "rep_name": "ODE_s1o4_r2_mixed",
+        "slope": "1/4",
+        "rank": 2,
+        "n_roots": 8,
+        "ring_counts": [
+          4,
+          4
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          0.786151,
+          1.27202
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.618034
+        ],
+        "spread_max_over_min": 1.618034,
+        "per_ring_gap_multiset": [
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ],
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ]
+        ],
+        "Cn_order": 4,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C4, rings=[4, 4, 4]]",
+        "description": "Multi-ring constellation with ring multiplicities [4, 4, 4] and global rotational symmetry C_4.",
+        "members": [
+          "ODE_s1o4_r3_generic_complex"
+        ],
+        "n_members": 1,
+        "rep_name": "ODE_s1o4_r3_generic_complex",
+        "slope": "1/4",
+        "rank": 3,
+        "n_roots": 12,
+        "ring_counts": [
+          4,
+          4,
+          4
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          0.650351,
+          1.112338,
+          1.382341
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.710364,
+          2.12553
+        ],
+        "spread_max_over_min": 2.12553,
+        "per_ring_gap_multiset": [
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ],
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ],
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ]
+        ],
+        "Cn_order": 4,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C4, rings=[4, 8]]",
+        "description": "Multi-ring constellation with ring multiplicities [4, 8] and global rotational symmetry C_4.",
+        "members": [
+          "ODE_s1o4_r3_mixed"
+        ],
+        "n_members": 1,
+        "rep_name": "ODE_s1o4_r3_mixed",
+        "slope": "1/4",
+        "rank": 3,
+        "n_roots": 12,
+        "ring_counts": [
+          4,
+          8
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          0.750749,
+          1.154124
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.537297
+        ],
+        "spread_max_over_min": 1.537297,
+        "per_ring_gap_multiset": [
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ],
+          [
+            0.356875,
+            0.356875,
+            0.356875,
+            0.356875,
+            1.213921,
+            1.213921,
+            1.213921,
+            1.213921
+          ]
+        ],
+        "Cn_order": 4,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C4, rings=[8]]",
+        "description": "Multi-ring constellation with ring multiplicities [8] and global rotational symmetry C_4.",
+        "members": [
+          "ODE_s1o4_r2_double"
+        ],
+        "n_members": 1,
+        "rep_name": "ODE_s1o4_r2_double",
+        "slope": "1/4",
+        "rank": 2,
+        "n_roots": 8,
+        "ring_counts": [
+          8
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198
+          ]
+        ],
+        "Cn_order": 4,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C4, rings=[8, 4]]",
+        "description": "Multi-ring constellation with ring multiplicities [8, 4] and global rotational symmetry C_4.",
+        "members": [
+          "ODE_s1o4_r3_double"
+        ],
+        "n_members": 1,
+        "rep_name": "ODE_s1o4_r3_double",
+        "slope": "1/4",
+        "rank": 3,
+        "n_roots": 12,
+        "ring_counts": [
+          8,
+          4
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          0.953343,
+          1.100276
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.154124
+        ],
+        "spread_max_over_min": 1.154124,
+        "per_ring_gap_multiset": [
+          [
+            0.642557,
+            0.642557,
+            0.642557,
+            0.642557,
+            0.928239,
+            0.928239,
+            0.928239,
+            0.928239
+          ],
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ]
+        ],
+        "Cn_order": 4,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[Regular-3-gon]",
+        "description": "All 3 roots lie on a single ring; rotational symmetry C_3. Regular 3-gon.",
+        "members": [
+          "ODE_s1o3_r1_simple",
+          "ODE_s2o3_r1_simple",
+          "DIFFERENCE_s1o3_r1_simple",
+          "DIFFERENCE_s2o3_r1_simple",
+          "Q-DIFFERENCE_s1o3_r1_simple",
+          "Q-DIFFERENCE_s2o3_r1_simple"
+        ],
+        "n_members": 6,
+        "rep_name": "ODE_s1o3_r1_simple",
+        "slope": "1/3",
+        "rank": 1,
+        "n_roots": 3,
+        "ring_counts": [
+          3
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ]
+        ],
+        "Cn_order": 3,
+        "is_regular_polygon": true
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C3, rings=[3, 3]]",
+        "description": "Multi-ring constellation with ring multiplicities [3, 3] and global rotational symmetry C_3.",
+        "members": [
+          "ODE_s1o3_r2_mixed",
+          "ODE_s1o3_r2_generic_complex",
+          "ODE_s2o3_r2_mixed",
+          "ODE_s2o3_r2_generic_complex",
+          "DIFFERENCE_s1o3_r2_mixed",
+          "DIFFERENCE_s1o3_r2_generic_complex",
+          "DIFFERENCE_s2o3_r2_mixed",
+          "DIFFERENCE_s2o3_r2_generic_complex",
+          "Q-DIFFERENCE_s1o3_r2_mixed",
+          "Q-DIFFERENCE_s1o3_r2_generic_complex",
+          "Q-DIFFERENCE_s2o3_r2_mixed",
+          "Q-DIFFERENCE_s2o3_r2_generic_complex"
+        ],
+        "n_members": 12,
+        "rep_name": "ODE_s1o3_r2_mixed",
+        "slope": "1/3",
+        "rank": 2,
+        "n_roots": 6,
+        "ring_counts": [
+          3,
+          3
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          0.725563,
+          1.378241
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.899548
+        ],
+        "spread_max_over_min": 1.899548,
+        "per_ring_gap_multiset": [
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ],
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ]
+        ],
+        "Cn_order": 3,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C3, rings=[3, 3, 3]]",
+        "description": "Multi-ring constellation with ring multiplicities [3, 3, 3] and global rotational symmetry C_3.",
+        "members": [
+          "ODE_s1o3_r3_generic_complex",
+          "ODE_s2o3_r3_generic_complex"
+        ],
+        "n_members": 2,
+        "rep_name": "ODE_s1o3_r3_generic_complex",
+        "slope": "1/3",
+        "rank": 3,
+        "n_roots": 9,
+        "ring_counts": [
+          3,
+          3,
+          3
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          0.563461,
+          1.152521,
+          1.539881
+        ],
+        "ratios_to_inner": [
+          1.0,
+          2.04543,
+          2.732895
+        ],
+        "spread_max_over_min": 2.732895,
+        "per_ring_gap_multiset": [
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ],
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ],
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ]
+        ],
+        "Cn_order": 3,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C3, rings=[3, 6]]",
+        "description": "Multi-ring constellation with ring multiplicities [3, 6] and global rotational symmetry C_3.",
+        "members": [
+          "ODE_s1o3_r3_mixed",
+          "ODE_s2o3_r3_mixed"
+        ],
+        "n_members": 2,
+        "rep_name": "ODE_s1o3_r3_mixed",
+        "slope": "1/3",
+        "rank": 3,
+        "n_roots": 9,
+        "ring_counts": [
+          3,
+          6
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          0.682328,
+          1.210608
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.774232
+        ],
+        "spread_max_over_min": 1.774232,
+        "per_ring_gap_multiset": [
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ],
+          [
+            0.475833,
+            0.475833,
+            0.475833,
+            1.618562,
+            1.618562,
+            1.618562
+          ]
+        ],
+        "Cn_order": 3,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C3, rings=[6]]",
+        "description": "Multi-ring constellation with ring multiplicities [6] and global rotational symmetry C_3.",
+        "members": [
+          "ODE_s1o3_r2_double",
+          "ODE_s2o3_r2_double"
+        ],
+        "n_members": 2,
+        "rep_name": "ODE_s1o3_r2_double",
+        "slope": "1/3",
+        "rank": 2,
+        "n_roots": 6,
+        "ring_counts": [
+          6
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.698132,
+            0.698132,
+            0.698132,
+            1.396263,
+            1.396263,
+            1.396263
+          ]
+        ],
+        "Cn_order": 3,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C3, rings=[6, 3]]",
+        "description": "Multi-ring constellation with ring multiplicities [6, 3] and global rotational symmetry C_3.",
+        "members": [
+          "ODE_s1o3_r3_double",
+          "ODE_s2o3_r3_double",
+          "STRESS_doubleroot"
+        ],
+        "n_members": 3,
+        "rep_name": "ODE_s1o3_r3_double",
+        "slope": "1/3",
+        "rank": 3,
+        "n_roots": 9,
+        "ring_counts": [
+          6,
+          3
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          0.938279,
+          1.135888
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.210608
+        ],
+        "spread_max_over_min": 1.210608,
+        "per_ring_gap_multiset": [
+          [
+            0.856743,
+            0.856743,
+            0.856743,
+            1.237652,
+            1.237652,
+            1.237652
+          ],
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ]
+        ],
+        "Cn_order": 3,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[Regular-2-gon]",
+        "description": "All 2 roots lie on a single ring; rotational symmetry C_2. Regular 2-gon.",
+        "members": [
+          "ODE_s1o2_r1_simple",
+          "ODE_s3o2_r1_simple",
+          "DIFFERENCE_s1o2_r1_simple",
+          "DIFFERENCE_s3o2_r1_simple",
+          "Q-DIFFERENCE_s1o2_r1_simple",
+          "Q-DIFFERENCE_s3o2_r1_simple"
+        ],
+        "n_members": 6,
+        "rep_name": "ODE_s1o2_r1_simple",
+        "slope": "1/2",
+        "rank": 1,
+        "n_roots": 2,
+        "ring_counts": [
+          2
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            3.141593,
+            3.141593
+          ]
+        ],
+        "Cn_order": 2,
+        "is_regular_polygon": true
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C2, rings=[2, 2]]",
+        "description": "Multi-ring constellation with ring multiplicities [2, 2] and global rotational symmetry C_2.",
+        "members": [
+          "ODE_s1o2_r2_mixed",
+          "ODE_s1o2_r2_generic_complex",
+          "ODE_s3o2_r2_mixed",
+          "ODE_s3o2_r2_generic_complex",
+          "DIFFERENCE_s1o2_r2_mixed",
+          "DIFFERENCE_s1o2_r2_generic_complex",
+          "DIFFERENCE_s3o2_r2_mixed",
+          "DIFFERENCE_s3o2_r2_generic_complex",
+          "Q-DIFFERENCE_s1o2_r2_mixed",
+          "Q-DIFFERENCE_s1o2_r2_generic_complex",
+          "Q-DIFFERENCE_s3o2_r2_mixed",
+          "Q-DIFFERENCE_s3o2_r2_generic_complex",
+          "STRESS_zeroroot"
+        ],
+        "n_members": 13,
+        "rep_name": "ODE_s1o2_r2_mixed",
+        "slope": "1/2",
+        "rank": 2,
+        "n_roots": 4,
+        "ring_counts": [
+          2,
+          2
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          0.618034,
+          1.618034
+        ],
+        "ratios_to_inner": [
+          1.0,
+          2.618034
+        ],
+        "spread_max_over_min": 2.618034,
+        "per_ring_gap_multiset": [
+          [
+            3.141593,
+            3.141593
+          ],
+          [
+            3.141593,
+            3.141593
+          ]
+        ],
+        "Cn_order": 2,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C2, rings=[2, 2, 2]]",
+        "description": "Multi-ring constellation with ring multiplicities [2, 2, 2] and global rotational symmetry C_2.",
+        "members": [
+          "ODE_s1o2_r3_generic_complex",
+          "ODE_s3o2_r3_generic_complex"
+        ],
+        "n_members": 2,
+        "rep_name": "ODE_s1o2_r3_generic_complex",
+        "slope": "1/2",
+        "rank": 3,
+        "n_roots": 6,
+        "ring_counts": [
+          2,
+          2,
+          2
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          0.422957,
+          1.237295,
+          1.910867
+        ],
+        "ratios_to_inner": [
+          1.0,
+          2.925344,
+          4.517876
+        ],
+        "spread_max_over_min": 4.517876,
+        "per_ring_gap_multiset": [
+          [
+            3.141593,
+            3.141593
+          ],
+          [
+            3.141593,
+            3.141593
+          ],
+          [
+            3.141593,
+            3.141593
+          ]
+        ],
+        "Cn_order": 2,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C2, rings=[2, 4]]",
+        "description": "Multi-ring constellation with ring multiplicities [2, 4] and global rotational symmetry C_2.",
+        "members": [
+          "ODE_s1o2_r3_mixed",
+          "ODE_s3o2_r3_mixed"
+        ],
+        "n_members": 2,
+        "rep_name": "ODE_s1o2_r3_mixed",
+        "slope": "1/2",
+        "rank": 3,
+        "n_roots": 6,
+        "ring_counts": [
+          2,
+          4
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          0.563624,
+          1.332003
+        ],
+        "ratios_to_inner": [
+          1.0,
+          2.363282
+        ],
+        "spread_max_over_min": 2.363282,
+        "per_ring_gap_multiset": [
+          [
+            3.141593,
+            3.141593
+          ],
+          [
+            0.71375,
+            0.71375,
+            2.427843,
+            2.427843
+          ]
+        ],
+        "Cn_order": 2,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C2, rings=[4]]",
+        "description": "Multi-ring constellation with ring multiplicities [4] and global rotational symmetry C_2.",
+        "members": [
+          "ODE_s1o2_r2_double",
+          "ODE_s3o2_r2_double"
+        ],
+        "n_members": 2,
+        "rep_name": "ODE_s1o2_r2_double",
+        "slope": "1/2",
+        "rank": 2,
+        "n_roots": 4,
+        "ring_counts": [
+          4
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            1.047198,
+            1.047198,
+            2.094395,
+            2.094395
+          ]
+        ],
+        "Cn_order": 2,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C2, rings=[4, 2]]",
+        "description": "Multi-ring constellation with ring multiplicities [4, 2] and global rotational symmetry C_2.",
+        "members": [
+          "ODE_s1o2_r3_double",
+          "ODE_s3o2_r3_double"
+        ],
+        "n_members": 2,
+        "rep_name": "ODE_s1o2_r3_double",
+        "slope": "1/2",
+        "rank": 3,
+        "n_roots": 6,
+        "ring_counts": [
+          4,
+          2
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          0.908863,
+          1.210608
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.332003
+        ],
+        "spread_max_over_min": 1.332003,
+        "per_ring_gap_multiset": [
+          [
+            1.285114,
+            1.285114,
+            1.856479,
+            1.856479
+          ],
+          [
+            3.141593,
+            3.141593
+          ]
+        ],
+        "Cn_order": 2,
+        "is_regular_polygon": false
+      },
+      {
+        "atlas": "23-class",
+        "label": "Class[C2, rings=[6]]",
+        "description": "Multi-ring constellation with ring multiplicities [6] and global rotational symmetry C_2.",
+        "members": [
+          "STRESS_equalmod"
+        ],
+        "n_members": 1,
+        "rep_name": "STRESS_equalmod",
+        "slope": "1/2",
+        "rank": 3,
+        "n_roots": 6,
+        "ring_counts": [
+          6
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.414214
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.785398,
+            0.785398,
+            0.785398,
+            0.785398,
+            1.570796,
+            1.570796
+          ]
+        ],
+        "Cn_order": 2,
+        "is_regular_polygon": false
+      }
+    ],
+    "dendrogram_levels": [
+      {
+        "level": 1,
+        "n_buckets": 7,
+        "buckets": [
+          {
+            "key": [
+              2
+            ],
+            "members": [
+              "Class[C2, rings=[2, 2, 2]]",
+              "Class[C2, rings=[2, 2]]",
+              "Class[C2, rings=[2, 4]]",
+              "Class[C2, rings=[4, 2]]",
+              "Class[C2, rings=[4]]",
+              "Class[C2, rings=[6]]",
+              "Class[Regular-2-gon]"
+            ]
+          },
+          {
+            "key": [
+              3
+            ],
+            "members": [
+              "Class[C3, rings=[3, 3, 3]]",
+              "Class[C3, rings=[3, 3]]",
+              "Class[C3, rings=[3, 6]]",
+              "Class[C3, rings=[6, 3]]",
+              "Class[C3, rings=[6]]",
+              "Class[Regular-3-gon]"
+            ]
+          },
+          {
+            "key": [
+              4
+            ],
+            "members": [
+              "Class[C4, rings=[4, 4, 4]]",
+              "Class[C4, rings=[4, 4]]",
+              "Class[C4, rings=[4, 8]]",
+              "Class[C4, rings=[8, 4]]",
+              "Class[C4, rings=[8]]",
+              "Class[Regular-4-gon]"
+            ]
+          },
+          {
+            "key": [
+              6
+            ],
+            "members": [
+              "Class[Regular-6-gon]"
+            ]
+          },
+          {
+            "key": [
+              8
+            ],
+            "members": [
+              "Class[Regular-8-gon]"
+            ]
+          },
+          {
+            "key": [
+              9
+            ],
+            "members": [
+              "Class[Regular-9-gon]"
+            ]
+          },
+          {
+            "key": [
+              12
+            ],
+            "members": [
+              "Class[Regular-12-gon]"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "n_buckets": 13,
+        "buckets": [
+          {
+            "key": [
+              2,
+              1
+            ],
+            "members": [
+              "Class[C2, rings=[4]]",
+              "Class[C2, rings=[6]]",
+              "Class[Regular-2-gon]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              2
+            ],
+            "members": [
+              "Class[C2, rings=[2, 2]]",
+              "Class[C2, rings=[2, 4]]",
+              "Class[C2, rings=[4, 2]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              3
+            ],
+            "members": [
+              "Class[C2, rings=[2, 2, 2]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              1
+            ],
+            "members": [
+              "Class[C3, rings=[6]]",
+              "Class[Regular-3-gon]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              2
+            ],
+            "members": [
+              "Class[C3, rings=[3, 3]]",
+              "Class[C3, rings=[3, 6]]",
+              "Class[C3, rings=[6, 3]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              3
+            ],
+            "members": [
+              "Class[C3, rings=[3, 3, 3]]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              1
+            ],
+            "members": [
+              "Class[C4, rings=[8]]",
+              "Class[Regular-4-gon]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              2
+            ],
+            "members": [
+              "Class[C4, rings=[4, 4]]",
+              "Class[C4, rings=[4, 8]]",
+              "Class[C4, rings=[8, 4]]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              3
+            ],
+            "members": [
+              "Class[C4, rings=[4, 4, 4]]"
+            ]
+          },
+          {
+            "key": [
+              6,
+              1
+            ],
+            "members": [
+              "Class[Regular-6-gon]"
+            ]
+          },
+          {
+            "key": [
+              8,
+              1
+            ],
+            "members": [
+              "Class[Regular-8-gon]"
+            ]
+          },
+          {
+            "key": [
+              9,
+              1
+            ],
+            "members": [
+              "Class[Regular-9-gon]"
+            ]
+          },
+          {
+            "key": [
+              12,
+              1
+            ],
+            "members": [
+              "Class[Regular-12-gon]"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "n_buckets": 23,
+        "buckets": [
+          {
+            "key": [
+              2,
+              1,
+              [
+                2
+              ]
+            ],
+            "members": [
+              "Class[Regular-2-gon]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              1,
+              [
+                4
+              ]
+            ],
+            "members": [
+              "Class[C2, rings=[4]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              1,
+              [
+                6
+              ]
+            ],
+            "members": [
+              "Class[C2, rings=[6]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              2,
+              [
+                2,
+                2
+              ]
+            ],
+            "members": [
+              "Class[C2, rings=[2, 2]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              2,
+              [
+                2,
+                4
+              ]
+            ],
+            "members": [
+              "Class[C2, rings=[2, 4]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              2,
+              [
+                4,
+                2
+              ]
+            ],
+            "members": [
+              "Class[C2, rings=[4, 2]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              3,
+              [
+                2,
+                2,
+                2
+              ]
+            ],
+            "members": [
+              "Class[C2, rings=[2, 2, 2]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              1,
+              [
+                3
+              ]
+            ],
+            "members": [
+              "Class[Regular-3-gon]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              1,
+              [
+                6
+              ]
+            ],
+            "members": [
+              "Class[C3, rings=[6]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              2,
+              [
+                3,
+                3
+              ]
+            ],
+            "members": [
+              "Class[C3, rings=[3, 3]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              2,
+              [
+                3,
+                6
+              ]
+            ],
+            "members": [
+              "Class[C3, rings=[3, 6]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              2,
+              [
+                6,
+                3
+              ]
+            ],
+            "members": [
+              "Class[C3, rings=[6, 3]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              3,
+              [
+                3,
+                3,
+                3
+              ]
+            ],
+            "members": [
+              "Class[C3, rings=[3, 3, 3]]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              1,
+              [
+                4
+              ]
+            ],
+            "members": [
+              "Class[Regular-4-gon]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              1,
+              [
+                8
+              ]
+            ],
+            "members": [
+              "Class[C4, rings=[8]]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              2,
+              [
+                4,
+                4
+              ]
+            ],
+            "members": [
+              "Class[C4, rings=[4, 4]]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              2,
+              [
+                4,
+                8
+              ]
+            ],
+            "members": [
+              "Class[C4, rings=[4, 8]]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              2,
+              [
+                8,
+                4
+              ]
+            ],
+            "members": [
+              "Class[C4, rings=[8, 4]]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              3,
+              [
+                4,
+                4,
+                4
+              ]
+            ],
+            "members": [
+              "Class[C4, rings=[4, 4, 4]]"
+            ]
+          },
+          {
+            "key": [
+              6,
+              1,
+              [
+                6
+              ]
+            ],
+            "members": [
+              "Class[Regular-6-gon]"
+            ]
+          },
+          {
+            "key": [
+              8,
+              1,
+              [
+                8
+              ]
+            ],
+            "members": [
+              "Class[Regular-8-gon]"
+            ]
+          },
+          {
+            "key": [
+              9,
+              1,
+              [
+                9
+              ]
+            ],
+            "members": [
+              "Class[Regular-9-gon]"
+            ]
+          },
+          {
+            "key": [
+              12,
+              1,
+              [
+                12
+              ]
+            ],
+            "members": [
+              "Class[Regular-12-gon]"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "n_buckets": 23,
+        "buckets": [
+          {
+            "key": [
+              2,
+              1,
+              [
+                2
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "Class[Regular-2-gon]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              1,
+              [
+                4
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "Class[C2, rings=[4]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              1,
+              [
+                6
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "Class[C2, rings=[6]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              2,
+              [
+                2,
+                2
+              ],
+              [
+                1.0,
+                2.618034
+              ]
+            ],
+            "members": [
+              "Class[C2, rings=[2, 2]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              2,
+              [
+                2,
+                4
+              ],
+              [
+                1.0,
+                2.363282
+              ]
+            ],
+            "members": [
+              "Class[C2, rings=[2, 4]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              2,
+              [
+                4,
+                2
+              ],
+              [
+                1.0,
+                1.332003
+              ]
+            ],
+            "members": [
+              "Class[C2, rings=[4, 2]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              3,
+              [
+                2,
+                2,
+                2
+              ],
+              [
+                1.0,
+                2.925344,
+                4.517876
+              ]
+            ],
+            "members": [
+              "Class[C2, rings=[2, 2, 2]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              1,
+              [
+                3
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "Class[Regular-3-gon]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              1,
+              [
+                6
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "Class[C3, rings=[6]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              2,
+              [
+                3,
+                3
+              ],
+              [
+                1.0,
+                1.899548
+              ]
+            ],
+            "members": [
+              "Class[C3, rings=[3, 3]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              2,
+              [
+                3,
+                6
+              ],
+              [
+                1.0,
+                1.774232
+              ]
+            ],
+            "members": [
+              "Class[C3, rings=[3, 6]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              2,
+              [
+                6,
+                3
+              ],
+              [
+                1.0,
+                1.210608
+              ]
+            ],
+            "members": [
+              "Class[C3, rings=[6, 3]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              3,
+              [
+                3,
+                3,
+                3
+              ],
+              [
+                1.0,
+                2.04543,
+                2.732895
+              ]
+            ],
+            "members": [
+              "Class[C3, rings=[3, 3, 3]]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              1,
+              [
+                4
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "Class[Regular-4-gon]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              1,
+              [
+                8
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "Class[C4, rings=[8]]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              2,
+              [
+                4,
+                4
+              ],
+              [
+                1.0,
+                1.618034
+              ]
+            ],
+            "members": [
+              "Class[C4, rings=[4, 4]]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              2,
+              [
+                4,
+                8
+              ],
+              [
+                1.0,
+                1.537297
+              ]
+            ],
+            "members": [
+              "Class[C4, rings=[4, 8]]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              2,
+              [
+                8,
+                4
+              ],
+              [
+                1.0,
+                1.154124
+              ]
+            ],
+            "members": [
+              "Class[C4, rings=[8, 4]]"
+            ]
+          },
+          {
+            "key": [
+              4,
+              3,
+              [
+                4,
+                4,
+                4
+              ],
+              [
+                1.0,
+                1.710364,
+                2.12553
+              ]
+            ],
+            "members": [
+              "Class[C4, rings=[4, 4, 4]]"
+            ]
+          },
+          {
+            "key": [
+              6,
+              1,
+              [
+                6
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "Class[Regular-6-gon]"
+            ]
+          },
+          {
+            "key": [
+              8,
+              1,
+              [
+                8
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "Class[Regular-8-gon]"
+            ]
+          },
+          {
+            "key": [
+              9,
+              1,
+              [
+                9
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "Class[Regular-9-gon]"
+            ]
+          },
+          {
+            "key": [
+              12,
+              1,
+              [
+                12
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "Class[Regular-12-gon]"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "n_buckets": 23,
+        "buckets": [
+          {
+            "key": [
+              1,
+              [
+                2
+              ],
+              [
+                1.0
+              ],
+              2
+            ],
+            "members": [
+              "Class[Regular-2-gon]"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                3
+              ],
+              [
+                1.0
+              ],
+              3
+            ],
+            "members": [
+              "Class[Regular-3-gon]"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                4
+              ],
+              [
+                1.0
+              ],
+              2
+            ],
+            "members": [
+              "Class[C2, rings=[4]]"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                4
+              ],
+              [
+                1.0
+              ],
+              4
+            ],
+            "members": [
+              "Class[Regular-4-gon]"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                6
+              ],
+              [
+                1.0
+              ],
+              2
+            ],
+            "members": [
+              "Class[C2, rings=[6]]"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                6
+              ],
+              [
+                1.0
+              ],
+              3
+            ],
+            "members": [
+              "Class[C3, rings=[6]]"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                6
+              ],
+              [
+                1.0
+              ],
+              6
+            ],
+            "members": [
+              "Class[Regular-6-gon]"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                8
+              ],
+              [
+                1.0
+              ],
+              4
+            ],
+            "members": [
+              "Class[C4, rings=[8]]"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                8
+              ],
+              [
+                1.0
+              ],
+              8
+            ],
+            "members": [
+              "Class[Regular-8-gon]"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                9
+              ],
+              [
+                1.0
+              ],
+              9
+            ],
+            "members": [
+              "Class[Regular-9-gon]"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                12
+              ],
+              [
+                1.0
+              ],
+              12
+            ],
+            "members": [
+              "Class[Regular-12-gon]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                2,
+                2
+              ],
+              [
+                1.0,
+                2.618034
+              ],
+              2
+            ],
+            "members": [
+              "Class[C2, rings=[2, 2]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                2,
+                4
+              ],
+              [
+                1.0,
+                2.363282
+              ],
+              2
+            ],
+            "members": [
+              "Class[C2, rings=[2, 4]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                3,
+                3
+              ],
+              [
+                1.0,
+                1.899548
+              ],
+              3
+            ],
+            "members": [
+              "Class[C3, rings=[3, 3]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                3,
+                6
+              ],
+              [
+                1.0,
+                1.774232
+              ],
+              3
+            ],
+            "members": [
+              "Class[C3, rings=[3, 6]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                4,
+                2
+              ],
+              [
+                1.0,
+                1.332003
+              ],
+              2
+            ],
+            "members": [
+              "Class[C2, rings=[4, 2]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                4,
+                4
+              ],
+              [
+                1.0,
+                1.618034
+              ],
+              4
+            ],
+            "members": [
+              "Class[C4, rings=[4, 4]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                4,
+                8
+              ],
+              [
+                1.0,
+                1.537297
+              ],
+              4
+            ],
+            "members": [
+              "Class[C4, rings=[4, 8]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                6,
+                3
+              ],
+              [
+                1.0,
+                1.210608
+              ],
+              3
+            ],
+            "members": [
+              "Class[C3, rings=[6, 3]]"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                8,
+                4
+              ],
+              [
+                1.0,
+                1.154124
+              ],
+              4
+            ],
+            "members": [
+              "Class[C4, rings=[8, 4]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                2,
+                2,
+                2
+              ],
+              [
+                1.0,
+                2.925344,
+                4.517876
+              ],
+              2
+            ],
+            "members": [
+              "Class[C2, rings=[2, 2, 2]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                3,
+                3,
+                3
+              ],
+              [
+                1.0,
+                2.04543,
+                2.732895
+              ],
+              3
+            ],
+            "members": [
+              "Class[C3, rings=[3, 3, 3]]"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                4,
+                4,
+                4
+              ],
+              [
+                1.0,
+                1.710364,
+                2.12553
+              ],
+              4
+            ],
+            "members": [
+              "Class[C4, rings=[4, 4, 4]]"
+            ]
+          }
+        ]
+      }
+    ],
+    "minimal_distinguishing_invariants": {
+      "minimal_set": [
+        "I_rc",
+        "I_Cn"
+      ],
+      "n_classes_total": 23,
+      "history": [
+        {
+          "step": 1,
+          "added": "I_rc",
+          "distinct_classes": 19,
+          "collisions": 4
+        },
+        {
+          "step": 2,
+          "added": "I_Cn",
+          "distinct_classes": 23,
+          "collisions": 0
+        }
+      ]
+    },
+    "symmetry_rollup": {
+      "n_classes": 23,
+      "trivial_stabilizer_count": 0,
+      "nontrivial_stabilizer_count": 23,
+      "by_Cn_order": {
+        "2": [
+          "Class[C2, rings=[2, 2, 2]]",
+          "Class[C2, rings=[2, 2]]",
+          "Class[C2, rings=[2, 4]]",
+          "Class[C2, rings=[4, 2]]",
+          "Class[C2, rings=[4]]",
+          "Class[C2, rings=[6]]",
+          "Class[Regular-2-gon]"
+        ],
+        "3": [
+          "Class[C3, rings=[3, 3, 3]]",
+          "Class[C3, rings=[3, 3]]",
+          "Class[C3, rings=[3, 6]]",
+          "Class[C3, rings=[6, 3]]",
+          "Class[C3, rings=[6]]",
+          "Class[Regular-3-gon]"
+        ],
+        "4": [
+          "Class[C4, rings=[4, 4, 4]]",
+          "Class[C4, rings=[4, 4]]",
+          "Class[C4, rings=[4, 8]]",
+          "Class[C4, rings=[8, 4]]",
+          "Class[C4, rings=[8]]",
+          "Class[Regular-4-gon]"
+        ],
+        "6": [
+          "Class[Regular-6-gon]"
+        ],
+        "8": [
+          "Class[Regular-8-gon]"
+        ],
+        "9": [
+          "Class[Regular-9-gon]"
+        ],
+        "12": [
+          "Class[Regular-12-gon]"
+        ]
+      },
+      "trivial_classes": [],
+      "nontrivial_classes": [
+        "Class[C2, rings=[2, 2, 2]]",
+        "Class[C2, rings=[2, 2]]",
+        "Class[C2, rings=[2, 4]]",
+        "Class[C2, rings=[4, 2]]",
+        "Class[C2, rings=[4]]",
+        "Class[C2, rings=[6]]",
+        "Class[C3, rings=[3, 3, 3]]",
+        "Class[C3, rings=[3, 3]]",
+        "Class[C3, rings=[3, 6]]",
+        "Class[C3, rings=[6, 3]]",
+        "Class[C3, rings=[6]]",
+        "Class[C4, rings=[4, 4, 4]]",
+        "Class[C4, rings=[4, 4]]",
+        "Class[C4, rings=[4, 8]]",
+        "Class[C4, rings=[8, 4]]",
+        "Class[C4, rings=[8]]",
+        "Class[Regular-12-gon]",
+        "Class[Regular-2-gon]",
+        "Class[Regular-3-gon]",
+        "Class[Regular-4-gon]",
+        "Class[Regular-6-gon]",
+        "Class[Regular-8-gon]",
+        "Class[Regular-9-gon]"
+      ]
+    }
+  },
+  "atlas_39": {
+    "fingerprints": [
+      {
+        "atlas": "39-class",
+        "id": "P3C00",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[5, 5, 5, 5, 5, 5, 5, 5, 5]; Delta-arg-partition=[2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_5; nontrivial-z-relations=0; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "PINV_s1o5_r2_genc",
+          "PINV_s2o5_r2_genc",
+          "PINV_s3o5_r2_genc",
+          "PINV_s4o5_r2_genc"
+        ],
+        "n_members": 4,
+        "rep_name": "PINV_s1o5_r2_genc",
+        "n_roots": 10,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          5,
+          5
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          0.863664,
+          1.157858
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.340635
+        ],
+        "spread_max_over_min": 1.340635,
+        "per_ring_gap_multiset": [
+          [
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637
+          ],
+          [
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637
+          ]
+        ],
+        "Cn_order": 5,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 5,
+        "omega_resonance_denom": 0,
+        "z_resonance_count": 0,
+        "delta_modulus_partition": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "delta_argument_partition": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C01",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[2, 2, 2]; Delta-arg-partition=[2, 2, 1, 1]; omega-resonant=True; sym C_2; nontrivial-z-relations=16; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "GAL_cyclotomic_3",
+          "OMEGA_q2_fifth"
+        ],
+        "n_members": 2,
+        "rep_name": "GAL_cyclotomic_3",
+        "n_roots": 4,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          4
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            1.047198,
+            1.047198,
+            2.094395,
+            2.094395
+          ]
+        ],
+        "Cn_order": 2,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 2,
+        "omega_resonance_denom": 6,
+        "z_resonance_count": 16,
+        "delta_modulus_partition": [
+          2,
+          2,
+          2
+        ],
+        "delta_argument_partition": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C02",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[5, 5, 5, 5, 5, 5, 5, 5, 5]; Delta-arg-partition=[2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=True; sym C_5; nontrivial-z-relations=0; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "HIGHQ_genc_s1o5_r2",
+          "HIGHQ_genc_s2o5_r2"
+        ],
+        "n_members": 2,
+        "rep_name": "HIGHQ_genc_s1o5_r2",
+        "n_roots": 10,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          5,
+          5
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          0.768441,
+          1.301336
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.693476
+        ],
+        "spread_max_over_min": 1.693476,
+        "per_ring_gap_multiset": [
+          [
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637
+          ],
+          [
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637
+          ]
+        ],
+        "Cn_order": 5,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 5,
+        "omega_resonance_denom": 15,
+        "z_resonance_count": 0,
+        "delta_modulus_partition": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "delta_argument_partition": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C03",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[6, 6, 6, 3, 3, 3, 3, 3, 3]; Delta-arg-partition=[3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_3; nontrivial-z-relations=3; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "CTRL_disc_eps1o5",
+          "CTRL_disc_eps1o25"
+        ],
+        "n_members": 2,
+        "rep_name": "CTRL_disc_eps1o5",
+        "n_roots": 9,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          3,
+          3,
+          3
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          1.0,
+          1.062659,
+          1.259921
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.062659,
+          1.259921
+        ],
+        "spread_max_over_min": 1.259921,
+        "per_ring_gap_multiset": [
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ],
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ],
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ]
+        ],
+        "Cn_order": 3,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 3,
+        "omega_resonance_denom": 3,
+        "z_resonance_count": 3,
+        "delta_modulus_partition": [
+          6,
+          6,
+          6,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "delta_argument_partition": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C04",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[8, 4, 4, 4, 4, 4]; Delta-arg-partition=[4, 4, 4, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1]; omega-resonant=True; sym C_4; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "CTRL_conjroots_t0",
+          "CTRL_conjroots_t1"
+        ],
+        "n_members": 2,
+        "rep_name": "CTRL_conjroots_t0",
+        "n_roots": 8,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          8
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.261799,
+            0.261799,
+            0.261799,
+            0.261799,
+            1.308997,
+            1.308997,
+            1.308997,
+            1.308997
+          ]
+        ],
+        "Cn_order": 4,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 4,
+        "omega_resonance_denom": 24,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          8,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "delta_argument_partition": [
+          4,
+          4,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C05",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[10, 10, 10, 10, 5]; Delta-arg-partition=[5, 5, 5, 5, 5, 4, 4, 4, 4, 4]; omega-resonant=True; sym C_10; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "HIGHQ_simple_s1o5_r2",
+          "HIGHQ_simple_s2o5_r2"
+        ],
+        "n_members": 2,
+        "rep_name": "HIGHQ_simple_s1o5_r2",
+        "n_roots": 10,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          10
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.628319,
+            0.628319,
+            0.628319,
+            0.628319,
+            0.628319,
+            0.628319,
+            0.628319,
+            0.628319,
+            0.628319,
+            0.628319
+          ]
+        ],
+        "Cn_order": 10,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 10,
+        "omega_resonance_denom": 10,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          10,
+          10,
+          10,
+          10,
+          5
+        ],
+        "delta_argument_partition": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C06",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[12, 12, 6, 6, 6, 6, 6, 6, 6]; Delta-arg-partition=[6, 6, 6, 6, 6, 4, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2]; omega-resonant=True; sym C_6; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "NEST_q3_qinner2",
+          "NEST_q2_qinner3"
+        ],
+        "n_members": 2,
+        "rep_name": "NEST_q3_qinner2",
+        "n_roots": 12,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          12
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.698132,
+            0.698132,
+            0.698132,
+            0.698132,
+            0.698132,
+            0.698132
+          ]
+        ],
+        "Cn_order": 6,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 6,
+        "omega_resonance_denom": 18,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          12,
+          12,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "delta_argument_partition": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C07",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[1]; Delta-arg-partition=[1]; omega-resonant=False; sym C_2; nontrivial-z-relations=0; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "CTRL_zeroroot_deep"
+        ],
+        "n_members": 1,
+        "rep_name": "CTRL_zeroroot_deep",
+        "n_roots": 2,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          2
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            3.141593,
+            3.141593
+          ]
+        ],
+        "Cn_order": 2,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 2,
+        "omega_resonance_denom": 2,
+        "z_resonance_count": 1,
+        "delta_modulus_partition": [
+          1
+        ],
+        "delta_argument_partition": [
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C08",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[3]; Delta-arg-partition=[1, 1, 1]; omega-resonant=False; sym C_1; nontrivial-z-relations=0; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "CTRL_zeroroot_doublemult"
+        ],
+        "n_members": 1,
+        "rep_name": "CTRL_zeroroot_doublemult",
+        "n_roots": 3,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          3
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          0.793701
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ]
+        ],
+        "Cn_order": 1,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 1,
+        "omega_resonance_denom": 3,
+        "z_resonance_count": 1,
+        "delta_modulus_partition": [
+          3
+        ],
+        "delta_argument_partition": [
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C09",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[3, 3, 3, 3, 3]; Delta-arg-partition=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_3; nontrivial-z-relations=0; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "MIX_DandS_1o3_r2"
+        ],
+        "n_members": 1,
+        "rep_name": "MIX_DandS_1o3_r2",
+        "n_roots": 6,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          3,
+          3
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          0.783264,
+          1.276709
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.629987
+        ],
+        "spread_max_over_min": 1.629987,
+        "per_ring_gap_multiset": [
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ],
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ]
+        ],
+        "Cn_order": 3,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 3,
+        "omega_resonance_denom": 0,
+        "z_resonance_count": 2,
+        "delta_modulus_partition": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "delta_argument_partition": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C10",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2]; Delta-arg-partition=[2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_4; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "MIX_DandS_1o4_r3"
+        ],
+        "n_members": 1,
+        "rep_name": "MIX_DandS_1o4_r3",
+        "n_roots": 12,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          4,
+          4,
+          4
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          0.753464,
+          0.974394,
+          1.362081
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.293219,
+          1.807758
+        ],
+        "spread_max_over_min": 1.807758,
+        "per_ring_gap_multiset": [
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ],
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ],
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ]
+        ],
+        "Cn_order": 4,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 4,
+        "omega_resonance_denom": 0,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          2
+        ],
+        "delta_argument_partition": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C11",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[5, 5]; Delta-arg-partition=[2, 2, 2, 2, 2]; omega-resonant=False; sym C_1; nontrivial-z-relations=0; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "HIGHQ_simple_s1o5_r1"
+        ],
+        "n_members": 1,
+        "rep_name": "HIGHQ_simple_s1o5_r1",
+        "n_roots": 5,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          5
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637
+          ]
+        ],
+        "Cn_order": 1,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 1,
+        "omega_resonance_denom": 5,
+        "z_resonance_count": 0,
+        "delta_modulus_partition": [
+          5,
+          5
+        ],
+        "delta_argument_partition": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C12",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]; Delta-arg-partition=[2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_5; nontrivial-z-relations=0; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "HIGHQ_genc_s1o5_r3"
+        ],
+        "n_members": 1,
+        "rep_name": "HIGHQ_genc_s1o5_r3",
+        "n_roots": 15,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          5,
+          5,
+          5
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          0.771805,
+          0.918355,
+          1.410852
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.189879,
+          1.82799
+        ],
+        "spread_max_over_min": 1.82799,
+        "per_ring_gap_multiset": [
+          [
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637
+          ],
+          [
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637
+          ],
+          [
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637
+          ]
+        ],
+        "Cn_order": 5,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 5,
+        "omega_resonance_denom": 0,
+        "z_resonance_count": 0,
+        "delta_modulus_partition": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "delta_argument_partition": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C13",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[6, 3, 3, 3]; Delta-arg-partition=[3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=True; sym C_3; nontrivial-z-relations=2; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "OMEGA_q3_seventh"
+        ],
+        "n_members": 1,
+        "rep_name": "OMEGA_q3_seventh",
+        "n_roots": 6,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          6
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.299199,
+            0.299199,
+            0.299199,
+            1.795196,
+            1.795196,
+            1.795196
+          ]
+        ],
+        "Cn_order": 3,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 3,
+        "omega_resonance_denom": 21,
+        "z_resonance_count": 2,
+        "delta_modulus_partition": [
+          6,
+          3,
+          3,
+          3
+        ],
+        "delta_argument_partition": [
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C14",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[6, 6, 3]; Delta-arg-partition=[3, 3, 3, 2, 2, 2]; omega-resonant=False; sym C_6; nontrivial-z-relations=0; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "HIGHQ_simple_s1o6_r1"
+        ],
+        "n_members": 1,
+        "rep_name": "HIGHQ_simple_s1o6_r1",
+        "n_roots": 6,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          6
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198
+          ]
+        ],
+        "Cn_order": 6,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 6,
+        "omega_resonance_denom": 6,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          6,
+          6,
+          3
+        ],
+        "delta_argument_partition": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C15",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[6, 6, 6, 6, 4]; Delta-arg-partition=[4, 4, 3, 3, 3, 2, 2, 2, 2, 1, 1, 1]; omega-resonant=True; sym C_2; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "GAL_cyclotomic_5"
+        ],
+        "n_members": 1,
+        "rep_name": "GAL_cyclotomic_5",
+        "n_roots": 8,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          8
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.628319,
+            0.628319,
+            0.628319,
+            0.628319,
+            0.628319,
+            0.628319,
+            1.256637,
+            1.256637
+          ]
+        ],
+        "Cn_order": 2,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 2,
+        "omega_resonance_denom": 10,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          6,
+          6,
+          6,
+          6,
+          4
+        ],
+        "delta_argument_partition": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C16",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 3, 3]; Delta-arg-partition=[3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=True; sym C_6; nontrivial-z-relations=0; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "HIGHQ_genc_s1o6_r2"
+        ],
+        "n_members": 1,
+        "rep_name": "HIGHQ_genc_s1o6_r2",
+        "n_roots": 12,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          6,
+          6
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          0.802926,
+          1.245445
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.551134
+        ],
+        "spread_max_over_min": 1.551134,
+        "per_ring_gap_multiset": [
+          [
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198
+          ],
+          [
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198
+          ]
+        ],
+        "Cn_order": 6,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 6,
+        "omega_resonance_denom": 18,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          3,
+          3
+        ],
+        "delta_argument_partition": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C17",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 3, 3, 3]; Delta-arg-partition=[3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_6; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "HIGHQ_genc_s1o6_r3"
+        ],
+        "n_members": 1,
+        "rep_name": "HIGHQ_genc_s1o6_r3",
+        "n_roots": 18,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          6,
+          6,
+          6
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          0.805854,
+          0.931484,
+          1.332195
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.155897,
+          1.653147
+        ],
+        "spread_max_over_min": 1.653147,
+        "per_ring_gap_multiset": [
+          [
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198
+          ],
+          [
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198
+          ],
+          [
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198
+          ]
+        ],
+        "Cn_order": 6,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 6,
+        "omega_resonance_denom": 0,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          3,
+          3,
+          3
+        ],
+        "delta_argument_partition": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C18",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[7, 7, 7]; Delta-arg-partition=[3, 3, 3, 3, 3, 3, 3]; omega-resonant=False; sym C_1; nontrivial-z-relations=0; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "HIGHQ_simple_s1o7_r1"
+        ],
+        "n_members": 1,
+        "rep_name": "HIGHQ_simple_s1o7_r1",
+        "n_roots": 7,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          7
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.897598,
+            0.897598,
+            0.897598,
+            0.897598,
+            0.897598,
+            0.897598,
+            0.897598
+          ]
+        ],
+        "Cn_order": 1,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 1,
+        "omega_resonance_denom": 7,
+        "z_resonance_count": 0,
+        "delta_modulus_partition": [
+          7,
+          7,
+          7
+        ],
+        "delta_argument_partition": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C19",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]; Delta-arg-partition=[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=True; sym C_7; nontrivial-z-relations=0; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "HIGHQ_genc_s3o7_r2"
+        ],
+        "n_members": 1,
+        "rep_name": "HIGHQ_genc_s3o7_r2",
+        "n_roots": 14,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          7,
+          7
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          0.828501,
+          1.206999
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.456846
+        ],
+        "spread_max_over_min": 1.456846,
+        "per_ring_gap_multiset": [
+          [
+            0.897598,
+            0.897598,
+            0.897598,
+            0.897598,
+            0.897598,
+            0.897598,
+            0.897598
+          ],
+          [
+            0.897598,
+            0.897598,
+            0.897598,
+            0.897598,
+            0.897598,
+            0.897598,
+            0.897598
+          ]
+        ],
+        "Cn_order": 7,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 7,
+        "omega_resonance_denom": 21,
+        "z_resonance_count": 0,
+        "delta_modulus_partition": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "delta_argument_partition": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C20",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[8, 4, 4, 4, 4, 4]; Delta-arg-partition=[4, 4, 4, 3, 2, 2, 2, 2, 1, 1, 1, 1, 1]; omega-resonant=True; sym C_4; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "CTRL_conjroots_t2"
+        ],
+        "n_members": 1,
+        "rep_name": "CTRL_conjroots_t2",
+        "n_roots": 8,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          8
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198
+          ]
+        ],
+        "Cn_order": 4,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 4,
+        "omega_resonance_denom": 12,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          8,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "delta_argument_partition": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C21",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[12, 12, 6, 3, 3]; Delta-arg-partition=[5, 5, 5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1]; omega-resonant=False; sym C_3; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "CTRL_disc_eps1"
+        ],
+        "n_members": 1,
+        "rep_name": "CTRL_disc_eps1",
+        "n_roots": 9,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          3,
+          6
+        ],
+        "n_rings": 2,
+        "radii_sorted": [
+          1.0,
+          1.259921
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.259921
+        ],
+        "spread_max_over_min": 1.259921,
+        "per_ring_gap_multiset": [
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            2.094395,
+            2.094395,
+            2.094395
+          ]
+        ],
+        "Cn_order": 3,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 3,
+        "omega_resonance_denom": 3,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          12,
+          12,
+          6,
+          3,
+          3
+        ],
+        "delta_argument_partition": [
+          5,
+          5,
+          5,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C22",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[12, 12, 12, 12, 12, 6]; Delta-arg-partition=[6, 6, 6, 6, 6, 5, 5, 5, 5, 5, 5, 3, 3]; omega-resonant=True; sym C_12; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "HIGHQ_simple_s1o6_r2"
+        ],
+        "n_members": 1,
+        "rep_name": "HIGHQ_simple_s1o6_r2",
+        "n_roots": 12,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          12
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599,
+            0.523599
+          ]
+        ],
+        "Cn_order": 12,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 12,
+        "omega_resonance_denom": 12,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          6
+        ],
+        "delta_argument_partition": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          3,
+          3
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C23",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[14, 14, 14, 14, 14, 14, 7]; Delta-arg-partition=[7, 7, 7, 7, 7, 7, 6, 6, 6, 6, 6, 6, 5, 4, 2, 2]; omega-resonant=True; sym C_14; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "HIGHQ_simple_s3o7_r2"
+        ],
+        "n_members": 1,
+        "rep_name": "HIGHQ_simple_s3o7_r2",
+        "n_roots": 14,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          14
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.448799,
+            0.448799,
+            0.448799,
+            0.448799,
+            0.448799,
+            0.448799,
+            0.448799,
+            0.448799,
+            0.448799,
+            0.448799,
+            0.448799,
+            0.448799,
+            0.448799,
+            0.448799
+          ]
+        ],
+        "Cn_order": 14,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 14,
+        "omega_resonance_denom": 14,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          7
+        ],
+        "delta_argument_partition": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          5,
+          4,
+          2,
+          2
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C24",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[15, 15, 15, 15, 15, 15, 15]; Delta-arg-partition=[7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 5, 2]; omega-resonant=True; sym C_15; nontrivial-z-relations=5; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "HIGHQ_simple_s1o5_r3"
+        ],
+        "n_members": 1,
+        "rep_name": "HIGHQ_simple_s1o5_r3",
+        "n_roots": 15,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          15
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.418879,
+            0.418879,
+            0.418879,
+            0.418879,
+            0.418879,
+            0.418879,
+            0.418879,
+            0.418879,
+            0.418879,
+            0.418879,
+            0.418879,
+            0.418879,
+            0.418879,
+            0.418879,
+            0.418879
+          ]
+        ],
+        "Cn_order": 15,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 15,
+        "omega_resonance_denom": 15,
+        "z_resonance_count": 5,
+        "delta_modulus_partition": [
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "delta_argument_partition": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          5,
+          2
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C25",
+        "description": "family=scalar; edges=1; Delta-mod-partition=[18, 18, 18, 18, 18, 18, 18, 18, 9]; Delta-arg-partition=[9, 9, 9, 9, 8, 8, 8, 8, 8, 7, 7, 7, 6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 1, 1]; omega-resonant=True; sym C_18; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "HIGHQ_simple_s1o6_r3"
+        ],
+        "n_members": 1,
+        "rep_name": "HIGHQ_simple_s1o6_r3",
+        "n_roots": 18,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          18
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066,
+            0.349066
+          ]
+        ],
+        "Cn_order": 18,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 18,
+        "omega_resonance_denom": 18,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          9
+        ],
+        "delta_argument_partition": [
+          9,
+          9,
+          9,
+          9,
+          8,
+          8,
+          8,
+          8,
+          8,
+          7,
+          7,
+          7,
+          6,
+          6,
+          5,
+          5,
+          5,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "n_edges": 1
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C26",
+        "description": "family=scalar; edges=2; Delta-mod-partition=[9, 6, 6, 3, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; Delta-arg-partition=[4, 4, 4, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_1; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=True",
+        "members": [
+          "MULTI_edges_1o3_then_1o2"
+        ],
+        "n_members": 1,
+        "rep_name": "MULTI_edges_1o3_then_1o2",
+        "n_roots": 10,
+        "n_zero_roots": 3,
+        "ring_counts": [
+          2,
+          3,
+          2
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          0.693205,
+          1.122462,
+          1.442574
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.619234,
+          2.081019
+        ],
+        "spread_max_over_min": 2.081019,
+        "per_ring_gap_multiset": [
+          [
+            3.141593,
+            3.141593
+          ],
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ],
+          [
+            3.141593,
+            3.141593
+          ]
+        ],
+        "Cn_order": 1,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 1,
+        "omega_resonance_denom": 0,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          9,
+          6,
+          6,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "delta_argument_partition": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 2
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C27",
+        "description": "family=scalar; edges=2; Delta-mod-partition=[16, 8, 8, 6, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]; Delta-arg-partition=[6, 5, 5, 5, 5, 4, 4, 4, 4, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_2; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=True",
+        "members": [
+          "MULTI_edges_1o4_then_1o2"
+        ],
+        "n_members": 1,
+        "rep_name": "MULTI_edges_1o4_then_1o2",
+        "n_roots": 12,
+        "n_zero_roots": 4,
+        "ring_counts": [
+          2,
+          4,
+          2
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          0.693205,
+          1.090508,
+          1.442574
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.573138,
+          2.081019
+        ],
+        "spread_max_over_min": 2.081019,
+        "per_ring_gap_multiset": [
+          [
+            3.141593,
+            3.141593
+          ],
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ],
+          [
+            3.141593,
+            3.141593
+          ]
+        ],
+        "Cn_order": 2,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 2,
+        "omega_resonance_denom": 0,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          16,
+          8,
+          8,
+          6,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "delta_argument_partition": [
+          6,
+          5,
+          5,
+          5,
+          5,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 2
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C28",
+        "description": "family=scalar; edges=2; Delta-mod-partition=[18, 18, 15, 12, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; Delta-arg-partition=[15, 7, 7, 7, 6, 6, 6, 6, 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_1; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=True",
+        "members": [
+          "MULTI_edges_1o3_r2_then_1o2"
+        ],
+        "n_members": 1,
+        "rep_name": "MULTI_edges_1o3_r2_then_1o2",
+        "n_roots": 14,
+        "n_zero_roots": 6,
+        "ring_counts": [
+          3,
+          2,
+          3
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          0.914724,
+          1.0,
+          1.227105
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.093226,
+          1.341504
+        ],
+        "spread_max_over_min": 1.341504,
+        "per_ring_gap_multiset": [
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ],
+          [
+            3.141593,
+            3.141593
+          ],
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ]
+        ],
+        "Cn_order": 1,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 1,
+        "omega_resonance_denom": 0,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          18,
+          18,
+          15,
+          12,
+          3,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "delta_argument_partition": [
+          15,
+          7,
+          7,
+          7,
+          6,
+          6,
+          6,
+          6,
+          6,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 2
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C29",
+        "description": "family=scalar; edges=2; Delta-mod-partition=[25, 10, 10, 10, 5, 5, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; Delta-arg-partition=[10, 6, 6, 5, 5, 5, 5, 5, 5, 5, 3, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_1; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=True",
+        "members": [
+          "MULTI_edges_1o5_then_1o2"
+        ],
+        "n_members": 1,
+        "rep_name": "MULTI_edges_1o5_then_1o2",
+        "n_roots": 14,
+        "n_zero_roots": 5,
+        "ring_counts": [
+          2,
+          5,
+          2
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          0.693205,
+          1.071773,
+          1.442574
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.546112,
+          2.081019
+        ],
+        "spread_max_over_min": 2.081019,
+        "per_ring_gap_multiset": [
+          [
+            3.141593,
+            3.141593
+          ],
+          [
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637
+          ],
+          [
+            3.141593,
+            3.141593
+          ]
+        ],
+        "Cn_order": 1,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 1,
+        "omega_resonance_denom": 0,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          25,
+          10,
+          10,
+          10,
+          5,
+          5,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "delta_argument_partition": [
+          10,
+          6,
+          6,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 2
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C30",
+        "description": "family=scalar; edges=2; Delta-mod-partition=[25, 25, 25, 10, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]; Delta-arg-partition=[10, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_5; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=True",
+        "members": [
+          "MULTI_edges_2o5_then_3o5"
+        ],
+        "n_members": 1,
+        "rep_name": "MULTI_edges_2o5_then_3o5",
+        "n_roots": 20,
+        "n_zero_roots": 5,
+        "ring_counts": [
+          5,
+          5,
+          5
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          0.863664,
+          1.071773,
+          1.157858
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.240961,
+          1.340635
+        ],
+        "spread_max_over_min": 1.340635,
+        "per_ring_gap_multiset": [
+          [
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637
+          ],
+          [
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637
+          ],
+          [
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637
+          ]
+        ],
+        "Cn_order": 5,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 5,
+        "omega_resonance_denom": 0,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          25,
+          25,
+          25,
+          10,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "delta_argument_partition": [
+          10,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 2
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C31",
+        "description": "family=scalar; edges=2; Delta-mod-partition=[32, 32, 28, 24, 24, 4, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; Delta-arg-partition=[28, 9, 9, 9, 9, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_1; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=True",
+        "members": [
+          "MULTI_edges_1o4_r2_then_1o3"
+        ],
+        "n_members": 1,
+        "rep_name": "MULTI_edges_1o4_r2_then_1o3",
+        "n_roots": 22,
+        "n_zero_roots": 8,
+        "ring_counts": [
+          3,
+          4,
+          4,
+          3
+        ],
+        "n_rings": 4,
+        "radii_sorted": [
+          0.783264,
+          0.935335,
+          1.1659,
+          1.276709
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.194152,
+          1.488515,
+          1.629987
+        ],
+        "spread_max_over_min": 1.629987,
+        "per_ring_gap_multiset": [
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ],
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ],
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ],
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ]
+        ],
+        "Cn_order": 1,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 1,
+        "omega_resonance_denom": 0,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          32,
+          32,
+          28,
+          24,
+          24,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "delta_argument_partition": [
+          28,
+          9,
+          9,
+          9,
+          9,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 2
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C32",
+        "description": "family=scalar; edges=2; Delta-mod-partition=[42, 24, 24, 15, 6, 4, 4, 4, 4, 4, 4, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]; Delta-arg-partition=[15, 9, 9, 8, 7, 7, 7, 7, 7, 6, 6, 6, 6, 6, 6, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_2; nontrivial-z-relations=30; edges-disjoint=True; zero-roots=True",
+        "members": [
+          "MULTI_edges_1o6_then_1o4"
+        ],
+        "n_members": 1,
+        "rep_name": "MULTI_edges_1o6_then_1o4",
+        "n_roots": 20,
+        "n_zero_roots": 6,
+        "ring_counts": [
+          4,
+          6,
+          4
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          0.83259,
+          1.059463,
+          1.201072
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.272491,
+          1.442574
+        ],
+        "spread_max_over_min": 1.442574,
+        "per_ring_gap_multiset": [
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ],
+          [
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198,
+            1.047198
+          ],
+          [
+            1.570796,
+            1.570796,
+            1.570796,
+            1.570796
+          ]
+        ],
+        "Cn_order": 2,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 2,
+        "omega_resonance_denom": 0,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          42,
+          24,
+          24,
+          15,
+          6,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "delta_argument_partition": [
+          15,
+          9,
+          9,
+          8,
+          7,
+          7,
+          7,
+          7,
+          7,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 2
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C33",
+        "description": "family=scalar; edges=3; Delta-mod-partition=[99, 55, 6, 6, 6, 3, 3, 2, 2, 2, 2, 2, 2]; Delta-arg-partition=[55, 15, 13, 13, 11, 11, 11, 11, 11, 11, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=True; sym C_1; nontrivial-z-relations=30; edges-disjoint=False; zero-roots=True",
+        "members": [
+          "MULTI3_1o4_1o3_1o2"
+        ],
+        "n_members": 1,
+        "rep_name": "MULTI3_1o4_1o3_1o2",
+        "n_roots": 20,
+        "n_zero_roots": 11,
+        "ring_counts": [
+          9
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.261799,
+            0.261799,
+            0.523599,
+            0.523599,
+            0.785398,
+            0.785398,
+            0.785398,
+            0.785398,
+            1.570796
+          ]
+        ],
+        "Cn_order": 1,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 1,
+        "omega_resonance_denom": 24,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          99,
+          55,
+          6,
+          6,
+          6,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "delta_argument_partition": [
+          55,
+          15,
+          13,
+          13,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 3
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C34",
+        "description": "family=scalar; edges=3; Delta-mod-partition=[106, 79, 26, 26, 7, 7, 5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; Delta-arg-partition=[78, 14, 14, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_1; nontrivial-z-relations=30; edges-disjoint=False; zero-roots=True",
+        "members": [
+          "MULTI3_1o5_1o3_1o2"
+        ],
+        "n_members": 1,
+        "rep_name": "MULTI3_1o5_1o3_1o2",
+        "n_roots": 25,
+        "n_zero_roots": 13,
+        "ring_counts": [
+          2,
+          8,
+          2
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          0.693205,
+          1.0,
+          1.442574
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.442574,
+          2.081019
+        ],
+        "spread_max_over_min": 2.081019,
+        "per_ring_gap_multiset": [
+          [
+            3.141593,
+            3.141593
+          ],
+          [
+            0.0,
+            0.418879,
+            0.418879,
+            0.837758,
+            0.837758,
+            1.256637,
+            1.256637,
+            1.256637
+          ],
+          [
+            3.141593,
+            3.141593
+          ]
+        ],
+        "Cn_order": 1,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 1,
+        "omega_resonance_denom": 0,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          106,
+          79,
+          26,
+          26,
+          7,
+          7,
+          5,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "delta_argument_partition": [
+          78,
+          14,
+          14,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 3
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C35",
+        "description": "family=system; edges=2; Delta-mod-partition=[3, 2, 2, 2, 1]; Delta-arg-partition=[2, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=True; sym C_1; nontrivial-z-relations=2; edges-disjoint=False; zero-roots=False",
+        "members": [
+          "SYS2_1o2_1o3"
+        ],
+        "n_members": 1,
+        "rep_name": "SYS2_1o2_1o3",
+        "n_roots": 5,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          5
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.523599,
+            0.523599,
+            1.570796,
+            1.570796,
+            2.094395
+          ]
+        ],
+        "Cn_order": 1,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 1,
+        "omega_resonance_denom": 12,
+        "z_resonance_count": 2,
+        "delta_modulus_partition": [
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "delta_argument_partition": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 2
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C36",
+        "description": "family=system; edges=2; Delta-mod-partition=[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]; Delta-arg-partition=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=False; sym C_1; nontrivial-z-relations=3; edges-disjoint=True; zero-roots=False",
+        "members": [
+          "SYS2_1o3_r2_genc"
+        ],
+        "n_members": 1,
+        "rep_name": "SYS2_1o3_r2_genc",
+        "n_roots": 9,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          3,
+          3,
+          3
+        ],
+        "n_rings": 3,
+        "radii_sorted": [
+          0.783264,
+          1.0,
+          1.276709
+        ],
+        "ratios_to_inner": [
+          1.0,
+          1.276709,
+          1.629987
+        ],
+        "spread_max_over_min": 1.629987,
+        "per_ring_gap_multiset": [
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ],
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ],
+          [
+            2.094395,
+            2.094395,
+            2.094395
+          ]
+        ],
+        "Cn_order": 1,
+        "is_regular_polygon": false,
+        "symmetry_C_n_invariant": 1,
+        "omega_resonance_denom": 0,
+        "z_resonance_count": 3,
+        "delta_modulus_partition": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "delta_argument_partition": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 2
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C37",
+        "description": "family=system; edges=3; Delta-mod-partition=[6, 6, 6, 3, 3, 2, 2, 2, 2, 2, 2]; Delta-arg-partition=[4, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; omega-resonant=True; sym C_1; nontrivial-z-relations=30; edges-disjoint=False; zero-roots=False",
+        "members": [
+          "SYS3_1o2_1o3_1o4"
+        ],
+        "n_members": 1,
+        "rep_name": "SYS3_1o2_1o3_1o4",
+        "n_roots": 9,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          9
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.261799,
+            0.261799,
+            0.523599,
+            0.523599,
+            0.785398,
+            0.785398,
+            0.785398,
+            0.785398,
+            1.570796
+          ]
+        ],
+        "Cn_order": 1,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 1,
+        "omega_resonance_denom": 24,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          6,
+          6,
+          6,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "delta_argument_partition": [
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_edges": 3
+      },
+      {
+        "atlas": "39-class",
+        "id": "P3C38",
+        "description": "family=system; edges=3; Delta-mod-partition=[45, 45, 15]; Delta-arg-partition=[15, 12, 12, 12, 12, 12, 6, 6, 6, 6, 6]; omega-resonant=False; sym C_1; nontrivial-z-relations=30; edges-disjoint=False; zero-roots=False",
+        "members": [
+          "SYS3_1o5_r1_x3"
+        ],
+        "n_members": 1,
+        "rep_name": "SYS3_1o5_r1_x3",
+        "n_roots": 15,
+        "n_zero_roots": 0,
+        "ring_counts": [
+          15
+        ],
+        "n_rings": 1,
+        "radii_sorted": [
+          1.0
+        ],
+        "ratios_to_inner": [
+          1.0
+        ],
+        "spread_max_over_min": 1.0,
+        "per_ring_gap_multiset": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637,
+            1.256637
+          ]
+        ],
+        "Cn_order": 1,
+        "is_regular_polygon": true,
+        "symmetry_C_n_invariant": 1,
+        "omega_resonance_denom": 5,
+        "z_resonance_count": 30,
+        "delta_modulus_partition": [
+          45,
+          45,
+          15
+        ],
+        "delta_argument_partition": [
+          15,
+          12,
+          12,
+          12,
+          12,
+          12,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "n_edges": 3
+      }
+    ],
+    "dendrogram_levels": [
+      {
+        "level": 1,
+        "n_buckets": 12,
+        "buckets": [
+          {
+            "key": [
+              1
+            ],
+            "members": [
+              "P3C08",
+              "P3C11",
+              "P3C18",
+              "P3C26",
+              "P3C28",
+              "P3C29",
+              "P3C31",
+              "P3C33",
+              "P3C34",
+              "P3C35",
+              "P3C36",
+              "P3C37",
+              "P3C38"
+            ]
+          },
+          {
+            "key": [
+              2
+            ],
+            "members": [
+              "P3C01",
+              "P3C07",
+              "P3C15",
+              "P3C27",
+              "P3C32"
+            ]
+          },
+          {
+            "key": [
+              3
+            ],
+            "members": [
+              "P3C03",
+              "P3C09",
+              "P3C13",
+              "P3C21"
+            ]
+          },
+          {
+            "key": [
+              4
+            ],
+            "members": [
+              "P3C04",
+              "P3C10",
+              "P3C20"
+            ]
+          },
+          {
+            "key": [
+              5
+            ],
+            "members": [
+              "P3C00",
+              "P3C02",
+              "P3C12",
+              "P3C30"
+            ]
+          },
+          {
+            "key": [
+              6
+            ],
+            "members": [
+              "P3C06",
+              "P3C14",
+              "P3C16",
+              "P3C17"
+            ]
+          },
+          {
+            "key": [
+              7
+            ],
+            "members": [
+              "P3C19"
+            ]
+          },
+          {
+            "key": [
+              10
+            ],
+            "members": [
+              "P3C05"
+            ]
+          },
+          {
+            "key": [
+              12
+            ],
+            "members": [
+              "P3C22"
+            ]
+          },
+          {
+            "key": [
+              14
+            ],
+            "members": [
+              "P3C23"
+            ]
+          },
+          {
+            "key": [
+              15
+            ],
+            "members": [
+              "P3C24"
+            ]
+          },
+          {
+            "key": [
+              18
+            ],
+            "members": [
+              "P3C25"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "n_buckets": 21,
+        "buckets": [
+          {
+            "key": [
+              1,
+              1
+            ],
+            "members": [
+              "P3C08",
+              "P3C11",
+              "P3C18",
+              "P3C33",
+              "P3C35",
+              "P3C37",
+              "P3C38"
+            ]
+          },
+          {
+            "key": [
+              1,
+              3
+            ],
+            "members": [
+              "P3C26",
+              "P3C28",
+              "P3C29",
+              "P3C34",
+              "P3C36"
+            ]
+          },
+          {
+            "key": [
+              1,
+              4
+            ],
+            "members": [
+              "P3C31"
+            ]
+          },
+          {
+            "key": [
+              2,
+              1
+            ],
+            "members": [
+              "P3C01",
+              "P3C07",
+              "P3C15"
+            ]
+          },
+          {
+            "key": [
+              2,
+              3
+            ],
+            "members": [
+              "P3C27",
+              "P3C32"
+            ]
+          },
+          {
+            "key": [
+              3,
+              1
+            ],
+            "members": [
+              "P3C13"
+            ]
+          },
+          {
+            "key": [
+              3,
+              2
+            ],
+            "members": [
+              "P3C09",
+              "P3C21"
+            ]
+          },
+          {
+            "key": [
+              3,
+              3
+            ],
+            "members": [
+              "P3C03"
+            ]
+          },
+          {
+            "key": [
+              4,
+              1
+            ],
+            "members": [
+              "P3C04",
+              "P3C20"
+            ]
+          },
+          {
+            "key": [
+              4,
+              3
+            ],
+            "members": [
+              "P3C10"
+            ]
+          },
+          {
+            "key": [
+              5,
+              2
+            ],
+            "members": [
+              "P3C00",
+              "P3C02"
+            ]
+          },
+          {
+            "key": [
+              5,
+              3
+            ],
+            "members": [
+              "P3C12",
+              "P3C30"
+            ]
+          },
+          {
+            "key": [
+              6,
+              1
+            ],
+            "members": [
+              "P3C06",
+              "P3C14"
+            ]
+          },
+          {
+            "key": [
+              6,
+              2
+            ],
+            "members": [
+              "P3C16"
+            ]
+          },
+          {
+            "key": [
+              6,
+              3
+            ],
+            "members": [
+              "P3C17"
+            ]
+          },
+          {
+            "key": [
+              7,
+              2
+            ],
+            "members": [
+              "P3C19"
+            ]
+          },
+          {
+            "key": [
+              10,
+              1
+            ],
+            "members": [
+              "P3C05"
+            ]
+          },
+          {
+            "key": [
+              12,
+              1
+            ],
+            "members": [
+              "P3C22"
+            ]
+          },
+          {
+            "key": [
+              14,
+              1
+            ],
+            "members": [
+              "P3C23"
+            ]
+          },
+          {
+            "key": [
+              15,
+              1
+            ],
+            "members": [
+              "P3C24"
+            ]
+          },
+          {
+            "key": [
+              18,
+              1
+            ],
+            "members": [
+              "P3C25"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "n_buckets": 34,
+        "buckets": [
+          {
+            "key": [
+              1,
+              1,
+              [
+                3
+              ]
+            ],
+            "members": [
+              "P3C08"
+            ]
+          },
+          {
+            "key": [
+              1,
+              1,
+              [
+                5
+              ]
+            ],
+            "members": [
+              "P3C11",
+              "P3C35"
+            ]
+          },
+          {
+            "key": [
+              1,
+              1,
+              [
+                7
+              ]
+            ],
+            "members": [
+              "P3C18"
+            ]
+          },
+          {
+            "key": [
+              1,
+              1,
+              [
+                9
+              ]
+            ],
+            "members": [
+              "P3C33",
+              "P3C37"
+            ]
+          },
+          {
+            "key": [
+              1,
+              1,
+              [
+                15
+              ]
+            ],
+            "members": [
+              "P3C38"
+            ]
+          },
+          {
+            "key": [
+              1,
+              3,
+              [
+                2,
+                3,
+                2
+              ]
+            ],
+            "members": [
+              "P3C26"
+            ]
+          },
+          {
+            "key": [
+              1,
+              3,
+              [
+                2,
+                5,
+                2
+              ]
+            ],
+            "members": [
+              "P3C29"
+            ]
+          },
+          {
+            "key": [
+              1,
+              3,
+              [
+                2,
+                8,
+                2
+              ]
+            ],
+            "members": [
+              "P3C34"
+            ]
+          },
+          {
+            "key": [
+              1,
+              3,
+              [
+                3,
+                2,
+                3
+              ]
+            ],
+            "members": [
+              "P3C28"
+            ]
+          },
+          {
+            "key": [
+              1,
+              3,
+              [
+                3,
+                3,
+                3
+              ]
+            ],
+            "members": [
+              "P3C36"
+            ]
+          },
+          {
+            "key": [
+              1,
+              4,
+              [
+                3,
+                4,
+                4,
+                3
+              ]
+            ],
+            "members": [
+              "P3C31"
+            ]
+          },
+          {
+            "key": [
+              2,
+              1,
+              [
+                2
+              ]
+            ],
+            "members": [
+              "P3C07"
+            ]
+          },
+          {
+            "key": [
+              2,
+              1,
+              [
+                4
+              ]
+            ],
+            "members": [
+              "P3C01"
+            ]
+          },
+          {
+            "key": [
+              2,
+              1,
+              [
+                8
+              ]
+            ],
+            "members": [
+              "P3C15"
+            ]
+          },
+          {
+            "key": [
+              2,
+              3,
+              [
+                2,
+                4,
+                2
+              ]
+            ],
+            "members": [
+              "P3C27"
+            ]
+          },
+          {
+            "key": [
+              2,
+              3,
+              [
+                4,
+                6,
+                4
+              ]
+            ],
+            "members": [
+              "P3C32"
+            ]
+          },
+          {
+            "key": [
+              3,
+              1,
+              [
+                6
+              ]
+            ],
+            "members": [
+              "P3C13"
+            ]
+          },
+          {
+            "key": [
+              3,
+              2,
+              [
+                3,
+                3
+              ]
+            ],
+            "members": [
+              "P3C09"
+            ]
+          },
+          {
+            "key": [
+              3,
+              2,
+              [
+                3,
+                6
+              ]
+            ],
+            "members": [
+              "P3C21"
+            ]
+          },
+          {
+            "key": [
+              3,
+              3,
+              [
+                3,
+                3,
+                3
+              ]
+            ],
+            "members": [
+              "P3C03"
+            ]
+          },
+          {
+            "key": [
+              4,
+              1,
+              [
+                8
+              ]
+            ],
+            "members": [
+              "P3C04",
+              "P3C20"
+            ]
+          },
+          {
+            "key": [
+              4,
+              3,
+              [
+                4,
+                4,
+                4
+              ]
+            ],
+            "members": [
+              "P3C10"
+            ]
+          },
+          {
+            "key": [
+              5,
+              2,
+              [
+                5,
+                5
+              ]
+            ],
+            "members": [
+              "P3C00",
+              "P3C02"
+            ]
+          },
+          {
+            "key": [
+              5,
+              3,
+              [
+                5,
+                5,
+                5
+              ]
+            ],
+            "members": [
+              "P3C12",
+              "P3C30"
+            ]
+          },
+          {
+            "key": [
+              6,
+              1,
+              [
+                6
+              ]
+            ],
+            "members": [
+              "P3C14"
+            ]
+          },
+          {
+            "key": [
+              6,
+              1,
+              [
+                12
+              ]
+            ],
+            "members": [
+              "P3C06"
+            ]
+          },
+          {
+            "key": [
+              6,
+              2,
+              [
+                6,
+                6
+              ]
+            ],
+            "members": [
+              "P3C16"
+            ]
+          },
+          {
+            "key": [
+              6,
+              3,
+              [
+                6,
+                6,
+                6
+              ]
+            ],
+            "members": [
+              "P3C17"
+            ]
+          },
+          {
+            "key": [
+              7,
+              2,
+              [
+                7,
+                7
+              ]
+            ],
+            "members": [
+              "P3C19"
+            ]
+          },
+          {
+            "key": [
+              10,
+              1,
+              [
+                10
+              ]
+            ],
+            "members": [
+              "P3C05"
+            ]
+          },
+          {
+            "key": [
+              12,
+              1,
+              [
+                12
+              ]
+            ],
+            "members": [
+              "P3C22"
+            ]
+          },
+          {
+            "key": [
+              14,
+              1,
+              [
+                14
+              ]
+            ],
+            "members": [
+              "P3C23"
+            ]
+          },
+          {
+            "key": [
+              15,
+              1,
+              [
+                15
+              ]
+            ],
+            "members": [
+              "P3C24"
+            ]
+          },
+          {
+            "key": [
+              18,
+              1,
+              [
+                18
+              ]
+            ],
+            "members": [
+              "P3C25"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "n_buckets": 36,
+        "buckets": [
+          {
+            "key": [
+              1,
+              1,
+              [
+                3
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C08"
+            ]
+          },
+          {
+            "key": [
+              1,
+              1,
+              [
+                5
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C11",
+              "P3C35"
+            ]
+          },
+          {
+            "key": [
+              1,
+              1,
+              [
+                7
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C18"
+            ]
+          },
+          {
+            "key": [
+              1,
+              1,
+              [
+                9
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C33",
+              "P3C37"
+            ]
+          },
+          {
+            "key": [
+              1,
+              1,
+              [
+                15
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C38"
+            ]
+          },
+          {
+            "key": [
+              1,
+              3,
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                1.0,
+                1.619234,
+                2.081019
+              ]
+            ],
+            "members": [
+              "P3C26"
+            ]
+          },
+          {
+            "key": [
+              1,
+              3,
+              [
+                2,
+                5,
+                2
+              ],
+              [
+                1.0,
+                1.546112,
+                2.081019
+              ]
+            ],
+            "members": [
+              "P3C29"
+            ]
+          },
+          {
+            "key": [
+              1,
+              3,
+              [
+                2,
+                8,
+                2
+              ],
+              [
+                1.0,
+                1.442574,
+                2.081019
+              ]
+            ],
+            "members": [
+              "P3C34"
+            ]
+          },
+          {
+            "key": [
+              1,
+              3,
+              [
+                3,
+                2,
+                3
+              ],
+              [
+                1.0,
+                1.093226,
+                1.341504
+              ]
+            ],
+            "members": [
+              "P3C28"
+            ]
+          },
+          {
+            "key": [
+              1,
+              3,
+              [
+                3,
+                3,
+                3
+              ],
+              [
+                1.0,
+                1.276709,
+                1.629987
+              ]
+            ],
+            "members": [
+              "P3C36"
+            ]
+          },
+          {
+            "key": [
+              1,
+              4,
+              [
+                3,
+                4,
+                4,
+                3
+              ],
+              [
+                1.0,
+                1.194152,
+                1.488515,
+                1.629987
+              ]
+            ],
+            "members": [
+              "P3C31"
+            ]
+          },
+          {
+            "key": [
+              2,
+              1,
+              [
+                2
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C07"
+            ]
+          },
+          {
+            "key": [
+              2,
+              1,
+              [
+                4
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C01"
+            ]
+          },
+          {
+            "key": [
+              2,
+              1,
+              [
+                8
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C15"
+            ]
+          },
+          {
+            "key": [
+              2,
+              3,
+              [
+                2,
+                4,
+                2
+              ],
+              [
+                1.0,
+                1.573138,
+                2.081019
+              ]
+            ],
+            "members": [
+              "P3C27"
+            ]
+          },
+          {
+            "key": [
+              2,
+              3,
+              [
+                4,
+                6,
+                4
+              ],
+              [
+                1.0,
+                1.272491,
+                1.442574
+              ]
+            ],
+            "members": [
+              "P3C32"
+            ]
+          },
+          {
+            "key": [
+              3,
+              1,
+              [
+                6
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C13"
+            ]
+          },
+          {
+            "key": [
+              3,
+              2,
+              [
+                3,
+                3
+              ],
+              [
+                1.0,
+                1.629987
+              ]
+            ],
+            "members": [
+              "P3C09"
+            ]
+          },
+          {
+            "key": [
+              3,
+              2,
+              [
+                3,
+                6
+              ],
+              [
+                1.0,
+                1.259921
+              ]
+            ],
+            "members": [
+              "P3C21"
+            ]
+          },
+          {
+            "key": [
+              3,
+              3,
+              [
+                3,
+                3,
+                3
+              ],
+              [
+                1.0,
+                1.062659,
+                1.259921
+              ]
+            ],
+            "members": [
+              "P3C03"
+            ]
+          },
+          {
+            "key": [
+              4,
+              1,
+              [
+                8
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C04",
+              "P3C20"
+            ]
+          },
+          {
+            "key": [
+              4,
+              3,
+              [
+                4,
+                4,
+                4
+              ],
+              [
+                1.0,
+                1.293219,
+                1.807758
+              ]
+            ],
+            "members": [
+              "P3C10"
+            ]
+          },
+          {
+            "key": [
+              5,
+              2,
+              [
+                5,
+                5
+              ],
+              [
+                1.0,
+                1.340635
+              ]
+            ],
+            "members": [
+              "P3C00"
+            ]
+          },
+          {
+            "key": [
+              5,
+              2,
+              [
+                5,
+                5
+              ],
+              [
+                1.0,
+                1.693476
+              ]
+            ],
+            "members": [
+              "P3C02"
+            ]
+          },
+          {
+            "key": [
+              5,
+              3,
+              [
+                5,
+                5,
+                5
+              ],
+              [
+                1.0,
+                1.189879,
+                1.82799
+              ]
+            ],
+            "members": [
+              "P3C12"
+            ]
+          },
+          {
+            "key": [
+              5,
+              3,
+              [
+                5,
+                5,
+                5
+              ],
+              [
+                1.0,
+                1.240961,
+                1.340635
+              ]
+            ],
+            "members": [
+              "P3C30"
+            ]
+          },
+          {
+            "key": [
+              6,
+              1,
+              [
+                6
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C14"
+            ]
+          },
+          {
+            "key": [
+              6,
+              1,
+              [
+                12
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C06"
+            ]
+          },
+          {
+            "key": [
+              6,
+              2,
+              [
+                6,
+                6
+              ],
+              [
+                1.0,
+                1.551134
+              ]
+            ],
+            "members": [
+              "P3C16"
+            ]
+          },
+          {
+            "key": [
+              6,
+              3,
+              [
+                6,
+                6,
+                6
+              ],
+              [
+                1.0,
+                1.155897,
+                1.653147
+              ]
+            ],
+            "members": [
+              "P3C17"
+            ]
+          },
+          {
+            "key": [
+              7,
+              2,
+              [
+                7,
+                7
+              ],
+              [
+                1.0,
+                1.456846
+              ]
+            ],
+            "members": [
+              "P3C19"
+            ]
+          },
+          {
+            "key": [
+              10,
+              1,
+              [
+                10
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C05"
+            ]
+          },
+          {
+            "key": [
+              12,
+              1,
+              [
+                12
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C22"
+            ]
+          },
+          {
+            "key": [
+              14,
+              1,
+              [
+                14
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C23"
+            ]
+          },
+          {
+            "key": [
+              15,
+              1,
+              [
+                15
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C24"
+            ]
+          },
+          {
+            "key": [
+              18,
+              1,
+              [
+                18
+              ],
+              [
+                1.0
+              ]
+            ],
+            "members": [
+              "P3C25"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "n_buckets": 36,
+        "buckets": [
+          {
+            "key": [
+              1,
+              [
+                2
+              ],
+              [
+                1.0
+              ],
+              2
+            ],
+            "members": [
+              "P3C07"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                3
+              ],
+              [
+                1.0
+              ],
+              1
+            ],
+            "members": [
+              "P3C08"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                4
+              ],
+              [
+                1.0
+              ],
+              2
+            ],
+            "members": [
+              "P3C01"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                5
+              ],
+              [
+                1.0
+              ],
+              1
+            ],
+            "members": [
+              "P3C11",
+              "P3C35"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                6
+              ],
+              [
+                1.0
+              ],
+              3
+            ],
+            "members": [
+              "P3C13"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                6
+              ],
+              [
+                1.0
+              ],
+              6
+            ],
+            "members": [
+              "P3C14"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                7
+              ],
+              [
+                1.0
+              ],
+              1
+            ],
+            "members": [
+              "P3C18"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                8
+              ],
+              [
+                1.0
+              ],
+              2
+            ],
+            "members": [
+              "P3C15"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                8
+              ],
+              [
+                1.0
+              ],
+              4
+            ],
+            "members": [
+              "P3C04",
+              "P3C20"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                9
+              ],
+              [
+                1.0
+              ],
+              1
+            ],
+            "members": [
+              "P3C33",
+              "P3C37"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                10
+              ],
+              [
+                1.0
+              ],
+              10
+            ],
+            "members": [
+              "P3C05"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                12
+              ],
+              [
+                1.0
+              ],
+              6
+            ],
+            "members": [
+              "P3C06"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                12
+              ],
+              [
+                1.0
+              ],
+              12
+            ],
+            "members": [
+              "P3C22"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                14
+              ],
+              [
+                1.0
+              ],
+              14
+            ],
+            "members": [
+              "P3C23"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                15
+              ],
+              [
+                1.0
+              ],
+              1
+            ],
+            "members": [
+              "P3C38"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                15
+              ],
+              [
+                1.0
+              ],
+              15
+            ],
+            "members": [
+              "P3C24"
+            ]
+          },
+          {
+            "key": [
+              1,
+              [
+                18
+              ],
+              [
+                1.0
+              ],
+              18
+            ],
+            "members": [
+              "P3C25"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                3,
+                3
+              ],
+              [
+                1.0,
+                1.629987
+              ],
+              3
+            ],
+            "members": [
+              "P3C09"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                3,
+                6
+              ],
+              [
+                1.0,
+                1.259921
+              ],
+              3
+            ],
+            "members": [
+              "P3C21"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                5,
+                5
+              ],
+              [
+                1.0,
+                1.340635
+              ],
+              5
+            ],
+            "members": [
+              "P3C00"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                5,
+                5
+              ],
+              [
+                1.0,
+                1.693476
+              ],
+              5
+            ],
+            "members": [
+              "P3C02"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                6,
+                6
+              ],
+              [
+                1.0,
+                1.551134
+              ],
+              6
+            ],
+            "members": [
+              "P3C16"
+            ]
+          },
+          {
+            "key": [
+              2,
+              [
+                7,
+                7
+              ],
+              [
+                1.0,
+                1.456846
+              ],
+              7
+            ],
+            "members": [
+              "P3C19"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                1.0,
+                1.619234,
+                2.081019
+              ],
+              1
+            ],
+            "members": [
+              "P3C26"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                2,
+                4,
+                2
+              ],
+              [
+                1.0,
+                1.573138,
+                2.081019
+              ],
+              2
+            ],
+            "members": [
+              "P3C27"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                2,
+                5,
+                2
+              ],
+              [
+                1.0,
+                1.546112,
+                2.081019
+              ],
+              1
+            ],
+            "members": [
+              "P3C29"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                2,
+                8,
+                2
+              ],
+              [
+                1.0,
+                1.442574,
+                2.081019
+              ],
+              1
+            ],
+            "members": [
+              "P3C34"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                3,
+                2,
+                3
+              ],
+              [
+                1.0,
+                1.093226,
+                1.341504
+              ],
+              1
+            ],
+            "members": [
+              "P3C28"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                3,
+                3,
+                3
+              ],
+              [
+                1.0,
+                1.062659,
+                1.259921
+              ],
+              3
+            ],
+            "members": [
+              "P3C03"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                3,
+                3,
+                3
+              ],
+              [
+                1.0,
+                1.276709,
+                1.629987
+              ],
+              1
+            ],
+            "members": [
+              "P3C36"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                4,
+                4,
+                4
+              ],
+              [
+                1.0,
+                1.293219,
+                1.807758
+              ],
+              4
+            ],
+            "members": [
+              "P3C10"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                4,
+                6,
+                4
+              ],
+              [
+                1.0,
+                1.272491,
+                1.442574
+              ],
+              2
+            ],
+            "members": [
+              "P3C32"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                5,
+                5,
+                5
+              ],
+              [
+                1.0,
+                1.189879,
+                1.82799
+              ],
+              5
+            ],
+            "members": [
+              "P3C12"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                5,
+                5,
+                5
+              ],
+              [
+                1.0,
+                1.240961,
+                1.340635
+              ],
+              5
+            ],
+            "members": [
+              "P3C30"
+            ]
+          },
+          {
+            "key": [
+              3,
+              [
+                6,
+                6,
+                6
+              ],
+              [
+                1.0,
+                1.155897,
+                1.653147
+              ],
+              6
+            ],
+            "members": [
+              "P3C17"
+            ]
+          },
+          {
+            "key": [
+              4,
+              [
+                3,
+                4,
+                4,
+                3
+              ],
+              [
+                1.0,
+                1.194152,
+                1.488515,
+                1.629987
+              ],
+              1
+            ],
+            "members": [
+              "P3C31"
+            ]
+          }
+        ]
+      }
+    ],
+    "minimal_distinguishing_invariants": {
+      "minimal_set": [
+        "I_slope",
+        "I_omega"
+      ],
+      "n_classes_total": 39,
+      "history": [
+        {
+          "step": 1,
+          "added": "I_slope",
+          "distinct_classes": 37,
+          "collisions": 2
+        },
+        {
+          "step": 2,
+          "added": "I_omega",
+          "distinct_classes": 39,
+          "collisions": 0
+        }
+      ]
+    },
+    "symmetry_rollup": {
+      "n_classes": 39,
+      "trivial_stabilizer_count": 13,
+      "nontrivial_stabilizer_count": 26,
+      "by_Cn_order": {
+        "1": [
+          "P3C08",
+          "P3C11",
+          "P3C18",
+          "P3C26",
+          "P3C28",
+          "P3C29",
+          "P3C31",
+          "P3C33",
+          "P3C34",
+          "P3C35",
+          "P3C36",
+          "P3C37",
+          "P3C38"
+        ],
+        "2": [
+          "P3C01",
+          "P3C07",
+          "P3C15",
+          "P3C27",
+          "P3C32"
+        ],
+        "3": [
+          "P3C03",
+          "P3C09",
+          "P3C13",
+          "P3C21"
+        ],
+        "4": [
+          "P3C04",
+          "P3C10",
+          "P3C20"
+        ],
+        "5": [
+          "P3C00",
+          "P3C02",
+          "P3C12",
+          "P3C30"
+        ],
+        "6": [
+          "P3C06",
+          "P3C14",
+          "P3C16",
+          "P3C17"
+        ],
+        "7": [
+          "P3C19"
+        ],
+        "10": [
+          "P3C05"
+        ],
+        "12": [
+          "P3C22"
+        ],
+        "14": [
+          "P3C23"
+        ],
+        "15": [
+          "P3C24"
+        ],
+        "18": [
+          "P3C25"
+        ]
+      },
+      "trivial_classes": [
+        "P3C08",
+        "P3C11",
+        "P3C18",
+        "P3C26",
+        "P3C28",
+        "P3C29",
+        "P3C31",
+        "P3C33",
+        "P3C34",
+        "P3C35",
+        "P3C36",
+        "P3C37",
+        "P3C38"
+      ],
+      "nontrivial_classes": [
+        "P3C00",
+        "P3C01",
+        "P3C02",
+        "P3C03",
+        "P3C04",
+        "P3C05",
+        "P3C06",
+        "P3C07",
+        "P3C09",
+        "P3C10",
+        "P3C12",
+        "P3C13",
+        "P3C14",
+        "P3C15",
+        "P3C16",
+        "P3C17",
+        "P3C19",
+        "P3C20",
+        "P3C21",
+        "P3C22",
+        "P3C23",
+        "P3C24",
+        "P3C25",
+        "P3C27",
+        "P3C30",
+        "P3C32"
+      ]
+    }
+  }
+}

@@ -1,0 +1,486 @@
+[
+  {
+    "key": "STRESS_zeroroot",
+    "type": "zero_inner_root",
+    "description": "Inner polynomial has a root at 0; the c=0 sector of the constellation is q-fold degenerate.",
+    "chi": "c**4 - c**2",
+    "chi_w": "w**2 - w",
+    "d": 4,
+    "q": 2,
+    "r": 2,
+    "beta_at_rep": [
+      -1.0,
+      0.0
+    ],
+    "ring_partition": [
+      2,
+      2
+    ],
+    "C_n_observed": 2,
+    "defining_function": "beta_r (constant term of chi_w)",
+    "F_value_at_rep": "0j",
+    "is_complex_algebraic": true,
+    "rank_dF_dbeta_complex": 1,
+    "rank_dF_dbeta_real": 2,
+    "codim_C_in_beta_space": 1,
+    "codim_R_in_beta_space": 2,
+    "soft_dim_C_in_beta_space": 1,
+    "soft_dim_R_in_beta_space": 2,
+    "vieta_jacobian_on_c_roots": {
+      "label": "STRESS_zeroroot",
+      "d": 4,
+      "ordered_root_multiplicities": [
+        2,
+        1,
+        1
+      ],
+      "swap_kernel_dim_predicted": 1,
+      "rank_full_Jacobian": 3,
+      "rank_on_centered_T": 2,
+      "ker_dim_on_centered_T": 1
+    },
+    "delta_multiset": {
+      "n_pairs": 6,
+      "distinct_moduli": 3,
+      "distinct_args_mod_pi": 1,
+      "n_zero_delta_pairs": 1,
+      "min_nonzero_modulus": 1.0,
+      "max_modulus": 2.0
+    },
+    "incidence_flags": {
+      "zero_root": true,
+      "disc_zero": false,
+      "equimodular": false,
+      "C_d_sparse": false
+    },
+    "inner_roots": [
+      [
+        1.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "inner_disc": [
+      1.0,
+      0.0
+    ],
+    "rigidity_class": "rigid_codim_1",
+    "fingerprint_vector": [
+      4,
+      2,
+      2,
+      1,
+      2,
+      2,
+      1,
+      2,
+      2,
+      1,
+      3,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "fingerprint_vector_layout": [
+      "d",
+      "q",
+      "r",
+      "codim_C_in_beta",
+      "codim_R_in_beta",
+      "rank_dF_real",
+      "soft_dim_C_in_beta",
+      "soft_dim_R_in_beta",
+      "C_n",
+      "is_complex_algebraic",
+      "delta_distinct_moduli",
+      "delta_distinct_args_mod_pi",
+      "delta_zero_pairs",
+      "vieta_rank_on_T",
+      "vieta_ker_dim_on_T",
+      "vieta_swap_kernel_dim",
+      "inc_zero_root",
+      "inc_disc_zero",
+      "inc_equimod",
+      "inc_C_d_sparse"
+    ]
+  },
+  {
+    "key": "STRESS_doubleroot",
+    "type": "discriminant_locus",
+    "description": "Inner polynomial has a repeated root (chi_w = (w-1)^2(w-2)); two mu_q-orbits coalesce.",
+    "chi": "c**9 - 4*c**6 + 5*c**3 - 2",
+    "chi_w": "w**3 - 4*w**2 + 5*w - 2",
+    "d": 9,
+    "q": 3,
+    "r": 3,
+    "beta_at_rep": [
+      -4.0,
+      5.0,
+      -2.0
+    ],
+    "ring_partition": [
+      6,
+      3
+    ],
+    "C_n_observed": 3,
+    "defining_function": "disc_w(chi_w)",
+    "F_value_at_rep": "0j",
+    "is_complex_algebraic": true,
+    "rank_dF_dbeta_complex": 1,
+    "rank_dF_dbeta_real": 2,
+    "codim_C_in_beta_space": 1,
+    "codim_R_in_beta_space": 2,
+    "soft_dim_C_in_beta_space": 2,
+    "soft_dim_R_in_beta_space": 4,
+    "vieta_jacobian_on_c_roots": {
+      "label": "STRESS_doubleroot",
+      "d": 9,
+      "ordered_root_multiplicities": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "swap_kernel_dim_predicted": 3,
+      "rank_full_Jacobian": 6,
+      "rank_on_centered_T": 5,
+      "ker_dim_on_centered_T": 3
+    },
+    "delta_multiset": {
+      "n_pairs": 36,
+      "distinct_moduli": 5,
+      "distinct_args_mod_pi": 12,
+      "n_zero_delta_pairs": 3,
+      "min_nonzero_modulus": 0.2599210498948732,
+      "max_modulus": 2.1822472719434427
+    },
+    "incidence_flags": {
+      "zero_root": false,
+      "disc_zero": true,
+      "equimodular": false,
+      "C_d_sparse": false
+    },
+    "inner_roots": [
+      [
+        1.9999999999999987,
+        1.5523295729164115e-16
+      ],
+      [
+        1.000000026862491,
+        -3.890678184886559e-10
+      ],
+      [
+        0.9999999731375113,
+        3.8906737242552103e-10
+      ]
+    ],
+    "inner_disc": [
+      0.0,
+      0.0
+    ],
+    "rigidity_class": "rigid_codim_1",
+    "fingerprint_vector": [
+      9,
+      3,
+      3,
+      1,
+      2,
+      2,
+      2,
+      4,
+      3,
+      1,
+      5,
+      12,
+      3,
+      5,
+      3,
+      3,
+      0,
+      1,
+      0,
+      0
+    ],
+    "fingerprint_vector_layout": [
+      "d",
+      "q",
+      "r",
+      "codim_C_in_beta",
+      "codim_R_in_beta",
+      "rank_dF_real",
+      "soft_dim_C_in_beta",
+      "soft_dim_R_in_beta",
+      "C_n",
+      "is_complex_algebraic",
+      "delta_distinct_moduli",
+      "delta_distinct_args_mod_pi",
+      "delta_zero_pairs",
+      "vieta_rank_on_T",
+      "vieta_ker_dim_on_T",
+      "vieta_swap_kernel_dim",
+      "inc_zero_root",
+      "inc_disc_zero",
+      "inc_equimod",
+      "inc_C_d_sparse"
+    ]
+  },
+  {
+    "key": "STRESS_equalmod",
+    "type": "equimodular_inner_roots",
+    "description": "All three inner roots {2, +2i, -2i} have |w|=2; three mu_q-orbits collapse to one radius.",
+    "chi": "c**6 - 2*c**4 + 4*c**2 - 8",
+    "chi_w": "w**3 - 2*w**2 + 4*w - 8",
+    "d": 6,
+    "q": 2,
+    "r": 3,
+    "beta_at_rep": [
+      -2.0,
+      4.0,
+      -8.0
+    ],
+    "ring_partition": [
+      6
+    ],
+    "C_n_observed": 2,
+    "defining_function": "|w_i|^2 - |w_{i+1}|^2 (i=1..r-1), real-analytic",
+    "F_value_at_rep": [
+      -7.105427357601002e-15,
+      0.0
+    ],
+    "is_complex_algebraic": false,
+    "rank_dF_dbeta_complex": null,
+    "rank_dF_dbeta_real": 2,
+    "codim_C_in_beta_space": 0,
+    "codim_R_in_beta_space": 2,
+    "soft_dim_C_in_beta_space": null,
+    "soft_dim_R_in_beta_space": 4,
+    "vieta_jacobian_on_c_roots": {
+      "label": "STRESS_equalmod",
+      "d": 6,
+      "ordered_root_multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "swap_kernel_dim_predicted": 0,
+      "rank_full_Jacobian": 6,
+      "rank_on_centered_T": 5,
+      "ker_dim_on_centered_T": 0
+    },
+    "delta_multiset": {
+      "n_pairs": 15,
+      "distinct_moduli": 4,
+      "distinct_args_mod_pi": 8,
+      "n_zero_delta_pairs": 0,
+      "min_nonzero_modulus": 1.082392200292394,
+      "max_modulus": 2.8284271247461903
+    },
+    "incidence_flags": {
+      "zero_root": false,
+      "disc_zero": false,
+      "equimodular": true,
+      "C_d_sparse": false
+    },
+    "inner_roots": [
+      [
+        -4.440892098500626e-16,
+        2.0000000000000013
+      ],
+      [
+        2.0000000000000013,
+        -1.1449174941446927e-15
+      ],
+      [
+        -6.54122081062456e-19,
+        -1.9999999999999996
+      ]
+    ],
+    "inner_disc": [
+      -1024.0,
+      0.0
+    ],
+    "rigidity_class": "real_only",
+    "fingerprint_vector": [
+      6,
+      2,
+      3,
+      0,
+      2,
+      2,
+      -1,
+      4,
+      2,
+      0,
+      4,
+      8,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "fingerprint_vector_layout": [
+      "d",
+      "q",
+      "r",
+      "codim_C_in_beta",
+      "codim_R_in_beta",
+      "rank_dF_real",
+      "soft_dim_C_in_beta",
+      "soft_dim_R_in_beta",
+      "C_n",
+      "is_complex_algebraic",
+      "delta_distinct_moduli",
+      "delta_distinct_args_mod_pi",
+      "delta_zero_pairs",
+      "vieta_rank_on_T",
+      "vieta_ker_dim_on_T",
+      "vieta_swap_kernel_dim",
+      "inc_zero_root",
+      "inc_disc_zero",
+      "inc_equimod",
+      "inc_C_d_sparse"
+    ]
+  },
+  {
+    "key": "STRESS_accidental_sym",
+    "type": "C_d_inflation_via_sparse_chi_w",
+    "description": "chi_w is a binomial w^r + beta_r; rotational symmetry inflates from C_q to C_d=C_{qr}.",
+    "chi": "c**6 + 1",
+    "chi_w": "w**3 + 1",
+    "d": 6,
+    "q": 2,
+    "r": 3,
+    "beta_at_rep": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "ring_partition": [
+      6
+    ],
+    "C_n_observed": 6,
+    "defining_function": "beta_1, beta_2, ..., beta_{r-1}  (sparsity to a single-binomial inner polynomial)",
+    "F_value_at_rep": [
+      "0j",
+      "0j"
+    ],
+    "is_complex_algebraic": true,
+    "rank_dF_dbeta_complex": 2,
+    "rank_dF_dbeta_real": 4,
+    "codim_C_in_beta_space": 2,
+    "codim_R_in_beta_space": 4,
+    "soft_dim_C_in_beta_space": 1,
+    "soft_dim_R_in_beta_space": 2,
+    "vieta_jacobian_on_c_roots": {
+      "label": "STRESS_accidental_sym",
+      "d": 6,
+      "ordered_root_multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "swap_kernel_dim_predicted": 0,
+      "rank_full_Jacobian": 6,
+      "rank_on_centered_T": 5,
+      "ker_dim_on_centered_T": 0
+    },
+    "delta_multiset": {
+      "n_pairs": 15,
+      "distinct_moduli": 3,
+      "distinct_args_mod_pi": 6,
+      "n_zero_delta_pairs": 0,
+      "min_nonzero_modulus": 0.9999999999999999,
+      "max_modulus": 2.0
+    },
+    "incidence_flags": {
+      "zero_root": false,
+      "disc_zero": false,
+      "equimodular": true,
+      "C_d_sparse": true
+    },
+    "inner_roots": [
+      [
+        -1.0000000000000004,
+        -5.551115123125783e-17
+      ],
+      [
+        0.5000000000000001,
+        0.866025403784439
+      ],
+      [
+        0.5000000000000002,
+        -0.8660254037844389
+      ]
+    ],
+    "inner_disc": [
+      -27.0,
+      0.0
+    ],
+    "rigidity_class": "very_rigid",
+    "fingerprint_vector": [
+      6,
+      2,
+      3,
+      2,
+      4,
+      4,
+      1,
+      2,
+      6,
+      1,
+      3,
+      6,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "fingerprint_vector_layout": [
+      "d",
+      "q",
+      "r",
+      "codim_C_in_beta",
+      "codim_R_in_beta",
+      "rank_dF_real",
+      "soft_dim_C_in_beta",
+      "soft_dim_R_in_beta",
+      "C_n",
+      "is_complex_algebraic",
+      "delta_distinct_moduli",
+      "delta_distinct_args_mod_pi",
+      "delta_zero_pairs",
+      "vieta_rank_on_T",
+      "vieta_ker_dim_on_T",
+      "vieta_swap_kernel_dim",
+      "inc_zero_root",
+      "inc_disc_zero",
+      "inc_equimod",
+      "inc_C_d_sparse"
+    ]
+  }
+]
