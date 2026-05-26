@@ -8,9 +8,9 @@ message: >-
 type: software
 version: "2.0"
 date-released: "2026-05-26"
-doi: 10.5281/zenodo.XXXXXXX
+doi: 10.5281/zenodo.20387847
 repository-code: "https://github.com/papanokechi/wkb-newton-polygons"
-url: "https://doi.org/10.5281/zenodo.XXXXXXX"
+url: "https://doi.org/10.5281/zenodo.20387847"
 license:
   - MIT
   - CC-BY-4.0
@@ -44,13 +44,10 @@ preferred-citation:
       affiliation: "Independent Researcher"
       orcid: "https://orcid.org/0009-0000-6192-8273"
   year: 2026
-  doi: 10.5281/zenodo.XXXXXXX
-  url: "https://doi.org/10.5281/zenodo.XXXXXXX"
-  notes: "arXiv:XXXX.XXXXX [math-ph]; Zenodo record (v2.0)"
+  doi: 10.5281/zenodo.20387847
+  url: "https://doi.org/10.5281/zenodo.20387847"
+  notes: "Zenodo record (v2.0); see DOI above"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.XXXXXXX
+    value: 10.5281/zenodo.20387847
     description: "Zenodo record for v2.0 of this dataset"
-  - type: doi
-    value: 10.5281/zenodo.20355904
-    description: "Zenodo record for v1.0 of this dataset (superseded)"

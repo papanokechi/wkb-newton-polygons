@@ -5,7 +5,7 @@ Version v2.0  —  camera-ready public release
 ================================================================================
 
 Release date: 2026-05-26
-DOI:          10.5281/zenodo.XXXXXXX  (assigned by Zenodo at publication)
+DOI:          10.5281/zenodo.20387847  (assigned by Zenodo at publication)
 Supersedes:   v1.0  (10.5281/zenodo.20355904)
 Authors:      Papanokechi (ORCID 0009-0000-6192-8273; Independent Researcher)
 
@@ -159,7 +159,7 @@ Users of v1.0 can switch to v2.0 with no API changes:
   manuscript versions are now the canonical typeset form.
 
 Users of v1.0 who cited 10.5281/zenodo.20355904 should consider
-re-citing 10.5281/zenodo.XXXXXXX (v2.0) which contains the published
+re-citing 10.5281/zenodo.20387847 (v2.0) which contains the published
 paper.
 
 ================================================================================
@@ -176,4 +176,4 @@ provided in accordance with the disclosure in §11 of the manuscript.
 ================================================================================
 
 Open an issue on https://github.com/papanokechi/wkb-newton-polygons or
-contact via the Zenodo record at https://doi.org/10.5281/zenodo.XXXXXXX.
+contact via the Zenodo record at https://doi.org/10.5281/zenodo.20387847.

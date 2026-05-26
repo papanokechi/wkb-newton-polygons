@@ -97,10 +97,6 @@ related_identifiers:
     scheme:       doi
     description:  "Previous version (v1.0) of this dataset"
 
-  - identifier:   "arXiv:XXXX.XXXXX"
-    relation:     isSupplementTo
-    scheme:       arxiv
-    description:  "Companion arXiv preprint (placeholder; update after arXiv submission)"
 
   - identifier:   "https://github.com/papanokechi/wkb-newton-polygons"
     relation:     isSourceOf

@@ -136,4 +136,4 @@ under the same terms as the project:
 
 Open a GitHub issue for any question. For matters relating to academic
 priority or co-authorship, please contact the author via the email
-listed on the [Zenodo record](https://doi.org/10.5281/zenodo.XXXXXXX).
+listed on the [Zenodo record](https://doi.org/10.5281/zenodo.20387847).

@@ -1,145 +1,231 @@
-\begin{thebibliography}{{Pap}26}
-
-\bibitem[AKT01]{aoki-kawai-takei}
-Takashi Aoki, Takahiro Kawai, and Yoshitsugu Takei.
-\newblock On the exact steepest descent method: a new method for the
-  description of {S}tokes curves.
-\newblock {\em Journal of Mathematical Physics}, 42(8):3691--3713, 2001.
-
-\bibitem[Arn76]{arnold1976}
-V.~I. Arnol'd.
-\newblock Local normal forms of functions.
-\newblock {\em Inventiones mathematicae}, 35:87--109, 1976.
-
-\bibitem[Boa14]{boalch-stokes}
-Philip Boalch.
-\newblock Geometry and braiding of {S}tokes data; fission and wild character
-  varieties.
-\newblock {\em Annals of Mathematics (2)}, 179(1):301--365, 2014.
-
-\bibitem[Boa16]{boalch-wildhodge}
-Philip Boalch.
-\newblock Wild non-abelian {H}odge theory on curves.
-\newblock In {\em Geometry and Quantization of Moduli Spaces}, Advanced Courses
-  in Mathematics --- CRM Barcelona, pages 1--38. Birkh{\"a}user, 2016.
-
-\bibitem[Bri71]{brieskorn}
-Egbert Brieskorn.
-\newblock Singular elements of semi-simple algebraic groups.
-\newblock In {\em Actes du Congr{\`e}s International des Math{\'e}maticiens
-  (Nice, 1970)}, pages 279--284. Gauthier-Villars, 1971.
-
-\bibitem[BT33]{birkhoff-trjitzinsky}
-G.~D. Birkhoff and W.~J. Trjitzinsky.
-\newblock Analytic theory of singular difference equations.
-\newblock {\em Acta Mathematica}, 60:1--89, 1933.
-
-\bibitem[GMN13]{gmn-spectral}
-Davide Gaiotto, Gregory~W. Moore, and Andrew Neitzke.
-\newblock Spectral networks.
-\newblock {\em Annales Henri Poincar{\'e}}, 14:1643--1731, 2013.
-
-\bibitem[IN14]{iwaki-nakanishi}
-Kohei Iwaki and Tomoki Nakanishi.
-\newblock Exact {WKB} analysis and cluster algebras.
-\newblock {\em Journal of Physics A: Mathematical and Theoretical},
-  47(47):474009, 2014.
-
-\bibitem[KT05]{kawai-takei}
-Takahiro Kawai and Yoshitsugu Takei.
-\newblock {\em Algebraic Analysis of Singular Perturbation Theory}, volume 227
-  of {\em Translations of Mathematical Monographs}.
-\newblock American Mathematical Society, 2005.
-
-\bibitem[Lan02]{lang-algebra}
-Serge Lang.
-\newblock {\em Algebra}, volume 211 of {\em Graduate Texts in Mathematics}.
-\newblock Springer, New York, revised third edition, 2002.
-
-\bibitem[Lev75]{levelt}
-A.~H.~M. Levelt.
-\newblock Jordan decomposition for a class of singular differential operators.
-\newblock {\em Arkiv f{\"o}r Matematik}, 13(1):1--27, 1975.
-
-\bibitem[Mal74]{robba-malgrange}
-Bernard Malgrange.
-\newblock Sur les points singuliers des {\'e}quations diff{\'e}rentielles.
-\newblock {\em L'Enseignement Math{\'e}matique}, 20:147--176, 1974.
-\newblock See also Robba, Ph., \emph{Lemmes de Hensel pour les op{\'e}rateurs
-  diff{\'e}rentiels}, Enseign. Math.\ 26 (1980), 279--311.
-
-\bibitem[McK80]{mckay}
-John McKay.
-\newblock Graphs, singularities, and finite groups.
-\newblock In {\em The {S}anta {C}ruz Conference on Finite Groups (Santa Cruz,
-  1979)}, volume~37 of {\em Proceedings of Symposia in Pure Mathematics}, pages
-  183--186. American Mathematical Society, 1980.
-
-\bibitem[Moc11]{mochizuki-asymptotic}
-Takuro Mochizuki.
-\newblock Wild harmonic bundles and wild pure twistor {$\mathcal{D}$}-modules.
-\newblock {\em Ast{\'e}risque}, (340), 2011.
-
-\bibitem[{Pap}26]{wkb_dataset_v1}
-{Papanokechi}.
-\newblock The {WKB} geometry of {N}ewton polygons: A classification theory ---
-  computational atlas, conjectures, and proof skeletons.
-\newblock Zenodo dataset, v1.0, May 2026.
-\newblock \url{https://doi.org/10.5281/zenodo.XXXXXXX}; placeholder DOI to be
-  assigned on publication.
-
-\bibitem[Ram97]{ramis-stokes}
-Jean-Pierre Ramis.
-\newblock Phenomenon of {S}tokes and resummation.
-\newblock {\em Banach Center Publications}, 39:93--113, 1997.
-
-\bibitem[RSZ13]{ramis-q-stokes}
-Jean-Pierre Ramis, Jacques Sauloy, and Changgui Zhang.
-\newblock Local analytic classification of {$q$}-difference equations.
-\newblock {\em Ast{\'e}risque}, (355), 2013.
-
-\bibitem[Sab05]{sabbah-polarizable}
-Claude Sabbah.
-\newblock {\em Polarizable Twistor {$\mathcal{D}$}-modules}.
-\newblock Number 300 in Ast{\'e}risque. Soci{\'e}t{\'e} Math{\'e}matique de
-  France, 2005.
-
-\bibitem[Sab07]{sabbah-isomon}
-Claude Sabbah.
-\newblock {\em Isomonodromic Deformations and {F}robenius Manifolds: An
-  Introduction}.
-\newblock Universitext. Springer, 2007.
-
-\bibitem[Sau03]{sauloy}
-Jacques Sauloy.
-\newblock Galois theory of {F}uchsian {$q$}-difference equations.
-\newblock {\em Annales Scientifiques de l'{\'E}cole Normale Sup{\'e}rieure
-  (4)}, 36(6):925--968, 2003.
-
-\bibitem[Sib90]{sibuya}
-Yasutaka Sibuya.
-\newblock {\em Linear Differential Equations in the Complex Domain: Problems of
-  Analytic Continuation}, volume~82 of {\em Translations of Mathematical
-  Monographs}.
-\newblock American Mathematical Society, 1990.
-
-\bibitem[Tur55]{turrittin}
-H.~L. Turrittin.
-\newblock Convergent solutions of ordinary linear homogeneous differential
-  equations in the neighborhood of an irregular singular point.
-\newblock {\em Acta Mathematica}, 93:27--66, 1955.
-
-\bibitem[Was87]{wasow}
-Wolfgang Wasow.
-\newblock {\em Asymptotic Expansions for Ordinary Differential Equations}.
-\newblock Dover, 1987.
-\newblock Reprint of the 1965 Wiley edition.
-
-\bibitem[Zha98]{zhang}
-Changgui Zhang.
-\newblock Sur la sommabilit{\'e} des s{\'e}ries enti{\`e}res solutions
-  formelles d'une {\'e}quation aux {$q$}-diff{\'e}rences.
-\newblock {\em Comptes Rendus de l'Acad{\'e}mie des Sciences --- S{\'e}rie I},
-  327:349--352, 1998.
-
-\end{thebibliography}
+%aipnum4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{24}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Wasow}(1987)}]{wasow}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Wasow}},\ }\href@noop {} {\emph {\bibinfo {title} {Asymptotic Expansions for
+  Ordinary Differential Equations}}}\ (\bibinfo  {publisher} {Dover},\ \bibinfo
+  {year} {1987})\ \bibinfo {note} {reprint of the 1965 Wiley
+  edition.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Sibuya}(1990)}]{sibuya}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Sibuya}},\ }\href@noop {} {\emph {\bibinfo {title} {Linear Differential
+  Equations in the Complex Domain: Problems of Analytic Continuation}}},\
+  \bibinfo {series} {Translations of Mathematical Monographs}, Vol.~\bibinfo
+  {volume} {82}\ (\bibinfo  {publisher} {American Mathematical Society},\
+  \bibinfo {year} {1990})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sabbah}(2007)}]{sabbah-isomon}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Sabbah}},\ }\href@noop {} {\emph {\bibinfo {title} {Isomonodromic
+  Deformations and {F}robenius Manifolds: An Introduction}}},\ Universitext\
+  (\bibinfo  {publisher} {Springer},\ \bibinfo {year} {2007})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Papanokechi}}(2026)}]{wkb_dataset_v1}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Papanokechi}}},\
+  }\href {https://doi.org/10.5281/zenodo.20387847} {\enquote {\bibinfo {title}
+  {The {WKB} geometry of {N}ewton polygons: A classification theory ---
+  computational atlas, conjectures, and proof skeletons},}\ }\bibinfo
+  {howpublished} {Zenodo dataset, v1.0} (\bibinfo {year} {2026}),\ \bibinfo
+  {note} {\url{https://doi.org/10.5281/zenodo.20387847}; placeholder DOI to be
+  assigned on publication.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Sabbah}(2005)}]{sabbah-polarizable}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Sabbah}},\ }\href@noop {} {\emph {\bibinfo {title} {Polarizable Twistor
+  {$\mathcal{D}$}-modules}}},\ \bibinfo {series} {Ast{\'e}risque}\ No.\
+  \bibinfo {number} {300}\ (\bibinfo  {publisher} {Soci{\'e}t{\'e}
+  Math{\'e}matique de France},\ \bibinfo {year} {2005})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Boalch}(2014)}]{boalch-stokes}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Boalch}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Annals
+  of Mathematics (2)}\ }\textbf {\bibinfo {volume} {179}},\ \bibinfo {pages}
+  {301} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Boalch}(2016)}]{boalch-wildhodge}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Boalch}},\ }in\ \href@noop {} {\emph {\bibinfo {booktitle} {Geometry and
+  Quantization of Moduli Spaces}}},\ \bibinfo {series and number} {Advanced
+  Courses in Mathematics --- CRM Barcelona}\ (\bibinfo  {publisher}
+  {Birkh{\"a}user},\ \bibinfo {year} {2016})\ pp.\ \bibinfo {pages}
+  {1--38}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mochizuki}(2011)}]{mochizuki-asymptotic}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Mochizuki}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Ast{\'e}risque}\ } (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Malgrange}(1974)}]{robba-malgrange}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Malgrange}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {L'Enseignement Math{\'e}matique}\ }\textbf {\bibinfo {volume} {20}},\
+  \bibinfo {pages} {147} (\bibinfo {year} {1974})},\ \bibinfo {note} {see also
+  Robba, Ph., \emph{Lemmes de Hensel pour les op{\'e}rateurs
+  diff{\'e}rentiels}, Enseign. Math.\ 26 (1980), 279--311.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Lang}(2002)}]{lang-algebra}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Lang}},\ }\href {https://doi.org/10.1007/978-1-4613-0041-0} {\emph {\bibinfo
+  {title} {Algebra}}},\ \bibinfo {edition} {revised third}\ ed.,\ \bibinfo
+  {series} {Graduate Texts in Mathematics}, Vol.\ \bibinfo {volume} {211}\
+  (\bibinfo  {publisher} {Springer},\ \bibinfo {address} {New York},\ \bibinfo
+  {year} {2002})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Arnol'd}(1976)}]{arnold1976}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~I.}\ \bibnamefont
+  {Arnol'd}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Inventiones mathematicae}\ }\textbf {\bibinfo {volume} {35}},\ \bibinfo
+  {pages} {87} (\bibinfo {year} {1976})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Brieskorn}(1971)}]{brieskorn}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Brieskorn}},\ }in\ \href@noop {} {\emph {\bibinfo {booktitle} {Actes du
+  Congr{\`e}s International des Math{\'e}maticiens (Nice, 1970)}}}\ (\bibinfo
+  {publisher} {Gauthier-Villars},\ \bibinfo {year} {1971})\ pp.\ \bibinfo
+  {pages} {279--284}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {McKay}(1980)}]{mckay}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {McKay}},\ }in\ \href@noop {} {\emph {\bibinfo {booktitle} {The {S}anta
+  {C}ruz Conference on Finite Groups (Santa Cruz, 1979)}}},\ \bibinfo {series}
+  {Proceedings of Symposia in Pure Mathematics}, Vol.~\bibinfo {volume} {37}\
+  (\bibinfo  {publisher} {American Mathematical Society},\ \bibinfo {year}
+  {1980})\ pp.\ \bibinfo {pages} {183--186}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Levelt}(1975)}]{levelt}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~H.~M.}\
+  \bibnamefont {Levelt}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Arkiv f{\"o}r Matematik}\ }\textbf {\bibinfo {volume} {13}},\
+  \bibinfo {pages} {1} (\bibinfo {year} {1975})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Turrittin}(1955)}]{turrittin}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~L.}\ \bibnamefont
+  {Turrittin}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Acta Mathematica}\ }\textbf {\bibinfo {volume} {93}},\ \bibinfo {pages} {27}
+  (\bibinfo {year} {1955})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Birkhoff}\ and\ \citenamefont
+  {Trjitzinsky}(1933)}]{birkhoff-trjitzinsky}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~D.}\ \bibnamefont
+  {Birkhoff}}\ and\ \bibinfo {author} {\bibfnamefont {W.~J.}\ \bibnamefont
+  {Trjitzinsky}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Acta Mathematica}\ }\textbf {\bibinfo {volume} {60}},\ \bibinfo {pages} {1}
+  (\bibinfo {year} {1933})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sauloy}(2003)}]{sauloy}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Sauloy}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Annales Scientifiques de l'{\'E}cole Normale Sup{\'e}rieure (4)}\ }\textbf
+  {\bibinfo {volume} {36}},\ \bibinfo {pages} {925} (\bibinfo {year}
+  {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ramis}(1997)}]{ramis-stokes}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.-P.}\ \bibnamefont
+  {Ramis}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Banach
+  Center Publications}\ }\textbf {\bibinfo {volume} {39}},\ \bibinfo {pages}
+  {93} (\bibinfo {year} {1997})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ramis}, \citenamefont {Sauloy},\ and\ \citenamefont
+  {Zhang}(2013)}]{ramis-q-stokes}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.-P.}\ \bibnamefont
+  {Ramis}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Sauloy}},\ and\
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Zhang}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Ast{\'e}risque}\ } (\bibinfo
+  {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zhang}(1998)}]{zhang}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Zhang}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Comptes
+  Rendus de l'Acad{\'e}mie des Sciences --- S{\'e}rie I}\ }\textbf {\bibinfo
+  {volume} {327}},\ \bibinfo {pages} {349} (\bibinfo {year}
+  {1998})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kawai}\ and\ \citenamefont
+  {Takei}(2005)}]{kawai-takei}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Kawai}}\ and\ \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Takei}},\
+  }\href@noop {} {\emph {\bibinfo {title} {Algebraic Analysis of Singular
+  Perturbation Theory}}},\ \bibinfo {series} {Translations of Mathematical
+  Monographs}, Vol.\ \bibinfo {volume} {227}\ (\bibinfo  {publisher} {American
+  Mathematical Society},\ \bibinfo {year} {2005})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Iwaki}\ and\ \citenamefont
+  {Nakanishi}(2014)}]{iwaki-nakanishi}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Iwaki}}\ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Nakanishi}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of Physics A: Mathematical and Theoretical}\ }\textbf {\bibinfo
+  {volume} {47}},\ \bibinfo {pages} {474009} (\bibinfo {year}
+  {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aoki}, \citenamefont {Kawai},\ and\ \citenamefont
+  {Takei}(2001)}]{aoki-kawai-takei}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Aoki}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Kawai}},\ and\
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Takei}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Journal of Mathematical Physics}\
+  }\textbf {\bibinfo {volume} {42}},\ \bibinfo {pages} {3691} (\bibinfo {year}
+  {2001})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gaiotto}, \citenamefont {Moore},\ and\ \citenamefont
+  {Neitzke}(2013)}]{gmn-spectral}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Gaiotto}}, \bibinfo {author} {\bibfnamefont {G.~W.}\ \bibnamefont {Moore}},\
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Neitzke}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Annales Henri
+  Poincar{\'e}}\ }\textbf {\bibinfo {volume} {14}},\ \bibinfo {pages} {1643}
+  (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\end{thebibliography}%

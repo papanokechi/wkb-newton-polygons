@@ -3,7 +3,7 @@
 **Paper:** *The WKB Geometry of Newton Polygons: A Functorial Classification
 Theory.*
 
-**Companion dataset:** Zenodo v1.0, DOI `10.5281/zenodo.XXXXXXX`
+**Companion dataset:** Zenodo v1.0, DOI `10.5281/zenodo.20387847`
 (placeholder).
 
 This checklist accompanies the manuscript bundles
@@ -66,7 +66,7 @@ This checklist accompanies the manuscript bundles
       is routed via the ORCID record and the GitHub repository
       `https://github.com/papanokechi`. No placeholder email remains in
       the source.
-- [ ] **Zenodo DOI** `10.5281/zenodo.XXXXXXX` — replace once the dataset
+- [ ] **Zenodo DOI** `10.5281/zenodo.20387847` — replace once the dataset
       is published (paper text **and** `references.bib`). The current
       placeholder DOI is the *concept* DOI for the WKB dataset; the
       author-identity reference Zenodo record is

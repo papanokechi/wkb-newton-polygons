@@ -2,13 +2,13 @@
 
 **A Functorial Classification Theory of Scalar Linear Operators with One Irregular Singularity**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20387847.svg)](https://doi.org/10.5281/zenodo.20387847)
 [![License: MIT (code)](https://img.shields.io/badge/code--license-MIT-green.svg)](LICENSE-CODE)
 [![License: CC BY 4.0 (text)](https://img.shields.io/badge/text--license-CC%20BY%204.0-lightgrey.svg)](LICENSE-TEXT)
 
 > *This repository is the public companion to the paper*  
 > **"The WKB Geometry of Newton Polygons: A Functorial Classification Theory"**  
-> *Papanokechi (2026), [arXiv:XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX)*
+> *Papanokechi (2026), [Zenodo 10.5281/zenodo.20387847](https://doi.org/10.5281/zenodo.20387847)*
 
 ---
 
@@ -106,8 +106,8 @@ If you use this dataset or the accompanying manuscript, please cite:
   title        = {The {WKB} Geometry of {Newton} Polygons:
                   A Functorial Classification Theory},
   year         = {2026},
-  doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {https://doi.org/10.5281/zenodo.XXXXXXX},
+  doi          = {10.5281/zenodo.20387847},
+  url          = {https://doi.org/10.5281/zenodo.20387847},
   note         = {Version 2.0; companion dataset and camera-ready manuscript}
 }
 ```

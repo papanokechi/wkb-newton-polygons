@@ -1,39 +1,33 @@
 ﻿%% ============================================================================
-%% paper.tex
+%% paper.tex -- JMP submission bundle (REVTeX 4.2, AIP)
 %% "The WKB Geometry of Newton Polygons: A Functorial Classification Theory"
-%% Version: v1.0  (camera-ready candidate for Zenodo upload v1.0)
-%% Companion dataset: doi:10.5281/zenodo.XXXXXXX  (PLACEHOLDER)
+%% Version: v2.0
+%% Companion dataset: doi:10.5281/zenodo.20387847
 %% ============================================================================
 
-\documentclass[11pt,a4paper]{article}
+\documentclass[aip,jmp,preprint,amsmath,amssymb,nofootinbib,floatfix]{revtex4-2}
 
-%% --- Geometry & typography -------------------------------------------------
-\usepackage[margin=1in]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{microtype}
-
-%% --- Math ------------------------------------------------------------------
-\usepackage{amsmath, amssymb, amsthm, mathtools}
+%% --- Additional math packages (REVTeX preloads amsmath/amssymb) ----------
+\usepackage{amsthm}
+\usepackage{mathtools}
 \usepackage{mathrsfs}
 \usepackage{stmaryrd}
 
-%% --- Tables, lists, graphics, color ---------------------------------------
+%% --- Tables, lists, graphics, color --------------------------------------
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage{xcolor}
 
-%% --- Hyperlinks & cross-refs (load late) ----------------------------------
+%% --- Hyperlinks & cross-refs (load late) ---------------------------------
 \usepackage[colorlinks=true,
             linkcolor=blue!50!black,
             citecolor=blue!50!black,
             urlcolor=blue!50!black]{hyperref}
 \usepackage[capitalize,noabbrev]{cleveref}
 
-%% --- Theorem environments --------------------------------------------------
+%% --- Theorem environments ------------------------------------------------
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
@@ -49,7 +43,7 @@
 \newtheorem{remark}[theorem]{Remark}
 \newtheorem{notation}[theorem]{Notation}
 
-%% --- Macros (notation lock) -----------------------------------------------
+%% --- Macros (notation lock) ----------------------------------------------
 \newcommand{\op}{\mathop{\square}}                % abstract irregular operator
 \newcommand{\opD}{\mathrm{D}}                     % d/dx
 \newcommand{\opS}{\mathrm{S}}                     % shift
@@ -78,18 +72,21 @@
 \DeclareMathOperator{\arginline}{arg}
 \newcommand{\Argm}{\arginline}
 
-%% --- Title & authors -------------------------------------------------------
-\title{The WKB Geometry of Newton Polygons:\\
+%% --- Title & authors -----------------------------------------------------
+\title{The WKB Geometry of Newton Polygons:
        A Functorial Classification Theory}
 
-\author{%
-  Papanokechi\thanks{Independent researcher. ORCID:
-  \href{https://orcid.org/0009-0000-6192-8273}{\texttt{0009-0000-6192-8273}}.
+\author{Papanokechi%
+  \thanks{ORCID:
+  \href{https://orcid.org/0009-0000-6192-8273}{0009-0000-6192-8273}.
   Code and data repository:
-  \url{https://github.com/papanokechi}.}
+  \url{https://github.com/papanokechi/wkb-newton-polygons}.
+  Companion dataset:
+  \href{https://doi.org/10.5281/zenodo.20387847}{10.5281/zenodo.20387847}.}%
 }
+\affiliation{Independent Researcher}
 
-\date{\today\hspace{1ex}\textsc{(preprint v1.0)}}
+\date{\today}
 
 
 \begin{document}
@@ -103,11 +100,7 @@ For a scalar local linear operator $L$ (differential, difference, or
 $q$-difference) with one irregular singularity at $x = \infty$ whose
 Newton polygon has a unique dominant edge of slope $-p/q$ with $r{+}1$
 lattice points, the WKB ansatz on that edge produces a characteristic
-polynomial $\chi \in \mathbb{C}[c]$. Our central algebraic identity is
-\[
-   \chi(c) \;=\; \chi_w(c^q),
-\]
-where $\chi_w \in \mathbb{C}[w]$ is the classical edge-indicial polynomial
+polynomial $\chi \in \mathbb{C}[c]$. Our central algebraic identity is $\chi(c) = \chi_w(c^q)$, where $\chi_w \in \mathbb{C}[w]$ is the classical edge-indicial polynomial
 of degree $r$ in $w = c^q$. The exponent constellation
 $\Cl(L) \subset \mathbb{C}$ is therefore a $\mu_q$-equivariant union of
 $r$ fibres of $c \mapsto c^q$ over $\Roots(\chi_w)$.
@@ -143,9 +136,7 @@ $\mu_q$-pullback.
 \noindent\textsc{MSC2020:} 34M40 (primary); 34M30, 34M35, 39A06, 39A13
 (secondary).
 
-\tableofcontents
 
-\bigskip\hrule\bigskip
 
 
 %% ============================================================================
@@ -1909,7 +1900,7 @@ constellation sits transversally to the analytic theory---coarser,
 computable, and structurally separable.
 
 %% ============================================================================
-%% Â§11  REPRODUCIBILITY NOTE
+%% Section 11: Reproducibility note
 %% ============================================================================
 \section{Reproducibility note}\label{sec:reproducibility}
 
@@ -1930,142 +1921,86 @@ sequence reproduces the JSON atlas and the rendered constellation zoo
 (\texttt{constellations.png}).
 
 The proofs of \Cref{thm:M1,thm:N1,thm:D2,thm:S1,thm:AT1,thm:AT3,thm:AT5,thm:AT7}
-are also bundled in the dataset as the file \texttt{proofs.md}, in
-long-form expository style with explicit cross-references to
-Phase-III/IV evidence. The integration map
-(\texttt{integration\_map.md}) records, for each theorem, the dataset
-artifact that supplies its empirical evidence. The counterexample
-catalogue (\texttt{counterexamples.json}) records the strata on which
-naive forms of the theorems fail; each theorem statement above includes
-a remark guarding against the relevant counterexamples.
-
-\medskip
-\noindent\textbf{Citation.} If you use this work, please cite both the
-paper and the dataset; the dataset DOI (placeholder
-\texttt{10.5281/zenodo.XXXXXXX}) will be assigned by Zenodo on
-publication of v1.0.
+are bundled in the dataset as the file \texttt{proofs.md}, in long-form
+expository style with explicit cross-references to Phase-III/IV evidence.
+The integration map (\texttt{integration\_map.md}) records, for each
+theorem, the dataset artifact that supplies its empirical evidence. The
+counterexample catalogue (\texttt{counterexamples.json}) records the
+strata on which naive forms of the theorems fail; each theorem statement
+above includes a remark guarding against the relevant counterexamples.
 
 %% ============================================================================
-%% COMPUTATIONAL AND AI DISCLOSURE
-%% ============================================================================
-\section*{Computational and AI Disclosure}\label{sec:disclosure}
-
-\paragraph{Computational environment.}
-All numerical and symbolic work in this paper was carried out in
-\texttt{Python 3.10+} using \texttt{sympy} (exact symbolic algebra),
-\texttt{fractions} and \texttt{numpy} (exact rational and floating-point
-arithmetic), and \texttt{matplotlib} (figure rendering). No randomised
-algorithms were used and no random seeds were set: every JSON artifact
-in the companion dataset \cite{wkb_dataset_v1} is reproduced bytewise on
-re-execution. The manuscript was typeset with MiKTeX/\TeX{} Live using
-the package set listed in the preamble; the bibliography was processed
-with \texttt{bibtex} against \texttt{references.bib}.
-
-\paragraph{Automated pipelines (Phases I--V).}
-The computational atlas was produced by five fleet scripts, each
-implementing one phase of the investigation:
-\begin{itemize}[leftmargin=2em,itemsep=2pt,topsep=2pt]
-\item \texttt{fleet.py} (Phases I/II) --- generates the single-edge
-  operator atlas, computes Newton polygons, extracts characteristic
-  polynomials $\chi$ and inner polynomials $\chi_w$, clusters the
-  exponent constellations, and emits the initial conjecture list.
-\item \texttt{fleet3.py} (Phase III) --- extends the atlas to
-  multi-edge polygons, $2\times 2$ and $3\times 3$ systems, resonant
-  slopes ($q\le 7$), and nested ramification; computes
-  $\Delta_{ij}$ partitions, Galois-orbit invariants, and the
-  inner-polynomial $\mathbb{Z}$-resonance dichotomy.
-\item \texttt{fleet4.py} (Phase IV) --- lifts the discrete invariants
-  to the analytic layer via the Levelt--Turrittin decomposition,
-  predicts anti-Stokes rays from the $\Delta_{ij}$ geometry, and
-  cross-checks the predictions against numerical Stokes computations.
-\item \texttt{fleet5.py} (Phase V) --- consolidates the conjectures
-  into theorem--proof pairs, runs each statement against the
-  counterexample catalogue, and emits the proof skeletons recorded in
-  \texttt{proofs.md} with placements specified by
-  \texttt{integration\_map.md}.
-\end{itemize}
-The pipelines are deterministic and self-contained; running them in
-sequence reproduces every JSON file, the rendered constellation zoo
-(\texttt{constellations.png}), and the proof skeletons.
-
-\paragraph{Role of AI assistance.}
-This work was conducted as independent research with AI-assisted
-execution (GitHub Copilot CLI driving an Anthropic Claude Opus~4.7
-model). The assistant was used in five clearly demarcated roles:
-\begin{enumerate}[label=(\roman*),leftmargin=2em,itemsep=2pt,topsep=2pt]
-\item \emph{Conjecture selection.} The assistant scanned the
-  Phase-I--III invariant tables for candidate universality laws; the
-  author selected which conjectures to promote to the main text.
-\item \emph{Proof-skeleton generation.} For each promoted conjecture
-  the assistant produced a draft proof skeleton naming the algebraic
-  ingredients (Newton-polygon combinatorics, $\mu_q$-pullback,
-  $\chi_w$ factorisation, Levelt--Turrittin, determinant polygon);
-  the author verified each step and rewrote the load-bearing
-  arguments.
-\item \emph{Counterexample guarding.} The assistant cross-referenced
-  each candidate theorem against \texttt{counterexamples.json} and
-  proposed genericity hypotheses (prime $q$, single-edge, non-resonant
-  inner polynomial) that survive the catalogued exceptions; the
-  author adjudicated which restrictions were accepted into the final
-  statements.
-\item \emph{Refinement passes.} The assistant unified notation, fixed
-  cross-references, and polished prose; all theorem statements,
-  remarks, and limitations were reviewed by the author.
-\item \emph{Manuscript assembly.} The assistant inserted the
-  theorem--proof blocks into the section placements recorded in
-  \texttt{integration\_map.md}, assembled the bibliography, and
-  produced the arXiv and journal submission bundles.
-\end{enumerate}
-No proprietary or closed-source models were used beyond the
-publicly-available AI assistant named above; no model was fine-tuned on
-the project's data, and no AI-mediated literature summaries were used
-in place of primary sources for citations.
-
-\paragraph{Human accountability.}
-All mathematical statements, theorem formulations, proofs, and
-classification claims in this paper were reviewed, validated, and
-finalised by the author. In particular, the structural law of
-\Cref{thm:main}, the multi-edge and nested-ramification factorisations
-of \Cref{thm:M1,thm:N1}, the prime-$q$ Kummer dichotomy of
-\Cref{thm:D2}, the system pullback of \Cref{thm:S1}, the four
-analytic-lifting theorems \Cref{thm:AT1,thm:AT3,thm:AT5,thm:AT7}, and
-the 23-class taxonomy of \Cref{sec:classes} reflect human mathematical
-judgment. The author retains sole accountability for all claims,
-methodology choices, and the published result.
-
-\paragraph{Reproducibility.}
-The complete computational record --- operators, Newton polygons,
-characteristic polynomials, constellations, clusters, counterexamples,
-Phase-III/IV invariants, proof skeletons, integration map, and
-rendered figures --- is deposited as the companion Zenodo dataset
-\cite{wkb_dataset_v1}, licensed CC-BY-4.0 (text and data) and MIT
-(code and pipelines).
-All code, fleet scripts, and sample artifacts are publicly available
-at \url{https://github.com/papanokechi/wkb-newton-polygons}, which
-mirrors the Zenodo v2.0 dataset and provides a stable, versioned
-record of the computational workflow.
-The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
-(placeholder, assigned by Zenodo at publication of v1.0). See
-\Cref{sec:reproducibility} for the command sequence that reproduces
-every artifact.
-
-
-%% ============================================================================
-%% ACKNOWLEDGEMENTS
+%% Acknowledgements (incl. compact AI-disclosure paragraph)
 %% ============================================================================
 \section*{Acknowledgements}\label{sec:ack}
 
-The fleet pipeline that generated the computational atlas was prototyped
-in successive phases of automated investigation; the author thanks the
-contributors to \texttt{sympy}, \texttt{numpy}, and \texttt{matplotlib},
-on which the pipeline rests. Acknowledgements of individual collaborators
-and funding sources will be added in the camera-ready version (v2.0).
+The author thanks the contributors to \texttt{sympy}, \texttt{numpy},
+and \texttt{matplotlib}, on which the fleet pipelines that produced
+the computational atlas rest.
 
+\paragraph{Computational environment.}
+All numerical and symbolic work in this paper was carried out in
+\texttt{Python 3.10+} using \texttt{sympy}, \texttt{numpy},
+\texttt{fractions}, and \texttt{matplotlib}. No randomised algorithms
+were used and no random seeds were set; every JSON artifact in the
+companion dataset \cite{wkb_dataset_v1} is reproduced bytewise on
+re-execution. The manuscript was typeset with MiKTeX/\TeX{} Live; the
+bibliography was processed with \texttt{bibtex} against
+\texttt{references.bib}.
+
+\paragraph{Use of AI tools.}
+This work was conducted as independent research with AI-assisted
+execution (GitHub Copilot CLI driving an Anthropic Claude Opus~4.7
+model). The assistant was used for drafting prose, organising
+exploratory invariant tables produced by the fleet pipelines, unifying
+notation across revisions, and assembling the submission bundles.
+\emph{All mathematics, theorem statements, proofs, and classification
+claims in this paper were authored, verified, and finalised by the
+human researcher;} the AI tool did not generate any load-bearing
+mathematical argument or numerical result. No proprietary or
+closed-source models were used beyond the publicly-available AI
+assistant named above; no model was fine-tuned on the project's data,
+and no AI-mediated literature summaries were used in place of primary
+sources for citations. The author retains sole accountability for all
+claims, methodology choices, and the published result.
 
 %% ============================================================================
-%% BIBLIOGRAPHY
+%% Author Declarations
 %% ============================================================================
-\bibliographystyle{alpha}
+\section*{Author Declarations}\label{sec:declarations}
+
+\paragraph{Conflict of Interest.}
+The author has no conflicts of interest to disclose.
+
+\paragraph{Author Contributions.}
+\textbf{Papanokechi:} Conceptualization (lead); Data curation (lead);
+Formal analysis (lead); Investigation (lead); Methodology (lead);
+Software (lead); Validation (lead); Visualization (lead);
+Writing -- original draft (lead); Writing -- review \& editing (lead).
+This is a sole-authored manuscript; all roles were carried out by the
+sole author.
+
+%% ============================================================================
+%% Data Availability
+%% ============================================================================
+\section*{Data Availability}\label{sec:dataavail}
+
+The data and code that support the findings of this study are openly
+available in the Zenodo repository at
+\href{https://doi.org/10.5281/zenodo.20387847}{doi:10.5281/zenodo.20387847}
+(version 2.0), and are mirrored in the GitHub repository at
+\url{https://github.com/papanokechi/wkb-newton-polygons} (tagged
+release \texttt{v2.0}). The deposit contains the source pipelines
+(\texttt{fleets/}), JSON datasets (\texttt{data/}), phase reports
+(\texttt{reports/}), figures, and the manuscript sources required to
+reproduce every result reported in this paper. See
+\Cref{sec:reproducibility} for the command sequence that reproduces
+each artifact.
+
+%% ============================================================================
+%% Bibliography
+%% ============================================================================
+\bibliographystyle{aipnum4-2}
 \bibliography{references}
 
 \end{document}

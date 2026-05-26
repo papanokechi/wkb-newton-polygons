@@ -5,7 +5,7 @@ Version v1.0  —  initial public release
 ================================================================================
 
 Release date: 2026-05-26
-DOI:          10.5281/zenodo.XXXXXXX  (assigned by Zenodo at publication)
+DOI:          10.5281/zenodo.20387847  (assigned by Zenodo at publication)
 Authors:      Papanokechi (ORCID 0009-0000-6192-8273; Independent Researcher)
 
 ================================================================================

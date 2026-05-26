@@ -1,0 +1,385 @@
+﻿diff --git a/arxiv_bundle/paper.tex b/arxiv_bundle/paper.tex
+index 6e7f346..317cc8a 100644
+--- a/arxiv_bundle/paper.tex
++++ b/arxiv_bundle/paper.tex
+@@ -1989,32 +1989,32 @@ sequence reproduces every JSON file, the rendered constellation zoo
+ (\texttt{constellations.png}), and the proof skeletons.
+ 
+ \paragraph{Role of AI assistance.}
+-This work was conducted as independent research with AI-assisted
+-execution (GitHub Copilot CLI driving an Anthropic Claude Opus~4.7
+-model). The assistant was used in five clearly demarcated roles:
++This work was conducted as independent research with AI tools used in
++a strictly supporting role. The author used GitHub Copilot CLI driving
++an Anthropic Claude Opus~4.7 model in four organisational and
++infrastructural capacities only:
+ \begin{enumerate}[label=(\roman*),leftmargin=2em,itemsep=2pt,topsep=2pt]
+-\item \emph{Conjecture selection.} The assistant scanned the
+-  Phase-I--III invariant tables for candidate universality laws; the
+-  author selected which conjectures to promote to the main text.
+-\item \emph{Proof-skeleton generation.} For each promoted conjecture
+-  the assistant produced a draft proof skeleton naming the algebraic
+-  ingredients (Newton-polygon combinatorics, $\mu_q$-pullback,
+-  $\chi_w$ factorisation, Levelt--Turrittin, determinant polygon);
+-  the author verified each step and rewrote the load-bearing
+-  arguments.
+-\item \emph{Counterexample guarding.} The assistant cross-referenced
+-  each candidate theorem against \texttt{counterexamples.json} and
+-  proposed genericity hypotheses (prime $q$, single-edge, non-resonant
+-  inner polynomial) that survive the catalogued exceptions; the
+-  author adjudicated which restrictions were accepted into the final
+-  statements.
+-\item \emph{Refinement passes.} The assistant unified notation, fixed
+-  cross-references, and polished prose; all theorem statements,
+-  remarks, and limitations were reviewed by the author.
+-\item \emph{Manuscript assembly.} The assistant inserted the
+-  theorem--proof blocks into the section placements recorded in
+-  \texttt{integration\_map.md}, assembled the bibliography, and
+-  produced the arXiv and journal submission bundles.
++\item \emph{Drafting assistance.} The assistant suggested phrasing,
++  unified notation, and polished prose. All theorem statements,
++  definitions, proofs, remarks, and limitations were authored,
++  edited, and finalised by the author.
++\item \emph{Code generation.} The assistant proposed Python utility
++  snippets (data-structure scaffolding, JSON serialisation, plotting
++  routines, build automation) for the fleet pipelines; the author
++  reviewed, integrated, and tested every block. The fleet pipelines
++  themselves implement deterministic symbolic and numerical
++  algorithms, and no AI-generated heuristic step lies on the
++  inference path supporting any mathematical claim.
++\item \emph{Exploratory pattern-finding on numerical data.} The
++  assistant cross-tabulated invariants from the JSON atlas to surface
++  candidate regularities for the author's inspection. Every pattern
++  that survived author scrutiny was independently formulated, proved,
++  and verified by the author. The assistant was not used to generate
++  mathematical content, definitions, conclusions, or proof arguments.
++\item \emph{Organisational support.} The assistant performed LaTeX
++  scaffolding tasks (bibliography entry formatting from
++  author-supplied references, cross-reference linting,
++  table-of-contents organisation, arXiv and journal bundle assembly).
+ \end{enumerate}
+ No proprietary or closed-source models were used beyond the
+ publicly-available AI assistant named above; no model was fine-tuned on
+@@ -2042,10 +2042,10 @@ rendered figures --- is deposited as the companion Zenodo dataset
+ (code and pipelines).
+ All code, fleet scripts, and sample artifacts are publicly available
+ at \url{https://github.com/papanokechi/wkb-newton-polygons}, which
+-mirrors the Zenodo v2.0 dataset and provides a stable, versioned
+-record of the computational workflow.
+-The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
+-(placeholder, assigned by Zenodo at publication of v1.0). See
++mirrors the Zenodo dataset and provides a stable, versioned record of
++the computational workflow.
++The dataset version DOI is \texttt{10.5281/zenodo.20387847}
++(Zenodo concept DOI \texttt{10.5281/zenodo.20387846}). See
+ \Cref{sec:reproducibility} for the command sequence that reproduces
+ every artifact.
+ 
+diff --git a/journal_bundle/paper.tex b/journal_bundle/paper.tex
+index 6e7f346..317cc8a 100644
+--- a/journal_bundle/paper.tex
++++ b/journal_bundle/paper.tex
+@@ -1989,32 +1989,32 @@ sequence reproduces every JSON file, the rendered constellation zoo
+ (\texttt{constellations.png}), and the proof skeletons.
+ 
+ \paragraph{Role of AI assistance.}
+-This work was conducted as independent research with AI-assisted
+-execution (GitHub Copilot CLI driving an Anthropic Claude Opus~4.7
+-model). The assistant was used in five clearly demarcated roles:
++This work was conducted as independent research with AI tools used in
++a strictly supporting role. The author used GitHub Copilot CLI driving
++an Anthropic Claude Opus~4.7 model in four organisational and
++infrastructural capacities only:
+ \begin{enumerate}[label=(\roman*),leftmargin=2em,itemsep=2pt,topsep=2pt]
+-\item \emph{Conjecture selection.} The assistant scanned the
+-  Phase-I--III invariant tables for candidate universality laws; the
+-  author selected which conjectures to promote to the main text.
+-\item \emph{Proof-skeleton generation.} For each promoted conjecture
+-  the assistant produced a draft proof skeleton naming the algebraic
+-  ingredients (Newton-polygon combinatorics, $\mu_q$-pullback,
+-  $\chi_w$ factorisation, Levelt--Turrittin, determinant polygon);
+-  the author verified each step and rewrote the load-bearing
+-  arguments.
+-\item \emph{Counterexample guarding.} The assistant cross-referenced
+-  each candidate theorem against \texttt{counterexamples.json} and
+-  proposed genericity hypotheses (prime $q$, single-edge, non-resonant
+-  inner polynomial) that survive the catalogued exceptions; the
+-  author adjudicated which restrictions were accepted into the final
+-  statements.
+-\item \emph{Refinement passes.} The assistant unified notation, fixed
+-  cross-references, and polished prose; all theorem statements,
+-  remarks, and limitations were reviewed by the author.
+-\item \emph{Manuscript assembly.} The assistant inserted the
+-  theorem--proof blocks into the section placements recorded in
+-  \texttt{integration\_map.md}, assembled the bibliography, and
+-  produced the arXiv and journal submission bundles.
++\item \emph{Drafting assistance.} The assistant suggested phrasing,
++  unified notation, and polished prose. All theorem statements,
++  definitions, proofs, remarks, and limitations were authored,
++  edited, and finalised by the author.
++\item \emph{Code generation.} The assistant proposed Python utility
++  snippets (data-structure scaffolding, JSON serialisation, plotting
++  routines, build automation) for the fleet pipelines; the author
++  reviewed, integrated, and tested every block. The fleet pipelines
++  themselves implement deterministic symbolic and numerical
++  algorithms, and no AI-generated heuristic step lies on the
++  inference path supporting any mathematical claim.
++\item \emph{Exploratory pattern-finding on numerical data.} The
++  assistant cross-tabulated invariants from the JSON atlas to surface
++  candidate regularities for the author's inspection. Every pattern
++  that survived author scrutiny was independently formulated, proved,
++  and verified by the author. The assistant was not used to generate
++  mathematical content, definitions, conclusions, or proof arguments.
++\item \emph{Organisational support.} The assistant performed LaTeX
++  scaffolding tasks (bibliography entry formatting from
++  author-supplied references, cross-reference linting,
++  table-of-contents organisation, arXiv and journal bundle assembly).
+ \end{enumerate}
+ No proprietary or closed-source models were used beyond the
+ publicly-available AI assistant named above; no model was fine-tuned on
+@@ -2042,10 +2042,10 @@ rendered figures --- is deposited as the companion Zenodo dataset
+ (code and pipelines).
+ All code, fleet scripts, and sample artifacts are publicly available
+ at \url{https://github.com/papanokechi/wkb-newton-polygons}, which
+-mirrors the Zenodo v2.0 dataset and provides a stable, versioned
+-record of the computational workflow.
+-The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
+-(placeholder, assigned by Zenodo at publication of v1.0). See
++mirrors the Zenodo dataset and provides a stable, versioned record of
++the computational workflow.
++The dataset version DOI is \texttt{10.5281/zenodo.20387847}
++(Zenodo concept DOI \texttt{10.5281/zenodo.20387846}). See
+ \Cref{sec:reproducibility} for the command sequence that reproduces
+ every artifact.
+ 
+diff --git a/major_revision/followup/paper_v2_1.tex b/major_revision/followup/paper_v2_1.tex
+index 6e7f346..317cc8a 100644
+--- a/major_revision/followup/paper_v2_1.tex
++++ b/major_revision/followup/paper_v2_1.tex
+@@ -1989,32 +1989,32 @@ sequence reproduces every JSON file, the rendered constellation zoo
+ (\texttt{constellations.png}), and the proof skeletons.
+ 
+ \paragraph{Role of AI assistance.}
+-This work was conducted as independent research with AI-assisted
+-execution (GitHub Copilot CLI driving an Anthropic Claude Opus~4.7
+-model). The assistant was used in five clearly demarcated roles:
++This work was conducted as independent research with AI tools used in
++a strictly supporting role. The author used GitHub Copilot CLI driving
++an Anthropic Claude Opus~4.7 model in four organisational and
++infrastructural capacities only:
+ \begin{enumerate}[label=(\roman*),leftmargin=2em,itemsep=2pt,topsep=2pt]
+-\item \emph{Conjecture selection.} The assistant scanned the
+-  Phase-I--III invariant tables for candidate universality laws; the
+-  author selected which conjectures to promote to the main text.
+-\item \emph{Proof-skeleton generation.} For each promoted conjecture
+-  the assistant produced a draft proof skeleton naming the algebraic
+-  ingredients (Newton-polygon combinatorics, $\mu_q$-pullback,
+-  $\chi_w$ factorisation, Levelt--Turrittin, determinant polygon);
+-  the author verified each step and rewrote the load-bearing
+-  arguments.
+-\item \emph{Counterexample guarding.} The assistant cross-referenced
+-  each candidate theorem against \texttt{counterexamples.json} and
+-  proposed genericity hypotheses (prime $q$, single-edge, non-resonant
+-  inner polynomial) that survive the catalogued exceptions; the
+-  author adjudicated which restrictions were accepted into the final
+-  statements.
+-\item \emph{Refinement passes.} The assistant unified notation, fixed
+-  cross-references, and polished prose; all theorem statements,
+-  remarks, and limitations were reviewed by the author.
+-\item \emph{Manuscript assembly.} The assistant inserted the
+-  theorem--proof blocks into the section placements recorded in
+-  \texttt{integration\_map.md}, assembled the bibliography, and
+-  produced the arXiv and journal submission bundles.
++\item \emph{Drafting assistance.} The assistant suggested phrasing,
++  unified notation, and polished prose. All theorem statements,
++  definitions, proofs, remarks, and limitations were authored,
++  edited, and finalised by the author.
++\item \emph{Code generation.} The assistant proposed Python utility
++  snippets (data-structure scaffolding, JSON serialisation, plotting
++  routines, build automation) for the fleet pipelines; the author
++  reviewed, integrated, and tested every block. The fleet pipelines
++  themselves implement deterministic symbolic and numerical
++  algorithms, and no AI-generated heuristic step lies on the
++  inference path supporting any mathematical claim.
++\item \emph{Exploratory pattern-finding on numerical data.} The
++  assistant cross-tabulated invariants from the JSON atlas to surface
++  candidate regularities for the author's inspection. Every pattern
++  that survived author scrutiny was independently formulated, proved,
++  and verified by the author. The assistant was not used to generate
++  mathematical content, definitions, conclusions, or proof arguments.
++\item \emph{Organisational support.} The assistant performed LaTeX
++  scaffolding tasks (bibliography entry formatting from
++  author-supplied references, cross-reference linting,
++  table-of-contents organisation, arXiv and journal bundle assembly).
+ \end{enumerate}
+ No proprietary or closed-source models were used beyond the
+ publicly-available AI assistant named above; no model was fine-tuned on
+@@ -2042,10 +2042,10 @@ rendered figures --- is deposited as the companion Zenodo dataset
+ (code and pipelines).
+ All code, fleet scripts, and sample artifacts are publicly available
+ at \url{https://github.com/papanokechi/wkb-newton-polygons}, which
+-mirrors the Zenodo v2.0 dataset and provides a stable, versioned
+-record of the computational workflow.
+-The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
+-(placeholder, assigned by Zenodo at publication of v1.0). See
++mirrors the Zenodo dataset and provides a stable, versioned record of
++the computational workflow.
++The dataset version DOI is \texttt{10.5281/zenodo.20387847}
++(Zenodo concept DOI \texttt{10.5281/zenodo.20387846}). See
+ \Cref{sec:reproducibility} for the command sequence that reproduces
+ every artifact.
+ 
+diff --git a/paper/manuscript.tex b/paper/manuscript.tex
+index 6e7f346..317cc8a 100644
+--- a/paper/manuscript.tex
++++ b/paper/manuscript.tex
+@@ -1989,32 +1989,32 @@ sequence reproduces every JSON file, the rendered constellation zoo
+ (\texttt{constellations.png}), and the proof skeletons.
+ 
+ \paragraph{Role of AI assistance.}
+-This work was conducted as independent research with AI-assisted
+-execution (GitHub Copilot CLI driving an Anthropic Claude Opus~4.7
+-model). The assistant was used in five clearly demarcated roles:
++This work was conducted as independent research with AI tools used in
++a strictly supporting role. The author used GitHub Copilot CLI driving
++an Anthropic Claude Opus~4.7 model in four organisational and
++infrastructural capacities only:
+ \begin{enumerate}[label=(\roman*),leftmargin=2em,itemsep=2pt,topsep=2pt]
+-\item \emph{Conjecture selection.} The assistant scanned the
+-  Phase-I--III invariant tables for candidate universality laws; the
+-  author selected which conjectures to promote to the main text.
+-\item \emph{Proof-skeleton generation.} For each promoted conjecture
+-  the assistant produced a draft proof skeleton naming the algebraic
+-  ingredients (Newton-polygon combinatorics, $\mu_q$-pullback,
+-  $\chi_w$ factorisation, Levelt--Turrittin, determinant polygon);
+-  the author verified each step and rewrote the load-bearing
+-  arguments.
+-\item \emph{Counterexample guarding.} The assistant cross-referenced
+-  each candidate theorem against \texttt{counterexamples.json} and
+-  proposed genericity hypotheses (prime $q$, single-edge, non-resonant
+-  inner polynomial) that survive the catalogued exceptions; the
+-  author adjudicated which restrictions were accepted into the final
+-  statements.
+-\item \emph{Refinement passes.} The assistant unified notation, fixed
+-  cross-references, and polished prose; all theorem statements,
+-  remarks, and limitations were reviewed by the author.
+-\item \emph{Manuscript assembly.} The assistant inserted the
+-  theorem--proof blocks into the section placements recorded in
+-  \texttt{integration\_map.md}, assembled the bibliography, and
+-  produced the arXiv and journal submission bundles.
++\item \emph{Drafting assistance.} The assistant suggested phrasing,
++  unified notation, and polished prose. All theorem statements,
++  definitions, proofs, remarks, and limitations were authored,
++  edited, and finalised by the author.
++\item \emph{Code generation.} The assistant proposed Python utility
++  snippets (data-structure scaffolding, JSON serialisation, plotting
++  routines, build automation) for the fleet pipelines; the author
++  reviewed, integrated, and tested every block. The fleet pipelines
++  themselves implement deterministic symbolic and numerical
++  algorithms, and no AI-generated heuristic step lies on the
++  inference path supporting any mathematical claim.
++\item \emph{Exploratory pattern-finding on numerical data.} The
++  assistant cross-tabulated invariants from the JSON atlas to surface
++  candidate regularities for the author's inspection. Every pattern
++  that survived author scrutiny was independently formulated, proved,
++  and verified by the author. The assistant was not used to generate
++  mathematical content, definitions, conclusions, or proof arguments.
++\item \emph{Organisational support.} The assistant performed LaTeX
++  scaffolding tasks (bibliography entry formatting from
++  author-supplied references, cross-reference linting,
++  table-of-contents organisation, arXiv and journal bundle assembly).
+ \end{enumerate}
+ No proprietary or closed-source models were used beyond the
+ publicly-available AI assistant named above; no model was fine-tuned on
+@@ -2042,10 +2042,10 @@ rendered figures --- is deposited as the companion Zenodo dataset
+ (code and pipelines).
+ All code, fleet scripts, and sample artifacts are publicly available
+ at \url{https://github.com/papanokechi/wkb-newton-polygons}, which
+-mirrors the Zenodo v2.0 dataset and provides a stable, versioned
+-record of the computational workflow.
+-The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
+-(placeholder, assigned by Zenodo at publication of v1.0). See
++mirrors the Zenodo dataset and provides a stable, versioned record of
++the computational workflow.
++The dataset version DOI is \texttt{10.5281/zenodo.20387847}
++(Zenodo concept DOI \texttt{10.5281/zenodo.20387846}). See
+ \Cref{sec:reproducibility} for the command sequence that reproduces
+ every artifact.
+ 
+diff --git a/paper/paper.tex b/paper/paper.tex
+index 6e7f346..317cc8a 100644
+--- a/paper/paper.tex
++++ b/paper/paper.tex
+@@ -1989,32 +1989,32 @@ sequence reproduces every JSON file, the rendered constellation zoo
+ (\texttt{constellations.png}), and the proof skeletons.
+ 
+ \paragraph{Role of AI assistance.}
+-This work was conducted as independent research with AI-assisted
+-execution (GitHub Copilot CLI driving an Anthropic Claude Opus~4.7
+-model). The assistant was used in five clearly demarcated roles:
++This work was conducted as independent research with AI tools used in
++a strictly supporting role. The author used GitHub Copilot CLI driving
++an Anthropic Claude Opus~4.7 model in four organisational and
++infrastructural capacities only:
+ \begin{enumerate}[label=(\roman*),leftmargin=2em,itemsep=2pt,topsep=2pt]
+-\item \emph{Conjecture selection.} The assistant scanned the
+-  Phase-I--III invariant tables for candidate universality laws; the
+-  author selected which conjectures to promote to the main text.
+-\item \emph{Proof-skeleton generation.} For each promoted conjecture
+-  the assistant produced a draft proof skeleton naming the algebraic
+-  ingredients (Newton-polygon combinatorics, $\mu_q$-pullback,
+-  $\chi_w$ factorisation, Levelt--Turrittin, determinant polygon);
+-  the author verified each step and rewrote the load-bearing
+-  arguments.
+-\item \emph{Counterexample guarding.} The assistant cross-referenced
+-  each candidate theorem against \texttt{counterexamples.json} and
+-  proposed genericity hypotheses (prime $q$, single-edge, non-resonant
+-  inner polynomial) that survive the catalogued exceptions; the
+-  author adjudicated which restrictions were accepted into the final
+-  statements.
+-\item \emph{Refinement passes.} The assistant unified notation, fixed
+-  cross-references, and polished prose; all theorem statements,
+-  remarks, and limitations were reviewed by the author.
+-\item \emph{Manuscript assembly.} The assistant inserted the
+-  theorem--proof blocks into the section placements recorded in
+-  \texttt{integration\_map.md}, assembled the bibliography, and
+-  produced the arXiv and journal submission bundles.
++\item \emph{Drafting assistance.} The assistant suggested phrasing,
++  unified notation, and polished prose. All theorem statements,
++  definitions, proofs, remarks, and limitations were authored,
++  edited, and finalised by the author.
++\item \emph{Code generation.} The assistant proposed Python utility
++  snippets (data-structure scaffolding, JSON serialisation, plotting
++  routines, build automation) for the fleet pipelines; the author
++  reviewed, integrated, and tested every block. The fleet pipelines
++  themselves implement deterministic symbolic and numerical
++  algorithms, and no AI-generated heuristic step lies on the
++  inference path supporting any mathematical claim.
++\item \emph{Exploratory pattern-finding on numerical data.} The
++  assistant cross-tabulated invariants from the JSON atlas to surface
++  candidate regularities for the author's inspection. Every pattern
++  that survived author scrutiny was independently formulated, proved,
++  and verified by the author. The assistant was not used to generate
++  mathematical content, definitions, conclusions, or proof arguments.
++\item \emph{Organisational support.} The assistant performed LaTeX
++  scaffolding tasks (bibliography entry formatting from
++  author-supplied references, cross-reference linting,
++  table-of-contents organisation, arXiv and journal bundle assembly).
+ \end{enumerate}
+ No proprietary or closed-source models were used beyond the
+ publicly-available AI assistant named above; no model was fine-tuned on
+@@ -2042,10 +2042,10 @@ rendered figures --- is deposited as the companion Zenodo dataset
+ (code and pipelines).
+ All code, fleet scripts, and sample artifacts are publicly available
+ at \url{https://github.com/papanokechi/wkb-newton-polygons}, which
+-mirrors the Zenodo v2.0 dataset and provides a stable, versioned
+-record of the computational workflow.
+-The dataset DOI is \texttt{10.5281/zenodo.XXXXXXX}
+-(placeholder, assigned by Zenodo at publication of v1.0). See
++mirrors the Zenodo dataset and provides a stable, versioned record of
++the computational workflow.
++The dataset version DOI is \texttt{10.5281/zenodo.20387847}
++(Zenodo concept DOI \texttt{10.5281/zenodo.20387846}). See
+ \Cref{sec:reproducibility} for the command sequence that reproduces
+ every artifact.
+ 
